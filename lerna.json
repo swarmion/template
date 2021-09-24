@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "backend/*",
+    "common/*",
+    "frontend/*"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

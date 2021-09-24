@@ -1,0 +1,57 @@
+{
+  "name": "@sls-monorepo/serverless-configuration",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "transpile": "babel . --extensions .ts",
+    "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
+    "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'",
+    "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs",
+    "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm",
+    "package:types": "ttsc",
+    "test:type": "tsc --noEmit --emitDeclarationOnly false",
+    "test:unit": "echo 'no tests yet'",
+    "test:dependents": "lerna run --scope @sls-monorepo/serverless-configuration --include-dependents --stream --concurrency 2 test:type",
+    "package:test": "yarn package && yarn test:dependents",
+    "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
+    "linter-base-config": "eslint --ext=js,ts",
+    "test:linter": "yarn linter-base-config .",
+    "lint:fix": "yarn linter-base-config --fix",
+    "lint:fix-all": "yarn lint:fix .",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@middy/core": "^2.4.3",
+    "@middy/http-error-handler": "^2.5.0",
+    "@middy/http-json-body-parser": "^2.4.3",
+    "@middy/validator": "^2.4.3",
+    "jwt-decode": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@serverless/typescript": "^2.52.0",
+    "@types/aws-lambda": "^8.10.81",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "concurrently": "^6.0.0",
+    "eslint": "^7.27.0",
+    "jest": "^26.6.0",
+    "jest-runner-groups": "^2.0.1",
+    "json-schema-to-ts": "^1.6.3",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.2.1",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.0.2"
+  }
+}

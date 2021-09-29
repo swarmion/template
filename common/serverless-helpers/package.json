@@ -1,5 +1,5 @@
 {
-  "name": "@sls-monorepo/backend-shared",
+  "name": "@sls-monorepo/serverless-helpers",
   "license": "UNLICENSED",
   "version": "1.0.0",
   "private": true,
@@ -18,7 +18,7 @@
     "package:types": "ttsc",
     "test:type": "tsc --noEmit --emitDeclarationOnly false",
     "test:unit": "echo 'no tests yet'",
-    "test:dependents": "lerna run --scope @sls-monorepo/backend-shared --include-dependents --stream --concurrency 2 test:type",
+    "test:dependents": "lerna run --scope @sls-monorepo/serverless-helpers --include-dependents --stream --concurrency 2 test:type",
     "package:test": "yarn package && yarn test:dependents",
     "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
     "linter-base-config": "eslint --ext=js,ts",

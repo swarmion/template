@@ -12,12 +12,15 @@
     "package": "lerna run --stream package",
     "package:since": "lerna run --stream --concurrency 3 package --include-dependencies --include-dependents --since",
     "build:since": "lerna run --stream --concurrency 3 build --include-dependencies --include-dependents --since",
+    "build:staging:since": "lerna run --stream --concurrency 3 build:staging --include-dependencies --include-dependents --since",
+    "build:production:since": "lerna run --stream --concurrency 3 build:production --include-dependencies --include-dependents --since",
     "watch": "lerna run --parallel watch",
-    "deploy": "yarn package && yarn deploy:order",
-    "deploy:order": "lerna run --stream --concurrency 2 deploy --scope @sls-monorepo/backend-*",
+    "deploy:dev": "yarn package && lerna run --stream --concurrency 2 deploy --scope @sls-monorepo/backend-*",
     "deploy:since": "lerna run --stream --concurrency 3 deploy --include-dependents --since",
+    "deploy:staging:since": "lerna run --stream --concurrency 3 deploy:staging --include-dependents --since",
+    "deploy:production:since": "lerna run --stream --concurrency 3 deploy:production --include-dependents --since",
     "info": "lerna run --stream sls:info",
-    "remove": "lerna run --stream --concurrency 2 remove --scope @sls-monorepo/backend-*",
+    "remove:dev": "lerna run --stream --concurrency 2 remove --scope @sls-monorepo/backend-*",
     "test:all": "concurrently 'yarn test:linter ${SCOPE:-}' 'yarn test:prettier' 'yarn test:type ${SCOPE:-}' 'yarn test:stylelint ${SCOPE:-}'",
     "test:since": "lerna run --stream --concurrency 3 test:all --include-dependents --since",
     "test:linter": "lerna run --stream --concurrency 2 test:linter",
@@ -25,7 +28,8 @@
     "test:type": "lerna run --stream --concurrency 2 test:type",
     "test:stylelint": "lerna run --stream --concurrency 2 test:stylelint",
     "test:unit": "lerna run --stream --concurrency 2 test:unit",
-    "lint:fix": "lerna run --stream --concurrency 2 lint:fix"
+    "lint:fix": "lerna run --stream --concurrency 2 lint:fix",
+    "list:since": "lerna list --all --long --parseable --since"
   },
   "dependencies": {},
   "devDependencies": {

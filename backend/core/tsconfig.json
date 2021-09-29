@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@libs/*": ["libs/*"],
+      "@resources/*": ["resources/*"],
+      "@functions/*": ["functions/*"],
+      "@integrationTests/*": ["integrationTests/*"]
+    }
+  },
+  "references": [
+    { "path": "../../common/serverless-helpers" },
+    { "path": "../../common/serverless-configuration" }
+  ],
+  "include": ["./**/*.ts"],
+  "ts-node": {
+    "files": true
+  }
+}

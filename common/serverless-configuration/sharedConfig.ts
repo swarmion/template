@@ -1,4 +1,5 @@
 export const projectName = 'sls-monorepo';
+export const region = 'eu-west-1';
 export const LAMBDAS_NODE_OPTIONS =
   '--enable-source-maps --stack-trace-limit=1000';
 export const defaultEnvironment = 'dev';

@@ -2,6 +2,7 @@ import {
   defaultEnvironment,
   LAMBDAS_NODE_OPTIONS,
   projectName,
+  region,
   sharedEnvsConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { AWS } from '@serverless/typescript';
@@ -14,7 +15,7 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
-    region: 'eu-west-3',
+    region,
     profile: '${self:custom.sharedEnvsConfig.${self:provider.stage}.profile}', // Used to point to the right AWS account
     stage: `\${opt:stage, '${defaultEnvironment}'}`, // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
     lambdaHashingVersion: '20201221',

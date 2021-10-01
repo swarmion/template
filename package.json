@@ -11,9 +11,6 @@
   "scripts": {
     "package": "lerna run --stream package",
     "package:since": "lerna run --stream --concurrency 3 package --include-dependencies --include-dependents --since",
-    "build:since": "lerna run --stream --concurrency 3 build --include-dependencies --include-dependents --since",
-    "build:staging:since": "lerna run --stream --concurrency 3 build:staging --include-dependencies --include-dependents --since",
-    "build:production:since": "lerna run --stream --concurrency 3 build:production --include-dependencies --include-dependents --since",
     "watch": "lerna run --parallel watch",
     "deploy": "yarn package && lerna run --stream --concurrency 2 deploy",
     "deploy:since": "lerna run --stream --concurrency 3 deploy --include-dependents --since",

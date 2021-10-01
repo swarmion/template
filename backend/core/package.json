@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@serverless/typescript": "^2.50.0",
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.3.1",
-    "jest": "^26.0.6",
+    "jest": "^27.2.4",
     "serverless": "^2.51.2",
     "ts-jest": "^26.0.6",
     "ts-node": "^10.1.0",

@@ -1,6 +1,6 @@
 # Serverless Monorepo Microservices Template
 
-This template aims to define a clean Serverless monorepo microservices architecture.
+This template aims to define a opinionated clean Serverless monorepo microservices architecture.
 
 ## Install
 
@@ -11,6 +11,7 @@ Head to [the install docs](./docs/install.md)!
 - Lerna
 - Eslint configuration
 - Prettier configuration
+- Jest configuration
 - Common packages built with babel, with a watch mode
 - Selective tests, package and deploy to remove the need to run all the tests and deploy at every commit.
 

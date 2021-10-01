@@ -18,11 +18,10 @@
     "deploy:production:since": "lerna run --stream --concurrency 3 deploy:production --include-dependents --since",
     "info": "lerna run --stream sls:info",
     "remove": "lerna run --stream --concurrency 2 remove",
+    "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:since": "lerna run --stream --concurrency 3 test:all --include-dependents --since",
     "test:linter": "lerna run --stream --concurrency 2 test:linter",
-    "test:prettier": "prettier --check .",
     "test:type": "lerna run --stream --concurrency 2 test:type",
-    "test:stylelint": "lerna run --stream --concurrency 2 test:stylelint",
     "test:unit": "lerna run --stream --concurrency 2 test:unit",
     "lint:fix": "lerna run --stream --concurrency 2 lint:fix",
     "list:since": "lerna list --all --long --parseable --since"

@@ -1,6 +1,6 @@
 const { resolve } = require('path');
 
-const jestConfig = require('../../../commonConfiguration/jest.config');
+const jestConfig = require('../../commonConfiguration/jest.config');
 
 module.exports = {
   ...jestConfig,

@@ -2,20 +2,31 @@
 
 This template aims to define a clean Serverless monorepo microservices architecture.
 
-## Requirements
-- node
-- yarn
+## Install
+
+Head to [the install docs](./docs/install.md)!
+
+## Features
+
+- Lerna
+- Eslint configuration
+- Prettier configuration
+
+## Code principles
+
+- Always explicitely declare dependencies between end services in `package.json`
+- These dependencies can be
 
 ## Commands
-- `nvm use`: set the version of node set in `.nvmrc` (you may use https://github.com/lukechilds/zsh-nvm to do this automatically);
+
+These commands have to be run at the root of the project.
+
+- `nvm use`: set the version of node set in `.nvmrc`
 - `yarn`: install node dependencies in all packages;
 - `yarn package`: compile the common packages;
-- `yarn watch`: launch the compilation in watch mode;
+- `yarn watch`: launch the compilation of all packages in watch mode;
 - `yarn deploy`: deploy all the end services in order;
 
-## Principles
-- Always explicitely declare dependencies between end services in `package.json` 
-
-
 ## Adding a new service
+
 - Good idea!

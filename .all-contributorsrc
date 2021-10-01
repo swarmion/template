@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "fargito",
+      "name": "François Farge",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29537204?v=4",
+      "profile": "https://github.com/fargito",
+      "contributions": [
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "serverless-monorepo-microservices-template",
+  "projectOwner": "fargito",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

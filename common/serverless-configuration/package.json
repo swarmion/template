@@ -27,13 +27,7 @@
     "lint:fix-all": "yarn lint:fix .",
     "precommit": "lint-staged"
   },
-  "dependencies": {
-    "@middy/core": "^2.4.3",
-    "@middy/http-error-handler": "^2.5.0",
-    "@middy/http-json-body-parser": "^2.4.3",
-    "@middy/validator": "^2.4.3",
-    "jwt-decode": "^3.1.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",

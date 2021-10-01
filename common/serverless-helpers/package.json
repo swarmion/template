@@ -31,8 +31,7 @@
     "@middy/core": "^2.4.3",
     "@middy/http-error-handler": "^2.5.0",
     "@middy/http-json-body-parser": "^2.4.3",
-    "@middy/validator": "^2.4.3",
-    "jwt-decode": "^3.1.2"
+    "@middy/validator": "^2.4.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
@@ -41,7 +40,6 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
     "@serverless/typescript": "^2.52.0",
-    "@types/aws-lambda": "^8.10.81",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^6.0.0",

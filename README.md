@@ -14,6 +14,7 @@ If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
 - Eslint configuration
 - Prettier configuration
 - Jest configuration
+- Typescript
 - Common packages built with babel, with a watch mode
 - Selective tests, package and deploy to remove the need to run all the tests and deploy at every commit.
 

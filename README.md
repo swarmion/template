@@ -1,9 +1,12 @@
 # Serverless Monorepo Microservices Template
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-This template aims to define a opinionated clean Serverless monorepo microservices architecture.
+This template aims to define an opinionated clean Serverless monorepo microservices architecture.
 
 ## Install
 

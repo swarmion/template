@@ -8,10 +8,12 @@ import {
 import { AWS } from '@serverless/typescript';
 
 import { HttpApiId } from './resources/apiGateway';
+import { functions } from './functions';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.50.0',
+  plugins: ['serverless-esbuild'],
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
@@ -36,6 +38,7 @@ const serverlessConfiguration: AWS = {
       metrics: true,
     },
   },
+  functions,
   custom: {
     projectName,
     sharedEnvsConfig,

@@ -9,6 +9,7 @@ import {
 } from '@sls-monorepo/serverless-configuration';
 
 import { AWS } from '@serverless/typescript';
+import { functions } from './functions';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-materials`, // Keep it short to have role name below 64
@@ -31,7 +32,7 @@ const serverlessConfiguration: AWS = {
       },
     },
   },
-  functions: {},
+  functions,
   custom: {
     projectName,
     sharedEnvsConfig,

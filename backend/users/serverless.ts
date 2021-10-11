@@ -12,7 +12,7 @@ import { AWS } from '@serverless/typescript';
 import { functions } from './functions';
 
 const serverlessConfiguration: AWS = {
-  service: `${projectName}-materials`, // Keep it short to have role name below 64
+  service: `${projectName}-users`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
   plugins: ['serverless-esbuild', 'serverless-iam-roles-per-function'],
   provider: {

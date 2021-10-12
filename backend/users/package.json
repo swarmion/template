@@ -21,9 +21,10 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/backend-core": "1.0.0",
+    "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
+    "@sls-monorepo/users-schemas": "1.0.0",
     "aws-sdk": "^2.948.0",
     "http-errors": "^1.8.0",
     "json-schema-to-ts": "^1.6.4"

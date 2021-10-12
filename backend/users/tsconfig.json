@@ -12,7 +12,8 @@
   },
   "references": [
     { "path": "../../common/serverless-configuration" },
-    { "path": "../../common/serverless-helpers" }
+    { "path": "../../common/serverless-helpers" },
+    { "path": "../../common/users-schemas" }
   ],
   "include": ["./**/*.ts"],
   "ts-node": {

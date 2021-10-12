@@ -1,8 +1,8 @@
 import {
-  sharedEsbuildConfig,
   httpApiIdExportName,
   projectName,
   sharedEnvsConfig,
+  sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 

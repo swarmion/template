@@ -1,7 +1,7 @@
 import {
-  sharedEsbuildConfig,
   projectName,
   sharedEnvsConfig,
+  sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { AWS } from '@serverless/typescript';

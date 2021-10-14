@@ -1,9 +1,5 @@
 {
-  "packages": [
-    "backend/*",
-    "common/*",
-    "frontend/*"
-  ],
+  "packages": ["backend/*", "contracts/*", "packages/*", "frontend/*"],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true

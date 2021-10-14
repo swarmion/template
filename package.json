@@ -5,7 +5,8 @@
   "private": true,
   "workspaces": [
     "backend/*",
-    "common/*",
+    "contracts/*",
+    "packages/*",
     "frontend/*"
   ],
   "scripts": {

@@ -11,9 +11,9 @@
     }
   },
   "references": [
-    { "path": "../../common/serverless-configuration" },
-    { "path": "../../common/serverless-helpers" },
-    { "path": "../../common/users-schemas" }
+    { "path": "../../packages/serverless-configuration" },
+    { "path": "../../packages/serverless-helpers" },
+    { "path": "../../contracts/users-schemas" }
   ],
   "include": ["./**/*.ts"],
   "ts-node": {

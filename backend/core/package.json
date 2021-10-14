@@ -25,14 +25,14 @@
     "@sls-monorepo/serverless-helpers": "1.0.0"
   },
   "devDependencies": {
-    "@serverless/typescript": "^2.50.0",
+    "@serverless/typescript": "^2.62.0",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.3.1",
+    "@types/node": "^16.10.9",
     "jest": "^27.2.4",
-    "serverless-esbuild": "^1.19.0",
     "serverless": "^2.51.2",
+    "serverless-esbuild": "^1.20.0",
     "ts-jest": "^27.0.5",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   }
 }

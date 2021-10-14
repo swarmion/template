@@ -25,6 +25,7 @@ If you want to take is as an example to start your own projet,
 - `nvm use`: use the version of node set in `.nvmrc`;
 - `yarn`: install node dependencies in all packages;
 - `yarn package`: compile the common packages;
+- `yarn upgrade-interactive --latest` in order to bump all dependencies to their latest version. Be careful as it may introduce breaking changes;
 
 ## Test the installation
 
@@ -42,7 +43,7 @@ In order to deploy the stack on a development environment, you will need to setu
 - Add a new user, give it a name;
 - In "AWS access type", select "Programmatic access", then click on "Next: permissions";
 - Click on the "Attach existing policy directly", then select "AdministratorAccess" and click on "Next: tags";
-- Click "Next: revieuw", then "Create user";
+- Click "Next: review", then "Create user";
 - Do not close the window yet;
 - Open a terminal and run: `aws configure --profile <your-profile>` (the value of `<your-profile>` depends of your choice in [the personalisation section](#change-the-project-general-settings). By default it will be `sls-monorepo-developer`);
 - Fill in the Access Key Id and the Secret Access Key from your user;

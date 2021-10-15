@@ -1,9 +1,8 @@
 import middy from '@middy/core';
-import { Handler } from 'aws-lambda';
-import jsonValidator from '@middy/validator';
-import jsonBodyParser from '@middy/http-json-body-parser';
 import httpErrorHandler from '@middy/http-error-handler';
-
+import jsonBodyParser from '@middy/http-json-body-parser';
+import jsonValidator from '@middy/validator';
+import { Handler } from 'aws-lambda';
 import { JSONSchema } from 'json-schema-to-ts';
 
 interface Options {

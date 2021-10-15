@@ -1,3 +1,5 @@
+import { AWS } from '@serverless/typescript';
+
 import {
   httpApiIdExportName,
   projectName,
@@ -6,7 +8,6 @@ import {
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 
-import { AWS } from '@serverless/typescript';
 import { functions } from './functions';
 
 const serverlessConfiguration: AWS = {

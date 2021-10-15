@@ -21,7 +21,7 @@
     "test:dependents": "lerna run --scope @sls-monorepo/forum-schemas --include-dependents --stream --concurrency 2 test:type",
     "package:test": "yarn package && yarn test:dependents",
     "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
-    "linter-base-config": "eslint --ext=js,ts",
+    "linter-base-config": "eslint --ext=js,ts .",
     "test:linter": "yarn linter-base-config .",
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",

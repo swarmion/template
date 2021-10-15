@@ -1,14 +1,15 @@
 import { AWS } from '@serverless/typescript';
 
+import { CoreCloudFormationKeys } from '@sls-monorepo/core-schemas';
 import {
   projectName,
   sharedEnvsConfig,
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
+import { generateCloudFormationExports } from '@sls-monorepo/serverless-helpers';
 
 import { functions } from './functions';
-import { HttpApiId } from './resources/apiGateway';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
@@ -38,9 +39,9 @@ const serverlessConfiguration: AWS = {
   },
   resources: {
     Description: 'Core service',
-    Outputs: {
-      HttpApiId,
-    },
+    Outputs: generateCloudFormationExports<CoreCloudFormationKeys>({
+      HttpApiId: { Ref: 'HttpApi' },
+    }),
   },
 };
 

@@ -13,7 +13,8 @@
   },
   "references": [
     { "path": "../../packages/serverless-helpers" },
-    { "path": "../../packages/serverless-configuration" }
+    { "path": "../../packages/serverless-configuration" },
+    { "path": "../../contracts/core-schemas" }
   ],
   "include": ["./**/*.ts"],
   "ts-node": {

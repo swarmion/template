@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@sls-monorepo/serverless-configuration": "1.0.0",
-    "@sls-monorepo/serverless-helpers": "1.0.0"
+    "@sls-monorepo/serverless-helpers": "1.0.0",
+    "@sls-monorepo/core-schemas": "1.0.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^2.62.0",

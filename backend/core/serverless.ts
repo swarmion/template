@@ -30,6 +30,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   functions,
+  package: { individually: true },
   custom: {
     projectName,
     sharedEnvsConfig,

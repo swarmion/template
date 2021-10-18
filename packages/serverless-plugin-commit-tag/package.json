@@ -1,0 +1,52 @@
+{
+  "name": "@sls-monorepo/serverless-plugin-commit-tag",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "transpile": "babel . --extensions .ts",
+    "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
+    "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'",
+    "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs",
+    "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm",
+    "package:types": "ttsc",
+    "test:type": "tsc --noEmit --emitDeclarationOnly false",
+    "test:unit": "echo 'no tests yet'",
+    "test:dependents": "lerna run --scope @sls-monorepo/serverless-plugin-commit-tag --include-dependents --stream --concurrency 2 test:type",
+    "package:test": "yarn package && yarn test:dependents",
+    "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
+    "linter-base-config": "eslint --ext=js,ts .",
+    "test:linter": "yarn linter-base-config .",
+    "lint:fix": "yarn linter-base-config --fix",
+    "lint:fix-all": "yarn lint:fix .",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@serverless/typescript": "^2.63.0",
+    "@types/aws-lambda": "^8.10.83",
+    "@types/serverless": "^1.78.36",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "concurrently": "^6.0.0",
+    "eslint": "^8.0.1",
+    "jest": "^27.3.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.2.1",
+    "serverless": "^2.63.0",
+    "simple-git": "^2.46.0",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.4.4"
+  }
+}

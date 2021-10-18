@@ -13,7 +13,7 @@ import { HttpApiId } from './resources/apiGateway';
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.50.0',
-  plugins: ['serverless-esbuild'],
+  plugins: ['serverless-esbuild', '@sls-monorepo/serverless-plugin-commit-tag'],
   provider: {
     ...sharedProviderConfig,
     httpApi: {

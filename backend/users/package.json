@@ -30,7 +30,7 @@
     "json-schema-to-ts": "^1.6.4"
   },
   "devDependencies": {
-    "@serverless/typescript": "^2.62.0",
+    "@serverless/typescript": "^2.63.0",
     "@types/http-errors": "^1.8.1",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.1",

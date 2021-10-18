@@ -39,7 +39,7 @@
     "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-typescript": "^7.13.0",
-    "@serverless/typescript": "^2.62.0",
+    "@serverless/typescript": "^2.63.0",
     "@types/aws-lambda": "^8.10.83",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-plugin-module-resolver": "^4.1.0",

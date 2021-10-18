@@ -25,7 +25,7 @@
     "@sls-monorepo/serverless-helpers": "1.0.0"
   },
   "devDependencies": {
-    "@serverless/typescript": "^2.62.0",
+    "@serverless/typescript": "^2.63.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.1",
     "jest": "^27.3.0",

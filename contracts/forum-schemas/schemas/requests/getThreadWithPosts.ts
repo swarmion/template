@@ -1,4 +1,5 @@
 import { FromSchema } from 'json-schema-to-ts';
+
 import { postEntitySchema, threadEntitySchema } from 'schemas/entities';
 
 export const getThreadReponseSchema = {

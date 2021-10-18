@@ -1,6 +1,8 @@
-import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
 import { FromSchema } from 'json-schema-to-ts';
+
+import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
 import { UserEntity } from '@sls-monorepo/users-schemas';
+
 import { inputSchema } from './schema';
 
 export const handler = async (

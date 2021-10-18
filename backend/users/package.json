@@ -14,7 +14,7 @@
     "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:type": "tsc --noEmit",
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage",
-    "linter-base-config": "eslint --ext=js,ts",
+    "linter-base-config": "eslint --ext=js,ts .",
     "test:linter": "yarn linter-base-config .",
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",

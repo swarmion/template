@@ -1,13 +1,14 @@
+import { AWS } from '@serverless/typescript';
+
 import {
   projectName,
   sharedEnvsConfig,
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
-import { AWS } from '@serverless/typescript';
 
-import { HttpApiId } from './resources/apiGateway';
 import { functions } from './functions';
+import { HttpApiId } from './resources/apiGateway';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
@@ -29,6 +30,7 @@ const serverlessConfiguration: AWS = {
     },
   },
   functions,
+  package: { individually: true },
   custom: {
     projectName,
     sharedEnvsConfig,

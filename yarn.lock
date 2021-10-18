@@ -9822,6 +9822,11 @@ serverless-iam-roles-per-function@^3.2.0:
   dependencies:
     lodash "^4.17.20"
 
+serverless-plugin-git-variables@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-git-variables/-/serverless-plugin-git-variables-5.1.0.tgz#668aceed366d647ac0143c4a8bc4782b7536df12"
+  integrity sha512-72HcfC6KIpsiPimJrdAknvtYEfERgm1+f6TPj3mvA5Dd+2xDFoi6bItyRwqqepoCshL77AFfzpmlxYn58Ez0rw==
+
 serverless@^2.63.0:
   version "2.63.0"
   resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.63.0.tgz#b1cf91253572640e8409ae6f816d0a330f08816a"

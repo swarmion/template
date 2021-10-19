@@ -26,6 +26,8 @@ If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
 
 ## Code principles
 
+For the repository structure, see [the repository structure documentation](./docs/repository-structure.md)
+
 - Always explicitely declare dependencies between end services in `package.json`
 - These dependencies can be of two kinds:
   - code dependencies: _service B_ declares _service A_ as a dependency because it needs some code exported by _service A_;

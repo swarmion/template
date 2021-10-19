@@ -8,7 +8,7 @@ interface OptionsExtended extends Serverless.Options {
 
 const TAG_NAME = 'GIT_COMMIT_HASH';
 
-export class ServerlessCommitTagPlugin implements Plugin {
+export class ServerlessTagGitCommitPlugin implements Plugin {
   options: OptionsExtended;
   serverless: Serverless;
   hooks: Plugin.Hooks;
@@ -19,11 +19,11 @@ export class ServerlessCommitTagPlugin implements Plugin {
     this.serverless = serverless;
     this.commands = {};
     this.hooks = {
-      'after:package:initialize': this.exportGitCommitHash.bind(this),
+      'after:package:initialize': this.tagStackWithGitCommit.bind(this),
     };
   }
 
-  async exportGitCommitHash(): Promise<void> {
+  async tagStackWithGitCommit(): Promise<void> {
     const git = simpleGit();
 
     const hash = await git.revparse('HEAD');

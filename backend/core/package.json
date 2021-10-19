@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@serverless/typescript": "^2.63.0",
-    "@sls-monorepo/serverless-plugin-commit-tag": "1.0.0",
+    "@sls-monorepo/serverless-tag-git-commit-plugin": "1.0.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.1",
     "jest": "^27.3.1",

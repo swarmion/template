@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "deployedCommit": "serverless deployedCommit",
     "deploy": "serverless deploy",
     "deploy:staging": "serverless deploy --stage staging",
     "deploy:production": "serverless deploy --stage production",

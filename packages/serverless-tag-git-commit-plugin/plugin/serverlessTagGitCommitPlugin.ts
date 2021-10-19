@@ -19,14 +19,14 @@ export class ServerlessTagGitCommitPlugin implements Plugin {
     this.options = options;
     this.serverless = serverless;
     this.commands = {
-      deployedVersion: {
+      deployedCommit: {
         usage: 'Get the git commit hash of the deployed version of the stack',
         lifecycleEvents: ['describeStack'],
       },
     };
     this.hooks = {
       'after:package:initialize': this.tagStackWithGitCommit.bind(this),
-      'deployedVersion:describeStack': this.getDeployedGitCommitHash.bind(this),
+      'deployedCommit:describeStack': this.getDeployedGitCommitHash.bind(this),
     };
   }
 

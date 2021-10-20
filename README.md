@@ -26,6 +26,20 @@ If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
 
 ## Code principles
 
+This repository follows the code principles:
+
+- **Your codebase should adapt to your team organizations**
+- **DRY** (Don't Repeat Yourself)
+- **Don't deploy all at once**
+- **Safe deployments**
+
+In order to respect these guidelines, a good solution is the Monorepo approach. See:
+
+- [the Monorepo structure documentation](./docs/monorepo-structure.md)
+- [the contracts documentation](./docs/contracts.md)
+
+Tips:
+
 - Always explicitely declare dependencies between end services in `package.json`
 - These dependencies can be of two kinds:
   - code dependencies: _service B_ declares _service A_ as a dependency because it needs some code exported by _service A_;

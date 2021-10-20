@@ -29,9 +29,9 @@ If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
 This repository follows the code principles:
 
 - **Your codebase should adapt to your team organizations**
-- **DRY** (Don't Repeat Yourself);
-- **Don't deploy all at once**;
-- **Safe deployments**.
+- **DRY** (Don't Repeat Yourself)
+- **Don't deploy all at once**
+- **Safe deployments**
 
 In order to respect these guidelines, a good solution is the Monorepo approach. See:
 

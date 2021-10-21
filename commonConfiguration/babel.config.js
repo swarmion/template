@@ -2,10 +2,7 @@ const defaultPresets = [
   ['@babel/preset-typescript', { allowNamespaces: true }],
 ];
 
-const defaultIgnores = [
-  'node_modules',
-  'dist',
-];
+const defaultIgnores = ['node_modules', 'dist'];
 
 const presetsForESM = [
   [
@@ -30,15 +27,13 @@ module.exports = (plugins = []) => {
   return {
     env: {
       cjs: {
-        ignore: defaultIgnores,
         presets: presetsForCJS,
-        plugins,
       },
       esm: {
-        ignore: defaultIgnores,
         presets: presetsForESM,
-        plugins,
       },
     },
+    ignore: defaultIgnores,
+    plugins,
   };
 };

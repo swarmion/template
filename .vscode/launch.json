@@ -4,7 +4,7 @@
     {
       "id": "backendWorkingDirectory",
       "description": "Select the backend service of the function you want to debug",
-      "options": ["backend/core", "backend/users"],
+      "options": ["backend/core", "backend/users", "backend/forum"],
       "default": "backend/core",
       "type": "pickString"
     },

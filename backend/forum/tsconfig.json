@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@libs/*": ["libs/*"],
+      "@resources/*": ["resources/*"],
+      "@functions/*": ["functions/*"]
+    }
+  },
+  "references": [
+    { "path": "../../packages/serverless-configuration" },
+    { "path": "../../packages/serverless-helpers" },
+    { "path": "../../contracts/forum-schemas" }
+  ],
+  "include": ["./**/*.ts"],
+  "ts-node": {
+    "files": true
+  }
+}

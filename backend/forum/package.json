@@ -1,0 +1,48 @@
+{
+  "name": "@sls-monorepo/backend-forum",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deployedCommit": "serverless deployedCommit",
+    "deploy": "serverless deploy",
+    "deploy:staging": "serverless deploy --stage staging",
+    "deploy:production": "serverless deploy --stage production",
+    "remove": "serverless remove",
+    "remove:staging": "serverless remove --stage staging",
+    "remove:production": "serverless remove --stage production",
+    "sls:info": "serverless info --verbose",
+    "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
+    "test:type": "tsc --noEmit",
+    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage",
+    "linter-base-config": "eslint --ext=js,ts .",
+    "test:linter": "yarn linter-base-config .",
+    "lint:fix": "yarn linter-base-config --fix",
+    "lint:fix-all": "yarn lint:fix .",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@sls-monorepo/backend-core": "1.0.0",
+    "@sls-monorepo/serverless-configuration": "1.0.0",
+    "@sls-monorepo/serverless-helpers": "1.0.0",
+    "@sls-monorepo/forum-schemas": "1.0.0",
+    "aws-sdk": "^2.1014.0",
+    "http-errors": "^1.8.0",
+    "json-schema-to-ts": "^1.6.4"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^2.63.0",
+    "@sls-monorepo/serverless-tag-git-commit-plugin": "1.0.0",
+    "@types/http-errors": "^1.8.1",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.5",
+    "jest": "^27.3.1",
+    "jest-runner-groups": "^2.1.0",
+    "serverless": "^2.64.1",
+    "serverless-esbuild": "^1.21.1",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

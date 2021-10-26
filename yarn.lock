@@ -2466,10 +2466,10 @@
     ramda "^0.26.1"
     traverse "^0.6.6"
 
-"@serverless/typescript@^2.63.0":
-  version "2.63.0"
-  resolved "https://registry.yarnpkg.com/@serverless/typescript/-/typescript-2.63.0.tgz#90d0161d0098a10863220deccdd0771e626f944c"
-  integrity sha512-N9yHrnLMQfvmoVICrq3C9Fw3U2b2J6rsOkHr3tpMUjrSSG7MYFeLeJG7Cc23/mbujPtE/WEzfDebUdWQ7Rxp4g==
+"@serverless/typescript@^2.64.1":
+  version "2.64.1"
+  resolved "https://registry.yarnpkg.com/@serverless/typescript/-/typescript-2.64.1.tgz#8c472935aabd3b98a3195ed236ee753a5b55d1ca"
+  integrity sha512-5JnHyGrOYaDiKos8K/6x2KeYA+u4lFOrO+0vlDZ6xYRH7t+85R2HHyqUvOC/ZtudJGj2Pp6jwtDjQMSvMjUXOA==
 
 "@serverless/utils-china@^1.1.4":
   version "1.1.4"
@@ -2804,10 +2804,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.1.tgz#2e50a649a50fc403433a14f829eface1a3443e97"
   integrity sha512-PYGcJHL9mwl1Ek3PLiYgyEKtwTMmkMw4vbiyz/ps3pfdRYLVv+SN7qHVAImrjdAXxgluDEw6Ph4lyv+m9UpRmA==
 
-"@types/node@^16.11.5":
-  version "16.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.5.tgz#e91be5ba4ab88c06095e7b61f9ad1767a1093faf"
-  integrity sha512-NyUV2DGcqYIx9op++MG2+Z4Nhw1tPhi0Wfs81TgncuX1aJC4zf2fgCJlJhl4BW9bCSS04e34VkqmOS96w0XQdg==
+"@types/node@^16.11.6":
+  version "16.11.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.6.tgz#6bef7a2a0ad684cf6e90fcfe31cecabd9ce0a3ae"
+  integrity sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -7633,10 +7633,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^11.2.4:
-  version "11.2.4"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-11.2.4.tgz#29bc84e0318e6e9d4a7a043513236d066e39ee1d"
-  integrity sha512-aTUqcPDSV05EyKlMT4N5h7tmnevKfAxI3xZkRb+DHfmcFaoCxfxVvpqlLMCVGy3EYle9JYER2nA5zc4eNTkZVQ==
+lint-staged@^11.2.5:
+  version "11.2.5"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-11.2.5.tgz#afa4c4740fbf874fab1531a846f14504e448e828"
+  integrity sha512-bD6FeKyRtMA3jXcNg/J0fuJmwDN8yaoTdqliFcEl8pFTHiP9NYwQCeZwBoZ8FEXx4lj/pli3oFehr86XYvMNEA==
   dependencies:
     cli-truncate "2.1.0"
     colorette "^1.4.0"

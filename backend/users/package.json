@@ -31,11 +31,11 @@
     "json-schema-to-ts": "^1.6.4"
   },
   "devDependencies": {
-    "@serverless/typescript": "^2.63.0",
+    "@serverless/typescript": "^2.64.1",
     "@sls-monorepo/serverless-tag-git-commit-plugin": "1.0.0",
     "@types/http-errors": "^1.8.1",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.5",
+    "@types/node": "^16.11.6",
     "jest": "^27.3.1",
     "jest-runner-groups": "^2.1.0",
     "serverless": "^2.64.1",

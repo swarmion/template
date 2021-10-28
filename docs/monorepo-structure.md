@@ -89,6 +89,8 @@ Yarn workpaces:
 
 - Handle dependencies anywhere in the repository
 
+You can find [here](https://doppelmutzi.github.io/monorepo-lerna-yarn-workspaces/) a good explanation on how and why use these tools together.
+
 ## Types of internal modules
 
 This repository defines two main types of _internal modules_.

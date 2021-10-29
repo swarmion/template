@@ -1,6 +1,6 @@
 {
   "name": "@sls-monorepo/app",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "version": "1.0.0",
   "private": true,
   "workspaces": [

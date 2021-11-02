@@ -26,7 +26,7 @@
     "@sls-monorepo/forum-schemas": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
-    "aws-sdk": "^2.1017.0",
+    "aws-sdk": "^2.1019.0",
     "http-errors": "^1.8.0",
     "json-schema-to-ts": "^1.6.4"
   },

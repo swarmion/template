@@ -7306,7 +7306,7 @@ jest-resolve@^27.3.1:
     resolve.exports "^1.1.0"
     slash "^3.0.0"
 
-jest-runner-groups@^2.0.1, jest-runner-groups@^2.1.0:
+jest-runner-groups@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/jest-runner-groups/-/jest-runner-groups-2.1.0.tgz#454cf7e0e442774b60b50ed20ed71f7fcb4a9218"
   integrity sha512-iHBIJ38yEW7qkPTW3tSulq/5kjgIiVtZjuYimBT1PltBYwsb1B1gPWGFMDdEfy9O3+6cyfe5MmVgMHafi69MUw==
@@ -7455,7 +7455,7 @@ jest-worker@^27.3.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^27.3.0, jest@^27.3.1:
+jest@^27.3.1:
   version "27.3.1"
   resolved "https://registry.yarnpkg.com/jest/-/jest-27.3.1.tgz#b5bab64e8f56b6f7e275ba1836898b0d9f1e5c8a"
   integrity sha512-U2AX0AgQGd5EzMsiZpYt8HyZ+nSVIh5ujQ9CPp9EQZJMjXIiSZpJNweZl0swatKRoqHWgGKM3zaSwm4Zaz87ng==
@@ -7576,7 +7576,7 @@ json-refs@^3.0.15:
     slash "^3.0.0"
     uri-js "^4.2.2"
 
-json-schema-to-ts@^1.6.3, json-schema-to-ts@^1.6.4:
+json-schema-to-ts@^1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/json-schema-to-ts/-/json-schema-to-ts-1.6.4.tgz#63e4fe854dff093923be9e8b59b39ee9a7971ba4"
   integrity sha512-pR4yQ9DHz6itqswtHCm26mw45FSNfQ9rEQjosaZErhn5J3J2sIViQiz8rDaezjKAhFGpmsoczYVBgGHzFw/stA==
@@ -9309,7 +9309,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.2.1, prettier@^2.4.1:
+prettier@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==

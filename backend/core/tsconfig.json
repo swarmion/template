@@ -3,15 +3,10 @@
   "compilerOptions": {
     "preserveSymlinks": true,
     "baseUrl": ".",
-    "esModuleInterop": true,
-    "paths": {
-      "@libs/*": ["libs/*"],
-      "@resources/*": ["resources/*"],
-      "@functions/*": ["functions/*"],
-      "@integrationTests/*": ["integrationTests/*"]
-    }
+    "esModuleInterop": true
   },
   "references": [
+    { "path": "../../packages/configuration" },
     { "path": "../../packages/serverless-helpers" },
     { "path": "../../packages/serverless-configuration" }
   ],

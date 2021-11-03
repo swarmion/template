@@ -35,11 +35,7 @@ export class ServerlessTagGitCommitPlugin implements Plugin {
 
     const hash = await git.revparse('HEAD');
 
-    // @ts-ignore outdated in @types/serverless
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     this.serverless.service.provider.stackTags = {
-      // @ts-ignore outdated in @types/serverless
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       ...this.serverless.service.provider.stackTags,
       [TAG_NAME]: hash,
     };

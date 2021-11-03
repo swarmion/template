@@ -36,7 +36,7 @@
     "@babel/preset-typescript": "^7.16.0",
     "@serverless/typescript": "^2.64.1",
     "@types/aws-lambda": "^8.10.85",
-    "@types/serverless": "^1.78.38",
+    "@types/serverless": "^1.78.39",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "aws-sdk": "^2.1020.0",
     "babel-plugin-module-resolver": "^4.1.0",

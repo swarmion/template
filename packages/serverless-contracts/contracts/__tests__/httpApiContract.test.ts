@@ -9,8 +9,10 @@ describe('httpApiContract', () => {
       });
 
       expect(httpApiContract.trigger).toEqual({
-        path: 'coucou',
-        method: 'POST',
+        httpApi: {
+          path: 'coucou',
+          method: 'POST',
+        },
       });
     });
   });

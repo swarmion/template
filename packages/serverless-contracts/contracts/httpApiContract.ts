@@ -1,8 +1,10 @@
 import { HttpMethod } from 'types/http';
 
 interface HttpApiTriggerType {
-  path: string;
-  method: string;
+  httpApi: {
+    path: string;
+    method: string;
+  };
 }
 
 export class HttpApiContract<Path extends string, Method extends HttpMethod> {
@@ -15,6 +17,6 @@ export class HttpApiContract<Path extends string, Method extends HttpMethod> {
   }
 
   get trigger(): HttpApiTriggerType {
-    return { path: this._path, method: this._method };
+    return { httpApi: { path: this._path, method: this._method } };
   }
 }

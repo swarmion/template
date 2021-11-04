@@ -1,9 +1,7 @@
 # Serverless Monorepo Microservices Template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
@@ -74,6 +72,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/fargito"><img src="https://avatars.githubusercontent.com/u/29537204?v=4?s=100" width="100px;" alt=""/><br /><sub><b>François Farge</b></sub></a><br /><a href="#infra-fargito" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/fargito/serverless-monorepo-microservices-template/commits?author=fargito" title="Code">💻</a> <a href="#ideas-fargito" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/fargito/serverless-monorepo-microservices-template/commits?author=fargito" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/adriencaccia"><img src="https://avatars.githubusercontent.com/u/19605940?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrien Cacciaguerra</b></sub></a><br /><a href="https://github.com/fargito/serverless-monorepo-microservices-template/commits?author=adriencaccia" title="Code">💻</a> <a href="#ideas-adriencaccia" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/LouisPinsard"><img src="https://avatars.githubusercontent.com/u/30240360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Louis Pinsard</b></sub></a><br /><a href="https://github.com/fargito/serverless-monorepo-microservices-template/commits?author=LouisPinsard" title="Code">💻</a></td>
   </tr>
 </table>
 

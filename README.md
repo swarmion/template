@@ -1,7 +1,9 @@
 # Serverless Monorepo Microservices Template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
@@ -60,6 +62,7 @@ These commands have to be run at the root of the project.
 ## Other docs
 
 - [serverless-tag-git-commit-plugin](./packages/serverless-tag-git-commit-plugin/README.md)
+- [serverless-contracts](./packages/serverless-contracts/README.md)
 
 ## Contributors ✨
 

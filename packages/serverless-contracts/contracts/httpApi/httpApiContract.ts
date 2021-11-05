@@ -1,12 +1,12 @@
-import { JSONSchema } from 'json-schema-to-ts';
+import { FromSchema, JSONSchema } from 'json-schema-to-ts';
 import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
 
 import { HttpMethod } from 'types/http';
+import { fillPathTemplate } from 'utils/fillPathTemplate';
 
 import {
   FullContractSchemaType,
-  HttpApiRequestType,
   HttpApiTriggerType,
   InputSchemaType,
 } from './types';
@@ -19,6 +19,19 @@ export class HttpApiContract<
   HeadersSchema extends JSONSchema | undefined,
   BodySchema extends JSONSchema | undefined,
   OutputSchema extends JSONSchema | undefined,
+  PathParametersType = PathParametersSchema extends JSONSchema
+    ? FromSchema<PathParametersSchema>
+    : undefined,
+  QueryStringParametersType = QueryStringParametersSchema extends JSONSchema
+    ? FromSchema<QueryStringParametersSchema>
+    : undefined,
+  HeadersType = HeadersSchema extends JSONSchema
+    ? FromSchema<HeadersSchema>
+    : undefined,
+  BodyType = BodySchema extends JSONSchema ? FromSchema<BodySchema> : undefined,
+  OutputType = OutputSchema extends JSONSchema
+    ? FromSchema<OutputSchema>
+    : undefined,
 > {
   private _path: Path;
   private _method: Method;
@@ -125,14 +138,12 @@ export class HttpApiContract<
     queryStringParameters,
     headers,
     body,
-  }: Partial<
-    HttpApiRequestType<
-      PathParametersSchema,
-      QueryStringParametersSchema,
-      HeadersSchema,
-      BodySchema
-    >
-  >): Promise<void> {
+  }: Partial<{
+    pathParameters: PathParametersType;
+    queryStringParameters: QueryStringParametersType;
+    headers: HeadersType;
+    body: BodyType;
+  }>): Promise<OutputType> {
     await Promise.resolve();
     console.log({
       pathParameters,
@@ -140,5 +151,18 @@ export class HttpApiContract<
       headers,
       body,
     });
+
+    const path =
+      typeof pathParameters !== 'undefined'
+        ? fillPathTemplate(
+            this._path,
+            pathParameters as unknown as Record<string, string>,
+          )
+        : this._path;
+
+    console.log(path);
+
+    // @ts-ignore it is not the responsibility of the request function to implement the validation
+    return {};
   }
 }

@@ -6,6 +6,7 @@ import { HttpMethod } from 'types/http';
 
 import {
   FullContractSchemaType,
+  HttpApiRequestType,
   HttpApiTriggerType,
   InputSchemaType,
 } from './types';
@@ -117,5 +118,27 @@ export class HttpApiContract<
       // @ts-ignore type inference does not work here
       required: Object.keys(properties),
     };
+  }
+
+  async request({
+    pathParameters,
+    queryStringParameters,
+    headers,
+    body,
+  }: Partial<
+    HttpApiRequestType<
+      PathParametersSchema,
+      QueryStringParametersSchema,
+      HeadersSchema,
+      BodySchema
+    >
+  >): Promise<void> {
+    await Promise.resolve();
+    console.log({
+      pathParameters,
+      queryStringParameters,
+      headers,
+      body,
+    });
   }
 }

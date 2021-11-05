@@ -34,7 +34,7 @@ describe('httpApiContract', () => {
     required: ['id', 'name'],
   } as const;
 
-  it('should accept all possible parameters', () => {
+  describe('when all parameters are set', () => {
     const httpApiContract = new HttpApiContract({
       path: 'coucou',
       method: 'POST',
@@ -45,52 +45,69 @@ describe('httpApiContract', () => {
       outputSchema,
     });
 
-    expect(httpApiContract.trigger).toEqual({
-      httpApi: {
-        path: 'coucou',
-        method: 'POST',
-      },
+    it('should have the correct trigger', () => {
+      expect(httpApiContract.trigger).toEqual({
+        httpApi: {
+          path: 'coucou',
+          method: 'POST',
+        },
+      });
     });
 
-    expect(httpApiContract.inputSchema).toEqual({
-      type: 'object',
-      properties: {
-        pathParameters: pathParametersSchema,
-        queryStringParameters: queryStringParametersSchema,
-        headers: headersSchema,
-        body: bodySchema,
-      },
-      required: ['pathParameters', 'queryStringParameters', 'headers', 'body'],
+    it('should have the correct inputSchema', () => {
+      expect(httpApiContract.inputSchema).toEqual({
+        type: 'object',
+        properties: {
+          pathParameters: pathParametersSchema,
+          queryStringParameters: queryStringParametersSchema,
+          headers: headersSchema,
+          body: bodySchema,
+        },
+        required: [
+          'pathParameters',
+          'queryStringParameters',
+          'headers',
+          'body',
+        ],
+      });
     });
 
-    expect(httpApiContract.outputSchema).toEqual(outputSchema);
+    it('should have the correct outputSchema', () => {
+      expect(httpApiContract.outputSchema).toEqual(outputSchema);
+    });
 
-    expect(httpApiContract.fullContractSchema).toEqual({
-      type: 'object',
-      properties: {
-        contractType: { const: 'httpApi' },
-        path: { const: 'coucou' },
-        method: { const: 'POST' },
-        pathParameters: pathParametersSchema,
-        queryStringParameters: queryStringParametersSchema,
-        headers: headersSchema,
-        body: bodySchema,
-        output: outputSchema,
-      },
-      required: [
-        'contractType',
-        'path',
-        'method',
-        'pathParameters',
-        'queryStringParameters',
-        'headers',
-        'body',
-        'output',
-      ],
+    it('should have the correct fullContractSchema', () => {
+      expect(httpApiContract.fullContractSchema).toEqual({
+        type: 'object',
+        properties: {
+          contractType: { const: 'httpApi' },
+          path: { const: 'coucou' },
+          method: { const: 'POST' },
+          pathParameters: pathParametersSchema,
+          queryStringParameters: queryStringParametersSchema,
+          headers: headersSchema,
+          body: bodySchema,
+          output: outputSchema,
+        },
+        required: [
+          'contractType',
+          'path',
+          'method',
+          'pathParameters',
+          'queryStringParameters',
+          'headers',
+          'body',
+          'output',
+        ],
+      });
+    });
+
+    it('should be requestable with the correct parameters', async () => {
+      await httpApiContract.request({ pathParameters: { userId: '123' } });
     });
   });
 
-  it('should accept a subset of those parameters', () => {
+  describe('when it is instanciated with a subset of schemas', () => {
     const httpApiContract = new HttpApiContract({
       path: 'coucou',
       method: 'POST',
@@ -101,22 +118,32 @@ describe('httpApiContract', () => {
       outputSchema: undefined,
     });
 
-    expect(httpApiContract.outputSchema).toEqual(undefined);
-
-    expect(httpApiContract.inputSchema).toEqual({
-      type: 'object',
-      properties: {},
-      required: [],
+    it('should should have the correct outputSchema', () => {
+      expect(httpApiContract.outputSchema).toEqual(undefined);
     });
 
-    expect(httpApiContract.fullContractSchema).toEqual({
-      type: 'object',
-      properties: {
-        contractType: { const: 'httpApi' },
-        path: { const: 'coucou' },
-        method: { const: 'POST' },
-      },
-      required: ['contractType', 'path', 'method'],
+    it('should should have the correct inputSchema', () => {
+      expect(httpApiContract.inputSchema).toEqual({
+        type: 'object',
+        properties: {},
+        required: [],
+      });
+    });
+
+    it('should have the correct fullContractSchema', () => {
+      expect(httpApiContract.fullContractSchema).toEqual({
+        type: 'object',
+        properties: {
+          contractType: { const: 'httpApi' },
+          path: { const: 'coucou' },
+          method: { const: 'POST' },
+        },
+        required: ['contractType', 'path', 'method'],
+      });
+    });
+
+    it('should be requestable with no parameters', async () => {
+      await httpApiContract.request({});
     });
   });
 });

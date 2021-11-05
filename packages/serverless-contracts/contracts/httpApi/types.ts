@@ -1,4 +1,4 @@
-import { JSONSchema } from 'json-schema-to-ts';
+import { FromSchema, JSONSchema } from 'json-schema-to-ts';
 
 export interface HttpApiTriggerType {
   httpApi: {
@@ -87,3 +87,23 @@ export interface FullContractSchemaType<
   properties: DefinedFullContractProperties;
   required: Array<keyof DefinedFullContractProperties>;
 }
+
+type JSONSchemaResolvedProperties<Type> = {
+  [Property in keyof Type]: Type[Property] extends undefined
+    ? undefined
+    : FromSchema<Type[Property]>;
+};
+
+export type HttpApiRequestType<
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
+> = JSONSchemaResolvedProperties<
+  AllInputProperties<
+    PathParametersSchema,
+    QueryStringParametersSchema,
+    HeadersSchema,
+    BodySchema
+  >
+>;

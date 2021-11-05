@@ -1,8 +1,17 @@
-import { FromSchema } from 'json-schema-to-ts';
+import { HttpApiContract } from '@sls-monorepo/serverless-contracts';
 
 import { postEntitySchema, threadEntitySchema } from 'schemas/entities';
 
-export const getThreadReponseSchema = {
+const pathParametersSchema = {
+  type: 'object',
+  properties: {
+    threadId: { type: 'string' },
+  },
+  required: ['threadId'],
+  additionalProperties: false,
+} as const;
+
+const outputSchema = {
   type: 'object',
   properties: {
     thread: threadEntitySchema,
@@ -12,4 +21,12 @@ export const getThreadReponseSchema = {
   additionalProperties: false,
 } as const;
 
-export type GetThreadReponse = FromSchema<typeof getThreadReponseSchema>;
+export const getThreadWithPostsContract = new HttpApiContract({
+  path: '/forum/thread/{threadId}',
+  method: 'GET',
+  pathParametersSchema,
+  queryStringParametersSchema: undefined,
+  bodySchema: undefined,
+  headersSchema: undefined,
+  outputSchema,
+});

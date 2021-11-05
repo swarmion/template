@@ -9,6 +9,7 @@ export const httpApiIdExportName =
 export const sharedProviderConfig = {
   name: 'aws',
   runtime: 'nodejs14.x',
+  architecture: 'arm64',
   region,
   profile: '${self:custom.sharedEnvsConfig.${self:provider.stage}.profile}', // Used to point to the right AWS account
   stage: "${opt:stage, 'dev'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/

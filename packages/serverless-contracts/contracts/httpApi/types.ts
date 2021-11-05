@@ -1,3 +1,5 @@
+import { JSONSchema } from 'json-schema-to-ts';
+
 export interface HttpApiTriggerType {
   httpApi: {
     path: string;
@@ -5,11 +7,23 @@ export interface HttpApiTriggerType {
   };
 }
 
+export type AllInputProperties<
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
+> = {
+  pathParameters: PathParametersSchema;
+  queryStringParameters: QueryStringParametersSchema;
+  headers: HeadersSchema;
+  body: BodySchema;
+};
+
 export interface InputSchemaType<
-  PathParametersSchema,
-  QueryStringParametersSchema,
-  HeadersSchema,
-  BodySchema,
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
 > {
   type: 'object';
   properties: {
@@ -24,11 +38,11 @@ export interface InputSchemaType<
 export interface FullContractSchemaType<
   Path,
   Method,
-  PathParametersSchema,
-  QueryStringParametersSchema,
-  HeadersSchema,
-  BodySchema,
-  OutputSchema,
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
+  OutputSchema extends JSONSchema | undefined,
 > {
   type: 'object';
   properties: {

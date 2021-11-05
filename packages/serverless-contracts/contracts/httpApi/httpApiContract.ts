@@ -11,11 +11,11 @@ import {
 export class HttpApiContract<
   Path extends string,
   Method extends HttpMethod,
-  PathParametersSchema extends JSONSchema,
-  QueryStringParametersSchema extends JSONSchema,
-  HeadersSchema extends JSONSchema,
-  BodySchema extends JSONSchema,
-  OutputSchema extends JSONSchema,
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
+  OutputSchema extends JSONSchema | undefined,
 > {
   private _path: Path;
   private _method: Method;

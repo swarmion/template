@@ -63,7 +63,7 @@ describe('httpApiContract', () => {
       required: ['pathParameters', 'queryStringParameters', 'headers', 'body'],
     });
 
-    expect(httpApiContract.ouputSchema).toEqual(outputSchema);
+    expect(httpApiContract.outputSchema).toEqual(outputSchema);
 
     expect(httpApiContract.fullContractSchema).toEqual({
       type: 'object',
@@ -101,6 +101,22 @@ describe('httpApiContract', () => {
       outputSchema: undefined,
     });
 
-    expect(httpApiContract.ouputSchema).toEqual(undefined);
+    expect(httpApiContract.outputSchema).toEqual(undefined);
+
+    expect(httpApiContract.inputSchema).toEqual({
+      type: 'object',
+      properties: {},
+      required: [],
+    });
+
+    expect(httpApiContract.fullContractSchema).toEqual({
+      type: 'object',
+      properties: {
+        contractType: { const: 'httpApi' },
+        path: { const: 'coucou' },
+        method: { const: 'POST' },
+      },
+      required: ['contractType', 'path', 'method'],
+    });
   });
 });

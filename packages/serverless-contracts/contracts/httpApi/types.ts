@@ -7,7 +7,13 @@ export interface HttpApiTriggerType {
   };
 }
 
-export type AllInputProperties<
+type DefinedProperties<Type> = {
+  [Property in keyof Type as Type[Property] extends undefined
+    ? never
+    : Property]: Type[Property];
+};
+
+type AllInputProperties<
   PathParametersSchema extends JSONSchema | undefined,
   QueryStringParametersSchema extends JSONSchema | undefined,
   HeadersSchema extends JSONSchema | undefined,
@@ -19,21 +25,43 @@ export type AllInputProperties<
   body: BodySchema;
 };
 
-export interface InputSchemaType<
+type AllFullContractProperties<
+  Path,
+  Method,
   PathParametersSchema extends JSONSchema | undefined,
   QueryStringParametersSchema extends JSONSchema | undefined,
   HeadersSchema extends JSONSchema | undefined,
   BodySchema extends JSONSchema | undefined,
-> {
+  OutputSchema extends JSONSchema | undefined,
+> = {
+  contractType: { const: 'httpApi' };
+  path: { const: Path };
+  method: { const: Method };
+  pathParameters: PathParametersSchema;
+  queryStringParameters: QueryStringParametersSchema;
+  headers: HeadersSchema;
+  body: BodySchema;
+  output: OutputSchema;
+};
+
+export type InputSchemaType<
+  PathParametersSchema extends JSONSchema | undefined,
+  QueryStringParametersSchema extends JSONSchema | undefined,
+  HeadersSchema extends JSONSchema | undefined,
+  BodySchema extends JSONSchema | undefined,
+  DefinedInputProperties = DefinedProperties<
+    AllInputProperties<
+      PathParametersSchema,
+      QueryStringParametersSchema,
+      HeadersSchema,
+      BodySchema
+    >
+  >,
+> = {
   type: 'object';
-  properties: {
-    pathParameters: PathParametersSchema;
-    queryStringParameters: QueryStringParametersSchema;
-    headers: HeadersSchema;
-    body: BodySchema;
-  };
-  required: ['pathParameters', 'queryStringParameters', 'headers', 'body'];
-}
+  properties: DefinedInputProperties;
+  required: Array<keyof DefinedInputProperties>;
+};
 
 export interface FullContractSchemaType<
   Path,
@@ -43,26 +71,19 @@ export interface FullContractSchemaType<
   HeadersSchema extends JSONSchema | undefined,
   BodySchema extends JSONSchema | undefined,
   OutputSchema extends JSONSchema | undefined,
+  DefinedFullContractProperties = DefinedProperties<
+    AllFullContractProperties<
+      Path,
+      Method,
+      PathParametersSchema,
+      QueryStringParametersSchema,
+      HeadersSchema,
+      BodySchema,
+      OutputSchema
+    >
+  >,
 > {
   type: 'object';
-  properties: {
-    contractType: { const: 'httpApi' };
-    path: { const: Path };
-    method: { const: Method };
-    pathParameters: PathParametersSchema;
-    queryStringParameters: QueryStringParametersSchema;
-    headers: HeadersSchema;
-    body: BodySchema;
-    output: OutputSchema;
-  };
-  required: [
-    'contractType',
-    'path',
-    'method',
-    'pathParameters',
-    'queryStringParameters',
-    'headers',
-    'body',
-    'output',
-  ];
+  properties: DefinedFullContractProperties;
+  required: Array<keyof DefinedFullContractProperties>;
 }

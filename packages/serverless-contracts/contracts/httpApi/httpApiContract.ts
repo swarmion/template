@@ -1,4 +1,6 @@
 import { JSONSchema } from 'json-schema-to-ts';
+import isUndefined from 'lodash/isUndefined';
+import omitBy from 'lodash/omitBy';
 
 import { HttpMethod } from 'types/http';
 
@@ -61,19 +63,25 @@ export class HttpApiContract<
     HeadersSchema,
     BodySchema
   > {
-    return {
-      type: 'object',
-      properties: {
+    const properties = omitBy(
+      {
         pathParameters: this._pathParametersSchema,
         queryStringParameters: this._queryStringParametersSchema,
         headers: this._headersSchema,
         body: this._bodySchema,
-      },
-      required: ['pathParameters', 'queryStringParameters', 'headers', 'body'],
+      } as const,
+      isUndefined,
+    );
+
+    return {
+      type: 'object',
+      properties,
+      // @ts-ignore here object.keys is not precise enough
+      required: Object.keys(properties),
     };
   }
 
-  get ouputSchema(): OutputSchema {
+  get outputSchema(): OutputSchema {
     return this._outputSchema;
   }
 
@@ -86,28 +94,28 @@ export class HttpApiContract<
     BodySchema,
     OutputSchema
   > {
+    const properties = {
+      contractType: { const: 'httpApi' },
+      path: { const: this._path },
+      method: { const: this._method },
+      ...omitBy(
+        {
+          pathParameters: this._pathParametersSchema,
+          queryStringParameters: this._queryStringParametersSchema,
+          headers: this._headersSchema,
+          body: this._bodySchema,
+          output: this._outputSchema,
+        },
+        isUndefined,
+      ),
+    };
+
     return {
       type: 'object',
-      properties: {
-        contractType: { const: 'httpApi' },
-        path: { const: this._path },
-        method: { const: this._method },
-        pathParameters: this._pathParametersSchema,
-        queryStringParameters: this._queryStringParametersSchema,
-        headers: this._headersSchema,
-        body: this._bodySchema,
-        output: this._outputSchema,
-      },
-      required: [
-        'contractType',
-        'path',
-        'method',
-        'pathParameters',
-        'queryStringParameters',
-        'headers',
-        'body',
-        'output',
-      ],
+      // @ts-ignore type inference does not work here
+      properties,
+      // @ts-ignore type inference does not work here
+      required: Object.keys(properties),
     };
   }
 }

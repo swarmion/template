@@ -1,13 +1,11 @@
 import { FromSchema } from 'json-schema-to-ts';
 
-import { GetThreadReponse } from '@sls-monorepo/forum-schemas';
+import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
 import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
 
-import { inputSchema } from './schema';
-
 export const handler = async (
-  event: FromSchema<typeof inputSchema>,
-): Promise<GetThreadReponse> => {
+  event: FromSchema<typeof getThreadWithPostsContract.inputSchema>,
+): Promise<FromSchema<typeof getThreadWithPostsContract.outputSchema>> => {
   const { threadId } = event.pathParameters;
 
   await Promise.resolve({ threadId });
@@ -39,4 +37,6 @@ export const handler = async (
   };
 };
 
-export const main = applyHttpMiddlewares(handler, { inputSchema });
+export const main = applyHttpMiddlewares(handler, {
+  inputSchema: getThreadWithPostsContract.inputSchema,
+});

@@ -1,13 +1,11 @@
 import { FromSchema } from 'json-schema-to-ts';
 
 import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
-import { UserEntity } from '@sls-monorepo/users-schemas';
-
-import { inputSchema } from './schema';
+import { getUserContract } from '@sls-monorepo/users-schemas';
 
 export const handler = async (
-  event: FromSchema<typeof inputSchema>,
-): Promise<UserEntity> => {
+  event: FromSchema<typeof getUserContract.inputSchema>,
+): Promise<FromSchema<typeof getUserContract.outputSchema>> => {
   const { userId } = event.pathParameters;
 
   await Promise.resolve({ userId });
@@ -15,4 +13,6 @@ export const handler = async (
   return { userId, userName: 'hello_world' };
 };
 
-export const main = applyHttpMiddlewares(handler, { inputSchema });
+export const main = applyHttpMiddlewares(handler, {
+  inputSchema: getUserContract.inputSchema,
+});

@@ -1,5 +1,7 @@
 import { JSONSchema } from 'json-schema-to-ts';
 
+import { HttpMethod } from 'types/http';
+
 export interface HttpApiTriggerType {
   httpApi: {
     path: string;
@@ -86,4 +88,12 @@ export interface FullContractSchemaType<
   type: 'object';
   properties: DefinedFullContractProperties;
   required: Array<keyof DefinedFullContractProperties>;
+}
+
+export interface RequestParameters<BodyType> {
+  method: HttpMethod;
+  path: string;
+  body?: BodyType;
+  headers?: Record<string, unknown>;
+  queryStringParameters?: Record<string, string>;
 }

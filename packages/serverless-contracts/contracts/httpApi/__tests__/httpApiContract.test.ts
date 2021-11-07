@@ -3,14 +3,16 @@ import { HttpApiContract } from '../httpApiContract';
 describe('httpApiContract', () => {
   const pathParametersSchema = {
     type: 'object',
-    properties: { userId: { type: 'string' } },
-    required: ['userId'],
+    properties: { userId: { type: 'string' }, pageNumber: { type: 'string' } },
+    required: ['userId', 'pageNumber'],
+    additionalProperties: false,
   } as const;
 
   const queryStringParametersSchema = {
     type: 'object',
     properties: { testId: { type: 'string' } },
     required: ['testId'],
+    additionalProperties: false,
   } as const;
 
   const headersSchema = {
@@ -36,8 +38,8 @@ describe('httpApiContract', () => {
 
   describe('when all parameters are set', () => {
     const httpApiContract = new HttpApiContract({
-      path: 'coucou',
-      method: 'POST',
+      path: '/users/{userId}',
+      method: 'GET',
       pathParametersSchema,
       queryStringParametersSchema,
       headersSchema,
@@ -48,8 +50,8 @@ describe('httpApiContract', () => {
     it('should have the correct trigger', () => {
       expect(httpApiContract.trigger).toEqual({
         httpApi: {
-          path: 'coucou',
-          method: 'POST',
+          path: '/users/{userId}',
+          method: 'GET',
         },
       });
     });
@@ -81,8 +83,8 @@ describe('httpApiContract', () => {
         type: 'object',
         properties: {
           contractType: { const: 'httpApi' },
-          path: { const: 'coucou' },
-          method: { const: 'POST' },
+          path: { const: '/users/{userId}' },
+          method: { const: 'GET' },
           pathParameters: pathParametersSchema,
           queryStringParameters: queryStringParametersSchema,
           headers: headersSchema,
@@ -102,8 +104,17 @@ describe('httpApiContract', () => {
       });
     });
 
-    it('should be requestable with the correct parameters', async () => {
-      await httpApiContract.request({ pathParameters: { userId: '123' } });
+    it('should be requestable with the correct parameters', () => {
+      expect(
+        httpApiContract.getRequestParameters({
+          pathParameters: { userId: '123', pageNumber: '12' },
+          headers: { myHeader: '12' },
+        }),
+      ).toEqual({
+        method: 'GET',
+        path: '/users/123',
+        headers: { myHeader: '12' },
+      });
     });
   });
 
@@ -142,8 +153,11 @@ describe('httpApiContract', () => {
       });
     });
 
-    it('should be requestable with no parameters', async () => {
-      await httpApiContract.request({});
+    it('should be requestable with no parameters', () => {
+      expect(httpApiContract.getRequestParameters({})).toEqual({
+        path: 'coucou',
+        method: 'POST',
+      });
     });
   });
 });

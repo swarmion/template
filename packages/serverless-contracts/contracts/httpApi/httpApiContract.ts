@@ -9,6 +9,7 @@ import {
   FullContractSchemaType,
   HttpApiTriggerType,
   InputSchemaType,
+  RequestParameters,
 } from './types';
 
 export class HttpApiContract<
@@ -29,9 +30,6 @@ export class HttpApiContract<
     ? FromSchema<HeadersSchema>
     : undefined,
   BodyType = BodySchema extends JSONSchema ? FromSchema<BodySchema> : undefined,
-  OutputType = OutputSchema extends JSONSchema
-    ? FromSchema<OutputSchema>
-    : undefined,
 > {
   private _path: Path;
   private _method: Method;
@@ -133,36 +131,38 @@ export class HttpApiContract<
     };
   }
 
-  async request({
+  getRequestParameters({
     pathParameters,
     queryStringParameters,
     headers,
     body,
   }: Partial<{
-    pathParameters: PathParametersType;
-    queryStringParameters: QueryStringParametersType;
-    headers: HeadersType;
+    pathParameters: PathParametersType extends Record<string, string>
+      ? PathParametersType
+      : never;
+    queryStringParameters: QueryStringParametersType extends Record<
+      string,
+      string
+    >
+      ? QueryStringParametersType
+      : never;
+    headers: HeadersType extends Record<string, unknown> ? HeadersType : never;
     body: BodyType;
-  }>): Promise<OutputType> {
-    await Promise.resolve();
-    console.log({
-      pathParameters,
-      queryStringParameters,
-      headers,
-      body,
-    });
-
+  }>): RequestParameters<BodyType> {
     const path =
       typeof pathParameters !== 'undefined'
-        ? fillPathTemplate(
-            this._path,
-            pathParameters as unknown as Record<string, string>,
-          )
+        ? fillPathTemplate(this._path, pathParameters)
         : this._path;
 
-    console.log(path);
-
-    // @ts-ignore it is not the responsibility of the request function to implement the validation
-    return {};
+    return omitBy(
+      {
+        method: this._method,
+        path,
+        body,
+        queryStringParameters,
+        headers,
+      },
+      isUndefined,
+    ) as RequestParameters<BodyType>;
   }
 }

@@ -36,7 +36,7 @@ This repository follows the code principles:
 In order to respect these guidelines, a good solution is the Monorepo approach. See:
 
 - [the Monorepo structure documentation](./docs/monorepo-structure.md)
-- [the contracts documentation](./docs/contracts.md)
+- [the contracts documentation](./packages/serverless-contracts/README.md)
 
 Tips:
 

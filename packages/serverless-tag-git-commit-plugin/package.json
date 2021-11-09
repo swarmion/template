@@ -38,7 +38,7 @@
     "@types/aws-lambda": "^8.10.85",
     "@types/serverless": "^1.78.39",
     "@zerollup/ts-transform-paths": "^1.7.18",
-    "aws-sdk": "^2.1023.0",
+    "aws-sdk": "^2.1024.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^6.0.0",
     "eslint": "^8.2.0",

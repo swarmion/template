@@ -30,7 +30,7 @@
     "@sls-monorepo/configuration": "1.0.0",
     "@sls-monorepo/serverless-tag-git-commit-plugin": "1.0.0",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
+    "@types/node": "^16.11.7",
     "jest": "^27.3.1",
     "serverless": "^2.65.0",
     "serverless-esbuild": "^1.21.1",

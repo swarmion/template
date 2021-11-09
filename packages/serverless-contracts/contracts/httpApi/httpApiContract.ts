@@ -4,6 +4,7 @@ import { FromSchema, JSONSchema } from 'json-schema-to-ts';
 import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
 
+import { ConstrainedJSONSchema } from 'types/constrainedJSONSchema';
 import { HttpMethod } from 'types/http';
 
 import { fillPathTemplate } from '../../utils/fillPathTemplate';
@@ -29,18 +30,18 @@ import {
 export class HttpApiContract<
   Path extends string,
   Method extends HttpMethod,
-  PathParametersSchema extends JSONSchema | undefined,
-  QueryStringParametersSchema extends JSONSchema | undefined,
-  HeadersSchema extends JSONSchema | undefined,
+  PathParametersSchema extends ConstrainedJSONSchema | undefined,
+  QueryStringParametersSchema extends ConstrainedJSONSchema | undefined,
+  HeadersSchema extends ConstrainedJSONSchema | undefined,
   BodySchema extends JSONSchema | undefined,
   OutputSchema extends JSONSchema | undefined,
-  PathParametersType = PathParametersSchema extends JSONSchema
+  PathParametersType = PathParametersSchema extends ConstrainedJSONSchema
     ? FromSchema<PathParametersSchema>
     : undefined,
-  QueryStringParametersType = QueryStringParametersSchema extends JSONSchema
+  QueryStringParametersType = QueryStringParametersSchema extends ConstrainedJSONSchema
     ? FromSchema<QueryStringParametersSchema>
     : undefined,
-  HeadersType = HeadersSchema extends JSONSchema
+  HeadersType = HeadersSchema extends ConstrainedJSONSchema
     ? FromSchema<HeadersSchema>
     : undefined,
   BodyType = BodySchema extends JSONSchema ? FromSchema<BodySchema> : undefined,

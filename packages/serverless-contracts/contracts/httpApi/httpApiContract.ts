@@ -5,8 +5,8 @@ import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
 
 import { HttpMethod } from 'types/http';
-import { fillPathTemplate } from 'utils/fillPathTemplate';
 
+import { fillPathTemplate } from '../../utils/fillPathTemplate';
 import { axiosRequest } from './axiosRequest';
 import {
   DefinedProperties,

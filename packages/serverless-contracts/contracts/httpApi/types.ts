@@ -143,6 +143,6 @@ export interface RequestParameters<BodyType> {
   method: HttpMethod;
   path: string;
   body?: BodyType;
-  headers?: Record<string, unknown>;
-  queryStringParameters?: Record<string, unknown>;
+  headers?: Record<string, string>;
+  queryStringParameters?: Record<string, string>;
 }

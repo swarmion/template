@@ -164,4 +164,4 @@ myContract.getRequestParameters({
 });
 ```
 
-and then use them in your request
+and then use them in your request.

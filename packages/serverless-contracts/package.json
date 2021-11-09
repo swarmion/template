@@ -28,6 +28,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

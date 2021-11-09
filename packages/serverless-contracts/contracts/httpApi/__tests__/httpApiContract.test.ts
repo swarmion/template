@@ -109,11 +109,15 @@ describe('httpApiContract', () => {
         httpApiContract.getRequestParameters({
           pathParameters: { userId: '123', pageNumber: '12' },
           headers: { myHeader: '12' },
+          queryStringParameters: { testId: '155' },
+          body: { foo: 'bar' },
         }),
       ).toEqual({
         method: 'GET',
         path: '/users/123',
         headers: { myHeader: '12' },
+        queryStringParameters: { testId: '155' },
+        body: { foo: 'bar' },
       });
     });
   });

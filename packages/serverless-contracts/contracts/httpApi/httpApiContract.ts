@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+import { AxiosResponse } from 'axios';
 import { FromSchema, JSONSchema } from 'json-schema-to-ts';
 import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
@@ -5,13 +7,25 @@ import omitBy from 'lodash/omitBy';
 import { HttpMethod } from 'types/http';
 import { fillPathTemplate } from 'utils/fillPathTemplate';
 
+import { axiosRequest } from './axiosRequest';
 import {
+  DefinedProperties,
   FullContractSchemaType,
-  HttpApiTriggerType,
+  HttpApiLambdaTriggerType,
   InputSchemaType,
   RequestParameters,
 } from './types';
 
+/**
+ * HttpApiContract:
+ *
+ * a contract used to define a type-safe interaction between AWS Services through an httpApi.
+ *
+ * Main features:
+ * - input and output dynamic validation with JSONSchemas on both end of the contract;
+ * - type inference for both input and output;
+ * - generation of a contract document that can be checked for breaking changes;
+ */
 export class HttpApiContract<
   Path extends string,
   Method extends HttpMethod,
@@ -30,6 +44,9 @@ export class HttpApiContract<
     ? FromSchema<HeadersSchema>
     : undefined,
   BodyType = BodySchema extends JSONSchema ? FromSchema<BodySchema> : undefined,
+  OutputType = OutputSchema extends JSONSchema
+    ? FromSchema<OutputSchema>
+    : undefined,
 > {
   private _path: Path;
   private _method: Method;
@@ -39,6 +56,20 @@ export class HttpApiContract<
   private _bodySchema: BodySchema;
   private _outputSchema: OutputSchema;
 
+  /**
+   * Builds a new HttpApi contract
+   *
+   * @param path the path on which the lambda will be triggered
+   * @param method the http method
+   * @param pathParametersSchema a JSONSchema used to validate the path parameters and infer their types.
+   * Please note that the `as const` directive is necessary to properly infer the type from the schema.
+   * See https://github.com/ThomasAribart/json-schema-to-ts#fromschema.
+   * Also please note that for Typescript reasons, you need to explicitely pass `undefined` if you don't want to use the schema.
+   * @param queryStringParametersSchema a JSONSchema used to validate the query parameters and infer their types (Same constraints).
+   * @param headersSchema a JSONSchema used to validate the headers and infer their types (Same constraints).
+   * @param bodySchema a JSONSchema used to validate the body and infer its type (Same constraints).
+   * @param outputSchema a JSONSchema used to validate the output and infer its type (Same constraints).
+   */
   constructor({
     path,
     method,
@@ -65,10 +96,18 @@ export class HttpApiContract<
     this._outputSchema = outputSchema;
   }
 
-  get trigger(): HttpApiTriggerType {
+  /**
+   * Returns the lambda httpApi trigger
+   */
+  get trigger(): HttpApiLambdaTriggerType {
     return { httpApi: { path: this._path, method: this._method } };
   }
 
+  /**
+   * Returns the aggregated input schema in order to validate the inputs of lambdas.
+   *
+   * This also enables to infer the type with `json-schema-to-ts`.
+   */
   get inputSchema(): InputSchemaType<
     PathParametersSchema,
     QueryStringParametersSchema,
@@ -93,10 +132,20 @@ export class HttpApiContract<
     };
   }
 
+  /**
+   * Returns the aggregated output schema in order to validate the outputs of lambdas.
+   *
+   * This also enables to infer the type with `json-schema-to-ts`.
+   */
   get outputSchema(): OutputSchema {
     return this._outputSchema;
   }
 
+  /**
+   * Returns the aggregated contract schema in order to validate the inputs of lambdas.
+   *
+   * This also enables to infer the type with `json-schema-to-ts`.
+   */
   get fullContractSchema(): FullContractSchemaType<
     Path,
     Method,
@@ -131,24 +180,33 @@ export class HttpApiContract<
     };
   }
 
-  getRequestParameters({
-    pathParameters,
-    queryStringParameters,
-    headers,
-    body,
-  }: Partial<{
-    pathParameters: PathParametersType extends Record<string, string>
-      ? PathParametersType
-      : never;
-    queryStringParameters: QueryStringParametersType extends Record<
-      string,
-      string
-    >
-      ? QueryStringParametersType
-      : never;
-    headers: HeadersType extends Record<string, unknown> ? HeadersType : never;
-    body: BodyType;
-  }>): RequestParameters<BodyType> {
+  /**
+   * Build the parameters necessary to call the request on the client-side
+   *
+   * @param pathParameters its type matches FromSchema<typeof pathParametersSchema>
+   * @param queryStringParameters its type matches FromSchema<typeof queryStringParametersSchema>
+   * @param headers its type matches FromSchema<typeof headersSchema>
+   * @param body its type matches FromSchema<typeof headersSchema>
+   *
+   * @returns the request parameters to be used on the client-side
+   */
+  getRequestParameters(
+    requestArguments: DefinedProperties<{
+      pathParameters: PathParametersType;
+      queryStringParameters: QueryStringParametersType;
+      headers: HeadersType;
+      body: BodyType;
+    }>,
+  ): RequestParameters<BodyType> {
+    // TODO improve inner typing here
+    const { pathParameters, queryStringParameters, headers, body } =
+      requestArguments as {
+        pathParameters: Record<string, string>;
+        queryStringParameters: Record<string, string>;
+        headers: Record<string, string>;
+        body: BodyType;
+      };
+
     const path =
       typeof pathParameters !== 'undefined'
         ? fillPathTemplate(this._path, pathParameters)
@@ -164,5 +222,24 @@ export class HttpApiContract<
       },
       isUndefined,
     ) as RequestParameters<BodyType>;
+  }
+
+  /**
+   * @param baseUrl the base endpoint of the api
+   * @param requestArguments see `getRequestParameters`
+   * @returns a promise with the response
+   */
+  async axiosRequest(
+    baseUrl: string,
+    requestArguments: DefinedProperties<{
+      pathParameters: PathParametersType;
+      queryStringParameters: QueryStringParametersType;
+      headers: HeadersType;
+      body: BodyType;
+    }>,
+  ): Promise<AxiosResponse<OutputType>> {
+    const requestParameters = this.getRequestParameters(requestArguments);
+
+    return await axiosRequest(baseUrl, requestParameters);
   }
 }

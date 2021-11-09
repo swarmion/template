@@ -39,7 +39,7 @@
     "@types/node": "^16.11.7",
     "jest": "^27.3.1",
     "jest-runner-groups": "^2.1.0",
-    "serverless": "^2.65.0",
+    "serverless": "^2.66.0",
     "serverless-esbuild": "^1.21.1",
     "serverless-iam-roles-per-function": "^3.2.0",
     "ts-jest": "^27.0.7",

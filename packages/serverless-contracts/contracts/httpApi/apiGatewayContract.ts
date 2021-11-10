@@ -5,6 +5,7 @@ import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
 
 import { ConstrainedJSONSchema } from 'types/constrainedJSONSchema';
+import { GenericContract } from 'types/genericContract';
 import { HttpMethod } from 'types/http';
 
 import { fillPathTemplate } from '../../utils/fillPathTemplate';
@@ -50,7 +51,8 @@ export class ApiGatewayContract<
   OutputType = OutputSchema extends JSONSchema
     ? FromSchema<OutputSchema>
     : undefined,
-> {
+> implements GenericContract
+{
   private _path: Path;
   private _method: Method;
   private _integrationType: IntegrationType;

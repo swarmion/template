@@ -184,10 +184,10 @@ export class HttpApiContract<
   /**
    * Build the parameters necessary to call the request on the client-side
    *
-   * @param pathParameters its type matches FromSchema<typeof pathParametersSchema>
-   * @param queryStringParameters its type matches FromSchema<typeof queryStringParametersSchema>
-   * @param headers its type matches FromSchema<typeof headersSchema>
-   * @param body its type matches FromSchema<typeof headersSchema>
+   * @param pathParameters its type matches `FromSchema<typeof pathParametersSchema>`
+   * @param queryStringParameters its type matches `FromSchema<typeof queryStringParametersSchema>`
+   * @param headers its type matches `FromSchema<typeof headersSchema>`
+   * @param body its type matches `FromSchema<typeof headersSchema>`
    *
    * @returns the request parameters to be used on the client-side
    */

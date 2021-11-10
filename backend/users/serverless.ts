@@ -1,7 +1,7 @@
 import { AWS } from '@serverless/typescript';
 
+import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
 import {
-  httpApiIdExportName,
   projectName,
   sharedEnvsConfig,
   sharedEsbuildConfig,
@@ -21,9 +21,7 @@ const serverlessConfiguration: AWS = {
   provider: {
     ...sharedProviderConfig,
     httpApi: {
-      id: {
-        'Fn::ImportValue': httpApiIdExportName,
-      },
+      id: httpApiResourceContract.importValue,
     },
   },
   functions,

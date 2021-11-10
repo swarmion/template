@@ -3,9 +3,6 @@ export const region = 'eu-west-1';
 
 export const defaultEnvironment = 'dev';
 
-export const httpApiIdExportName =
-  '${self:custom.projectName}-HttpApiId-${self:provider.stage}';
-
 export const sharedProviderConfig = {
   name: 'aws',
   runtime: 'nodejs14.x',

@@ -9,6 +9,7 @@
     { "path": "../../packages/configuration" },
     { "path": "../../packages/serverless-configuration" },
     { "path": "../../packages/serverless-helpers" },
+    { "path": "../../contracts/core-schemas" },
     { "path": "../../contracts/users-schemas" }
   ],
   "include": ["./**/*.ts"],

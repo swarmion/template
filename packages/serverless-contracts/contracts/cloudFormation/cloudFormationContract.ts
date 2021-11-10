@@ -23,7 +23,8 @@ export class CloudFormationContract<Key extends string>
   /**
    * Builds a new ApiGateway contract
    *
-   * @param key
+   * @param key the name of the export
+   * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
    */
   constructor({ key }: { key: Key }) {
     this._key = key;

@@ -1,1 +1,1 @@
-export { HttpApiContract } from './httpApi/httpApiContract';
+export { ApiGatewayContract } from './httpApi/apiGatewayContract';

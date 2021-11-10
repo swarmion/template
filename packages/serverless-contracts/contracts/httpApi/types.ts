@@ -3,14 +3,22 @@ import { JSONSchema } from 'json-schema-to-ts';
 import { HttpMethod } from 'types/http';
 
 /**
+ * The integration type: HTTP API or REST API
+ * For more information, see https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html
+ */
+export type ApiGatewayIntegrationType = 'httpApi' | 'restApi';
+
+/**
  * The type of an httpApi lambda trigger
  */
-export interface HttpApiLambdaTriggerType {
-  httpApi: {
+export type ApiGatewayLambdaTriggerType<
+  ApiGatewayIntegration extends ApiGatewayIntegrationType,
+> = {
+  [key in ApiGatewayIntegration extends 'httpApi' ? 'httpApi' : 'http']: {
     path: string;
     method: string;
   };
-}
+};
 
 /**
  * A helper type used to remove undefined keys from an interface
@@ -66,13 +74,14 @@ type AllInputProperties<
 type AllFullContractProperties<
   Path,
   Method,
+  IntegrationType,
   PathParametersSchema extends JSONSchema | undefined,
   QueryStringParametersSchema extends JSONSchema | undefined,
   HeadersSchema extends JSONSchema | undefined,
   BodySchema extends JSONSchema | undefined,
   OutputSchema extends JSONSchema | undefined,
 > = {
-  contractType: { const: 'httpApi' };
+  contractType: { const: IntegrationType };
   path: { const: Path };
   method: { const: Method };
   pathParameters: PathParametersSchema;
@@ -114,6 +123,7 @@ export type InputSchemaType<
 export interface FullContractSchemaType<
   Path,
   Method,
+  IntegrationType,
   PathParametersSchema extends JSONSchema | undefined,
   QueryStringParametersSchema extends JSONSchema | undefined,
   HeadersSchema extends JSONSchema | undefined,
@@ -123,6 +133,7 @@ export interface FullContractSchemaType<
     AllFullContractProperties<
       Path,
       Method,
+      IntegrationType,
       PathParametersSchema,
       QueryStringParametersSchema,
       HeadersSchema,

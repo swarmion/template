@@ -1,4 +1,4 @@
-import { HttpApiContract } from '../httpApiContract';
+import { ApiGatewayContract } from '../apiGatewayContract';
 
 describe('httpApiContract', () => {
   const pathParametersSchema = {
@@ -37,9 +37,10 @@ describe('httpApiContract', () => {
   } as const;
 
   describe('when all parameters are set', () => {
-    const httpApiContract = new HttpApiContract({
+    const httpApiContract = new ApiGatewayContract({
       path: '/users/{userId}',
       method: 'GET',
+      integrationType: 'httpApi',
       pathParametersSchema,
       queryStringParametersSchema,
       headersSchema,
@@ -123,9 +124,10 @@ describe('httpApiContract', () => {
   });
 
   describe('when it is instanciated with a subset of schemas', () => {
-    const httpApiContract = new HttpApiContract({
+    const restApiContract = new ApiGatewayContract({
       path: 'coucou',
       method: 'POST',
+      integrationType: 'restApi',
       pathParametersSchema: undefined,
       queryStringParametersSchema: undefined,
       headersSchema: undefined,
@@ -133,12 +135,21 @@ describe('httpApiContract', () => {
       outputSchema: undefined,
     });
 
+    it('should have the correct trigger', () => {
+      expect(restApiContract.trigger).toEqual({
+        http: {
+          path: 'coucou',
+          method: 'POST',
+        },
+      });
+    });
+
     it('should should have the correct outputSchema', () => {
-      expect(httpApiContract.outputSchema).toEqual(undefined);
+      expect(restApiContract.outputSchema).toEqual(undefined);
     });
 
     it('should should have the correct inputSchema', () => {
-      expect(httpApiContract.inputSchema).toEqual({
+      expect(restApiContract.inputSchema).toEqual({
         type: 'object',
         properties: {},
         required: [],
@@ -146,10 +157,10 @@ describe('httpApiContract', () => {
     });
 
     it('should have the correct fullContractSchema', () => {
-      expect(httpApiContract.fullContractSchema).toEqual({
+      expect(restApiContract.fullContractSchema).toEqual({
         type: 'object',
         properties: {
-          contractType: { const: 'httpApi' },
+          contractType: { const: 'restApi' },
           path: { const: 'coucou' },
           method: { const: 'POST' },
         },
@@ -158,7 +169,7 @@ describe('httpApiContract', () => {
     });
 
     it('should be requestable with no parameters', () => {
-      expect(httpApiContract.getRequestParameters({})).toEqual({
+      expect(restApiContract.getRequestParameters({})).toEqual({
         path: 'coucou',
         method: 'POST',
       });

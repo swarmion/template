@@ -1,4 +1,4 @@
-import { HttpApiContract } from '@sls-monorepo/serverless-contracts';
+import { ApiGatewayContract } from '@sls-monorepo/serverless-contracts';
 
 import { postEntitySchema, threadEntitySchema } from 'schemas/entities';
 
@@ -21,9 +21,10 @@ const outputSchema = {
   additionalProperties: false,
 } as const;
 
-export const getThreadWithPostsContract = new HttpApiContract({
+export const getThreadWithPostsContract = new ApiGatewayContract({
   path: '/forum/thread/{threadId}',
   method: 'GET',
+  integrationType: 'httpApi',
   pathParametersSchema,
   queryStringParametersSchema: undefined,
   bodySchema: undefined,

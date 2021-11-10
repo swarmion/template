@@ -10,26 +10,28 @@ import { HttpMethod } from 'types/http';
 import { fillPathTemplate } from '../../utils/fillPathTemplate';
 import { axiosRequest } from './axiosRequest';
 import {
+  ApiGatewayIntegrationType,
+  ApiGatewayLambdaTriggerType,
   DefinedProperties,
   FullContractSchemaType,
-  HttpApiLambdaTriggerType,
   InputSchemaType,
   RequestParameters,
 } from './types';
 
 /**
- * HttpApiContract:
+ * ApiGatewayContract:
  *
- * a contract used to define a type-safe interaction between AWS Services through an httpApi.
+ * a contract used to define a type-safe interaction between AWS Services through Api Gateway.
  *
  * Main features:
  * - input and output dynamic validation with JSONSchemas on both end of the contract;
  * - type inference for both input and output;
  * - generation of a contract document that can be checked for breaking changes;
  */
-export class HttpApiContract<
+export class ApiGatewayContract<
   Path extends string,
   Method extends HttpMethod,
+  IntegrationType extends ApiGatewayIntegrationType,
   PathParametersSchema extends ConstrainedJSONSchema | undefined,
   QueryStringParametersSchema extends ConstrainedJSONSchema | undefined,
   HeadersSchema extends ConstrainedJSONSchema | undefined,
@@ -51,6 +53,7 @@ export class HttpApiContract<
 > {
   private _path: Path;
   private _method: Method;
+  private _integrationType: IntegrationType;
   private _pathParametersSchema: PathParametersSchema;
   private _queryStringParametersSchema: QueryStringParametersSchema;
   private _headersSchema: HeadersSchema;
@@ -58,10 +61,11 @@ export class HttpApiContract<
   private _outputSchema: OutputSchema;
 
   /**
-   * Builds a new HttpApi contract
+   * Builds a new ApiGateway contract
    *
    * @param path the path on which the lambda will be triggered
    * @param method the http method
+   * @param integrationType httpApi or restApi, see https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html
    * @param pathParametersSchema a JSONSchema used to validate the path parameters and infer their types.
    * Please note that the `as const` directive is necessary to properly infer the type from the schema.
    * See https://github.com/ThomasAribart/json-schema-to-ts#fromschema.
@@ -74,6 +78,7 @@ export class HttpApiContract<
   constructor({
     path,
     method,
+    integrationType,
     pathParametersSchema,
     queryStringParametersSchema,
     headersSchema,
@@ -82,6 +87,7 @@ export class HttpApiContract<
   }: {
     path: Path;
     method: Method;
+    integrationType: IntegrationType;
     pathParametersSchema: PathParametersSchema;
     queryStringParametersSchema: QueryStringParametersSchema;
     headersSchema: HeadersSchema;
@@ -90,6 +96,7 @@ export class HttpApiContract<
   }) {
     this._path = path;
     this._method = method;
+    this._integrationType = integrationType;
     this._pathParametersSchema = pathParametersSchema;
     this._queryStringParametersSchema = queryStringParametersSchema;
     this._headersSchema = headersSchema;
@@ -98,10 +105,13 @@ export class HttpApiContract<
   }
 
   /**
-   * Returns the lambda httpApi trigger
+   * Returns the lambda trigger
    */
-  get trigger(): HttpApiLambdaTriggerType {
-    return { httpApi: { path: this._path, method: this._method } };
+  get trigger(): ApiGatewayLambdaTriggerType<IntegrationType> {
+    const key = this._integrationType === 'httpApi' ? 'httpApi' : 'http';
+
+    // @ts-ignore somehow the type inference does not work here
+    return { [key]: { path: this._path, method: this._method } };
   }
 
   /**
@@ -150,6 +160,7 @@ export class HttpApiContract<
   get fullContractSchema(): FullContractSchemaType<
     Path,
     Method,
+    IntegrationType,
     PathParametersSchema,
     QueryStringParametersSchema,
     HeadersSchema,
@@ -157,7 +168,7 @@ export class HttpApiContract<
     OutputSchema
   > {
     const properties = {
-      contractType: { const: 'httpApi' },
+      contractType: { const: this._integrationType },
       path: { const: this._path },
       method: { const: this._method },
       ...omitBy(

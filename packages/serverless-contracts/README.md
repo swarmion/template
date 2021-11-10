@@ -20,13 +20,14 @@ In order to make these contracts safe, each side of the contract must be able to
 - statically with Typescript
 - dynamically with JSONSchema
 
-_As of today, only interactions through ApiGateway's HTTP API are supported. In the future, REST API and CloudFormation import/exports will also be supported._
+_As of today, only interactions through ApiGateway's HTTP API and REST API are supported. In the future, CloudFormation import/exports and more will also be supported._
 
 ## Defining contracts between services
 
 Let's create our first HttpApi contract. First we will need to define the subschemas for each part of our contract:
 
 - the `path` and the http `method` which will trigger the lambda
+- the `integrationType`: `"httpApi"` or `"restApi"`. For more information, see [AWS ApiGateway documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)
 - then the different parts of the http request:
   - the path parameters: `pathParametersSchema`, which must correspond to a `Record<string, string>`
   - the query string parameters: `queryStringParametersSchema`, which must respect the same constraint
@@ -70,9 +71,10 @@ const outputSchema = {
   required: ['id', 'name'],
 } as const;
 
-const myContract = new HttpApiContract({
+const myContract = new ApiGatewayContract({
   path: '/users/{userId}',
   method: 'GET',
+  integrationType: 'httpApi',
   pathParametersSchema,
   queryStringParametersSchema,
   headersSchema,
@@ -88,9 +90,10 @@ In order to properly use Typescript's type inference:
 - If you do not wish to use one of the subschemas, you need to explicitely set it as `undefined` in the contract. For example, in order to define a contract without headers, we need to create it with:
 
 ```ts
-const myContract = new HttpApiContract({
+const myContract = new ApiGatewayContract({
   path: '/users/{userId}',
   method: 'GET',
+  integrationType: 'httpApi',
   pathParametersSchema,
   queryStringParametersSchema,
   headersSchema: undefined,

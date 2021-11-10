@@ -1,4 +1,4 @@
-import { HttpApiContract } from '@sls-monorepo/serverless-contracts';
+import { ApiGatewayContract } from '@sls-monorepo/serverless-contracts';
 
 import { userEntitySchema } from 'schemas/entities';
 
@@ -11,9 +11,10 @@ const pathParametersSchema = {
   additionalProperties: false,
 } as const;
 
-export const getUserContract = new HttpApiContract({
+export const getUserContract = new ApiGatewayContract({
   path: '/users/{userId}',
   method: 'GET',
+  integrationType: 'httpApi',
   pathParametersSchema,
   queryStringParametersSchema: undefined,
   bodySchema: undefined,

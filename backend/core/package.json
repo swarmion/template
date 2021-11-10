@@ -32,7 +32,7 @@
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.7",
     "jest": "^27.3.1",
-    "serverless": "^2.66.0",
+    "serverless": "^2.66.1",
     "serverless-esbuild": "^1.21.1",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",

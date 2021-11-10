@@ -26,7 +26,7 @@
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
     "@sls-monorepo/users-schemas": "1.0.0",
-    "aws-sdk": "^2.1024.0",
+    "aws-sdk": "^2.1025.0",
     "http-errors": "^1.8.0",
     "json-schema-to-ts": "^1.6.4"
   },
@@ -39,7 +39,7 @@
     "@types/node": "^16.11.7",
     "jest": "^27.3.1",
     "jest-runner-groups": "^2.1.0",
-    "serverless": "^2.66.0",
+    "serverless": "^2.66.1",
     "serverless-esbuild": "^1.21.1",
     "serverless-iam-roles-per-function": "^3.2.0",
     "ts-jest": "^27.0.7",

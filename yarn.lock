@@ -2567,10 +2567,10 @@
     node-fetch "^2.6.0"
     shortid "^2.2.14"
 
-"@serverless/components@^3.17.2":
-  version "3.17.2"
-  resolved "https://registry.yarnpkg.com/@serverless/components/-/components-3.17.2.tgz#1b6338977b8062eb5ef5624fa79dc2d84ac447ec"
-  integrity sha512-7iFkhwLKPD1iqSYr3ppF5CsJ08KYKVCCV6DoiG7ek2Aiy+JtqZkTn9GMCEbrGqZtxDMiRfaYuaOt19F19JqTlQ==
+"@serverless/components@^3.18.0":
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/@serverless/components/-/components-3.18.0.tgz#11d7a43dfd9c51911c409e6b7b84c5203d5df71d"
+  integrity sha512-/mg+A9HACedGD3qJ0MxepmmBwFi3hwUYFNEDJi7Z63pkHvXg+jLEeHtbAx2HdqxY1SHH/LtRzZR4GBcFCaY+Og==
   dependencies:
     "@serverless/platform-client" "^4.2.2"
     "@serverless/platform-client-china" "^2.2.0"
@@ -3624,10 +3624,10 @@ audit-resolve-core@^1.1.8:
     spawn-shell "^2.1.0"
     yargs-parser "^18.1.3"
 
-aws-sdk@^2.1024.0:
-  version "2.1024.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1024.0.tgz#c69ae613a546e56643c921d4aae36d7f8d6f44bc"
-  integrity sha512-FgGvRtxTzgU7iBXG/+hCGqdE2U2gF/NqVDQsTBjrLIbOMiNNheL8uzxcmIKKZ49lFlWwVkM0HNmpEmA5hiLinw==
+aws-sdk@^2.1025.0:
+  version "2.1025.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1025.0.tgz#566f62efc80d6d4cc6e893774a2f15ac774a93fc"
+  integrity sha512-1AR2xIHcbIWj5y3fh9JHd2fLgiGqpn9Ww+8y9kZDnrsIousJkR6L+QkG0mRhChu/AjpFVQ44fiTBoE4J88Dqyw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5506,7 +5506,7 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-module-utils@^2.7.0:
+eslint-module-utils@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.7.1.tgz#b435001c9f8dd4ab7f6d0efcae4b9696d4c24b7c"
   integrity sha512-fjoetBXQZq2tSTWZ9yWVl2KuFrTZZH3V+9iD1V1RfpDgxzJR+mPd/KZmMiA8gbPqdBzpNiEHOuT7IYEWxrH0zQ==
@@ -5515,19 +5515,19 @@ eslint-module-utils@^2.7.0:
     find-up "^2.1.0"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@^2.25.2:
-  version "2.25.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.2.tgz#b3b9160efddb702fc1636659e71ba1d10adbe9e9"
-  integrity sha512-qCwQr9TYfoBHOFcVGKY9C9unq05uOxxdklmBXLVvcwo68y5Hta6/GzCZEMx2zQiu0woKNEER0LE7ZgaOfBU14g==
+eslint-plugin-import@^2.25.3:
+  version "2.25.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.25.3.tgz#a554b5f66e08fb4f6dc99221866e57cfff824766"
+  integrity sha512-RzAVbby+72IB3iOEL8clzPLzL3wpDrlwjsTBAQXgyp5SeTqqY+0bFubwuo+y/HLhNZcXV4XqTBO4LGsfyHIDXg==
   dependencies:
     array-includes "^3.1.4"
     array.prototype.flat "^1.2.5"
     debug "^2.6.9"
     doctrine "^2.1.0"
     eslint-import-resolver-node "^0.3.6"
-    eslint-module-utils "^2.7.0"
+    eslint-module-utils "^2.7.1"
     has "^1.0.3"
-    is-core-module "^2.7.0"
+    is-core-module "^2.8.0"
     is-glob "^4.0.3"
     minimatch "^3.0.4"
     object.values "^1.1.5"
@@ -6807,7 +6807,7 @@ is-ci@^2.0.0:
   dependencies:
     ci-info "^2.0.0"
 
-is-core-module@^2.2.0, is-core-module@^2.5.0, is-core-module@^2.7.0:
+is-core-module@^2.2.0, is-core-module@^2.5.0, is-core-module@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.8.0.tgz#0321336c3d0925e497fd97f5d95cb114a5ccd548"
   integrity sha512-vd15qHsaqrRL7dtH6QNuy0ndJmRDrS9HAM1CAiSifNUFv4x1a0CCVsj18hJ1mShxIG6T2i1sO78MkP56r0nYRw==
@@ -10137,20 +10137,20 @@ serverless-iam-roles-per-function@^3.2.0:
   dependencies:
     lodash "^4.17.20"
 
-serverless@^2.66.0:
-  version "2.66.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.66.0.tgz#22dfc152d8b15a2a8ec2606394eed2354c8be777"
-  integrity sha512-oPNuSpk44IgnPYJCnh8M3hKCX7zn9XZYpFt9kJQQhLM5zDxMiBk9yj8VV7yhUpBXBOi5gjrA5OZZwnpCPXjYww==
+serverless@^2.66.1:
+  version "2.66.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.66.1.tgz#49b3e83a78d852538c5cdaeed3a1b8a96fce94ee"
+  integrity sha512-Swf5aHivSfU0fKuvV4FY0WmMNBZVx7cVK3FcxWLX1lFuzUQ+5D/bpunHW4lmg4tKmGtjBnQ0oQ+4N2MHE3wPrg==
   dependencies:
     "@serverless/cli" "^1.5.3"
-    "@serverless/components" "^3.17.2"
+    "@serverless/components" "^3.18.0"
     "@serverless/dashboard-plugin" "^5.5.1"
     "@serverless/platform-client" "^4.3.0"
     "@serverless/utils" "^5.20.1"
     ajv "^6.12.6"
     ajv-keywords "^3.5.2"
     archiver "^5.3.0"
-    aws-sdk "^2.1024.0"
+    aws-sdk "^2.1025.0"
     bluebird "^3.7.2"
     boxen "^5.1.2"
     cachedir "^2.3.0"

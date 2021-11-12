@@ -1,5 +1,6 @@
 import { AWS } from '@serverless/typescript';
 
+import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
 import {
   projectName,
   sharedEnvsConfig,
@@ -8,7 +9,6 @@ import {
 } from '@sls-monorepo/serverless-configuration';
 
 import { functions } from './functions';
-import { HttpApiId } from './resources/apiGateway';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
@@ -42,7 +42,10 @@ const serverlessConfiguration: AWS = {
   resources: {
     Description: 'Core service',
     Outputs: {
-      HttpApiId,
+      HttpApiId: httpApiResourceContract.exportValue({
+        description: 'The shared httpApi resource',
+        value: { Ref: 'HttpApi' },
+      }),
     },
   },
 };

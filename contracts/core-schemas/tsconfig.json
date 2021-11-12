@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "plugins": [{ "transform": "@zerollup/ts-transform-paths" }],
+    "emitDeclarationOnly": true,
+    "outDir": "./dist/types"
+  },
+  "references": [{ "path": "../../packages/serverless-contracts" }],
+  "exclude": ["./dist"],
+  "include": ["./**/*.ts"]
+}

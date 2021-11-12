@@ -15,4 +15,5 @@ export const handler = async (
 
 export const main = applyHttpMiddlewares(handler, {
   inputSchema: getUserContract.inputSchema,
+  outputSchema: getUserContract.outputSchema,
 });

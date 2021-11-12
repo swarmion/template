@@ -12,14 +12,12 @@ interface Options {
 
 export const applyHttpMiddlewares = <Event, Result>(
   handler: Handler<Event, Result>,
-  { inputSchema }: Options,
+  { inputSchema, outputSchema }: Options,
 ): middy.MiddyfiedHandler<Event, Result> => {
   const middyfiedHandler = middy(handler);
 
-  if (inputSchema !== undefined) {
-    middyfiedHandler.use(jsonBodyParser());
-    middyfiedHandler.use(jsonValidator({ inputSchema }));
-  }
+  middyfiedHandler.use(jsonBodyParser());
+  middyfiedHandler.use(jsonValidator({ inputSchema, outputSchema }));
 
   middyfiedHandler.use(httpErrorHandler());
 

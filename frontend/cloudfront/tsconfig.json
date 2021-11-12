@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "esModuleInterop": true
+  },
+  "references": [{ "path": "../../packages/serverless-configuration" }],
+  "include": ["./**/*.ts"],
+  "ts-node": {
+    "files": true
+  }
+}

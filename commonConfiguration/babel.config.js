@@ -2,7 +2,7 @@ const defaultPresets = [
   ['@babel/preset-typescript', { allowNamespaces: true }],
 ];
 
-const defaultIgnores = ['node_modules', 'dist'];
+const defaultIgnores = [/.*\/(.*\.|)test\.tsx?/, /node_modules/, /dist/];
 
 const presetsForESM = [
   [

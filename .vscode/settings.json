@@ -7,6 +7,8 @@
   },
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "search.exclude": {
+    "**/bundles": true,
+    "**/coverage": true,
     "**/node_modules": true,
     "**/.serverless": true,
     "**/dist": true,
@@ -20,5 +22,8 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }

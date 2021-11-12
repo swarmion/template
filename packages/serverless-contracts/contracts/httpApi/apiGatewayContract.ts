@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import { AxiosResponse } from 'axios';
+import { AxiosInstance, AxiosResponse } from 'axios';
 import { FromSchema, JSONSchema } from 'json-schema-to-ts';
 import isUndefined from 'lodash/isUndefined';
 import omitBy from 'lodash/omitBy';
@@ -8,7 +8,6 @@ import { ConstrainedJSONSchema } from 'types/constrainedJSONSchema';
 import { HttpMethod } from 'types/http';
 
 import { fillPathTemplate } from '../../utils/fillPathTemplate';
-import { axiosRequest } from './axiosRequest';
 import {
   ApiGatewayIntegrationType,
   ApiGatewayLambdaTriggerType,
@@ -237,12 +236,12 @@ export class ApiGatewayContract<
   }
 
   /**
-   * @param baseUrl the base endpoint of the api
+   * @param axiosClient axios client used to make the request
    * @param requestArguments see `getRequestParameters`
    * @returns a promise with the response
    */
   async axiosRequest(
-    baseUrl: string,
+    axiosClient: AxiosInstance,
     requestArguments: DefinedProperties<{
       pathParameters: PathParametersType;
       queryStringParameters: QueryStringParametersType;
@@ -250,8 +249,15 @@ export class ApiGatewayContract<
       body: BodyType;
     }>,
   ): Promise<AxiosResponse<OutputType>> {
-    const requestParameters = this.getRequestParameters(requestArguments);
+    const { path, method, queryStringParameters, body, headers } =
+      this.getRequestParameters(requestArguments);
 
-    return await axiosRequest(baseUrl, requestParameters);
+    return await axiosClient.request({
+      method,
+      url: path,
+      headers,
+      data: body,
+      params: queryStringParameters,
+    });
   }
 }

@@ -13,11 +13,9 @@ export type CloudFormationImport<Key extends string> = {
  * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
  */
 export type CloudFormationExport<Key extends string, Value> = {
-  [key in Key]: {
-    Description: string;
-    Value: Value;
-    Export: { Name: Key };
-  };
+  Description: string;
+  Value: Value;
+  Export: { Name: Key };
 };
 
 export interface FullContractSchemaType<Key extends string> {

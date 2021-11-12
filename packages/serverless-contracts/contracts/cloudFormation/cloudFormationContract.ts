@@ -50,13 +50,10 @@ export class CloudFormationContract<Key extends string>
     description: string;
     value: Value;
   }): CloudFormationExport<Key, Value> {
-    // @ts-ignore somehow the type inference does not work here
     return {
-      [this._key]: {
-        Description: description,
-        Value: value,
-        Export: { Name: this._key },
-      },
+      Description: description,
+      Value: value,
+      Export: { Name: this._key },
     };
   }
 

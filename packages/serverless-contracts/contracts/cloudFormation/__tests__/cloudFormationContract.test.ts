@@ -18,11 +18,9 @@ describe('cloudFormationContract', () => {
         value: { Ref: 'HttpApi' },
       }),
     ).toEqual({
-      mySuperExport: {
-        Description: 'My super export',
-        Value: { Ref: 'HttpApi' },
-        Export: { Name: 'mySuperExport' },
-      },
+      Description: 'My super export',
+      Value: { Ref: 'HttpApi' },
+      Export: { Name: 'mySuperExport' },
     });
   });
 });

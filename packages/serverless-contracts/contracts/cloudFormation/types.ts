@@ -3,8 +3,8 @@
  *
  * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
  */
-export type CloudFormationImport<Key extends string> = {
-  'Fn::ImportValue': Key;
+export type CloudFormationImport<Name extends string> = {
+  'Fn::ImportValue': Name;
 };
 
 /**
@@ -12,18 +12,18 @@ export type CloudFormationImport<Key extends string> = {
  *
  * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
  */
-export type CloudFormationExport<Key extends string, Value> = {
+export type CloudFormationExport<Name extends string, Value> = {
   Description: string;
   Value: Value;
-  Export: { Name: Key };
+  Export: { Name: Name };
 };
 
-export interface FullContractSchemaType<Key extends string> {
+export interface FullContractSchemaType<Name extends string> {
   type: 'object';
   properties: {
     contractType: { const: 'cloudFormation' };
-    key: { const: Key };
+    name: { const: Name };
   };
-  required: ['key', 'contractType'];
+  required: ['name', 'contractType'];
   additionalProperties: false;
 }

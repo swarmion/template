@@ -2,7 +2,7 @@ import { CloudFormationContract } from '../cloudFormationContract';
 
 describe('cloudFormationContract', () => {
   const cloudFormationContract = new CloudFormationContract({
-    key: 'mySuperExport',
+    name: 'mySuperExport',
   });
 
   it('should return the correct importValue', () => {

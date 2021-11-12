@@ -15,26 +15,26 @@ import {
  * - export and import generated and type-safe;
  * - generation of a contract document that can be checked for breaking changes;
  */
-export class CloudFormationContract<Key extends string>
+export class CloudFormationContract<Name extends string>
   implements GenericContract
 {
-  private _key: Key;
+  private _name: Name;
 
   /**
    * Builds a new ApiGateway contract
    *
-   * @param key the name of the export
+   * @param name the name of the export
    * See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html
    */
-  constructor({ key }: { key: Key }) {
-    this._key = key;
+  constructor({ name }: { name: Name }) {
+    this._name = name;
   }
 
   /**
-   * @returns the CloudFormation { Fn::ImportValue } function corresponding to the key
+   * @returns the CloudFormation { Fn::ImportValue } function corresponding to the name
    */
-  get importValue(): CloudFormationImport<Key> {
-    return { 'Fn::ImportValue': this._key };
+  get importValue(): CloudFormationImport<Name> {
+    return { 'Fn::ImportValue': this._name };
   }
 
   /**
@@ -49,22 +49,22 @@ export class CloudFormationContract<Key extends string>
   }: {
     description: string;
     value: Value;
-  }): CloudFormationExport<Key, Value> {
+  }): CloudFormationExport<Name, Value> {
     return {
       Description: description,
       Value: value,
-      Export: { Name: this._key },
+      Export: { Name: this._name },
     };
   }
 
-  get fullContractSchema(): FullContractSchemaType<Key> {
+  get fullContractSchema(): FullContractSchemaType<Name> {
     return {
       type: 'object',
       properties: {
         contractType: { const: 'cloudFormation' },
-        key: { const: this._key },
+        name: { const: this._name },
       },
-      required: ['key', 'contractType'],
+      required: ['name', 'contractType'],
       additionalProperties: false,
     };
   }

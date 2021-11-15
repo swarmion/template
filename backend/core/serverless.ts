@@ -7,12 +7,14 @@ import {
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
+import { ServerlessContracts } from '@sls-monorepo/serverless-contracts-plugin';
 
 import { functions } from './functions';
 
-const serverlessConfiguration: AWS = {
+const serverlessConfiguration: AWS & ServerlessContracts = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
+  configValidationMode: 'error',
   plugins: [
     'serverless-esbuild',
     '@sls-monorepo/serverless-tag-git-commit-plugin',
@@ -39,6 +41,10 @@ const serverlessConfiguration: AWS = {
     projectName,
     sharedEnvsConfig,
     esbuild: sharedEsbuildConfig,
+  },
+  contracts: {
+    provides: [httpApiResourceContract.fullContractSchema],
+    consumes: [],
   },
   resources: {
     Description: 'Core service',

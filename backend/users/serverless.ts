@@ -7,12 +7,14 @@ import {
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
+import { ServerlessContracts } from '@sls-monorepo/serverless-contracts-plugin';
 
 import { functions } from './functions';
 
-const serverlessConfiguration: AWS = {
+const serverlessConfiguration: AWS & ServerlessContracts = {
   service: `${projectName}-users`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
+  configValidationMode: 'error',
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
@@ -31,6 +33,10 @@ const serverlessConfiguration: AWS = {
     projectName,
     sharedEnvsConfig,
     esbuild: sharedEsbuildConfig,
+  },
+  contracts: {
+    provides: [],
+    consumes: [],
   },
   resources: {
     Description: 'Users service: manage users',

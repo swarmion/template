@@ -1,6 +1,7 @@
 import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
+import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
 import {
   projectName,
   sharedEnvsConfig,
@@ -35,8 +36,8 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [],
-    consumes: [],
+    provides: [getThreadWithPostsContract.fullContractSchema],
+    consumes: [httpApiResourceContract.fullContractSchema],
   },
   resources: {
     Description: 'Forum service: handle forum activity, posts and threads',

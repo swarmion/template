@@ -8,6 +8,7 @@ import {
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { ServerlessContracts } from '@sls-monorepo/serverless-contracts-plugin';
+import { getUserContract } from '@sls-monorepo/users-schemas';
 
 import { functions } from './functions';
 
@@ -35,8 +36,8 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [],
-    consumes: [],
+    provides: [getUserContract.fullContractSchema],
+    consumes: [httpApiResourceContract.fullContractSchema],
   },
   resources: {
     Description: 'Users service: manage users',

@@ -40,10 +40,15 @@ export class ServerlessContractsPlugin implements Plugin {
         usage: 'Show local Serverless contracts',
         lifecycleEvents: ['run'],
       },
+      remoteContracts: {
+        usage: 'Show currently deployed Serverless contracts',
+        lifecycleEvents: ['run'],
+      },
     };
     this.hooks = {
       'localContracts:run': this.printLocalServerlessContracts.bind(this),
-      'after:package:initialize': this.tagStackWithTimestamp.bind(this),
+      'remoteContracts:run': this.printRemoteServerlessContracts.bind(this),
+      'before:package:finalize': this.tagStackWithTimestamp.bind(this),
       'after:aws:deploy:deploy:uploadArtifacts':
         this.uploadContracts.bind(this),
     };
@@ -75,10 +80,15 @@ export class ServerlessContractsPlugin implements Plugin {
   }
 
   tagStackWithTimestamp(): void {
-    console.log('coucoucoucocucou');
+    const artifactDirectoryName = this.serverless.service.package
+      .artifactDirectoryName as string;
+
+    // format is serverless/{service}/{stage}/{timestamp}
+    const [, , , timestamp] = artifactDirectoryName.split('/');
+
     this.serverless.service.provider.stackTags = {
       ...this.serverless.service.provider.stackTags,
-      [LATEST_DEPLOYED_TIMESTAMP_TAG_NAME]: '123',
+      [LATEST_DEPLOYED_TIMESTAMP_TAG_NAME]: timestamp,
     };
   }
 

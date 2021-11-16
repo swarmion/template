@@ -36,8 +36,10 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [getUserContract.fullContractSchema],
-    consumes: [httpApiResourceContract.fullContractSchema],
+    provides: { getUserContract: getUserContract.fullContractSchema },
+    consumes: {
+      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
+    },
   },
   resources: {
     Description: 'Users service: manage users',

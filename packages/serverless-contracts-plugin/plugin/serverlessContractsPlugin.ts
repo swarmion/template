@@ -12,6 +12,8 @@ interface OptionsExtended extends Serverless.Options {
   verbose?: boolean;
 }
 
+const COMPILED_CONTRACTS_FILE_NAME = 'serverless-contracts.json';
+
 export class ServerlessContractsPlugin implements Plugin {
   options: OptionsExtended;
   serverless: Serverless;
@@ -45,15 +47,15 @@ export class ServerlessContractsPlugin implements Plugin {
     // @ts-ignore mistype in the orignals (the animals)
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     const { provides, consumes } = this.serverless.service
-      .initialServerlessConfig.contracts as ServerlessContracts['contracts'];
+      .initialServerlessConfig.contracts as ServerlessContracts;
 
-    return { contracts: { provides, consumes } };
+    return { provides, consumes };
   }
 
-  printContracts({
-    contracts: { provides, consumes },
-    contractsLocation,
-  }: ServerlessContracts & { contractsLocation: ContractsLocation }): void {
+  printContracts(
+    { provides, consumes }: ServerlessContracts,
+    contractsLocation: ContractsLocation,
+  ): void {
     console.log(
       `--- Serverless contracts for location ${contractsLocation} ---`,
     );
@@ -67,11 +69,19 @@ export class ServerlessContractsPlugin implements Plugin {
   }
 
   printLocalServerlessContracts(): void {
-    const { contracts } = this.listLocalContracts();
-    this.printContracts({
-      contracts,
-      contractsLocation: ContractsLocation.LOCAL,
-    });
+    const contracts = this.listLocalContracts();
+    this.printContracts(contracts, ContractsLocation.LOCAL);
+  }
+
+  async printRemoteServerlessContracts(): Promise<void> {
+    const contracts = await this.listRemoteContracts();
+    this.printContracts(contracts, ContractsLocation.REMOTE);
+  }
+
+  async listRemoteContracts(): Promise<ServerlessContracts> {
+    await Promise.resolve();
+
+    return { provides: {}, consumes: {} };
   }
 
   async uploadContracts(): Promise<void> {
@@ -89,18 +99,16 @@ export class ServerlessContractsPlugin implements Plugin {
     const artifactDirectoryName = this.serverless.service.package
       .artifactDirectoryName as string;
 
-    const { contracts } = this.listLocalContracts();
+    const contracts = this.listLocalContracts();
 
     const fileHash = crypto
       .createHash('sha256')
       .update(JSON.stringify(contracts))
       .digest('base64');
 
-    const compiledContractsFileName = 'compiled-serverless-contracts.json';
-
     const params = {
       Bucket: bucketName,
-      Key: `${artifactDirectoryName}/${compiledContractsFileName}`,
+      Key: `${artifactDirectoryName}/${COMPILED_CONTRACTS_FILE_NAME}`,
       Body: JSON.stringify(contracts),
       ContentType: 'application/json',
       Metadata: {

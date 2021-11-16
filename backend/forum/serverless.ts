@@ -36,8 +36,12 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [getThreadWithPostsContract.fullContractSchema],
-    consumes: [httpApiResourceContract.fullContractSchema],
+    provides: {
+      getThreadWithPostsContract: getThreadWithPostsContract.fullContractSchema,
+    },
+    consumes: {
+      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
+    },
   },
   resources: {
     Description: 'Forum service: handle forum activity, posts and threads',

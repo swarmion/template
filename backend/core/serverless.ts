@@ -43,8 +43,10 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [httpApiResourceContract.fullContractSchema],
-    consumes: [],
+    provides: {
+      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
+    },
+    consumes: {},
   },
   resources: {
     Description: 'Core service',

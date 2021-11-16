@@ -1,8 +1,5 @@
-import * as AWS from 'aws-sdk';
-import crypto from 'crypto';
 import * as Serverless from 'serverless';
 import * as Plugin from 'serverless/classes/Plugin';
-import simpleGit from 'simple-git';
 
 import { ContractsLocation } from '../types/locations';
 import {
@@ -10,14 +7,17 @@ import {
   ServerlessContracts,
   serviceOptionsSchema,
 } from '../types/serviceOptions';
+import {
+  CONTRACTS_VERSION,
+  LATEST_DEPLOYED_TIMESTAMP_TAG_NAME,
+} from './utils/constants';
+import { listLocalContracts } from './utils/listLocalContracts';
+import { printContracts } from './utils/printContracts';
+import { uploadContracts } from './utils/uploadContracts';
 
 interface OptionsExtended extends Serverless.Options {
   verbose?: boolean;
 }
-
-const COMPILED_CONTRACTS_FILE_NAME = 'serverless-contracts.json';
-const LATEST_DEPLOYED_TIMESTAMP_TAG_NAME = 'LATEST_DEPLOYED_TIMESTAMP';
-const CONTRACTS_VERSION = '1.0.0';
 
 export class ServerlessContractsPlugin implements Plugin {
   options: OptionsExtended;
@@ -50,38 +50,17 @@ export class ServerlessContractsPlugin implements Plugin {
   }
 
   listLocalContracts(): ServerlessContracts {
-    // @ts-ignore mistype in the orignals (the animals)
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    const { provides, consumes } = this.serverless.service
-      .initialServerlessConfig.contracts as ServerlessContracts;
-
-    return { provides, consumes };
-  }
-
-  printContracts(
-    { provides, consumes }: ServerlessContracts,
-    contractsLocation: ContractsLocation,
-  ): void {
-    console.log(
-      `--- Serverless contracts for location ${contractsLocation} ---`,
-    );
-    console.log();
-    console.log('-- Provides --');
-    console.log();
-    console.log(JSON.stringify(provides));
-    console.log();
-    console.log('-- Consumes --');
-    console.log(JSON.stringify(consumes));
+    return listLocalContracts(this.serverless);
   }
 
   printLocalServerlessContracts(): void {
     const contracts = this.listLocalContracts();
-    this.printContracts(contracts, ContractsLocation.LOCAL);
+    printContracts(contracts, ContractsLocation.LOCAL);
   }
 
   async printRemoteServerlessContracts(): Promise<void> {
     const contracts = await this.listRemoteContracts();
-    this.printContracts(contracts, ContractsLocation.REMOTE);
+    printContracts(contracts, ContractsLocation.REMOTE);
   }
 
   async listRemoteContracts(): Promise<RemoteServerlessContracts> {
@@ -103,70 +82,7 @@ export class ServerlessContractsPlugin implements Plugin {
     };
   }
 
-  async getLatestDeployedTimestamp(): Promise<string | undefined> {
-    const provider = this.serverless.getProvider('aws');
-
-    const stackName = provider.naming.getStackName();
-
-    const { Stacks } = (await provider.request(
-      'CloudFormation',
-      'describeStacks',
-      {
-        StackName: stackName,
-      },
-    )) as AWS.CloudFormation.DescribeStacksOutput;
-
-    return Stacks !== undefined
-      ? Stacks[0].Tags?.find(
-          ({ Key }) => Key === LATEST_DEPLOYED_TIMESTAMP_TAG_NAME,
-        )?.Value
-      : undefined;
-  }
-
   async uploadContracts(): Promise<void> {
-    // @ts-ignore @types/serverless does not know this prop
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-    if (this.serverless.service.provider.shouldNotDeploy) {
-      this.serverless.cli.log(
-        'Service files not changed. Skipping contracts upload...',
-        'Contracts',
-        { color: 'orange' },
-      );
-    }
-    const provider = this.serverless.getProvider('aws');
-    const bucketName = await provider.getServerlessDeploymentBucketName();
-    const artifactDirectoryName = this.serverless.service.package
-      .artifactDirectoryName as string;
-
-    const contracts = this.listLocalContracts();
-
-    const git = simpleGit();
-
-    const gitCommit = await git.revparse('HEAD');
-
-    const contractsToUpload: RemoteServerlessContracts = {
-      ...contracts,
-      gitCommit,
-      contractsVersion: CONTRACTS_VERSION,
-    };
-
-    const fileHash = crypto
-      .createHash('sha256')
-      .update(JSON.stringify(contractsToUpload))
-      .digest('base64');
-
-    const params = {
-      Bucket: bucketName,
-      Key: `${artifactDirectoryName}/${COMPILED_CONTRACTS_FILE_NAME}`,
-      Body: JSON.stringify(contractsToUpload),
-      ContentType: 'application/json',
-      Metadata: {
-        filesha256: fileHash,
-      },
-    };
-
-    this.serverless.cli.log('Uploading contracts file to S3...', 'Contracts');
-
-    await provider.request('S3', 'upload', params);
+    await uploadContracts(this.serverless);
   }
 }

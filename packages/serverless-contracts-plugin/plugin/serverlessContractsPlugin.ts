@@ -1,3 +1,4 @@
+import crypto from 'crypto';
 import * as Serverless from 'serverless';
 import * as Plugin from 'serverless/classes/Plugin';
 
@@ -35,6 +36,8 @@ export class ServerlessContractsPlugin implements Plugin {
     };
     this.hooks = {
       'localContracts:run': this.printLocalServerlessContracts.bind(this),
+      'after:aws:deploy:deploy:uploadArtifacts':
+        this.uploadContracts.bind(this),
     };
   }
 
@@ -69,5 +72,35 @@ export class ServerlessContractsPlugin implements Plugin {
       contracts,
       contractsLocation: ContractsLocation.LOCAL,
     });
+  }
+
+  async uploadContracts(): Promise<void> {
+    const provider = this.serverless.getProvider('aws');
+    const bucketName = await provider.getServerlessDeploymentBucketName();
+    const artifactDirectoryName = this.serverless.service.package
+      .artifactDirectoryName as string;
+
+    const { contracts } = this.listLocalContracts();
+
+    const fileHash = crypto
+      .createHash('sha256')
+      .update(JSON.stringify(contracts))
+      .digest('base64');
+
+    const compiledContractsFileName = 'compiled-serverless-contracts.json';
+
+    const params = {
+      Bucket: bucketName,
+      Key: `${artifactDirectoryName}/${compiledContractsFileName}`,
+      Body: JSON.stringify(contracts),
+      ContentType: 'application/json',
+      Metadata: {
+        filesha256: fileHash,
+      },
+    };
+
+    this.serverless.cli.log('Uploading contracts file to S3...');
+
+    await provider.request('S3', 'upload', params);
   }
 }

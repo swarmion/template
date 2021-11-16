@@ -75,6 +75,15 @@ export class ServerlessContractsPlugin implements Plugin {
   }
 
   async uploadContracts(): Promise<void> {
+    // @ts-ignore @types/serverless does not know this prop
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+    if (this.serverless.service.provider.shouldNotDeploy) {
+      this.serverless.cli.log(
+        'Service files not changed. Skipping contracts upload...',
+        'Contracts',
+        { color: 'orange' },
+      );
+    }
     const provider = this.serverless.getProvider('aws');
     const bucketName = await provider.getServerlessDeploymentBucketName();
     const artifactDirectoryName = this.serverless.service.package
@@ -99,7 +108,7 @@ export class ServerlessContractsPlugin implements Plugin {
       },
     };
 
-    this.serverless.cli.log('Uploading contracts file to S3...');
+    this.serverless.cli.log('Uploading contracts file to S3...', 'Contracts');
 
     await provider.request('S3', 'upload', params);
   }

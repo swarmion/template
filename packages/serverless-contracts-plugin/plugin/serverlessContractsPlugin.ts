@@ -2,9 +2,11 @@ import * as AWS from 'aws-sdk';
 import crypto from 'crypto';
 import * as Serverless from 'serverless';
 import * as Plugin from 'serverless/classes/Plugin';
+import simpleGit from 'simple-git';
 
 import { ContractsLocation } from '../types/locations';
 import {
+  RemoteServerlessContracts,
   ServerlessContracts,
   serviceOptionsSchema,
 } from '../types/serviceOptions';
@@ -15,6 +17,7 @@ interface OptionsExtended extends Serverless.Options {
 
 const COMPILED_CONTRACTS_FILE_NAME = 'serverless-contracts.json';
 const LATEST_DEPLOYED_TIMESTAMP_TAG_NAME = 'LATEST_DEPLOYED_TIMESTAMP';
+const CONTRACTS_VERSION = '1.0.0';
 
 export class ServerlessContractsPlugin implements Plugin {
   options: OptionsExtended;
@@ -81,10 +84,15 @@ export class ServerlessContractsPlugin implements Plugin {
     this.printContracts(contracts, ContractsLocation.REMOTE);
   }
 
-  async listRemoteContracts(): Promise<ServerlessContracts> {
+  async listRemoteContracts(): Promise<RemoteServerlessContracts> {
     await Promise.resolve();
 
-    return { provides: {}, consumes: {} };
+    return {
+      provides: {},
+      consumes: {},
+      gitCommit: '',
+      contractsVersion: CONTRACTS_VERSION,
+    };
   }
 
   tagStackWithTimestamp(): void {
@@ -95,7 +103,7 @@ export class ServerlessContractsPlugin implements Plugin {
     };
   }
 
-  async getDeployedTimestamp(): Promise<string | undefined> {
+  async getLatestDeployedTimestamp(): Promise<string | undefined> {
     const provider = this.serverless.getProvider('aws');
 
     const stackName = provider.naming.getStackName();
@@ -132,15 +140,25 @@ export class ServerlessContractsPlugin implements Plugin {
 
     const contracts = this.listLocalContracts();
 
+    const git = simpleGit();
+
+    const gitCommit = await git.revparse('HEAD');
+
+    const contractsToUpload: RemoteServerlessContracts = {
+      ...contracts,
+      gitCommit,
+      contractsVersion: CONTRACTS_VERSION,
+    };
+
     const fileHash = crypto
       .createHash('sha256')
-      .update(JSON.stringify(contracts))
+      .update(JSON.stringify(contractsToUpload))
       .digest('base64');
 
     const params = {
       Bucket: bucketName,
       Key: `${artifactDirectoryName}/${COMPILED_CONTRACTS_FILE_NAME}`,
-      Body: JSON.stringify(contracts),
+      Body: JSON.stringify(contractsToUpload),
       ContentType: 'application/json',
       Metadata: {
         filesha256: fileHash,

@@ -33,3 +33,8 @@ export type ServerlessContracts = {
   provides: Record<string, JSONSchema>;
   consumes: Record<string, JSONSchema>;
 };
+
+export interface RemoteServerlessContracts extends ServerlessContracts {
+  gitCommit: string;
+  contractsVersion: '1.0.0';
+}

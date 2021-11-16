@@ -15,11 +15,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
   configValidationMode: 'error',
-  plugins: [
-    'serverless-esbuild',
-    '@sls-monorepo/serverless-tag-git-commit-plugin',
-    '@sls-monorepo/serverless-contracts-plugin',
-  ],
+  plugins: ['serverless-esbuild', '@sls-monorepo/serverless-contracts-plugin'],
   provider: {
     ...sharedProviderConfig,
     httpApi: {

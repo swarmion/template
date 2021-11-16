@@ -1,3 +1,4 @@
+import * as AWS from 'aws-sdk';
 import crypto from 'crypto';
 import * as Serverless from 'serverless';
 import * as Plugin from 'serverless/classes/Plugin';
@@ -13,6 +14,7 @@ interface OptionsExtended extends Serverless.Options {
 }
 
 const COMPILED_CONTRACTS_FILE_NAME = 'serverless-contracts.json';
+const LATEST_DEPLOYED_TIMESTAMP_TAG_NAME = 'LATEST_DEPLOYED_TIMESTAMP';
 
 export class ServerlessContractsPlugin implements Plugin {
   options: OptionsExtended;
@@ -38,6 +40,7 @@ export class ServerlessContractsPlugin implements Plugin {
     };
     this.hooks = {
       'localContracts:run': this.printLocalServerlessContracts.bind(this),
+      'after:package:initialize': this.tagStackWithTimestamp.bind(this),
       'after:aws:deploy:deploy:uploadArtifacts':
         this.uploadContracts.bind(this),
     };
@@ -82,6 +85,34 @@ export class ServerlessContractsPlugin implements Plugin {
     await Promise.resolve();
 
     return { provides: {}, consumes: {} };
+  }
+
+  tagStackWithTimestamp(): void {
+    console.log('coucoucoucocucou');
+    this.serverless.service.provider.stackTags = {
+      ...this.serverless.service.provider.stackTags,
+      [LATEST_DEPLOYED_TIMESTAMP_TAG_NAME]: '123',
+    };
+  }
+
+  async getDeployedTimestamp(): Promise<string | undefined> {
+    const provider = this.serverless.getProvider('aws');
+
+    const stackName = provider.naming.getStackName();
+
+    const { Stacks } = (await provider.request(
+      'CloudFormation',
+      'describeStacks',
+      {
+        StackName: stackName,
+      },
+    )) as AWS.CloudFormation.DescribeStacksOutput;
+
+    return Stacks !== undefined
+      ? Stacks[0].Tags?.find(
+          ({ Key }) => Key === LATEST_DEPLOYED_TIMESTAMP_TAG_NAME,
+        )?.Value
+      : undefined;
   }
 
   async uploadContracts(): Promise<void> {

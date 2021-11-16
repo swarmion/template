@@ -19,7 +19,6 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
-    '@sls-monorepo/serverless-tag-git-commit-plugin',
     '@sls-monorepo/serverless-contracts-plugin',
   ],
   provider: {

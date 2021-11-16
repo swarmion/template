@@ -61,7 +61,6 @@ These commands have to be run at the root of the project.
 
 ## Other docs
 
-- [serverless-tag-git-commit-plugin](./packages/serverless-tag-git-commit-plugin/README.md)
 - [serverless-contracts](./packages/serverless-contracts/README.md)
 
 ## Contributors ✨

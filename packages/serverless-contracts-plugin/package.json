@@ -41,6 +41,7 @@
     "@serverless/typescript": "^2.65.0",
     "@sls-monorepo/configuration": "1.0.0",
     "@zerollup/ts-transform-paths": "^1.7.18",
+    "aws-sdk": "^2.1025.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^6.4.0",
     "eslint": "^8.2.0",

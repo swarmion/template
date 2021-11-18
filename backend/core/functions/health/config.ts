@@ -1,6 +1,9 @@
-import { getHandlerPath } from '@sls-monorepo/serverless-helpers';
+import {
+  getHandlerPath,
+  LambdaFunction,
+} from '@sls-monorepo/serverless-helpers';
 
-export default {
+const config: LambdaFunction = {
   environment: {},
   handler: getHandlerPath(__dirname),
   events: [
@@ -12,3 +15,5 @@ export default {
     },
   ],
 };
+
+export default config;

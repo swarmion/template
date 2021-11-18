@@ -1,8 +1,13 @@
 import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
-import { getHandlerPath } from '@sls-monorepo/serverless-helpers';
+import {
+  getHandlerPath,
+  LambdaFunction,
+} from '@sls-monorepo/serverless-helpers';
 
-export default {
+const config: LambdaFunction = {
   environment: {},
   handler: getHandlerPath(__dirname),
   events: [getThreadWithPostsContract.trigger],
 };
+
+export default config;

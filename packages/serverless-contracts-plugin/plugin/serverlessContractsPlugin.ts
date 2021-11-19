@@ -1,6 +1,7 @@
 import * as Serverless from 'serverless';
 import * as Plugin from 'serverless/classes/Plugin';
 
+import { DeploymentTypes } from '../types/deploymentTypes';
 import { ContractsLocation } from '../types/locations';
 import {
   RemoteServerlessContracts,
@@ -13,6 +14,7 @@ import { listLocalContracts } from './utils/listLocalContracts';
 import { listRemoteContracts } from './utils/listRemoteContracts';
 import { printContracts } from './utils/printContracts';
 import { uploadContracts } from './utils/uploadContracts';
+import { validateDeployment } from './utils/validateDeployment';
 
 interface OptionsExtended extends Serverless.Options {
   verbose?: boolean;
@@ -47,6 +49,7 @@ export class ServerlessContractsPlugin implements Plugin {
     this.hooks = {
       'localContracts:run': this.printLocalServerlessContracts.bind(this),
       'remoteContracts:run': this.printRemoteServerlessContracts.bind(this),
+      'before:deploy:deploy': this.validateDeployment.bind(this),
       'before:package:finalize': this.tagStackWithTimestamp.bind(this),
       'after:aws:deploy:deploy:uploadArtifacts':
         this.uploadContracts.bind(this),
@@ -64,10 +67,18 @@ export class ServerlessContractsPlugin implements Plugin {
 
   async printRemoteServerlessContracts(): Promise<void> {
     const contracts = await this.listRemoteContracts();
+    if (contracts === undefined) {
+      this.serverless.cli.log(
+        'Unable to retrieve remote contracts',
+        'Contracts',
+      );
+
+      return;
+    }
     printContracts(contracts, ContractsLocation.REMOTE);
   }
 
-  async listRemoteContracts(): Promise<RemoteServerlessContracts> {
+  async listRemoteContracts(): Promise<RemoteServerlessContracts | undefined> {
     return listRemoteContracts(this.serverless);
   }
 
@@ -87,5 +98,26 @@ export class ServerlessContractsPlugin implements Plugin {
 
   async uploadContracts(): Promise<void> {
     await uploadContracts(this.serverless);
+  }
+
+  async validateDeployment(): Promise<void> {
+    const localContracts = listLocalContracts(this.serverless);
+    const remoteContracts = await listRemoteContracts(this.serverless);
+    if (remoteContracts === undefined) {
+      this.serverless.cli.log(
+        'Unable to retrieve remote contracts, deployment is unsafe',
+        'Contracts',
+      );
+
+      return;
+    }
+
+    this.serverless.cli.log('Validating contracts...', 'Contracts');
+
+    await validateDeployment(
+      localContracts,
+      remoteContracts,
+      DeploymentTypes.PROVIDER_FIRST,
+    );
   }
 }

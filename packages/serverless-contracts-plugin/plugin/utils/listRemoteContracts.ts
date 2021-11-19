@@ -8,13 +8,11 @@ import { getLatestDeployedTimestamp } from './getLatestDeployedTimestamp';
 
 export const listRemoteContracts = async (
   serverless: Serverless,
-): Promise<RemoteServerlessContracts> => {
+): Promise<RemoteServerlessContracts | undefined> => {
   const provider = serverless.getProvider('aws');
   const latestDeployedTimestamp = await getLatestDeployedTimestamp(provider);
 
-  if (latestDeployedTimestamp === undefined) {
-    throw new Error('Unable to retrieve the contracts');
-  }
+  if (latestDeployedTimestamp === undefined) return;
 
   const previousArtifactDirectoryName =
     buildPreviousDeploymentArtifactDirectoryName(

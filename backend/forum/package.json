@@ -28,23 +28,23 @@
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-contracts-plugin": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
-    "aws-sdk": "^2.1030.0",
+    "aws-sdk": "^2.1033.0",
     "http-errors": "^1.8.1",
     "json-schema-to-ts": "^1.6.4"
   },
   "devDependencies": {
-    "@serverless/typescript": "^2.65.0",
+    "@serverless/typescript": "^2.66.2",
     "@sls-monorepo/configuration": "1.0.0",
     "@types/http-errors": "^1.8.1",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.7",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.9",
     "jest": "^27.3.1",
     "jest-runner-groups": "^2.1.0",
-    "serverless": "^2.66.1",
-    "serverless-esbuild": "^1.21.2",
+    "serverless": "^2.66.2",
+    "serverless-esbuild": "^1.22.0",
     "serverless-iam-roles-per-function": "^3.2.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   }
 }

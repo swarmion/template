@@ -8,7 +8,6 @@ export const printContracts = (
   console.log(`--- Serverless contracts for location ${contractsLocation} ---`);
   console.log();
   console.log('-- Provides --');
-  console.log();
   console.log(JSON.stringify(provides, null, 2));
   console.log();
   console.log('-- Consumes --');

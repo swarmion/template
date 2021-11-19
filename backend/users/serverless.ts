@@ -19,7 +19,6 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
-    '@sls-monorepo/serverless-tag-git-commit-plugin',
     '@sls-monorepo/serverless-contracts-plugin',
   ],
   provider: {
@@ -36,8 +35,10 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [getUserContract.fullContractSchema],
-    consumes: [httpApiResourceContract.fullContractSchema],
+    provides: { getUserContract: getUserContract.fullContractSchema },
+    consumes: {
+      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
+    },
   },
   resources: {
     Description: 'Users service: manage users',

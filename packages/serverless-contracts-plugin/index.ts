@@ -1,5 +1,4 @@
 import { ServerlessContractsPlugin } from './plugin/serverlessContractsPlugin';
-import type { ServerlessContracts } from './types/serviceOptions';
-export type { ServerlessContracts };
+export type { ServiceOptions as ServerlessContracts } from './types/serviceOptions';
 
 module.exports = ServerlessContractsPlugin;

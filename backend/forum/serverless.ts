@@ -19,7 +19,6 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
-    '@sls-monorepo/serverless-tag-git-commit-plugin',
     '@sls-monorepo/serverless-contracts-plugin',
   ],
   provider: {
@@ -36,8 +35,12 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     esbuild: sharedEsbuildConfig,
   },
   contracts: {
-    provides: [getThreadWithPostsContract.fullContractSchema],
-    consumes: [httpApiResourceContract.fullContractSchema],
+    provides: {
+      getThreadWithPostsContract: getThreadWithPostsContract.fullContractSchema,
+    },
+    consumes: {
+      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
+    },
   },
   resources: {
     Description: 'Forum service: handle forum activity, posts and threads',

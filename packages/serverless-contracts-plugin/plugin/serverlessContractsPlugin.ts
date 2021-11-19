@@ -7,11 +7,10 @@ import {
   ServerlessContracts,
   serviceOptionsSchema,
 } from '../types/serviceOptions';
-import {
-  CONTRACTS_VERSION,
-  LATEST_DEPLOYED_TIMESTAMP_TAG_NAME,
-} from './utils/constants';
+import { getTimestampFromArtifactDirectoryName } from './utils/artifactDirectory';
+import { LATEST_DEPLOYED_TIMESTAMP_TAG_NAME } from './utils/constants';
 import { listLocalContracts } from './utils/listLocalContracts';
+import { listRemoteContracts } from './utils/listRemoteContracts';
 import { printContracts } from './utils/printContracts';
 import { uploadContracts } from './utils/uploadContracts';
 
@@ -69,22 +68,16 @@ export class ServerlessContractsPlugin implements Plugin {
   }
 
   async listRemoteContracts(): Promise<RemoteServerlessContracts> {
-    await Promise.resolve();
-
-    return {
-      provides: {},
-      consumes: {},
-      gitCommit: '',
-      contractsVersion: CONTRACTS_VERSION,
-    };
+    return listRemoteContracts(this.serverless);
   }
 
   tagStackWithTimestamp(): void {
     const artifactDirectoryName = this.serverless.service.package
       .artifactDirectoryName as string;
 
-    // format is serverless/{service}/{stage}/{timestamp}
-    const [, , , timestamp] = artifactDirectoryName.split('/');
+    const timestamp = getTimestampFromArtifactDirectoryName(
+      artifactDirectoryName,
+    );
 
     this.serverless.service.provider.stackTags = {
       ...this.serverless.service.provider.stackTags,

@@ -19,7 +19,6 @@
     "test:type": "tsc --noEmit --emitDeclarationOnly false",
     "test:unit": "echo 'no tests yet'",
     "test:dependents": "lerna run --scope @sls-monorepo/core-schemas --include-dependents --stream --concurrency 2 test:type",
-    "package:test": "yarn package && yarn test:dependents",
     "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
     "linter-base-config": "eslint --ext=js,ts .",
     "test:linter": "yarn linter-base-config .",

@@ -1,7 +1,7 @@
 import JsonSchemaDiff from 'json-schema-diff';
 import { JSONSchema } from 'json-schema-to-ts';
 
-import { DeploymentTypes } from '../../types/deploymentTypes';
+import { DeploymentStrategies } from '../../types/deploymentTypes';
 import {
   RemoteServerlessContracts,
   ServerlessContracts,
@@ -10,9 +10,9 @@ import {
 export const validateDeployment = async (
   localContracts: ServerlessContracts,
   remoteContracts: RemoteServerlessContracts,
-  deploymentType: DeploymentTypes,
+  deploymentStrategy: DeploymentStrategies,
 ): Promise<void> => {
-  if (deploymentType === DeploymentTypes.PROVIDER_FIRST) {
+  if (deploymentStrategy === DeploymentStrategies.PROVIDER_FIRST) {
     await validateProviderFirstDeployment(localContracts, remoteContracts);
   } else {
     await validateConsumerFirstDeployment(localContracts, remoteContracts);

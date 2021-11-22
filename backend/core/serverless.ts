@@ -1,3 +1,4 @@
+import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
@@ -7,7 +8,6 @@ import {
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
-import { ServerlessContracts } from '@sls-monorepo/serverless-contracts-plugin';
 
 import { functions } from './functions';
 
@@ -15,7 +15,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
   configValidationMode: 'error',
-  plugins: ['serverless-esbuild', '@sls-monorepo/serverless-contracts-plugin'],
+  plugins: ['serverless-esbuild', '@serverless-contracts/plugin'],
   provider: {
     ...sharedProviderConfig,
     httpApi: {

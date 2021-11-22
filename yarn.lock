@@ -3144,6 +3144,23 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@serverless-contracts/core@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.1.tgz#b2bac9cd22640486c64e3f03b1b94ba66f07092b"
+  integrity sha512-5p0A1saZvPMWWYVFBOFePcoKSpEIJeqN6zFfEP7QayZcYc80DP30XlCDDMSaJsH/rBYv8MiLpskf7QgNRbQY4A==
+  dependencies:
+    axios "^0.24.0"
+    lodash "^4.17.21"
+
+"@serverless-contracts/plugin@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.1.tgz#305d83ab452f0339b30efe78f2a838ba3e68d7d0"
+  integrity sha512-YIb+dFmsoAgiboEbGVDZvEfrfDfLO2gHWVap4JAsAR8mY//3rLjLwrb1bvvlM/99qojieeNwBEGz1I8O7f0l3w==
+  dependencies:
+    axios "^0.24.0"
+    json-schema-diff "^0.17.1"
+    lodash "^4.17.21"
+
 "@serverless/cli@^1.5.3":
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/@serverless/cli/-/cli-1.5.3.tgz#61045cdc11c0f41f50ee1ce784dfa8f0f4f26416"

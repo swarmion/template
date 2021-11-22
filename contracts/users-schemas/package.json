@@ -28,7 +28,7 @@
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
-    "@sls-monorepo/serverless-contracts": "1.0.0"
+    "@serverless-contracts/core": "0.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

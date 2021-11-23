@@ -22,7 +22,7 @@
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.0.3",
+    "@serverless-contracts/plugin": "0.0.4",
     "@sls-monorepo/backend-core": "1.0.0",
     "@sls-monorepo/core-schemas": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",

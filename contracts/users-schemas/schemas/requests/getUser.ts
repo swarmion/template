@@ -1,4 +1,4 @@
-import { ApiGatewayContract } from '@sls-monorepo/serverless-contracts';
+import { ApiGatewayContract } from '@serverless-contracts/core';
 
 import { userEntitySchema } from 'schemas/entities';
 

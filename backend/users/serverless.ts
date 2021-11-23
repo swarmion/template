@@ -1,3 +1,4 @@
+import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
@@ -7,7 +8,6 @@ import {
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
-import { ServerlessContracts } from '@sls-monorepo/serverless-contracts-plugin';
 import { getUserContract } from '@sls-monorepo/users-schemas';
 
 import { functions } from './functions';
@@ -19,7 +19,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
-    '@sls-monorepo/serverless-contracts-plugin',
+    '@serverless-contracts/plugin',
   ],
   provider: {
     ...sharedProviderConfig,

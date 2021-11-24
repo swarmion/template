@@ -22,13 +22,13 @@
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.0.4",
+    "@serverless-contracts/plugin": "0.0.6",
     "@sls-monorepo/backend-core": "1.0.0",
     "@sls-monorepo/core-schemas": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
     "@sls-monorepo/users-schemas": "1.0.0",
-    "aws-sdk": "^2.1034.0",
+    "aws-sdk": "^2.1035.0",
     "http-errors": "^1.8.1",
     "json-schema-to-ts": "^1.6.4"
   },
@@ -37,7 +37,7 @@
     "@sls-monorepo/configuration": "1.0.0",
     "@types/http-errors": "^1.8.1",
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.9",
+    "@types/node": "^16.11.10",
     "jest": "^27.3.1",
     "jest-runner-groups": "^2.1.0",
     "serverless": "^2.66.2",

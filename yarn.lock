@@ -3144,18 +3144,18 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@serverless-contracts/core@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.4.tgz#c184320bb5b2f27341ee760d34d95933037e2d27"
-  integrity sha512-16P/gs5txDFsNT3GJCIzy8D0m7oSMkRf2TIvz8vcg5sEGBfzgYJJJ4YXksFLTm12+VbNMGcOcge0y1Hj1r7h4A==
+"@serverless-contracts/core@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.6.tgz#2990c7c482f4c173dc7715aa6f19d101c6f5a30d"
+  integrity sha512-Rt5hJGMHmg74GcQ/cTT7YcBxaJjNEx9u0FVpLZ09fzl91HXERN8YPIBjKguUy+00/k3I5vUx7dBwpJvMDKsIFQ==
   dependencies:
     axios "^0.24.0"
     lodash "^4.17.21"
 
-"@serverless-contracts/plugin@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.4.tgz#f616b692ff61b368f85c03acd9bd7cc3509641dd"
-  integrity sha512-L1POFfY92LF60b4twystZWCDnf+XBuowloQdmcpt7OeEGGhyrDVIgy7/sESM3vVzI5dC4YMgKE+6L3cK6N7ipQ==
+"@serverless-contracts/plugin@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.6.tgz#b4b5273fd981e1c0b082b59bf4941b5347f5058e"
+  integrity sha512-1FV9rDbNK6UBW9sP0ppDUK69eCvVZwVmLjaiXzgIgP8FIrg7gas/hD8tAn1+uVBjFR/hNTdjPFzyacW/7YOPtw==
   dependencies:
     axios "^0.24.0"
     json-schema-diff "^0.17.1"
@@ -3777,10 +3777,15 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node@*", "@types/node@>=13.7.0", "@types/node@>=8.1.0", "@types/node@^16.11.9":
+"@types/node@*", "@types/node@>=13.7.0", "@types/node@>=8.1.0":
   version "16.11.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.9.tgz#879be3ad7af29f4c1a5c433421bf99fab7047185"
   integrity sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==
+
+"@types/node@^16.11.10":
+  version "16.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.10.tgz#2e3ad0a680d96367103d3e670d41c2fed3da61ae"
+  integrity sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -4470,10 +4475,10 @@ aws-sdk@^2.1030.0, aws-sdk@^2.942.0:
     uuid "3.3.2"
     xml2js "0.4.19"
 
-aws-sdk@^2.1034.0:
-  version "2.1034.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1034.0.tgz#61b0511e712ff765da1e182ac969d5eca38ac5a5"
-  integrity sha512-yo0B9nOZAKgsQqIKXqkeOJ2Wrt8zx4wd1JmCP1XZzdz1O4b1TfZA/mTN5cMiszOaEk8EWqvPESrw8MaIHFS3wA==
+aws-sdk@^2.1035.0:
+  version "2.1035.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1035.0.tgz#89a34c5b1e76e8304201036bf5258bceeebf4137"
+  integrity sha512-BjSGGZIQE/SCLDgj2T4AhtBG4A4NgXhV/Z/I/E7Mst/RpOepTqZGznUbgXTvO+Z3gKqx33jJa6mS7ZxStCb/Wg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"

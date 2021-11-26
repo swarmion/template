@@ -27,6 +27,7 @@
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
+    "@babel/runtime": "^7.16.3",
     "@middy/core": "^2.5.3",
     "@middy/http-error-handler": "^2.5.3",
     "@middy/http-json-body-parser": "^2.5.3",

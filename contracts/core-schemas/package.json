@@ -27,6 +27,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@babel/runtime": "^7.16.3",
     "@serverless-contracts/core": "0.0.6"
   },
   "devDependencies": {

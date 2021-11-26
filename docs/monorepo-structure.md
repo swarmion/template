@@ -35,9 +35,22 @@ Therefore, it defines a set of _internal modules_ managed by [Lerna](https://ler
 |   |
 |   └── ...                         # other deployed services
 |
+├── frontend
+|   ├── app
+|   |   ├── ...
+|   |   ├── package.json            # dependencies of the app service
+|   |   └── tsconfig.json           # app typescript config
+|   |
+|   ├── cloudfront
+|   |   ├── ...
+|   |   ├── package.json            # dependencies of the cloudfront service
+|   |   ├── serverless.ts           # cloudfront serverless service file
+|   |   └── tsconfig.json           # cloudfront typescript config
+|   |
+|   └── ...                         # other deployed services
+|
 ├── commonConfiguration             # configuration files such as jest, babel...
 |   ├── babel.config.js
-|   ├── jest.config.js
 |   └── lintstaged-base-config.js
 |
 ├── contracts                       # JSONSchema-based binding contracts.
@@ -59,7 +72,12 @@ Therefore, it defines a set of _internal modules_ managed by [Lerna](https://ler
 |   └── ...                         # other contracts, used between deployed services
 |
 ├── packages
-|   ├── serverless-configuration    # common constants used in all deployed services
+|   ├── configuration    # common constants used in all services
+|   |   ├── ...
+|   |   ├── package.json
+|   |   └── tsconfig.json
+|   |
+|   ├── serverless-configuration    # common constants used in all serverless deployed services
 |   |   ├── ...
 |   |   ├── package.json
 |   |   └── tsconfig.json

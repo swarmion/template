@@ -3152,6 +3152,14 @@
     axios "^0.24.0"
     lodash "^4.17.21"
 
+"@serverless-contracts/eslint-plugin@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/eslint-plugin/-/eslint-plugin-0.0.7.tgz#d601768416f110d95f0af68c172630618ec60709"
+  integrity sha512-7dJJHoRd6Fit9cJwipuwNDchZZuqqw0R1Yusc3JIL2fHA9lZ8qXTkLCem3wMpJ4al+bSDJp+aXd5xcxbnAly5g==
+  dependencies:
+    "@babel/runtime" "^7.16.3"
+    find-up "^5.0.0"
+
 "@serverless-contracts/plugin@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.6.tgz#b4b5273fd981e1c0b082b59bf4941b5347f5058e"

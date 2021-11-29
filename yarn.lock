@@ -3144,11 +3144,12 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@serverless-contracts/core@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.6.tgz#2990c7c482f4c173dc7715aa6f19d101c6f5a30d"
-  integrity sha512-Rt5hJGMHmg74GcQ/cTT7YcBxaJjNEx9u0FVpLZ09fzl91HXERN8YPIBjKguUy+00/k3I5vUx7dBwpJvMDKsIFQ==
+"@serverless-contracts/core@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.7.tgz#908b1cd1498d60a867001d370fa0ca4477f62299"
+  integrity sha512-SQZIQ2EgkmtPRQQ/xTDdm6MZqv9/OW+n97PcUBcijiry1k8hmbG/mGFR6oK1E20HnLgJGGmcN7V6NaoJR0+pNg==
   dependencies:
+    "@babel/runtime" "^7.16.3"
     axios "^0.24.0"
     lodash "^4.17.21"
 
@@ -3160,11 +3161,12 @@
     "@babel/runtime" "^7.16.3"
     find-up "^5.0.0"
 
-"@serverless-contracts/plugin@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.6.tgz#b4b5273fd981e1c0b082b59bf4941b5347f5058e"
-  integrity sha512-1FV9rDbNK6UBW9sP0ppDUK69eCvVZwVmLjaiXzgIgP8FIrg7gas/hD8tAn1+uVBjFR/hNTdjPFzyacW/7YOPtw==
+"@serverless-contracts/plugin@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.7.tgz#f8868d0688e77bb0a3aba10370172465c6af16bd"
+  integrity sha512-do+w3aOsfg8BU9pLHe5pXQvSrL07vaX0S2B+W5VjQgCsy052XDE329wK+vpCE2HZMEpTb9D/n6//JHSNI0FY5Q==
   dependencies:
+    "@babel/runtime" "^7.16.3"
     axios "^0.24.0"
     json-schema-diff "^0.17.1"
     lodash "^4.17.21"

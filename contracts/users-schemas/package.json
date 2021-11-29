@@ -9,6 +9,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "contracts": true,
   "scripts": {
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",
@@ -16,7 +17,6 @@
     "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
     "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs --source-maps",
     "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps",
-    "package:test": "yarn package && yarn test:dependents",
     "package:types": "ttsc",
     "precommit": "lint-staged",
     "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
@@ -28,7 +28,8 @@
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
-    "@serverless-contracts/core": "0.0.6"
+    "@babel/runtime": "^7.16.3",
+    "@serverless-contracts/core": "0.0.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

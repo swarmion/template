@@ -22,7 +22,7 @@
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.0.6",
+    "@serverless-contracts/plugin": "0.0.7",
     "@sls-monorepo/backend-core": "1.0.0",
     "@sls-monorepo/core-schemas": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@serverless/typescript": "^2.66.2",
+    "@serverless-contracts/eslint-plugin": "0.0.7",
     "@sls-monorepo/configuration": "1.0.0",
     "@types/http-errors": "^1.8.1",
     "@types/jest": "^27.0.3",

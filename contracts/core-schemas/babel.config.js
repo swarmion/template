@@ -12,7 +12,6 @@ const plugins = [
       },
     },
   ],
-  '@babel/plugin-transform-runtime',
 ];
 
 module.exports = commonBabelConfig(plugins);

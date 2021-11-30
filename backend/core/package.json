@@ -29,7 +29,7 @@
   "devDependencies": {
     "@serverless/typescript": "^2.67.0",
     "@sls-monorepo/configuration": "1.0.0",
-    "@sls-monorepo/core-schemas": "1.0.0",
+    "@sls-monorepo/core-contracts": "1.0.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.10",
     "jest": "^27.4.0",

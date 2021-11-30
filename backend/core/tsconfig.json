@@ -8,7 +8,7 @@
   "references": [
     { "path": "../../packages/configuration" },
     { "path": "../../packages/serverless-helpers" },
-    { "path": "../../contracts/core-schemas" },
+    { "path": "../../contracts/core-contracts" },
     { "path": "../../packages/serverless-configuration" }
   ],
   "include": ["./**/*.ts"],

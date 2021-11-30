@@ -28,7 +28,7 @@
     "@react-hookz/web": "^12.0.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@sls-monorepo/configuration": "1.0.0",
-    "@sls-monorepo/users-schemas": "1.0.0",
+    "@sls-monorepo/users-contracts": "1.0.0",
     "axios": "0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

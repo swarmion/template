@@ -6,9 +6,7 @@ const plugins = [
     {
       root: ['.'],
       alias: {
-        types: './types',
-        schemas: './schemas',
-        utils: './utils',
+        contracts: './contracts',
       },
     },
   ],

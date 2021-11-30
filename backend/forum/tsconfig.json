@@ -9,8 +9,8 @@
     { "path": "../../packages/configuration" },
     { "path": "../../packages/serverless-configuration" },
     { "path": "../../packages/serverless-helpers" },
-    { "path": "../../contracts/forum-schemas" },
-    { "path": "../../contracts/core-schemas" }
+    { "path": "../../contracts/forum-contracts" },
+    { "path": "../../contracts/core-contracts" }
   ],
   "include": ["./**/*.ts"],
   "ts-node": {

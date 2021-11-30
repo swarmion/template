@@ -1,6 +1,6 @@
 import { FromSchema } from 'json-schema-to-ts';
 
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
+import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
 import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
 
 export const handler = async (

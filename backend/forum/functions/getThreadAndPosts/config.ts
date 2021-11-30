@@ -1,4 +1,4 @@
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
+import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
 import {
   getHandlerPath,
   LambdaFunction,

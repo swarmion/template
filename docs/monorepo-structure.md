@@ -54,17 +54,17 @@ Therefore, it defines a set of _internal modules_ managed by [Lerna](https://ler
 |   └── lintstaged-base-config.js
 |
 ├── contracts                       # JSONSchema-based binding contracts.
-|   ├── core-schemas
+|   ├── core-contracts
 |   |   ├── ...
 |   |   ├── package.json
 |   |   └── tsconfig.json
 |   |
-|   ├── forum-schemas
+|   ├── forum-contracts
 |   |   ├── ...
 |   |   ├── package.json
 |   |   └── tsconfig.json
 |   |
-|   ├── users-schemas
+|   ├── users-contracts
 |   |   ├── ...
 |   |   ├── package.json
 |   |   └── tsconfig.json

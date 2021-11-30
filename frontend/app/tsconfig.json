@@ -18,7 +18,7 @@
   },
   "references": [
     { "path": "../../packages/configuration" },
-    { "path": "../../contracts/users-schemas" }
+    { "path": "../../contracts/users-contracts" }
   ],
   "include": ["./config", "./src", "./vite.config.ts", "./jest.*"]
 }

@@ -1,14 +1,14 @@
 import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
 
-import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
+import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
   projectName,
   sharedEnvsConfig,
   sharedEsbuildConfig,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
-import { getUserContract } from '@sls-monorepo/users-schemas';
+import { getUserContract } from '@sls-monorepo/users-contracts';
 
 import { functions } from './functions';
 

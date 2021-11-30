@@ -2,7 +2,7 @@ import {
   getHandlerPath,
   LambdaFunction,
 } from '@sls-monorepo/serverless-helpers';
-import { getUserContract } from '@sls-monorepo/users-schemas';
+import { getUserContract } from '@sls-monorepo/users-contracts';
 
 const config: LambdaFunction = {
   environment: {},

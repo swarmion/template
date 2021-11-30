@@ -1,8 +1,8 @@
 import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
 
-import { httpApiResourceContract } from '@sls-monorepo/core-schemas';
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-schemas';
+import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
+import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
 import {
   projectName,
   sharedEnvsConfig,

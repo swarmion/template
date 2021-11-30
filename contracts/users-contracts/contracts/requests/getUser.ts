@@ -1,6 +1,6 @@
 import { ApiGatewayContract } from '@serverless-contracts/core';
 
-import { userEntitySchema } from 'schemas/entities';
+import { userEntitySchema } from 'contracts/entities';
 
 const pathParametersSchema = {
   type: 'object',

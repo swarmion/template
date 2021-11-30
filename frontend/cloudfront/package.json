@@ -24,8 +24,8 @@
   "devDependencies": {
     "@serverless/typescript": "^2.67.0",
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.10",
-    "jest": "^27.4.0",
+    "@types/node": "^16.11.11",
+    "jest": "^27.4.2",
     "jest-runner-groups": "^2.1.0",
     "serverless": "^2.67.0",
     "serverless-lift": "^1.3.0",

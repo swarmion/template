@@ -20,7 +20,7 @@
     "list:since": "lerna list --all --long --parseable --since",
     "package": "lerna run --stream package",
     "package:since": "lerna run --stream --concurrency 3 package --include-dependencies --include-dependents --since",
-    "prepare": "husky install",
+    "prepare": "husky install && syncpack format",
     "remove": "lerna run --stream --concurrency 2 remove",
     "resolve-audit": "resolve-audit --yarn",
     "test:all": "yarn test:linter && yarn test:type && yarn test:unit",

@@ -19,9 +19,12 @@
   },
   "dependencies": {
     "@sls-monorepo/frontend-app": "1.0.0",
-    "@sls-monorepo/serverless-configuration": "1.0.0"
+    "@sls-monorepo/serverless-configuration": "1.0.0",
+    "@sls-monorepo/users-contracts": "1.0.0"
   },
   "devDependencies": {
+    "@serverless-contracts/eslint-plugin": "0.0.7",
+    "@serverless-contracts/plugin": "0.0.7",
     "@serverless/typescript": "^2.68.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.11",

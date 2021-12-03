@@ -3155,27 +3155,27 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@serverless-contracts/core@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.0.7.tgz#908b1cd1498d60a867001d370fa0ca4477f62299"
-  integrity sha512-SQZIQ2EgkmtPRQQ/xTDdm6MZqv9/OW+n97PcUBcijiry1k8hmbG/mGFR6oK1E20HnLgJGGmcN7V6NaoJR0+pNg==
+"@serverless-contracts/core@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/core/-/core-0.1.3.tgz#1233ab37bdd2cd119c39c57a39ef73fe96009807"
+  integrity sha512-jksbl78qHtiAfPgVftYb5e8c7G4Jxzb3XakLbeOv4D6/6ogH9EdVKiYnc6YabxJbKtG+tidIsj55SK3rLqRG7Q==
   dependencies:
     "@babel/runtime" "^7.16.3"
     axios "^0.24.0"
     lodash "^4.17.21"
 
-"@serverless-contracts/eslint-plugin@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/eslint-plugin/-/eslint-plugin-0.0.7.tgz#d601768416f110d95f0af68c172630618ec60709"
-  integrity sha512-7dJJHoRd6Fit9cJwipuwNDchZZuqqw0R1Yusc3JIL2fHA9lZ8qXTkLCem3wMpJ4al+bSDJp+aXd5xcxbnAly5g==
+"@serverless-contracts/eslint-plugin@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/eslint-plugin/-/eslint-plugin-0.1.3.tgz#fafaac39a5f2e338e088cbd1a90d48d5d9f89fda"
+  integrity sha512-JYJuEvCSWRGSQl9jKII+itkVPLG8QV+QgYN3ti1JqMt2FXj1CMXY+wjENX86kjK3GeRbfroP+yWU7VfP1/p8Vw==
   dependencies:
     "@babel/runtime" "^7.16.3"
-    find-up "^5.0.0"
+    find-up "5.0.0"
 
-"@serverless-contracts/plugin@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.0.7.tgz#f8868d0688e77bb0a3aba10370172465c6af16bd"
-  integrity sha512-do+w3aOsfg8BU9pLHe5pXQvSrL07vaX0S2B+W5VjQgCsy052XDE329wK+vpCE2HZMEpTb9D/n6//JHSNI0FY5Q==
+"@serverless-contracts/plugin@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@serverless-contracts/plugin/-/plugin-0.1.3.tgz#4646e1bdb86f99e1fbb48f493155ef31ba166b16"
+  integrity sha512-TdcG9fQuS3RsJFr012WfQSBDdBz6+46QcOgSY0FscQnPXl2KU6VcczqsbqzKIxMbV5ms8K2yiYMKQt4dGyaBCw==
   dependencies:
     "@babel/runtime" "^7.16.3"
     axios "^0.24.0"
@@ -7177,6 +7177,14 @@ find-requires@^1.0.0:
     es5-ext "^0.10.49"
     esniff "^1.1.0"
 
+find-up@5.0.0, find-up@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
+  integrity sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==
+  dependencies:
+    locate-path "^6.0.0"
+    path-exists "^4.0.0"
+
 find-up@^2.0.0, find-up@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
@@ -7197,14 +7205,6 @@ find-up@^4.0.0, find-up@^4.1.0:
   integrity sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
   dependencies:
     locate-path "^5.0.0"
-    path-exists "^4.0.0"
-
-find-up@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
-  integrity sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==
-  dependencies:
-    locate-path "^6.0.0"
     path-exists "^4.0.0"
 
 flat-cache@^3.0.4:

@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.16.3",
-    "@serverless-contracts/core": "0.0.7"
+    "@serverless-contracts/core": "0.1.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

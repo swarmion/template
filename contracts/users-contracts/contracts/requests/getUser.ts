@@ -12,6 +12,7 @@ const pathParametersSchema = {
 } as const;
 
 export const getUserContract = new ApiGatewayContract({
+  id: 'users-getUser',
   path: '/users/{userId}',
   method: 'GET',
   integrationType: 'httpApi',

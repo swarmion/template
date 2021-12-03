@@ -22,6 +22,7 @@ const outputSchema = {
 } as const;
 
 export const getThreadWithPostsContract = new ApiGatewayContract({
+  id: 'forum-getThreadWithPosts',
   path: '/forum/thread/{threadId}',
   method: 'GET',
   integrationType: 'httpApi',

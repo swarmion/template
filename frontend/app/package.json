@@ -1,7 +1,7 @@
 {
   "name": "@sls-monorepo/frontend-app",
-  "version": "1.0.0",
   "private": true,
+  "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
     "analyze": "ANALYZE=true yarn build",

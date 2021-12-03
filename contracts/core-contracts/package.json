@@ -1,8 +1,8 @@
 {
   "name": "@sls-monorepo/core-contracts",
-  "license": "UNLICENSED",
-  "version": "1.0.0",
   "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
   "files": [
     "dist"
   ],
@@ -11,21 +11,21 @@
   "types": "dist/types/index.d.ts",
   "contracts": true,
   "scripts": {
-    "transpile": "babel . --extensions .ts",
+    "lint:fix": "yarn linter-base-config --fix",
+    "lint:fix-all": "yarn lint:fix .",
+    "linter-base-config": "eslint --ext=js,ts .",
     "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
-    "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'",
     "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs --source-maps",
     "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps",
     "package:types": "ttsc",
+    "precommit": "lint-staged",
+    "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
+    "test:dependents": "lerna run --scope @sls-monorepo/core-contracts --include-dependents --stream --concurrency 2 test:type",
+    "test:linter": "yarn linter-base-config .",
     "test:type": "tsc --noEmit --emitDeclarationOnly false",
     "test:unit": "echo 'no tests yet'",
-    "test:dependents": "lerna run --scope @sls-monorepo/core-contracts --include-dependents --stream --concurrency 2 test:type",
-    "test:all": "yarn test:linter && yarn test:dependents && yarn test:unit",
-    "linter-base-config": "eslint --ext=js,ts .",
-    "test:linter": "yarn linter-base-config .",
-    "lint:fix": "yarn linter-base-config --fix",
-    "lint:fix-all": "yarn lint:fix .",
-    "precommit": "lint-staged"
+    "transpile": "babel . --extensions .ts",
+    "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.3",

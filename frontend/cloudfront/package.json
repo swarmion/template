@@ -18,7 +18,8 @@
     "test:unit": "echo 'No tests yet'"
   },
   "dependencies": {
-    "@sls-monorepo/serverless-configuration": "1.0.0"
+    "@sls-monorepo/serverless-configuration": "1.0.0",
+    "@sls-monorepo/users-contracts": "1.0.0"
   },
   "devDependencies": {
     "@serverless-contracts/eslint-plugin": "0.1.4",

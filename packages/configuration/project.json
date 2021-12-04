@@ -1,7 +1,22 @@
 {
   "root": "packages/configuration",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "package": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "packages/configuration/dist"
+      ],
+      "options": {
+        "cwd": "packages/configuration",
+        "commands": [
+          {
+            "command": "yarn package"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": []
 }

@@ -1,7 +1,32 @@
 {
-    "root": "backend/core",
-    "projectType": "application",
-    "targets": {},
-    "tags": [],
-    "implicitDependencies": []
+  "root": "backend/core",
+  "projectType": "application",
+  "targets": {
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "backend/core/.serverless"
+      ],
+      "dependsOn": [
+        {
+          "target": "build",
+          "projects": "dependencies"
+        },
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/core",
+        "commands": [
+          {
+            "command": "serverless deploy"
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": []
 }

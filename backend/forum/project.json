@@ -1,7 +1,32 @@
 {
   "root": "backend/forum",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "backend/forum/.serverless"
+      ],
+      "dependsOn": [
+        {
+          "target": "build",
+          "projects": "dependencies"
+        },
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/forum",
+        "commands": [
+          {
+            "command": "serverless deploy"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": [
     "backend-core"

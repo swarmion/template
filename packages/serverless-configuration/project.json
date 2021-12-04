@@ -1,7 +1,22 @@
 {
   "root": "packages/serverless-configuration",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "package": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "packages/serverless-configuration/dist"
+      ],
+      "options": {
+        "cwd": "packages/serverless-configuration",
+        "commands": [
+          {
+            "command": "yarn package"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": []
 }

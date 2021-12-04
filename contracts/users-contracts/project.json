@@ -1,7 +1,22 @@
 {
   "root": "contracts/users-contracts",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "package": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "packages/users-contracts/dist"
+      ],
+      "options": {
+        "cwd": "packages/users-contracts",
+        "commands": [
+          {
+            "command": "yarn package"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": []
 }

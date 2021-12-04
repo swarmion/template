@@ -1,7 +1,22 @@
 {
   "root": "frontend/app",
   "projectType": "library",
-  "targets": {},
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "frontend/app/dist"
+      ],
+      "options": {
+        "cwd": "frontend/app",
+        "commands": [
+          {
+            "command": "yarn build"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": []
 }

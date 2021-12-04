@@ -1,7 +1,32 @@
 {
   "root": "frontend/cloudfront",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "frontend/cloudfront/.serverless"
+      ],
+      "dependsOn": [
+        {
+          "target": "build",
+          "projects": "dependencies"
+        },
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "frontend/cloudfront",
+        "commands": [
+          {
+            "command": "serverless deploy"
+          }
+        ]
+      }
+    }
+  },
   "tags": [],
   "implicitDependencies": [
     "frontend-app"

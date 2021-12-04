@@ -4,6 +4,6 @@
   "targets": {},
   "tags": [],
   "implicitDependencies": [
-    "@sls-monorepo/frontend-app"
+    "frontend-app"
   ]
 }

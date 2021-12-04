@@ -1,0 +1,7 @@
+{
+  "root": "contracts/core-contracts",
+  "projectType": "library",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

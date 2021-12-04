@@ -1,0 +1,7 @@
+{
+  "root": "packages/serverless-helpers",
+  "projectType": "library",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

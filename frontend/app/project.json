@@ -1,0 +1,7 @@
+{
+  "root": "frontend/app",
+  "projectType": "library",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

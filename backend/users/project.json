@@ -1,0 +1,7 @@
+{
+  "root": "backend/users",
+  "projectType": "application",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

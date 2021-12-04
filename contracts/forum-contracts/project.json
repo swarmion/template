@@ -1,0 +1,7 @@
+{
+  "root": "contracts/forum-contracts",
+  "projectType": "library",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

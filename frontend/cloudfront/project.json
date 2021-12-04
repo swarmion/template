@@ -1,0 +1,7 @@
+{
+  "root": "frontend/cloudfront",
+  "projectType": "application",
+  "targets": {},
+  "tags": [],
+  "implicitDependencies": []
+}

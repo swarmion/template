@@ -1,0 +1,7 @@
+{
+    "root": "backend/core",
+    "projectType": "application",
+    "targets": {},
+    "tags": [],
+    "implicitDependencies": []
+}

@@ -1,38 +1,16 @@
 {
   "version": 2,
   "projects": {
-    "@sls-monorepo/backend-core": {
-      "root": "backend/core"
-    },
-    "@sls-monorepo/backend-forum": {
-      "root": "backend/forum"
-    },
-    "@sls-monorepo/backend-users": {
-      "root": "backend/users"
-    },
-    "@sls-monorepo/core-contracts": {
-      "root": "contracts/core-contracts"
-    },
-    "@sls-monorepo/forum-contracts": {
-      "root": "contracts/forum-contracts"
-    },
-    "@sls-monorepo/users-contracts": {
-      "root": "contracts/users-contracts"
-    },
-    "@sls-monorepo/frontend-app": {
-      "root": "frontend/app"
-    },
-    "@sls-monorepo/frontend-cloudfront": {
-      "root": "frontend/cloudfront"
-    },
-    "@sls-monorepo/configuration": {
-      "root": "packages/configuration"
-    },
-    "@sls-monorepo/serverless-configuration": {
-      "root": "packages/serverless-configuration"
-    },
-    "@sls-monorepo/serverless-helpers": {
-      "root": "packages/serverless-helpers"
-    }
+    "@sls-monorepo/backend-core": "backend/core",
+    "@sls-monorepo/backend-forum": "backend/forum",
+    "@sls-monorepo/backend-users": "backend/users",
+    "@sls-monorepo/core-contracts": "contracts/core-contracts",
+    "@sls-monorepo/forum-contracts": "contracts/forum-contracts",
+    "@sls-monorepo/users-contracts": "contracts/users-contracts",
+    "@sls-monorepo/frontend-app": "frontend/app",
+    "@sls-monorepo/frontend-cloudfront": "frontend/cloudfront",
+    "@sls-monorepo/configuration": "packages/configuration",
+    "@sls-monorepo/serverless-configuration": "packages/serverless-configuration",
+    "@sls-monorepo/serverless-helpers": "packages/serverless-helpers"
   }
 }

@@ -15,6 +15,7 @@
     "deploy:production:since": "lerna run --stream --concurrency 3 deploy:production --include-dependents --since",
     "deploy:since": "lerna run --stream --concurrency 3 deploy --include-dependents --since",
     "deploy:staging:since": "lerna run --stream --concurrency 3 deploy:staging --include-dependents --since",
+    "graph": "nx dep-graph",
     "info": "lerna run --stream sls:info",
     "lint:fix": "lerna run --stream --concurrency 2 lint:fix",
     "list:since": "lerna list --all --long --parseable --since",

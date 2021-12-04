@@ -3,5 +3,7 @@
   "projectType": "application",
   "targets": {},
   "tags": [],
-  "implicitDependencies": []
+  "implicitDependencies": [
+    "@sls-monorepo/frontend-app"
+  ]
 }

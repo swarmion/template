@@ -5,10 +5,10 @@
     "package": {
       "executor": "@nrwl/workspace:run-commands",
       "outputs": [
-        "packages/users-contracts/dist"
+        "contracts/users-contracts/dist"
       ],
       "options": {
-        "cwd": "packages/users-contracts",
+        "cwd": "contracts/users-contracts",
         "commands": [
           {
             "command": "yarn package"

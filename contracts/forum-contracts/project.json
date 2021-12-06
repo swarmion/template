@@ -5,10 +5,10 @@
     "package": {
       "executor": "@nrwl/workspace:run-commands",
       "outputs": [
-        "packages/forum-contracts/dist"
+        "contracts/forum-contracts/dist"
       ],
       "options": {
-        "cwd": "packages/forum-contracts",
+        "cwd": "contracts/forum-contracts",
         "commands": [
           {
             "command": "yarn package"

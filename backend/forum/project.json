@@ -25,6 +25,23 @@
           }
         ]
       }
+    },
+    "test": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/forum",
+        "commands": [
+          {
+            "command": "yarn test:all"
+          }
+        ]
+      }
     }
   },
   "tags": [],

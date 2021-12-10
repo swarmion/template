@@ -25,8 +25,25 @@
           }
         ]
       }
-    }
-  },
-  "tags": [],
-  "implicitDependencies": []
+    },
+    "test": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/core",
+        "commands": [
+          {
+            "command": "yarn test:all"
+          }
+        ]
+      }
+    },
+    "tags": [],
+    "implicitDependencies": []
+  }
 }

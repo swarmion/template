@@ -3913,11 +3913,6 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/serverless@^1.78.39":
-  version "1.78.39"
-  resolved "https://registry.yarnpkg.com/@types/serverless/-/serverless-1.78.39.tgz#6df445576562d68ced9b24217977f854b92ae291"
-  integrity sha512-AcQ58tUIiNgFJw49p51JYOOwWftTJJlwIca5s3ONaSouwr7OC3m6Hpe7cM1K818sAwSttGq94V4B3O8sTdioCw==
-
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"

@@ -6,6 +6,8 @@
     "source.fixAll.stylelint": true
   },
   "eslint.workingDirectories": [{ "mode": "auto" }],
+  "stylelint.validate": ["typescript", "typescriptreact"],
+  "stylelint.customSyntax": "@stylelint/postcss-css-in-js",
   "search.exclude": {
     "**/bundles": true,
     "**/coverage": true,

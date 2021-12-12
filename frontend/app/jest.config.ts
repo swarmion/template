@@ -16,7 +16,6 @@ const config: InitialOptionsTsJest = {
     '^testUtils(/(.*)|)$': '<rootDir>/src/testUtils/$1',
     '^theme(/(.*)|)$': '<rootDir>/src/theme/$1',
     '^translations(/(.*)|)$': '<rootDir>/src/translations/$1',
-    '@mui/styled-engine': '@mui/styled-engine-sc',
     '@react-hookz/web/esnext': '@react-hookz/web',
     '^.*\\.svg$': '<rootDir>/src/__mocks__/svgrMock.ts',
   },

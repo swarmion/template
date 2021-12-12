@@ -1,4 +1,4 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useAsync } from '@react-hookz/web/esnext';
 import { nanoid } from '@reduxjs/toolkit';
@@ -11,6 +11,8 @@ import { getUserContract } from '@sls-monorepo/users-contracts';
 import { Title } from 'components';
 import client from 'services/networking/client';
 import { getUser, setUser } from 'store/user';
+
+import { StyledButton, StyledButtonWithTheme } from './Home.style';
 
 const Home = (): JSX.Element => {
   const dispatch = useDispatch();
@@ -56,9 +58,12 @@ const Home = (): JSX.Element => {
     >
       <Title />
       <Box marginTop={6}>
-        <Button variant="contained" onClick={execute}>
+        <StyledButton variant="contained" onClick={execute}>
           <FormattedMessage id="home.button" />
-        </Button>
+        </StyledButton>
+        <StyledButtonWithTheme variant="contained" onClick={execute}>
+          <FormattedMessage id="home.button" />
+        </StyledButtonWithTheme>
       </Box>
       <Typography variant="h5">User from api call</Typography>
       <Box marginTop={6}>{JSON.stringify(result?.data)}</Box>

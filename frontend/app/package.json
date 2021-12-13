@@ -17,13 +17,17 @@
     "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:linter": "yarn linter-base-config src",
     "test:type": "tsc --noEmit",
-    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
+    "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
+    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
+    "stylelint-base-config": "stylelint",
+    "stylelint:fix": "yarn stylelint-base-config --fix"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.0",
     "@mui/lab": "^5.0.0-alpha.58",
     "@mui/material": "^5.2.2",
-    "@mui/styled-engine-sc": "^5.0.0",
     "@mui/system": "^5.2.2",
     "@react-hookz/web": "^12.0.0",
     "@reduxjs/toolkit": "^1.6.2",
@@ -35,8 +39,7 @@
     "react-intl": "^5.23.0",
     "react-redux": "^7.2.5",
     "react-router-dom": "^6.0.0",
-    "redux": "^4.1.1",
-    "styled-components": "^5.3.1"
+    "redux": "^4.1.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -46,6 +49,7 @@
     "@types/dotenv-flow": "^3.2.0",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.0",
+    "@stylelint/postcss-css-in-js": "^0.37.2",
     "@vitejs/plugin-react": "^1.1.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^8.3.0",
@@ -56,9 +60,14 @@
     "husky": "^7.0.4",
     "jest": "^27.4.3",
     "jest-runner-groups": "^2.1.0",
+    "postcss-syntax": "^0.36.2",
     "prettier": "^2.5.0",
     "redux-devtools-extension": "^2.13.9",
     "rollup-plugin-visualizer": "^5.5.2",
+    "stylelint": "^14.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2",

@@ -24,10 +24,5 @@ export default defineConfig(({ mode }) => {
   return {
     define: envWithProcessPrefix,
     plugins,
-    resolve: {
-      alias: {
-        '@mui/styled-engine': '@mui/styled-engine-sc',
-      },
-    },
   };
 });

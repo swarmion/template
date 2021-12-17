@@ -15,6 +15,23 @@
           }
         ]
       }
+    },
+    "test": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "frontend/app",
+        "commands": [
+          {
+            "command": "yarn test:all"
+          }
+        ]
+      }
     }
   },
   "tags": [],

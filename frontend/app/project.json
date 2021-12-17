@@ -16,7 +16,7 @@
         ]
       }
     },
-    "test": {
+    "test:all": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -29,6 +29,57 @@
         "commands": [
           {
             "command": "yarn test:all"
+          }
+        ]
+      }
+    },
+    "test:linter": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "frontend/app",
+        "commands": [
+          {
+            "command": "yarn test:linter"
+          }
+        ]
+      }
+    },
+    "test:type": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/core",
+        "commands": [
+          {
+            "command": "yarn test:type"
+          }
+        ]
+      }
+    },
+    "test:unit": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "backend/core",
+        "commands": [
+          {
+            "command": "yarn test:unit"
           }
         ]
       }

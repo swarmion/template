@@ -26,7 +26,7 @@
         ]
       }
     },
-    "test": {
+    "test:all": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -42,6 +42,57 @@
           }
         ]
       }
+    }
+  },
+  "test:linter": {
+    "executor": "@nrwl/workspace:run-commands",
+    "dependsOn": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "options": {
+      "cwd": "backend/users",
+      "commands": [
+        {
+          "command": "yarn test:linter"
+        }
+      ]
+    }
+  },
+  "test:type": {
+    "executor": "@nrwl/workspace:run-commands",
+    "dependsOn": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "options": {
+      "cwd": "backend/users",
+      "commands": [
+        {
+          "command": "yarn test:type"
+        }
+      ]
+    }
+  },
+  "test:unit": {
+    "executor": "@nrwl/workspace:run-commands",
+    "dependsOn": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "options": {
+      "cwd": "backend/users",
+      "commands": [
+        {
+          "command": "yarn test:unit"
+        }
+      ]
     }
   },
   "tags": [],

@@ -14,13 +14,13 @@
     "precommit": "lint-staged",
     "serve": "vite preview",
     "start": "vite",
+    "stylelint-base-config": "stylelint",
+    "stylelint:fix": "yarn stylelint-base-config --fix",
     "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:linter": "yarn linter-base-config src",
-    "test:type": "tsc --noEmit",
     "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
-    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
-    "stylelint-base-config": "stylelint",
-    "stylelint:fix": "yarn stylelint-base-config --fix"
+    "test:type": "tsc --noEmit",
+    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
   },
   "dependencies": {
     "@emotion/react": "^11.7.0",
@@ -42,6 +42,7 @@
     "redux": "^4.1.1"
   },
   "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.37.2",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
@@ -49,7 +50,6 @@
     "@types/dotenv-flow": "^3.2.0",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.0",
-    "@stylelint/postcss-css-in-js": "^0.37.2",
     "@vitejs/plugin-react": "^1.1.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^8.3.0",

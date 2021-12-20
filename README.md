@@ -61,7 +61,7 @@ These commands have to be run at the root of the project.
 
 ## Other docs
 
-- [serverless-contracts](./packages/serverless-contracts/README.md)
+- [serverless-contracts](https://github.com/fargito/serverless-contracts)
 
 ## Contributors ✨
 

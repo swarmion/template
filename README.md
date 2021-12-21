@@ -14,7 +14,7 @@ If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
 
 ## Features
 
-- Lerna
+- Nx
 - Eslint configuration
 - Prettier configuration
 - Jest configuration

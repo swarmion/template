@@ -59,7 +59,7 @@
         }
       ],
       "options": {
-        "cwd": "backend/core",
+        "cwd": "frontend/app",
         "commands": [
           {
             "command": "yarn test:type"
@@ -76,7 +76,7 @@
         }
       ],
       "options": {
-        "cwd": "backend/core",
+        "cwd": "frontend/app",
         "commands": [
           {
             "command": "yarn test:unit"

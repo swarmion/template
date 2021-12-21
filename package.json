@@ -10,6 +10,7 @@
     "frontend/*"
   ],
   "scripts": {
+    "build:all": "nx run-many --target=build --all",
     "check-audit": "check-audit --yarn",
     "deploy": "yarn package && lerna run --stream --concurrency 2 deploy",
     "deploy:production:since": "lerna run --stream --concurrency 3 deploy:production --include-dependents --since",
@@ -24,12 +25,11 @@
     "prepare": "husky install && syncpack format",
     "remove": "lerna run --stream --concurrency 2 remove",
     "resolve-audit": "resolve-audit --yarn",
-    "build:all": "nx run-many --target=build --all",
-    "test:all": "nx run-many --target=test:all --all --parallel --maxParallel=5",
-    "test:linter": "nx run-many --target=test:linter --all --parallel --maxParallel=5",
+    "test:all": "nx run-many --target=test:all --all",
+    "test:linter": "nx run-many --target=test:linter --all",
     "test:since": "lerna run --stream --concurrency 3 test:all --include-dependents --since",
-    "test:type": "nx run-many --target=test:type --all --parallel --maxParallel=5",
-    "test:unit": "nx run-many --target=test:unit --all --parallel --maxParallel=5",
+    "test:type": "nx run-many --target=test:type --all",
+    "test:unit": "nx run-many --target=test:unit --all",
     "watch": "lerna run --parallel watch"
   },
   "dependencies": {},

@@ -16,6 +16,13 @@ const getFullFunctionName = (config: AWS, functionName: string): string =>
  */
 export const testFunctionNames = (config: AWS): void => {
   const functionNames = getFunctionNames(config);
+  if (functionNames.length === 0) {
+    it('has no functions declared', () => {
+      expect(functionNames).toEqual([]);
+    });
+
+    return;
+  }
 
   it.each(functionNames)(
     `has function %s which generated name contains less than or equal to ${MAX_AWS_LAMBDA_NAME_LENGTH} chars`,

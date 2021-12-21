@@ -23,11 +23,11 @@
     "@sls-monorepo/users-contracts": "1.0.0"
   },
   "devDependencies": {
-    "@serverless-contracts/eslint-plugin": "0.1.3",
-    "@serverless-contracts/plugin": "0.1.3",
+    "@serverless-contracts/eslint-plugin": "0.1.4",
+    "@serverless-contracts/plugin": "0.1.4",
     "@serverless/typescript": "^2.68.0",
     "@types/jest": "^27.0.3",
-    "@types/node": "^17.0.1",
+    "@types/node": "^17.0.2",
     "jest": "^27.4.3",
     "jest-runner-groups": "^2.1.0",
     "serverless": "^2.68.0",

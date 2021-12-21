@@ -10,27 +10,18 @@
     "frontend/*"
   ],
   "scripts": {
-    "build:all": "nx run-many --target=build --all",
     "check-audit": "check-audit --yarn",
-    "deploy": "yarn package && lerna run --stream --concurrency 2 deploy",
-    "deploy:production:since": "lerna run --stream --concurrency 3 deploy:production --include-dependents --since",
-    "deploy:since": "lerna run --stream --concurrency 3 deploy --include-dependents --since",
-    "deploy:staging:since": "lerna run --stream --concurrency 3 deploy:staging --include-dependents --since",
+    "deploy": "nx run-many --target=deploy --all",
     "graph": "nx dep-graph",
-    "info": "lerna run --stream sls:info",
-    "lint:fix": "lerna run --stream --concurrency 2 lint:fix",
-    "list:since": "lerna list --all --long --parseable --since",
-    "package": "lerna run --stream package",
-    "package:since": "lerna run --stream --concurrency 3 package --include-dependencies --include-dependents --since",
+    "info": "nx run-many --target=sls:info --all",
+    "package": "nx run-many --target=package --all",
     "prepare": "husky install && syncpack format",
-    "remove": "lerna run --stream --concurrency 2 remove",
     "resolve-audit": "resolve-audit --yarn",
     "test:all": "nx run-many --target=test:all --all",
     "test:linter": "nx run-many --target=test:linter --all",
-    "test:since": "lerna run --stream --concurrency 3 test:all --include-dependents --since",
     "test:type": "nx run-many --target=test:type --all",
     "test:unit": "nx run-many --target=test:unit --all",
-    "watch": "lerna run --parallel watch"
+    "watch": "nx run-many --target=watch --all --parallel --maxParallel 10"
   },
   "dependencies": {},
   "devDependencies": {

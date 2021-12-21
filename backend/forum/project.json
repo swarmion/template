@@ -15,6 +15,10 @@
         {
           "target": "package",
           "projects": "dependencies"
+        },
+        {
+          "target": "deploy",
+          "projects": "dependencies"
         }
       ],
       "options": {

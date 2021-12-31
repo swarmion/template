@@ -11,17 +11,17 @@
   ],
   "scripts": {
     "check-audit": "check-audit --yarn",
-    "deploy": "nx run-many --target=deploy --all",
+    "deploy": "nx run-many --target=deploy --all --parallel=10",
     "graph": "nx dep-graph",
-    "info": "nx run-many --target=sls:info --all",
-    "package": "nx run-many --target=package --all",
+    "info": "nx run-many --target=sls:info --all --parallel=10",
+    "package": "nx run-many --target=package --all --parallel=10",
     "prepare": "husky install && syncpack format",
     "resolve-audit": "resolve-audit --yarn",
-    "test:all": "nx run-many --target=test:all --all",
-    "test:linter": "nx run-many --target=test:linter --all",
-    "test:type": "nx run-many --target=test:type --all",
-    "test:unit": "nx run-many --target=test:unit --all",
-    "watch": "nx run-many --target=watch --all --parallel --maxParallel 10"
+    "test:all": "nx run-many --target=test:all --all --parallel=10",
+    "test:linter": "nx run-many --target=test:linter --all --parallel=10",
+    "test:type": "nx run-many --target=test:type --all --parallel=10",
+    "test:unit": "nx run-many --target=test:unit --all --parallel=10",
+    "watch": "nx run-many --target=watch --all  --parallel=10"
   },
   "dependencies": {},
   "devDependencies": {

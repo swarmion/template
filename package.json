@@ -10,6 +10,7 @@
     "frontend/*"
   ],
   "scripts": {
+    "build:all": "nx run-many --target=build --all --parallel=10",
     "check-audit": "check-audit --yarn",
     "deploy": "nx run-many --target=deploy --all --parallel=10",
     "graph": "nx dep-graph",
@@ -21,7 +22,6 @@
     "test:linter": "nx run-many --target=test:linter --all --parallel=10",
     "test:type": "nx run-many --target=test:type --all --parallel=10",
     "test:unit": "nx run-many --target=test:unit --all --parallel=10",
-    "build:all": "nx run-many --target=build --all --parallel=10",
     "watch": "nx run-many --target=watch --all  --parallel=10"
   },
   "dependencies": {},

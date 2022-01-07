@@ -1,0 +1,90 @@
+{
+  "root": "contracts/forum-contracts",
+  "projectType": "library",
+  "targets": {
+    "package": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "contracts/forum-contracts/dist"
+      ],
+      "options": {
+        "cwd": "contracts/forum-contracts",
+        "commands": [
+          {
+            "command": "yarn package"
+          }
+        ]
+      }
+    },
+    "test:all": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "contracts/forum-contracts",
+        "commands": [
+          {
+            "command": "yarn test:all"
+          }
+        ]
+      }
+    },
+    "test:linter": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "contracts/forum-contracts",
+        "commands": [
+          {
+            "command": "yarn test:linter"
+          }
+        ]
+      }
+    },
+    "test:type": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "contracts/forum-contracts",
+        "commands": [
+          {
+            "command": "yarn test:type"
+          }
+        ]
+      }
+    },
+    "test:unit": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "contracts/forum-contracts",
+        "commands": [
+          {
+            "command": "yarn test:type"
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": []
+}

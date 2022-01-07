@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@serverless-contracts/plugin": "0.1.4",
-    "@sls-monorepo/backend-core": "1.0.0",
     "@sls-monorepo/core-contracts": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",

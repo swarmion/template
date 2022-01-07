@@ -1,0 +1,90 @@
+{
+  "root": "packages/serverless-helpers",
+  "projectType": "library",
+  "targets": {
+    "package": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [
+        "packages/serverless-helpers/dist"
+      ],
+      "options": {
+        "cwd": "packages/serverless-helpers",
+        "commands": [
+          {
+            "command": "yarn package"
+          }
+        ]
+      }
+    },
+    "test:all": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "packages/serverless-helpers",
+        "commands": [
+          {
+            "command": "yarn test:all"
+          }
+        ]
+      }
+    },
+    "test:linter": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "packages/serverless-helpers",
+        "commands": [
+          {
+            "command": "yarn test:linter"
+          }
+        ]
+      }
+    },
+    "test:type": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "packages/serverless-helpers",
+        "commands": [
+          {
+            "command": "yarn test:type"
+          }
+        ]
+      }
+    },
+    "test:unit": {
+      "executor": "@nrwl/workspace:run-commands",
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
+      "options": {
+        "cwd": "packages/serverless-helpers",
+        "commands": [
+          {
+            "command": "yarn test:type"
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": []
+}

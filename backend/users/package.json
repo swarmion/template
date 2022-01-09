@@ -27,24 +27,25 @@
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
     "@sls-monorepo/users-contracts": "1.0.0",
-    "aws-sdk": "^2.1047.0",
+    "aws-sdk": "^2.1053.0",
     "http-errors": "^2.0.0",
-    "json-schema-to-ts": "^1.6.4"
+    "json-schema-to-ts": "^1.6.5"
   },
   "devDependencies": {
     "@serverless-contracts/eslint-plugin": "0.1.4",
-    "@serverless/typescript": "^2.68.0",
+    "@serverless/typescript": "^2.70.0",
     "@sls-monorepo/configuration": "1.0.0",
     "@types/http-errors": "^1.8.1",
-    "@types/jest": "^27.0.3",
-    "@types/node": "^17.0.2",
-    "jest": "^27.4.3",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.8",
+    "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
-    "serverless": "^2.68.0",
-    "serverless-esbuild": "^1.22.1",
+    "lint-staged": "^12.1.7",
+    "serverless": "^2.70.0",
+    "serverless-esbuild": "^1.23.3",
     "serverless-iam-roles-per-function": "^3.2.0",
-    "ts-jest": "^27.0.7",
+    "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.4"
   }
 }

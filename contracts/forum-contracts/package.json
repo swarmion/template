@@ -27,25 +27,25 @@
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
-    "@babel/runtime": "^7.16.3",
+    "@babel/runtime": "^7.16.7",
     "@serverless-contracts/core": "0.1.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/plugin-transform-runtime": "^7.16.4",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-typescript": "^7.16.0",
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-plugin-module-resolver": "^4.1.0",
-    "concurrently": "^6.4.0",
-    "eslint": "^8.3.0",
-    "jest": "^27.4.3",
+    "concurrently": "^6.5.1",
+    "eslint": "^8.6.0",
+    "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
-    "json-schema-to-ts": "^1.6.4",
-    "lint-staged": "^12.1.2",
-    "prettier": "^2.5.0",
+    "json-schema-to-ts": "^1.6.5",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
     "ttypescript": "^1.5.13",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.4"
   }
 }

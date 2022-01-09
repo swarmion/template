@@ -7,6 +7,12 @@
       "outputs": [
         "frontend/app/dist"
       ],
+      "dependsOn": [
+        {
+          "target": "package",
+          "projects": "dependencies"
+        }
+      ],
       "options": {
         "cwd": "frontend/app",
         "commands": [

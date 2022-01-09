@@ -40,6 +40,7 @@
     "@types/node": "^17.0.2",
     "jest": "^27.4.3",
     "jest-runner-groups": "^2.1.0",
+    "lint-staged": "^12.1.2",
     "serverless": "^2.68.0",
     "serverless-esbuild": "^1.22.1",
     "serverless-iam-roles-per-function": "^3.2.0",

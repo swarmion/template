@@ -10,7 +10,7 @@ Apart from the various configuration files at the root of the project, this repo
 
 _Note: the services names in this folder are purely for the sake of the template and should not be considered standard._
 
-Therefore, it defines a set of _internal modules_ managed by [Lerna](https://lerna.js.org/) and [Yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/).
+Therefore, it defines a set of _internal modules_ managed by [Nx](https://nx.dev/) and [Yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/).
 
 ```
 .
@@ -89,17 +89,16 @@ Therefore, it defines a set of _internal modules_ managed by [Lerna](https://ler
 |   |
 |   └── ...                        # other internal shared packages
 |
-├── lerna.json                     # lerna configuration
 ├── package.json                   # shared dependencies and global scripts
 └── yarn.lock                      # unique lock file, using yarn workspaces
 
 ```
 
-## Lerna and Yarn workspaces
+## Nx and Yarn workspaces
 
 These tools work in sync but provide slightly different features.
 
-Lerna:
+Nx:
 
 - Filter changes, run commands
 
@@ -107,7 +106,7 @@ Yarn workpaces:
 
 - Handle dependencies anywhere in the repository
 
-You can find [here](https://doppelmutzi.github.io/monorepo-lerna-yarn-workspaces/) a good explanation on how and why use these tools together.
+You can find [here](https://nx.dev/getting-started/nx-core) a good explanation on how and why use these tools together.
 
 ## Types of internal modules
 

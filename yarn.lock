@@ -2541,9 +2541,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^16.0.1":
-  version: 16.0.1
-  resolution: "@commitlint/cli@npm:16.0.1"
+"@commitlint/cli@npm:^16.0.2":
+  version: 16.0.2
+  resolution: "@commitlint/cli@npm:16.0.2"
   dependencies:
     "@commitlint/format": ^16.0.0
     "@commitlint/lint": ^16.0.0
@@ -2556,7 +2556,7 @@ __metadata:
     yargs: ^17.0.0
   bin:
     commitlint: cli.js
-  checksum: a4ec182911a6a26cd4e5ad878089075ca96c417aac538b6bb42a4e7fd9c96e1c73ef4c9034c153f017ce28bf1c2ca837f403034e6462910f4c51a383aba3d5ee
+  checksum: 20760e0f8d54cfffad8a3c24ab4052b815d4545e2237f6b2c54a9a9a1190bf69adcff49b22ba665ae5e3b758b17b7a9dfb162d49d8b3926a756f60a314edd5e3
   languageName: node
   linkType: hard
 
@@ -3015,25 +3015,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-displaynames@npm:5.3.1":
-  version: 5.3.1
-  resolution: "@formatjs/intl-displaynames@npm:5.3.1"
+"@formatjs/intl-displaynames@npm:5.4.0":
+  version: 5.4.0
+  resolution: "@formatjs/intl-displaynames@npm:5.4.0"
   dependencies:
     "@formatjs/ecma402-abstract": 1.11.1
     "@formatjs/intl-localematcher": 0.2.22
     tslib: ^2.1.0
-  checksum: ec57a75ae897147dc267be93edb2586d036ee31ec710383aaf00cd46c2a2345d1e9a89decee9d2c666cbae4a08a0a1aa3a7ce5032c50c3b4e3aa482edbcb4fe5
+  checksum: 1f3046780d5d6ca52fe3e6330d3e92c79c901841264d3a4926f072fb546f2b4c81e3038ca5438674a5fef0b35d1be43dcfb5ee62806a701ab6ed343cb8b6d7a1
   languageName: node
   linkType: hard
 
-"@formatjs/intl-listformat@npm:6.4.1":
-  version: 6.4.1
-  resolution: "@formatjs/intl-listformat@npm:6.4.1"
+"@formatjs/intl-listformat@npm:6.5.0":
+  version: 6.5.0
+  resolution: "@formatjs/intl-listformat@npm:6.5.0"
   dependencies:
     "@formatjs/ecma402-abstract": 1.11.1
     "@formatjs/intl-localematcher": 0.2.22
     tslib: ^2.1.0
-  checksum: aa845449a077515445f55c7c4ea9cfd75c6e1258c167045db84583b06eedc001f81d176326c4122da95c96d3d8b2cd4edcf127bad71d113f1a9afa8c05b8cdb2
+  checksum: 5ffdaca57a23241c9fd418bf7ad3cfe7fe1eb4add8b034b81ae00a16a5147533ae2d8cfbf99bd21d9870c286347ece291667dccea0576a92442deef890f04597
   languageName: node
   linkType: hard
 
@@ -3046,15 +3046,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl@npm:1.18.1":
-  version: 1.18.1
-  resolution: "@formatjs/intl@npm:1.18.1"
+"@formatjs/intl@npm:1.18.2":
+  version: 1.18.2
+  resolution: "@formatjs/intl@npm:1.18.2"
   dependencies:
     "@formatjs/ecma402-abstract": 1.11.1
     "@formatjs/fast-memoize": 1.2.1
     "@formatjs/icu-messageformat-parser": 2.0.16
-    "@formatjs/intl-displaynames": 5.3.1
-    "@formatjs/intl-listformat": 6.4.1
+    "@formatjs/intl-displaynames": 5.4.0
+    "@formatjs/intl-listformat": 6.5.0
     intl-messageformat: 9.11.1
     tslib: ^2.1.0
   peerDependencies:
@@ -3062,7 +3062,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 1b509ccbf394e64a578335518d015f2f518de76c4854f44b4481e8f00cf3edccb42bf223e8a986de6212be9cb6aeccfb14b1ebe0bc201c9e02310afd0258457c
+  checksum: 65de7af4baec1480e216d282f74710d33f1c65401187fb46097446b75a1e963fc2f02999b5063fe3cead0d00ab4eb1890cf118f5e390280439f2e9de2d35123f
   languageName: node
   linkType: hard
 
@@ -4440,7 +4440,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/app@workspace:."
   dependencies:
-    "@commitlint/cli": ^16.0.1
+    "@commitlint/cli": ^16.0.2
     "@commitlint/config-conventional": ^16.0.0
     "@nrwl/cli": ^13.4.3
     "@nrwl/tao": ^13.4.3
@@ -4560,7 +4560,7 @@ __metadata:
     "@serverless/typescript": ^2.70.0
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
@@ -4586,13 +4586,14 @@ __metadata:
     "@serverless-contracts/core": 0.1.4
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^12.1.7
     prettier: ^2.5.1
+    ts-node: ^10.4.0
     ttypescript: ^1.5.13
     typescript: ^4.5.4
   languageName: unknown
@@ -4611,13 +4612,14 @@ __metadata:
     "@serverless-contracts/core": 0.1.4
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^12.1.7
     prettier: ^2.5.1
+    ts-node: ^10.4.0
     ttypescript: ^1.5.13
     typescript: ^4.5.4
   languageName: unknown
@@ -4661,7 +4663,7 @@ __metadata:
     prettier: ^2.5.1
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-intl: ^5.24.1
+    react-intl: ^5.24.2
     react-redux: ^7.2.6
     react-router-dom: ^6.2.1
     redux: ^4.1.2
@@ -4715,7 +4717,7 @@ __metadata:
     "@serverless/typescript": ^2.70.0
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
@@ -4745,7 +4747,7 @@ __metadata:
     "@types/aws-lambda": ^8.10.89
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
@@ -4770,13 +4772,14 @@ __metadata:
     "@serverless-contracts/core": 0.1.4
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^6.5.1
+    concurrently: ^7.0.0
     eslint: ^8.6.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^12.1.7
     prettier: ^2.5.1
+    ts-node: ^10.4.0
     ttypescript: ^1.5.13
     typescript: ^4.5.4
   languageName: unknown
@@ -7836,9 +7839,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^6.5.1":
-  version: 6.5.1
-  resolution: "concurrently@npm:6.5.1"
+"concurrently@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "concurrently@npm:7.0.0"
   dependencies:
     chalk: ^4.1.0
     date-fns: ^2.16.1
@@ -7849,8 +7852,8 @@ __metadata:
     tree-kill: ^1.2.2
     yargs: ^16.2.0
   bin:
-    concurrently: bin/concurrently.js
-  checksum: 3f4d89b464fa5c9fb6f9489b46594c30ba54eff6ff10ab3cb5f30f64b74c83be664623a0f0cc731a3cb3f057a1f4a3292f7d3470c012a292c44aca31f214a3fa
+    concurrently: dist/bin/concurrently.js
+  checksum: 1be78f24bf814f097adaf2e61a37563eb73f12272bbeda90e3e616a23525f793268e22a3c6aedf34e5bad44459f7c30ee053c617905416ba11ce2bee55f089a5
   languageName: node
   linkType: hard
 
@@ -16060,15 +16063,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intl@npm:^5.24.1":
-  version: 5.24.1
-  resolution: "react-intl@npm:5.24.1"
+"react-intl@npm:^5.24.2":
+  version: 5.24.2
+  resolution: "react-intl@npm:5.24.2"
   dependencies:
     "@formatjs/ecma402-abstract": 1.11.1
     "@formatjs/icu-messageformat-parser": 2.0.16
-    "@formatjs/intl": 1.18.1
-    "@formatjs/intl-displaynames": 5.3.1
-    "@formatjs/intl-listformat": 6.4.1
+    "@formatjs/intl": 1.18.2
+    "@formatjs/intl-displaynames": 5.4.0
+    "@formatjs/intl-listformat": 6.5.0
     "@types/hoist-non-react-statics": ^3.3.1
     "@types/react": 16 || 17
     hoist-non-react-statics: ^3.3.2
@@ -16080,7 +16083,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 194e320c8ea6a69ff74465b4932ee7d085a2a062458215a7d2d3e9d0e2ff244f97826592843e1306ef39da8afba50f5ae7f35ca14b0d6f2b7f7144e33eb352f0
+  checksum: 1e6a6480656b4f5a630b8c38feed96247b3f44bcb4ad699906b1d4b5f64bd3e26f1680413aacd6f21c1261533fe98451648b4fd75fcd57b9f64091f275908b7c
   languageName: node
   linkType: hard
 

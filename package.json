@@ -27,7 +27,7 @@
     "watch": "nx run-many --target=watch --all  --parallel=4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
+    "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@nrwl/cli": "^13.4.3",
     "@nrwl/tao": "^13.4.3",

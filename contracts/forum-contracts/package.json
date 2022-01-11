@@ -28,13 +28,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
-    "@serverless-contracts/core": "0.1.4"
+    "@serverless-contracts/core": "0.1.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.7",
+    "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
-    "@babel/plugin-transform-runtime": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
     "@babel/preset-typescript": "^7.16.7",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-plugin-module-resolver": "^4.1.0",

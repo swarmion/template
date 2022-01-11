@@ -22,15 +22,15 @@
     "@sls-monorepo/users-contracts": "1.0.0"
   },
   "devDependencies": {
-    "@serverless-contracts/eslint-plugin": "0.1.4",
-    "@serverless-contracts/plugin": "0.1.4",
+    "@serverless-contracts/eslint-plugin": "0.1.5",
+    "@serverless-contracts/plugin": "0.1.5",
     "@serverless/typescript": "^2.70.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.8",
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
     "lint-staged": "^12.1.7",
-    "serverless": "^2.70.0",
+    "serverless": "^2.71.0",
     "serverless-lift": "^1.11.0",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",

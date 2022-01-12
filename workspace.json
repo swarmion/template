@@ -4,13 +4,13 @@
     "backend-core": "backend/core",
     "backend-forum": "backend/forum",
     "backend-users": "backend/users",
+    "configuration": "packages/configuration",
     "core-contracts": "contracts/core-contracts",
     "forum-contracts": "contracts/forum-contracts",
-    "users-contracts": "contracts/users-contracts",
     "frontend-app": "frontend/app",
     "frontend-cloudfront": "frontend/cloudfront",
-    "configuration": "packages/configuration",
     "serverless-configuration": "packages/serverless-configuration",
-    "serverless-helpers": "packages/serverless-helpers"
+    "serverless-helpers": "packages/serverless-helpers",
+    "users-contracts": "contracts/users-contracts"
   }
 }

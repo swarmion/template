@@ -25,14 +25,26 @@ const storeDeploymentRecord = async (record: SnsRecord): Promise<void> => {
   );
   const stackId = stackIdMatch?.groups?.stackId;
 
+  const resourceIdMatch = new RegExp(
+    /LogicalResourceId='(?<resourceId>[\w\d-:./]+)'\n/,
+  ).exec(record.Sns.Message);
+  const resourceId = resourceIdMatch?.groups?.resourceId;
+
   const timestampMatch = new RegExp(
     /Timestamp='(?<timestamp>[\w\d:.-]+)'\n/,
   ).exec(record.Sns.Message);
   const timestamp = timestampMatch?.groups?.timestamp;
 
+  const statusMatch = new RegExp(
+    /ResourceStatus='(?<status>[\w\d:.-]+)'\n/,
+  ).exec(record.Sns.Message);
+  const status = statusMatch?.groups?.status;
+
   await DeploymentEvent.put({
     stackId,
     timestamp,
+    status,
+    resourceId,
   });
 };
 

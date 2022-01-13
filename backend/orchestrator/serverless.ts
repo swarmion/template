@@ -15,7 +15,11 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   service: `${projectName}-orchestrator`, // Keep it short to have role name below 64
   frameworkVersion: '>=2.61.0',
   configValidationMode: 'error',
-  plugins: ['serverless-esbuild', '@serverless-contracts/plugin'],
+  plugins: [
+    'serverless-esbuild',
+    '@serverless-contracts/plugin',
+    'serverless-iam-roles-per-function',
+  ],
   provider: {
     ...sharedProviderConfig,
   },

@@ -52,6 +52,10 @@
       "name": "sls-monorepo root"
     },
     {
+      "path": "backend/orchestrator",
+      "name": "backend orchestrator [service]"
+    },
+    {
       "path": "backend/core",
       "name": "backend core [service]"
     },

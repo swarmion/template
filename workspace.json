@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "backend-orchestrator": "backend/orchestrator",
     "backend-core": "backend/core",
     "backend-forum": "backend/forum",
     "backend-users": "backend/users",

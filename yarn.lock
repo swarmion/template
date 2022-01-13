@@ -3882,6 +3882,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@sls-monorepo/backend-orchestrator@workspace:backend/orchestrator":
+  version: 0.0.0-use.local
+  resolution: "@sls-monorepo/backend-orchestrator@workspace:backend/orchestrator"
+  dependencies:
+    "@serverless-contracts/plugin": 0.1.5
+    "@serverless/typescript": ^2.70.0
+    "@sls-monorepo/configuration": 1.0.0
+    "@sls-monorepo/serverless-configuration": 1.0.0
+    "@sls-monorepo/serverless-helpers": 1.0.0
+    "@types/jest": ^27.4.0
+    "@types/node": ^17.0.8
+    jest: ^27.4.7
+    lint-staged: ^12.1.7
+    serverless: ^2.71.0
+    serverless-esbuild: ^1.23.3
+    ts-jest: ^27.1.2
+    ts-node: ^10.4.0
+    typescript: ^4.5.4
+  languageName: unknown
+  linkType: soft
+
 "@sls-monorepo/backend-users@workspace:backend/users":
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/backend-users@workspace:backend/users"

@@ -20,12 +20,20 @@ interface SnsRecord {
 }
 
 const storeDeploymentRecord = async (record: SnsRecord): Promise<void> => {
-  await DeploymentEvent.put({
-    stackId: '15',
-    timestamp: '2022-01-13T17:27:23.547Z',
-  });
+  const stackIdMatch = new RegExp(/StackId='(?<stackId>[\w\d-:./]+)'\n/).exec(
+    record.Sns.Message,
+  );
+  const stackId = stackIdMatch?.groups?.stackId;
 
-  console.log(JSON.stringify(record.Sns.Message));
+  const timestampMatch = new RegExp(
+    /Timestamp='(?<timestamp>[\w\d:.-]+)'\n/,
+  ).exec(record.Sns.Message);
+  const timestamp = timestampMatch?.groups?.timestamp;
+
+  await DeploymentEvent.put({
+    stackId,
+    timestamp,
+  });
 };
 
 export const main = async ({

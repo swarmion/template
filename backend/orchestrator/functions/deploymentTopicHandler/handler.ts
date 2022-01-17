@@ -20,24 +20,26 @@ interface SnsRecord {
 }
 
 const storeDeploymentRecord = async (record: SnsRecord): Promise<void> => {
+  const message = record.Sns.Message;
+
   const stackIdMatch = new RegExp(/StackId='(?<stackId>[\w\d-:./]+)'\n/).exec(
-    record.Sns.Message,
+    message,
   );
   const stackId = stackIdMatch?.groups?.stackId;
 
   const resourceIdMatch = new RegExp(
     /LogicalResourceId='(?<resourceId>[\w\d-:./]+)'\n/,
-  ).exec(record.Sns.Message);
+  ).exec(message);
   const resourceId = resourceIdMatch?.groups?.resourceId;
 
   const timestampMatch = new RegExp(
     /Timestamp='(?<timestamp>[\w\d:.-]+)'\n/,
-  ).exec(record.Sns.Message);
+  ).exec(message);
   const timestamp = timestampMatch?.groups?.timestamp;
 
   const statusMatch = new RegExp(
     /ResourceStatus='(?<status>[\w\d:.-]+)'\n/,
-  ).exec(record.Sns.Message);
+  ).exec(message);
   const status = statusMatch?.groups?.status;
 
   await DeploymentEvent.put({
@@ -45,6 +47,7 @@ const storeDeploymentRecord = async (record: SnsRecord): Promise<void> => {
     timestamp,
     status,
     resourceId,
+    message,
   });
 };
 

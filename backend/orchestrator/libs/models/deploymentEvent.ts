@@ -20,6 +20,7 @@ const DeploymentEvent = new Entity({
     status: 'string',
     resourceId: 'string',
     timestamp: 'string',
+    message: 'string',
   },
   table: DeploymentTable,
 } as const);

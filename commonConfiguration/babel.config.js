@@ -8,7 +8,7 @@ const defaultPlugins = [
   [
     'module-resolver',
     {
-      root: ['.'],
+      root: ['./src'],
       extensions: ['.ts'],
     },
   ],

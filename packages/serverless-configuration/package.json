@@ -8,7 +8,7 @@
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/src/index.d.ts",
   "scripts": {
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",
@@ -22,7 +22,7 @@
     "test:linter": "yarn linter-base-config .",
     "test:type": "tsc --noEmit --emitDeclarationOnly false",
     "test:unit": "echo 'no tests yet'",
-    "transpile": "babel . --extensions .ts",
+    "transpile": "babel src --extensions .ts",
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {

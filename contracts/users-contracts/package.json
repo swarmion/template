@@ -8,7 +8,7 @@
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/types/src/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "contracts": true,
   "scripts": {
     "lint:fix": "yarn linter-base-config --fix",

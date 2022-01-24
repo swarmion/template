@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended',
+  ],
   rules: {
     'prettier/prettier': 'error',
     'import/extensions': 0,
@@ -109,6 +113,7 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
       },
+      settings: { 'import/resolver': { typescript: {} } },
       rules: {
         '@typescript-eslint/prefer-optional-chain': 'error',
         'no-shadow': 'off',

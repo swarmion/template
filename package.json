@@ -29,9 +29,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
-    "@nrwl/cli": "^13.4.6",
-    "@nrwl/tao": "^13.4.6",
-    "@nrwl/workspace": "^13.4.6",
+    "@nrwl/cli": "^13.6.1",
+    "@nrwl/tao": "^13.6.1",
+    "@nrwl/workspace": "^13.6.1",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",

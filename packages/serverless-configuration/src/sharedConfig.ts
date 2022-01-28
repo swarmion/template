@@ -10,7 +10,6 @@ export const sharedProviderConfig = {
   region,
   profile: '${self:custom.sharedEnvsConfig.${self:provider.stage}.profile}', // Used to point to the right AWS account
   stage: "${opt:stage, 'dev'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
-  lambdaHashingVersion: '20201221',
   environment: {
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
     NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',

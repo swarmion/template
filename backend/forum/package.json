@@ -22,7 +22,7 @@
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.1.5",
+    "@serverless-contracts/plugin": "0.1.6",
     "@sls-monorepo/core-contracts": "1.0.0",
     "@sls-monorepo/forum-contracts": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
@@ -32,8 +32,8 @@
     "json-schema-to-ts": "^1.6.5"
   },
   "devDependencies": {
-    "@serverless-contracts/eslint-plugin": "0.1.5",
-    "@serverless/typescript": "^2.71.0",
+    "@serverless-contracts/eslint-plugin": "0.1.6",
+    "@serverless/typescript": "^3.0.0",
     "@sls-monorepo/configuration": "1.0.0",
     "@types/http-errors": "^1.8.2",
     "@types/jest": "^27.4.0",
@@ -41,7 +41,7 @@
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
     "lint-staged": "^12.3.2",
-    "serverless": "^2.72.1",
+    "serverless": "^3.0.0",
     "serverless-esbuild": "^1.23.3",
     "serverless-iam-roles-per-function": "^3.2.0",
     "ts-jest": "^27.1.3",

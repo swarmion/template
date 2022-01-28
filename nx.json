@@ -10,9 +10,10 @@
           "test",
           "lint",
           "package",
-          "prepare"
+          "postinstall"
         ],
-        "cacheDirectory": "nx-cache"
+        "cacheDirectory": "nx-cache",
+        "useDaemonProcess": false
       }
     }
   },
@@ -23,9 +24,9 @@
         "projects": "dependencies"
       }
     ],
-    "prepare": [
+    "postinstall": [
       {
-        "target": "prepare",
+        "target": "postinstall",
         "projects": "dependencies"
       }
     ],

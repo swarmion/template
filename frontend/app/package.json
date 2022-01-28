@@ -6,11 +6,9 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "build": "vite build",
-    "deploy": "echo 'no deploy script'",
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",
     "linter-base-config": "eslint --ext=js,jsx,ts,tsx",
-    "migrate": "echo 'No migrations in this service'",
     "precommit": "lint-staged",
     "serve": "vite preview",
     "start": "vite",

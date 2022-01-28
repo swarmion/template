@@ -8,14 +8,12 @@
     "lint:fix": "yarn linter-base-config --fix",
     "lint:fix-all": "yarn lint:fix .",
     "linter-base-config": "eslint --ext=js,ts",
-    "migrate": "echo 'No migrations in this service'",
     "precommit": "lint-staged",
     "remove": "serverless remove",
     "sls:info": "serverless info --verbose",
-    "test": "yarn test:linter && yarn test:type && yarn test:unit",
+    "test": "yarn test:linter && yarn test:type",
     "test:linter": "yarn linter-base-config .",
-    "test:type": "tsc --noEmit",
-    "test:unit": "echo 'No tests yet'"
+    "test:type": "tsc --noEmit"
   },
   "dependencies": {
     "@sls-monorepo/serverless-configuration": "1.0.0",

@@ -4140,30 +4140,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless-contracts/core@npm:0.1.5":
-  version: 0.1.5
-  resolution: "@serverless-contracts/core@npm:0.1.5"
+"@serverless-contracts/core@npm:0.1.6":
+  version: 0.1.6
+  resolution: "@serverless-contracts/core@npm:0.1.6"
   dependencies:
     "@babel/runtime": ^7.16.3
     axios: ^0.24.0
     lodash: ^4.17.21
-  checksum: cb88edf202e0436427c371369ec34f50ccaff2570a68d54680c05950ec085c2fcdd3b152a9bab5bb295f36b544a73d82da3bf4daf412af6d3cb508f0ebb5f145
+  checksum: b26e61c9b4e86b884ca703f4349f9704f60c4d5f51f187ce1a1007de95fd8a037d4bfd1e64770afbfdebab6cf573553a7136c5520dedafa290bc83aa87828766
   languageName: node
   linkType: hard
 
-"@serverless-contracts/eslint-plugin@npm:0.1.5":
-  version: 0.1.5
-  resolution: "@serverless-contracts/eslint-plugin@npm:0.1.5"
+"@serverless-contracts/eslint-plugin@npm:0.1.6":
+  version: 0.1.6
+  resolution: "@serverless-contracts/eslint-plugin@npm:0.1.6"
   dependencies:
     "@babel/runtime": ^7.16.3
     find-up: 5.0.0
-  checksum: cf3cf61c93660a5b6dc174231294eda92eec6e30b2f5bf78133af484612f3b04f6c48d28875585d19e2a83b61da3efa8091917e24a954243f0a778537f8cb912
+  checksum: 2afe3e5001a718e2d0a4f92e9d961dc283de451bdbb04931bd6e63075d9966e14a3e3384860ffe32f6e0ab181922d2ca790aa5eda9a82a5c4c191dcd708df92e
   languageName: node
   linkType: hard
 
-"@serverless-contracts/plugin@npm:0.1.5":
-  version: 0.1.5
-  resolution: "@serverless-contracts/plugin@npm:0.1.5"
+"@serverless-contracts/plugin@npm:0.1.6":
+  version: 0.1.6
+  resolution: "@serverless-contracts/plugin@npm:0.1.6"
   dependencies:
     "@babel/runtime": ^7.16.3
     axios: ^0.24.0
@@ -4171,7 +4171,7 @@ __metadata:
     lodash: ^4.17.21
   peerDependencies:
     serverless: ^2.60 || 3
-  checksum: 2b2db9c7a787e181de6ecd00d5298226490f96db733df70a5cb61283c309855a3d9d7c18a131e56394d0346ff4cc4c42866accf02c9b9a42d2f96fd92f92c859
+  checksum: 359bfeced14cd1d5766e1b4e519293cb274764c62a271fc3bfa9ece637ecf54c8fd3a3e60a4bc37ce85282f57ebb6b0b5a2f206e348eed931bbaf449e68035ef
   languageName: node
   linkType: hard
 
@@ -4339,7 +4339,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless-contracts/plugin": 0.1.5
+    "@serverless-contracts/plugin": 0.1.6
     "@serverless/typescript": ^3.0.0
     "@sls-monorepo/configuration": 1.0.0
     "@sls-monorepo/core-contracts": 1.0.0
@@ -4361,8 +4361,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.1.5
-    "@serverless-contracts/plugin": 0.1.5
+    "@serverless-contracts/eslint-plugin": 0.1.6
+    "@serverless-contracts/plugin": 0.1.6
     "@serverless/typescript": ^3.0.0
     "@sls-monorepo/configuration": 1.0.0
     "@sls-monorepo/core-contracts": 1.0.0
@@ -4391,8 +4391,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.1.5
-    "@serverless-contracts/plugin": 0.1.5
+    "@serverless-contracts/eslint-plugin": 0.1.6
+    "@serverless-contracts/plugin": 0.1.6
     "@serverless/typescript": ^3.0.0
     "@sls-monorepo/configuration": 1.0.0
     "@sls-monorepo/core-contracts": 1.0.0
@@ -4453,7 +4453,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.16.7
-    "@serverless-contracts/core": 0.1.5
+    "@serverless-contracts/core": 0.1.6
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
@@ -4479,7 +4479,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.16.7
-    "@serverless-contracts/core": 0.1.5
+    "@serverless-contracts/core": 0.1.6
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
@@ -4556,8 +4556,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sls-monorepo/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.1.5
-    "@serverless-contracts/plugin": 0.1.5
+    "@serverless-contracts/eslint-plugin": 0.1.6
+    "@serverless-contracts/plugin": 0.1.6
     "@serverless/typescript": ^3.0.0
     "@sls-monorepo/serverless-configuration": 1.0.0
     "@sls-monorepo/users-contracts": 1.0.0
@@ -4639,7 +4639,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.16.7
-    "@serverless-contracts/core": 0.1.5
+    "@serverless-contracts/core": 0.1.6
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0

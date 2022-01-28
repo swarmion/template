@@ -4,7 +4,7 @@ import type { Lift } from 'serverless-lift';
 
 import {
   projectName,
-  sharedEnvsConfig,
+  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { getUserContract } from '@sls-monorepo/users-contracts';
@@ -16,8 +16,8 @@ const serverlessConfiguration: AWS & Lift & ServerlessContracts = {
   provider: sharedProviderConfig,
   custom: {
     projectName,
-    sharedEnvsConfig,
   },
+  params: sharedParams,
   constructs: {
     app: {
       type: 'static-website',

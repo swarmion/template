@@ -4,8 +4,8 @@ import { AWS } from '@serverless/typescript';
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
   projectName,
-  sharedEnvsConfig,
   sharedEsbuildConfig,
+  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { getUserContract } from '@sls-monorepo/users-contracts';
@@ -31,9 +31,9 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   package: { individually: true },
   custom: {
     projectName,
-    sharedEnvsConfig,
     esbuild: sharedEsbuildConfig,
   },
+  params: sharedParams,
   contracts: {
     provides: { getUserContract: getUserContract.fullContractSchema },
     consumes: {

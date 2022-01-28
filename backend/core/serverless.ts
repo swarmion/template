@@ -4,8 +4,8 @@ import { AWS } from '@serverless/typescript';
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
   projectName,
-  sharedEnvsConfig,
   sharedEsbuildConfig,
+  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 
@@ -22,8 +22,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
       payload: '2.0',
       cors: {
         // @ts-ignore we use a configuration per environment so we put it as a serverless variable
-        allowedOrigins:
-          '${self:custom.sharedEnvsConfig.${self:provider.stage}.apiGatewayCorsAllowedOrigins}',
+        allowedOrigins: '${param:apiGatewayCorsAllowedOrigins}',
         allowedHeaders: ['Content-Type', 'Authorization', 'Origin'],
         allowedMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
         allowCredentials: true,
@@ -33,9 +32,9 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   },
   functions,
   package: { individually: true },
+  params: sharedParams,
   custom: {
     projectName,
-    sharedEnvsConfig,
     esbuild: sharedEsbuildConfig,
   },
   contracts: {

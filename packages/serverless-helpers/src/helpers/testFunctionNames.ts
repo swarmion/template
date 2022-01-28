@@ -8,7 +8,7 @@ const getFunctionNames = (config: AWS): string[] => {
 };
 
 const getFullFunctionName = (config: AWS, functionName: string): string =>
-  `${config.service as string}-${STAGE}-${functionName}`;
+  `${config.service}-${STAGE}-${functionName}`;
 
 /**
  * Test that all the automatically generated function names will pass the 64 characters AWS limit

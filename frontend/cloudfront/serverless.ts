@@ -11,7 +11,7 @@ import { getUserContract } from '@sls-monorepo/users-contracts';
 
 const serverlessConfiguration: AWS & Lift & ServerlessContracts = {
   service: `${projectName}-frontend`, // Keep it short to have role name below 64
-  frameworkVersion: '>=2.50.0',
+  frameworkVersion: '>=3.0.0',
   plugins: ['serverless-lift', '@serverless-contracts/plugin'],
   provider: sharedProviderConfig,
   custom: {

@@ -16,7 +16,7 @@
         ]
       }
     },
-    "test:all": {
+    "test": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -28,7 +28,7 @@
         "cwd": "contracts/forum-contracts",
         "commands": [
           {
-            "command": "yarn test:all"
+            "command": "yarn test"
           }
         ]
       }

@@ -31,7 +31,7 @@ If you want to take is as an example to start your own projet,
 
 At the root of the project:
 
-- `yarn test:all`
+- `yarn test`
 
 ## Configure the deploy user
 

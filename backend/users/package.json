@@ -16,7 +16,7 @@
     "remove:production": "serverless remove --stage production",
     "remove:staging": "serverless remove --stage staging",
     "sls:info": "serverless info --verbose",
-    "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
+    "test": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:linter": "yarn linter-base-config .",
     "test:type": "tsc --noEmit",
     "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage"

@@ -27,7 +27,7 @@
     "@sls-monorepo/forum-contracts": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
-    "aws-sdk": "^2.1065.0",
+    "aws-sdk": "^2.1066.0",
     "http-errors": "^2.0.0",
     "json-schema-to-ts": "^1.6.5"
   },
@@ -41,7 +41,7 @@
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
     "lint-staged": "^12.3.2",
-    "serverless": "^3.0.0",
+    "serverless": "^3.0.1",
     "serverless-esbuild": "^1.23.3",
     "serverless-iam-roles-per-function": "^3.2.0",
     "ts-jest": "^27.1.3",

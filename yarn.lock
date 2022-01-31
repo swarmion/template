@@ -3931,42 +3931,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/cli@npm:13.6.1, @nrwl/cli@npm:^13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/cli@npm:13.6.1"
+"@nrwl/cli@npm:13.7.1, @nrwl/cli@npm:^13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/cli@npm:13.7.1"
   dependencies:
-    "@nrwl/tao": 13.6.1
+    "@nrwl/tao": 13.7.1
     chalk: 4.1.0
     enquirer: ~2.3.6
     v8-compile-cache: 2.3.0
     yargs-parser: 20.0.0
   bin:
     nx: bin/nx.js
-  checksum: d6c2fc4645de73c209d9213ba229f8085a62d6b92141f90d02f4596f4fad409ade0c65cb50c0440dfe051e19f3cf5f9736fbd97c3ebc50b933ecbca12eed6253
+  checksum: 55f0fb30d951e3e5fe0e2f19604fcb899db6b92799537826bf066f5543085e38097daebc9319bbed5f247740dad0105c7da205dc4533faeaa64a0493afcb7666
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/devkit@npm:13.6.1"
+"@nrwl/devkit@npm:13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/devkit@npm:13.7.1"
   dependencies:
-    "@nrwl/tao": 13.6.1
+    "@nrwl/tao": 13.7.1
     ejs: ^3.1.5
     ignore: ^5.0.4
     rxjs: ^6.5.4
     semver: 7.3.4
     tslib: ^2.3.0
-  checksum: 2adc7fccd24970669d58d3c6d36ba0eb4dec69977a6d538106c3bcaacf221f7df3f293f6bc996a3b833d6d23c5dc06aaf840b7d97865581988a9b1afab35d61b
+  checksum: ef95a7b9b98f62297a2645c069a89d9f4f66279e89d4007d90cc98620ad19deec79564d5cf1337c21f82858bc03ee847918469e4bc60d24cd16804f27fa0a36e
   languageName: node
   linkType: hard
 
-"@nrwl/jest@npm:13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/jest@npm:13.6.1"
+"@nrwl/jest@npm:13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/jest@npm:13.7.1"
   dependencies:
     "@jest/reporters": 27.2.2
     "@jest/test-result": 27.2.2
-    "@nrwl/devkit": 13.6.1
+    "@nrwl/devkit": 13.7.1
     chalk: 4.1.0
     identity-obj-proxy: 3.0.0
     jest-config: 27.2.2
@@ -3975,16 +3975,16 @@ __metadata:
     resolve.exports: 1.1.0
     rxjs: ^6.5.4
     tslib: ^2.3.0
-  checksum: deb0d676606ae8b43e4ec65633dfc62879a40c0771233a4852cc9acce8545bd67f55f0efd39222d2b46fb7253b3f558b186975e656b0290719342e966c2c3498
+  checksum: 7bf06be92cd5c3d6bf25f8f8f77153fe4227567da84ec3a4adbbe02e20fb19a399527b921e0010174974b1e8da21d67bb7077a5325a85ee2613756935daa6c5d
   languageName: node
   linkType: hard
 
-"@nrwl/linter@npm:13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/linter@npm:13.6.1"
+"@nrwl/linter@npm:13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/linter@npm:13.7.1"
   dependencies:
-    "@nrwl/devkit": 13.6.1
-    "@nrwl/jest": 13.6.1
+    "@nrwl/devkit": 13.7.1
+    "@nrwl/jest": 13.7.1
     "@phenomnomnominal/tsquery": 4.1.1
     tmp: ~0.2.1
     tslib: ^2.3.0
@@ -3993,13 +3993,13 @@ __metadata:
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: 8e95ba9322539aca0c758862e52d70658adae7ca6627bb2b2828673a2561e07b328791edb63dc7835462cf0d47e94619838db2ca1e6a1a1f73b12aeb0d205606
+  checksum: d8aba53d3ad9e20a3cb5e78342e327aa82a308f31405aa48cb1d3ae421239c87453fd00eb120e03126c54911c7f9bf180372bf1eb7b2a7475ed20a963bf7cdab
   languageName: node
   linkType: hard
 
-"@nrwl/tao@npm:13.6.1, @nrwl/tao@npm:^13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/tao@npm:13.6.1"
+"@nrwl/tao@npm:13.7.1, @nrwl/tao@npm:^13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/tao@npm:13.7.1"
   dependencies:
     chalk: 4.1.0
     enquirer: ~2.3.6
@@ -4007,7 +4007,7 @@ __metadata:
     fs-extra: ^9.1.0
     ignore: ^5.0.4
     jsonc-parser: 3.0.0
-    nx: 13.6.1
+    nx: 13.7.1
     rxjs: ^6.5.4
     rxjs-for-await: 0.0.2
     semver: 7.3.4
@@ -4016,18 +4016,18 @@ __metadata:
     yargs-parser: 20.0.0
   bin:
     tao: index.js
-  checksum: 575ef341a9b97c39fb92993d9359d37a3c82a7334612a3f30308933ad2cd5a0233f206eb48028320acb3e08b51a39e5ec5891cd319a29c962c256da390761c2e
+  checksum: b16479e14bc4d6cb215acaa027118ccb73c4c66a8375bed75ac8762c8b7b032e3b672d741fe1f0fbcd007578d6a3e1cb550a91ea7a246f1b119111c2ae14e02f
   languageName: node
   linkType: hard
 
-"@nrwl/workspace@npm:^13.6.1":
-  version: 13.6.1
-  resolution: "@nrwl/workspace@npm:13.6.1"
+"@nrwl/workspace@npm:^13.7.1":
+  version: 13.7.1
+  resolution: "@nrwl/workspace@npm:13.7.1"
   dependencies:
-    "@nrwl/cli": 13.6.1
-    "@nrwl/devkit": 13.6.1
-    "@nrwl/jest": 13.6.1
-    "@nrwl/linter": 13.6.1
+    "@nrwl/cli": 13.7.1
+    "@nrwl/devkit": 13.7.1
+    "@nrwl/jest": 13.7.1
+    "@nrwl/linter": 13.7.1
     "@parcel/watcher": 2.0.4
     chalk: 4.1.0
     chokidar: ^3.5.1
@@ -4042,7 +4042,7 @@ __metadata:
     ignore: ^5.0.4
     minimatch: 3.0.4
     npm-run-path: ^4.0.1
-    open: ^7.4.2
+    open: ^8.4.0
     rxjs: ^6.5.4
     semver: 7.3.4
     tmp: ~0.2.1
@@ -4054,7 +4054,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: d45b00796e2f7c8df98408177fd0de0611486b6416633b309bc057d8872e63bf2d9a052eed63064d25e65c4fc1ec856215ec2c6e9e8ea0af443e259c87e173cb
+  checksum: b45dcf33cab0fa55f711ceeb4f4b815ff054136510788178e035760cabdb24431424f9ec86d4f49d79f404761e240d56ca37b09d158235f8f806dc17b3d8a525
   languageName: node
   linkType: hard
 
@@ -4311,14 +4311,14 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.1.0
     "@commitlint/config-conventional": ^16.0.0
-    "@nrwl/cli": ^13.6.1
-    "@nrwl/tao": ^13.6.1
-    "@nrwl/workspace": ^13.6.1
+    "@nrwl/cli": ^13.7.1
+    "@nrwl/tao": ^13.7.1
+    "@nrwl/workspace": ^13.7.1
     "@types/jest": ^27.4.0
     "@typescript-eslint/eslint-plugin": ^5.10.1
     "@typescript-eslint/parser": ^5.10.1
-    aws-sdk: ^2.1065.0
-    eslint: ^8.7.0
+    aws-sdk: ^2.1066.0
+    eslint: ^8.8.0
     eslint-config-prettier: ^8.3.0
     eslint-import-resolver-typescript: ^2.5.0
     eslint-plugin-import: ^2.25.4
@@ -4349,7 +4349,7 @@ __metadata:
     "@types/node": ^17.0.13
     jest: ^27.4.7
     lint-staged: ^12.3.2
-    serverless: ^3.0.0
+    serverless: ^3.0.1
     serverless-esbuild: ^1.23.3
     ts-jest: ^27.1.3
     ts-node: ^10.4.0
@@ -4372,13 +4372,13 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.0
     "@types/node": ^17.0.13
-    aws-sdk: ^2.1065.0
+    aws-sdk: ^2.1066.0
     http-errors: ^2.0.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^12.3.2
-    serverless: ^3.0.0
+    serverless: ^3.0.1
     serverless-esbuild: ^1.23.3
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4402,13 +4402,13 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.0
     "@types/node": ^17.0.13
-    aws-sdk: ^2.1065.0
+    aws-sdk: ^2.1066.0
     http-errors: ^2.0.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^12.3.2
-    serverless: ^3.0.0
+    serverless: ^3.0.1
     serverless-esbuild: ^1.23.3
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4431,7 +4431,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -4457,7 +4457,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -4483,7 +4483,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -4520,7 +4520,7 @@ __metadata:
     "@vitejs/plugin-react": ^1.1.4
     axios: 0.24.0
     dotenv-flow: ^3.2.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-react: ^7.28.0
     eslint-plugin-react-hooks: ^4.3.0
@@ -4566,7 +4566,7 @@ __metadata:
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     lint-staged: ^12.3.2
-    serverless: ^3.0.0
+    serverless: ^3.0.1
     serverless-lift: ^1.12.0
     ts-jest: ^27.1.3
     ts-node: ^10.4.0
@@ -4588,7 +4588,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -4618,7 +4618,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -4643,7 +4643,7 @@ __metadata:
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.0.0
-    eslint: ^8.7.0
+    eslint: ^8.8.0
     jest: ^27.4.7
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
@@ -6126,7 +6126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1064.0, aws-sdk@npm:^2.1065.0":
+"aws-sdk@npm:^2.1065.0":
   version: 2.1065.0
   resolution: "aws-sdk@npm:2.1065.0"
   dependencies:
@@ -6140,6 +6140,23 @@ __metadata:
     uuid: 3.3.2
     xml2js: 0.4.19
   checksum: b65ddb86fff7dbba8e304d6c2b44b5abd75f88ea3994a18891f88d6c0dbdc15dc0ea659a3cc95eb3fe8b4ebb8301313c7b99c7ee4adcd487be003c4f16901714
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.1066.0":
+  version: 2.1066.0
+  resolution: "aws-sdk@npm:2.1066.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 5ed48ddd14fa01478222d989be06d75a9a3d7521a5bb9324547f745fbde8ee760836c80c6ee9678449b591c67e1d447671ed16ab36583a3a6266c4fc6ba6eb7c
   languageName: node
   linkType: hard
 
@@ -8840,9 +8857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.7.0":
-  version: 8.7.0
-  resolution: "eslint@npm:8.7.0"
+"eslint@npm:^8.8.0":
+  version: 8.8.0
+  resolution: "eslint@npm:8.8.0"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -8881,7 +8898,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 1c80375a48b0fe3ccae3c6354323e4f0e92e970f23abc5b9705b90b7aef514b69ebd0a63e74962d30789986c91fa41c0e25cd2f98f19e9e2a2d36aafdfc9ccc9
+  checksum: 41a7e85bf84cf9f2d758ef3e8d08020a39a2836703728b59535684681349bd021c2c6e24174462b844a914870d707d2151e0371198899d957b444de91adaa435
   languageName: node
   linkType: hard
 
@@ -13642,14 +13659,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:13.6.1":
-  version: 13.6.1
-  resolution: "nx@npm:13.6.1"
+"nx@npm:13.7.1":
+  version: 13.7.1
+  resolution: "nx@npm:13.7.1"
   dependencies:
-    "@nrwl/cli": 13.6.1
+    "@nrwl/cli": 13.7.1
   bin:
     nx: bin/nx.js
-  checksum: f51fdda69edbbdcebd59fc2c69ba6afe5c6dcd75743cc9f80f6446d6d221d91c9d96db88883f11d285820b6903c738a0c3a7be3f03653f234700818cc89ab48d
+  checksum: db98689b0a4c70be044245e2ab9511c033c640698b2dadb6c2de9c40267b3740a2eac98b5d0778b71cd7c726607baa48d7dfe14584a74617ebaa4f0e206bbf3f
   languageName: node
   linkType: hard
 
@@ -15660,9 +15677,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "serverless@npm:3.0.0"
+"serverless@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "serverless@npm:3.0.1"
   dependencies:
     "@serverless/dashboard-plugin": ^6.0.0
     "@serverless/platform-client": ^4.3.0
@@ -15670,7 +15687,7 @@ __metadata:
     ajv: ^8.9.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1064.0
+    aws-sdk: ^2.1065.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -15719,7 +15736,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 594ed88c18dbce2f4ee43e97dee17282a079fce1426197841a6770a2502dc30a7ecb4f4a77e948f16d6554b43f606ac0959c4ebe97cadacd1506dc5687f4bbd9
+  checksum: 01023c3c30e0cdea9b2aeb44a98e68e553ea326bc3b6902295081d9bbccad997055bae921bee70b3cdf544deb46a5a94569c3064ff0f93aaef74d948be2ba67d
   languageName: node
   linkType: hard
 

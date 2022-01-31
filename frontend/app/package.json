@@ -16,7 +16,7 @@
     "start": "vite",
     "stylelint-base-config": "stylelint",
     "stylelint:fix": "yarn stylelint-base-config --fix",
-    "test:all": "yarn test:linter && yarn test:type && yarn test:unit",
+    "test": "yarn test:linter && yarn test:type && yarn test:unit",
     "test:linter": "yarn linter-base-config src",
     "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
     "test:type": "tsc --noEmit",

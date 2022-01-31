@@ -22,7 +22,7 @@
         ]
       }
     },
-    "test:all": {
+    "test": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -34,7 +34,7 @@
         "cwd": "frontend/app",
         "commands": [
           {
-            "command": "yarn test:all"
+            "command": "yarn test"
           }
         ]
       }

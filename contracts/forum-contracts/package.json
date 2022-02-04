@@ -27,13 +27,13 @@
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
   "dependencies": {
-    "@babel/runtime": "^7.16.7",
-    "@serverless-contracts/core": "0.1.7"
+    "@babel/runtime": "^7.17.0",
+    "@serverless-contracts/core": "0.1.8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.8",
-    "@babel/core": "^7.16.12",
-    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
     "@zerollup/ts-transform-paths": "^1.7.18",
@@ -43,7 +43,7 @@
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
     "json-schema-to-ts": "^1.6.5",
-    "lint-staged": "^12.3.2",
+    "lint-staged": "^12.3.3",
     "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
     "ttypescript": "^1.5.13",

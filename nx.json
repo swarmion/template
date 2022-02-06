@@ -7,10 +7,13 @@
       "options": {
         "cacheableOperations": [
           "build",
-          "test",
-          "lint",
           "package",
-          "postinstall"
+          "test",
+          "test-all",
+          "test-type",
+          "test-linter",
+          "test-stylelint",
+          "test-unit"
         ],
         "cacheDirectory": "nx-cache",
         "useDaemonProcess": false
@@ -20,17 +23,49 @@
   "targetDependencies": {
     "build": [
       {
-        "target": "build",
+        "target": "package",
         "projects": "dependencies"
       }
     ],
-    "postinstall": [
+    "deploy": [
       {
-        "target": "postinstall",
+        "target": "package",
+        "projects": "dependencies"
+      },
+      {
+        "target": "build",
+        "projects": "dependencies"
+      },
+      {
+        "target": "deploy",
         "projects": "dependencies"
       }
     ],
     "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "test": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "test-linter": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "test-type": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ],
+    "test-unit": [
       {
         "target": "package",
         "projects": "dependencies"

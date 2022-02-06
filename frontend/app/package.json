@@ -6,19 +6,19 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "build": "vite build",
-    "lint:fix": "yarn linter-base-config --fix",
-    "lint:fix-all": "yarn lint:fix .",
+    "lint-fix": "yarn linter-base-config --fix",
+    "lint-fix-all": "yarn lint-fix .",
     "linter-base-config": "eslint --ext=js,jsx,ts,tsx",
     "precommit": "lint-staged",
     "serve": "vite preview",
     "start": "vite",
     "stylelint-base-config": "stylelint",
-    "stylelint:fix": "yarn stylelint-base-config --fix",
-    "test": "yarn test:linter && yarn test:type && yarn test:unit",
-    "test:linter": "yarn linter-base-config src",
+    "stylelint-fix": "yarn stylelint-base-config --fix",
+    "test": "yarn test-linter && yarn test-type && yarn test-unit",
+    "test-linter": "yarn linter-base-config src",
     "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
-    "test:type": "tsc --noEmit",
-    "test:unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
+    "test-type": "tsc --noEmit",
+    "test-unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",

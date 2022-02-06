@@ -4,9 +4,7 @@
   "targets": {
     "deploy": {
       "executor": "@nrwl/workspace:run-commands",
-      "outputs": [
-        "frontend/cloudfront/.serverless"
-      ],
+      "outputs": ["frontend/cloudfront/.serverless"],
       "dependsOn": [
         {
           "target": "build",
@@ -47,7 +45,7 @@
         ]
       }
     },
-    "test:linter": {
+    "test-linter": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -59,12 +57,12 @@
         "cwd": "frontend/cloudfront",
         "commands": [
           {
-            "command": "yarn test:linter"
+            "command": "yarn test-linter"
           }
         ]
       }
     },
-    "test:type": {
+    "test-type": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -76,12 +74,12 @@
         "cwd": "frontend/cloudfront",
         "commands": [
           {
-            "command": "yarn test:type"
+            "command": "yarn test-type"
           }
         ]
       }
     },
-    "test:unit": {
+    "test-unit": {
       "executor": "@nrwl/workspace:run-commands",
       "dependsOn": [
         {
@@ -93,14 +91,12 @@
         "cwd": "frontend/cloudfront",
         "commands": [
           {
-            "command": "yarn test:type"
+            "command": "yarn test-type"
           }
         ]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": [
-    "frontend-app"
-  ]
+  "implicitDependencies": ["frontend-app"]
 }

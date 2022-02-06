@@ -4,9 +4,7 @@
   "targets": {
     "deploy": {
       "executor": "@nrwl/workspace:run-commands",
-      "outputs": [
-        "backend/forum/.serverless"
-      ],
+      "outputs": ["backend/forum/.serverless"],
       "dependsOn": [
         {
           "target": "build",
@@ -48,7 +46,7 @@
       }
     }
   },
-  "test:linter": {
+  "test-linter": {
     "executor": "@nrwl/workspace:run-commands",
     "dependsOn": [
       {
@@ -60,12 +58,12 @@
       "cwd": "backend/forum",
       "commands": [
         {
-          "command": "yarn test:linter"
+          "command": "yarn test-linter"
         }
       ]
     }
   },
-  "test:type": {
+  "test-type": {
     "executor": "@nrwl/workspace:run-commands",
     "dependsOn": [
       {
@@ -77,12 +75,12 @@
       "cwd": "backend/forum",
       "commands": [
         {
-          "command": "yarn test:type"
+          "command": "yarn test-type"
         }
       ]
     }
   },
-  "test:unit": {
+  "test-unit": {
     "executor": "@nrwl/workspace:run-commands",
     "dependsOn": [
       {
@@ -94,13 +92,11 @@
       "cwd": "backend/forum",
       "commands": [
         {
-          "command": "yarn test:unit"
+          "command": "yarn test-unit"
         }
       ]
     }
   },
   "tags": [],
-  "implicitDependencies": [
-    "backend-core"
-  ]
+  "implicitDependencies": ["backend-core"]
 }

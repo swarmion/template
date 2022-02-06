@@ -60,7 +60,7 @@
     "husky": "^7.0.4",
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
-    "lint-staged": "^12.3.3",
+    "lint-staged": "^11.2.6",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.5.1",
     "redux-devtools-extension": "^2.13.9",

@@ -3,9 +3,9 @@ import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
+  profiles,
   projectName,
   sharedEsbuildConfig,
-  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 
@@ -32,9 +32,20 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   },
   functions,
   package: { individually: true },
-  params: sharedParams,
+  params: {
+    dev: {
+      apiGatewayCorsAllowedOrigins: ['http://localhost:3000'],
+    },
+    staging: {
+      apiGatewayCorsAllowedOrigins: ['https://staging.my-domain.com'],
+    },
+    production: {
+      apiGatewayCorsAllowedOrigins: ['https://www.my-domain.com'],
+    },
+  },
   custom: {
     projectName,
+    profiles,
     esbuild: sharedEsbuildConfig,
   },
   contracts: {

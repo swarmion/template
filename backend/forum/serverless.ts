@@ -4,9 +4,9 @@ import { AWS } from '@serverless/typescript';
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
 import {
+  profiles,
   projectName,
   sharedEsbuildConfig,
-  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 
@@ -31,9 +31,9 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   package: { individually: true },
   custom: {
     projectName,
+    profiles,
     esbuild: sharedEsbuildConfig,
   },
-  params: sharedParams,
   contracts: {
     provides: {
       getThreadWithPostsContract: getThreadWithPostsContract.fullContractSchema,

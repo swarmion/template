@@ -8,7 +8,7 @@ export const sharedProviderConfig = {
   runtime: 'nodejs14.x',
   architecture: 'arm64',
   region,
-  profile: '${param:profile}', // Used to point to the right AWS account
+  profile: '${self:custom.profiles.${self:provider.stage}}', // Used to point to the right AWS account
   stage: "${opt:stage, 'dev'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
   environment: {
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
@@ -19,19 +19,16 @@ export const sharedProviderConfig = {
   },
 } as const;
 
-export const sharedParams = {
-  dev: {
-    profile: 'sls-monorepo-developer',
-    apiGatewayCorsAllowedOrigins: ['http://localhost:3000'],
-  },
-  staging: {
-    profile: '',
-    apiGatewayCorsAllowedOrigins: ['https://staging.my-domain.com'],
-  },
-  production: {
-    profile: '',
-    apiGatewayCorsAllowedOrigins: ['https://www.my-domain.com'],
-  },
+/**
+ * common profiles settings. This must be put in the `custom` section of the `serverless.ts`
+ * config files since stage params cannot be used for the profile. See https://github.com/serverless/serverless/issues/10642
+ *
+ * An empty string for a profile means that the default profile will be used
+ */
+export const profiles = {
+  dev: 'sls-monorepo-developer',
+  staging: '',
+  production: '',
 };
 
 export const sharedEsbuildConfig = {

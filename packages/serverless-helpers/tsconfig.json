@@ -8,6 +8,6 @@
     "emitDeclarationOnly": true,
     "outDir": "./dist/types"
   },
-  "exclude": ["./dist"],
+  "exclude": ["./dist", "./jest.config.ts"],
   "include": ["./**/*.ts"]
 }

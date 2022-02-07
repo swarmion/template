@@ -3,9 +3,9 @@ import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
-  profiles,
   projectName,
   sharedEsbuildConfig,
+  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
 import { getUserContract } from '@sls-monorepo/users-contracts';
@@ -27,11 +27,11 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
       id: httpApiResourceContract.importValue,
     },
   },
+  params: sharedParams,
   functions,
   package: { individually: true },
   custom: {
     projectName,
-    profiles,
     esbuild: sharedEsbuildConfig,
   },
   contracts: {

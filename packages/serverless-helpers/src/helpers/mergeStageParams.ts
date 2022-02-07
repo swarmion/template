@@ -4,7 +4,7 @@ export const mergeStageParams = <
   ServiceParamKeys extends string,
 >(
   commonStageParams: Record<Stage, Record<CommonParamKeys, unknown>>,
-  serviceStageParams: Record<Stage, Record<ServiceParamKeys, string>>,
+  serviceStageParams: Record<Stage, Record<ServiceParamKeys, unknown>>,
 ): Record<Stage, Record<CommonParamKeys & ServiceParamKeys, unknown>> => {
   return Object.keys(commonStageParams).reduce(
     (prev, stage: Stage) => ({

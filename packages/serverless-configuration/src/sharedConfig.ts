@@ -8,7 +8,7 @@ export const sharedProviderConfig = {
   runtime: 'nodejs14.x',
   architecture: 'arm64',
   region,
-  profile: '${self:custom.profiles.${self:provider.stage}}', // Used to point to the right AWS account
+  profile: '${param:profile}', // Used to point to the right AWS account
   stage: "${opt:stage, 'dev'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
   environment: {
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
@@ -25,10 +25,10 @@ export const sharedProviderConfig = {
  *
  * An empty string for a profile means that the default profile will be used
  */
-export const profiles = {
-  dev: 'sls-monorepo-developer',
-  staging: '',
-  production: '',
+export const sharedParams = {
+  dev: { profile: 'sls-monorepo-developer' },
+  staging: { profile: '' },
+  production: { profile: '' },
 };
 
 export const sharedEsbuildConfig = {

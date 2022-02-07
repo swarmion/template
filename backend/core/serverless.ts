@@ -3,11 +3,12 @@ import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
 import {
-  profiles,
   projectName,
   sharedEsbuildConfig,
+  sharedParams,
   sharedProviderConfig,
 } from '@sls-monorepo/serverless-configuration';
+import { mergeStageParams } from '@sls-monorepo/serverless-helpers';
 
 import { functions } from './functions';
 
@@ -32,7 +33,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   },
   functions,
   package: { individually: true },
-  params: {
+  params: mergeStageParams(sharedParams, {
     dev: {
       apiGatewayCorsAllowedOrigins: ['http://localhost:3000'],
     },
@@ -42,10 +43,9 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
     production: {
       apiGatewayCorsAllowedOrigins: ['https://www.my-domain.com'],
     },
-  },
+  }),
   custom: {
     projectName,
-    profiles,
     esbuild: sharedEsbuildConfig,
   },
   contracts: {

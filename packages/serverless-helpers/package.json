@@ -21,6 +21,7 @@
     "test": "yarn test-linter && yarn test-type",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit --emitDeclarationOnly false",
+    "test-unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
     "transpile": "babel src --extensions .ts --quiet",
     "watch": "rm -rf dist && concurrently 'yarn:package:* --watch'"
   },
@@ -38,6 +39,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
     "@serverless/typescript": "^3.1.1",
+    "@sls-monorepo/configuration": "1.0.0",
     "@types/aws-lambda": "^8.10.92",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-plugin-module-resolver": "^4.1.0",

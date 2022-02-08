@@ -5,17 +5,15 @@
   "license": "UNLICENSED",
   "scripts": {
     "deploy": "./deploy.sh",
-    "lint:fix": "yarn linter-base-config --fix",
-    "lint:fix-all": "yarn lint:fix .",
+    "lint-fix": "yarn linter-base-config --fix",
+    "lint-fix-all": "yarn lint-fix .",
     "linter-base-config": "eslint --ext=js,ts",
-    "migrate": "echo 'No migrations in this service'",
     "precommit": "lint-staged",
     "remove": "serverless remove",
-    "sls:info": "serverless info --verbose",
-    "test": "yarn test:linter && yarn test:type && yarn test:unit",
-    "test:linter": "yarn linter-base-config .",
-    "test:type": "tsc --noEmit",
-    "test:unit": "echo 'No tests yet'"
+    "sls-info": "serverless info --verbose",
+    "test": "yarn test-linter && yarn test-type",
+    "test-linter": "yarn linter-base-config .",
+    "test-type": "tsc --noEmit"
   },
   "dependencies": {
     "@sls-monorepo/serverless-configuration": "1.0.0",
@@ -29,7 +27,7 @@
     "@types/node": "^17.0.14",
     "jest": "^27.4.7",
     "jest-runner-groups": "^2.1.0",
-    "lint-staged": "^12.3.3",
+    "lint-staged": "^11.2.6",
     "serverless": "^3.1.1",
     "serverless-lift": "^1.12.0",
     "ts-jest": "^27.1.3",

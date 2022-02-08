@@ -1,4 +1,4 @@
-export const mergeStageParams = <
+const mergeStageParams = <
   Stage extends string,
   CommonParamKeys extends string,
   ServiceParamKeys extends string,
@@ -14,3 +14,5 @@ export const mergeStageParams = <
     {} as Record<Stage, Record<string, unknown>>,
   );
 };
+
+export default mergeStageParams;

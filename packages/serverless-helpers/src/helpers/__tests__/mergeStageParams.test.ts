@@ -1,4 +1,4 @@
-import { mergeStageParams } from '../mergeStageParams';
+import mergeStageParams from '../mergeStageParams';
 
 /**
  * unit tests

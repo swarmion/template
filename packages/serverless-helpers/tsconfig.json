@@ -2,12 +2,11 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "src",
-    "rootDir": "src",
     "composite": true,
     "plugins": [{ "transform": "@zerollup/ts-transform-paths" }],
     "emitDeclarationOnly": true,
     "outDir": "./dist/types"
   },
-  "exclude": ["./dist", "./jest.config.ts"],
+  "exclude": ["./dist"],
   "include": ["./**/*.ts"]
 }

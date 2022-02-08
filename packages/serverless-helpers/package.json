@@ -16,7 +16,7 @@
     "package": "rm -rf dist && yarn package:cjs && yarn package:esm && yarn package:types",
     "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs --source-maps",
     "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps",
-    "package:types": "ttsc",
+    "package:types": "ttsc -p tsconfig.build.json",
     "precommit": "lint-staged",
     "test": "yarn test-linter && yarn test-type",
     "test-linter": "yarn linter-base-config .",

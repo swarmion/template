@@ -18,7 +18,7 @@
     "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps",
     "package:types": "ttsc -p tsconfig.build.json",
     "precommit": "lint-staged",
-    "test": "yarn test-linter && yarn test-type",
+    "test": "yarn test-linter && yarn test-type && yarn test-unit",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit --emitDeclarationOnly false",
     "test-unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests",

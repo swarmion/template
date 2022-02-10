@@ -4012,6 +4012,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@serverless/utils@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "@serverless/utils@npm:6.0.2"
+  dependencies:
+    archive-type: ^4.0.0
+    chalk: ^4.1.2
+    ci-info: ^3.3.0
+    cli-progress-footer: ^2.3.0
+    content-disposition: ^0.5.4
+    d: ^1.0.1
+    decompress: ^4.2.1
+    event-emitter: ^0.3.5
+    ext: ^1.6.0
+    ext-name: ^5.0.0
+    file-type: ^16.5.3
+    filenamify: ^4.3.0
+    get-stream: ^6.0.1
+    got: ^11.8.3
+    inquirer: ^8.2.0
+    js-yaml: ^4.1.0
+    jwt-decode: ^3.1.2
+    lodash: ^4.17.21
+    log: ^6.3.1
+    log-node: ^8.0.3
+    make-dir: ^3.1.0
+    memoizee: ^0.4.15
+    ncjsm: ^4.3.0
+    p-event: ^4.2.0
+    supports-color: ^8.1.1
+    type: ^2.6.0
+    uni-global: ^1.0.0
+    uuid: ^8.3.2
+    write-file-atomic: ^4.0.0
+  checksum: 2735644a0d7bbaeb7072622f3d1c34f06596b33236062af66eb2b3aab737fd16804c049063fd49ea6c818a705e4acce45ae699fba0f0ddf2c40ea18f6c9897a1
+  languageName: node
+  linkType: hard
+
 "@sindresorhus/is@npm:^4.0.0":
   version: 4.4.0
   resolution: "@sindresorhus/is@npm:4.4.0"
@@ -4049,7 +4086,7 @@ __metadata:
     "@types/jest": ^27.4.0
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
-    aws-sdk: ^2.1071.0
+    aws-sdk: ^2.1072.0
     eslint: ^8.8.0
     eslint-config-prettier: ^8.3.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -4078,10 +4115,10 @@ __metadata:
     "@sls-monorepo/serverless-configuration": 1.0.0
     "@sls-monorepo/serverless-helpers": 1.0.0
     "@types/jest": ^27.4.0
-    "@types/node": ^17.0.16
+    "@types/node": ^17.0.17
     jest: ^27.5.1
     lint-staged: ^11.2.6
-    serverless: ^3.1.1
+    serverless: ^3.2.0
     serverless-esbuild: ^1.24.1
     ts-jest: ^27.1.3
     ts-node: ^10.5.0
@@ -4103,14 +4140,14 @@ __metadata:
     "@sls-monorepo/serverless-helpers": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.0
-    "@types/node": ^17.0.16
-    aws-sdk: ^2.1071.0
+    "@types/node": ^17.0.17
+    aws-sdk: ^2.1072.0
     http-errors: ^2.0.0
     jest: ^27.5.1
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^11.2.6
-    serverless: ^3.1.1
+    serverless: ^3.2.0
     serverless-esbuild: ^1.24.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4133,14 +4170,14 @@ __metadata:
     "@sls-monorepo/users-contracts": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.0
-    "@types/node": ^17.0.16
-    aws-sdk: ^2.1071.0
+    "@types/node": ^17.0.17
+    aws-sdk: ^2.1072.0
     http-errors: ^2.0.0
     jest: ^27.5.1
     jest-runner-groups: ^2.1.0
     json-schema-to-ts: ^1.6.5
     lint-staged: ^11.2.6
-    serverless: ^3.1.1
+    serverless: ^3.2.0
     serverless-esbuild: ^1.24.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4271,7 +4308,7 @@ __metadata:
     redux: ^4.1.2
     redux-devtools-extension: ^2.13.9
     rollup-plugin-visualizer: ^5.5.4
-    stylelint: ^14.4.0
+    stylelint: ^14.5.0
     stylelint-config-prettier: ^9.0.3
     stylelint-config-rational-order: ^0.1.2
     stylelint-config-standard: ^24.0.0
@@ -4294,11 +4331,11 @@ __metadata:
     "@sls-monorepo/serverless-configuration": 1.0.0
     "@sls-monorepo/users-contracts": 1.0.0
     "@types/jest": ^27.4.0
-    "@types/node": ^17.0.16
+    "@types/node": ^17.0.17
     jest: ^27.5.1
     jest-runner-groups: ^2.1.0
     lint-staged: ^11.2.6
-    serverless: ^3.1.1
+    serverless: ^3.2.0
     serverless-lift: ^1.12.1
     ts-jest: ^27.1.3
     ts-node: ^10.5.0
@@ -4857,10 +4894,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.16":
-  version: 17.0.16
-  resolution: "@types/node@npm:17.0.16"
-  checksum: 2d452a9e0ee7ec83d447d66dd2baf4dd05ef2fbcda39b06f73d86b36d5150d86c43a733d534d77467e7782104756944d42a35ed4b64113bda341b8334ee4d01d
+"@types/node@npm:^17.0.17":
+  version: 17.0.17
+  resolution: "@types/node@npm:17.0.17"
+  checksum: 8ddba2829acdf1684fbd8fd248ec13f033efb70ecd1085677b547c40ef8e936a006b95eac3bdc28c47939c62526f3f027afeb4a930e30e4394923bbae4626476
   languageName: node
   linkType: hard
 
@@ -5429,7 +5466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.0.0, ajv@npm:^8.0.1, ajv@npm:^8.6.0, ajv@npm:^8.9.0":
+"ajv@npm:^8.0.0, ajv@npm:^8.0.1, ajv@npm:^8.6.0":
   version: 8.9.0
   resolution: "ajv@npm:8.9.0"
   dependencies:
@@ -5438,6 +5475,18 @@ __metadata:
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
   checksum: 756c048bfa917b43bb84c8a0a53e6a489123203bc4bdec8cbeb8ec2d715674f5e61d49560a1a6ec83268af4f33bed324f5cb6d9c76d96849fd58ed7089b8e7f3
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^8.10.0":
+  version: 8.10.0
+  resolution: "ajv@npm:8.10.0"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    json-schema-traverse: ^1.0.0
+    require-from-string: ^2.0.2
+    uri-js: ^4.2.2
+  checksum: 3594728ef1e31219ef97bfacb203d0d72db8ad5c35d6d0578e38ee453e4537c2bf927dad144bb84b0c893f661d71b58337d4643e8ee2f2a6e1d63b041c92fe82
   languageName: node
   linkType: hard
 
@@ -5814,7 +5863,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1066.0, aws-sdk@npm:^2.942.0":
+"aws-sdk@npm:^2.1072.0":
+  version: 2.1072.0
+  resolution: "aws-sdk@npm:2.1072.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 0c63b35275e314cc052b67e31be87e428f371fb48ff4b9cb870310500e2d8836942865fd7bfc574d3eff4207ac132044bab06e659a9174cb16731075ad803783
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.942.0":
   version: 2.1066.0
   resolution: "aws-sdk@npm:2.1066.0"
   dependencies:
@@ -5828,23 +5894,6 @@ __metadata:
     uuid: 3.3.2
     xml2js: 0.4.19
   checksum: 5ed48ddd14fa01478222d989be06d75a9a3d7521a5bb9324547f745fbde8ee760836c80c6ee9678449b591c67e1d447671ed16ab36583a3a6266c4fc6ba6eb7c
-  languageName: node
-  linkType: hard
-
-"aws-sdk@npm:^2.1071.0":
-  version: 2.1071.0
-  resolution: "aws-sdk@npm:2.1071.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    uuid: 3.3.2
-    xml2js: 0.4.19
-  checksum: 957350d1b5606f1d2d3100ac40c988f6fbb68d9a129e6f55cfffc363aac28ece2ecee59427680ebf82c557a9572efe545aac4ce2e48c9944f5155310ebd98901
   languageName: node
   linkType: hard
 
@@ -10187,6 +10236,28 @@ __metadata:
     strip-ansi: ^6.0.0
     through: ^2.3.6
   checksum: 4d387fc1eb6126acbd58cbdb9ad99d2887d181df86ab0c2b9abdf734e751093e2d5882c2b6dc7144d9ab16b7ab30a78a1d7f01fb6a2850a44aeb175d1e3f8778
+  languageName: node
+  linkType: hard
+
+"inquirer@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "inquirer@npm:8.2.0"
+  dependencies:
+    ansi-escapes: ^4.2.1
+    chalk: ^4.1.1
+    cli-cursor: ^3.1.0
+    cli-width: ^3.0.0
+    external-editor: ^3.0.3
+    figures: ^3.0.0
+    lodash: ^4.17.21
+    mute-stream: 0.0.8
+    ora: ^5.4.1
+    run-async: ^2.4.0
+    rxjs: ^7.2.0
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+    through: ^2.3.6
+  checksum: 861d1a9324ae933b49126b3541d94e4d6a2f2a25411b3f3cc00c34bf1bdab34146362d702cf289efe6d8034900dc5905bcf2ea716092a02b6fc390e5986dd236
   languageName: node
   linkType: hard
 
@@ -15153,6 +15224,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rxjs@npm:^7.2.0":
+  version: 7.5.4
+  resolution: "rxjs@npm:7.5.4"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: 6f55f835f2543bc8214900f9e28b6320e6adc95875011fbca63e80a66eb18c9ff7cfdccb23b2180cbb6412762b98ed158c89fd51cb020799d127c66ea38c3c0e
+  languageName: node
+  linkType: hard
+
 "rxjs@npm:^7.5.1":
   version: 7.5.2
   resolution: "rxjs@npm:7.5.2"
@@ -15378,17 +15458,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "serverless@npm:3.1.1"
+"serverless@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "serverless@npm:3.2.0"
   dependencies:
     "@serverless/dashboard-plugin": ^6.0.0
     "@serverless/platform-client": ^4.3.1
-    "@serverless/utils": ^6.0.0
-    ajv: ^8.9.0
+    "@serverless/utils": ^6.0.2
+    ajv: ^8.10.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1066.0
+    aws-sdk: ^2.1072.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -15425,19 +15505,19 @@ __metadata:
     promise-queue: ^2.2.5
     require-from-string: ^2.0.2
     semver: ^7.3.5
-    signal-exit: ^3.0.6
+    signal-exit: ^3.0.7
     strip-ansi: ^6.0.1
     supports-color: ^8.1.1
     tar: ^6.1.11
     timers-ext: ^0.1.7
-    type: ^2.5.0
+    type: ^2.6.0
     untildify: ^4.0.0
     uuid: ^8.3.2
     yaml-ast-parser: 0.0.43
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 360f37dc8ff5a26d9e501ba6ec0197039166e6836cb564b40fd7052679121de82243e9d8dc2eb491654648e9e9f7edd8ab40922aaf50cf4572d7859fe6024b35
+  checksum: b7fb1a5df42e053c4ab1e619e4e4aa07c8a558f50b3312031890fce4f20b209d3a9a309abafa0bcfcfc722c58b7aad988bed6426bd1ca710a2fc08c1099f07c3
   languageName: node
   linkType: hard
 
@@ -15517,10 +15597,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"signal-exit@npm:^3.0.0, signal-exit@npm:^3.0.2, signal-exit@npm:^3.0.3, signal-exit@npm:^3.0.6":
+"signal-exit@npm:^3.0.0, signal-exit@npm:^3.0.2, signal-exit@npm:^3.0.3":
   version: 3.0.6
   resolution: "signal-exit@npm:3.0.6"
   checksum: b819ac81ba757af559dad0804233ae31bf6f054591cd8a671e9cbcf09f21c72ec3076fe87d1e04861f5b33b47d63f0694b568de99c99cd733ee2060515beb6d5
+  languageName: node
+  linkType: hard
+
+"signal-exit@npm:^3.0.7":
+  version: 3.0.7
+  resolution: "signal-exit@npm:3.0.7"
+  checksum: a2f098f247adc367dffc27845853e9959b9e88b01cb301658cfe4194352d8d2bb32e18467c786a7fe15f1d44b233ea35633d076d5e737870b7139949d1ab6318
   languageName: node
   linkType: hard
 
@@ -16191,9 +16278,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.4.0":
-  version: 14.4.0
-  resolution: "stylelint@npm:14.4.0"
+"stylelint@npm:^14.5.0":
+  version: 14.5.0
+  resolution: "stylelint@npm:14.5.0"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
@@ -16238,7 +16325,7 @@ __metadata:
     write-file-atomic: ^4.0.0
   bin:
     stylelint: bin/stylelint.js
-  checksum: 06dda5cd95dabbd53c5c94621c29d22ec07fee4ad91552019d68ec64dbd7f442ac94189e930d80e989da027c355152eeaa4c4de51c37394dfe83efd42dc828d6
+  checksum: b4244701f7a276528b2e3c262406514d85a023ec623547bc762dfa1db6ab910ba867e6e012c10937e5a750e61e5f0656ec6e66ffc4a368733c2f595b0dd19702
   languageName: node
   linkType: hard
 
@@ -17002,6 +17089,13 @@ __metadata:
   version: 2.5.0
   resolution: "type@npm:2.5.0"
   checksum: 0fe1bb4e8ba298b2b245fdc6bca6178887e29e2134d231e468366615b3adffd651d464eb51d8b15f8cfd168577c282a17e19bf80f036a60d4df16308a83a93c4
+  languageName: node
+  linkType: hard
+
+"type@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "type@npm:2.6.0"
+  checksum: 80da01fcc0f6ed5a253dc326530e134000a8f66ea44b6d9687cde2f894f0d0b2486595b0cd040a64f7f79dc3120784236f8c9ef667a8aef03984e049b447cfb4
   languageName: node
   linkType: hard
 

@@ -14,7 +14,7 @@ const getFullFunctionName = (config: AWS, functionName: string): string =>
  * Test that all the automatically generated function names will pass the 64 characters AWS limit
  * @param config serverless configuration object
  */
-export const testFunctionNames = (config: AWS): void => {
+const testFunctionNames = (config: AWS): void => {
   const functionNames = getFunctionNames(config);
   if (functionNames.length === 0) {
     it('has no functions declared', () => {
@@ -35,3 +35,5 @@ export const testFunctionNames = (config: AWS): void => {
     },
   );
 };
+
+export default testFunctionNames;

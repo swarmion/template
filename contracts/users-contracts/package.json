@@ -47,5 +47,14 @@
     "ts-node": "^10.5.0",
     "ttypescript": "^1.5.13",
     "typescript": "^4.5.5"
+  },
+  "nx": {
+    "targets": {
+      "package": {
+        "outputs": [
+          "contracts/users-contracts/dist"
+        ]
+      }
+    }
   }
 }

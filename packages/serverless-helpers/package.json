@@ -52,5 +52,14 @@
     "prettier": "^2.5.1",
     "ttypescript": "^1.5.13",
     "typescript": "^4.5.5"
+  },
+  "nx": {
+    "targets": {
+      "package": {
+        "outputs": [
+          "packages/serverless-helpers/dist"
+        ]
+      }
+    }
   }
 }

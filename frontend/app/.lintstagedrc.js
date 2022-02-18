@@ -1,4 +1,4 @@
-const baseConfig = require('../../commonConfiguration/lintstaged-base-config');
+const baseConfig = require('../../.lintstagedrc');
 
 module.exports = {
   ...baseConfig,

@@ -17,7 +17,6 @@
     "package:cjs": "NODE_ENV=cjs yarn transpile --out-dir dist/cjs --source-maps",
     "package:esm": "NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps",
     "package:types": "ttsc -p tsconfig.build.json",
-    "precommit": "lint-staged",
     "test": "yarn test-linter && yarn test-type && yarn test-unit",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit --emitDeclarationOnly false",
@@ -48,7 +47,6 @@
     "jest": "^27.5.1",
     "jest-runner-groups": "^2.1.0",
     "json-schema-to-ts": "^1.6.5",
-    "lint-staged": "^11.2.6",
     "prettier": "^2.5.1",
     "ttypescript": "^1.5.13",
     "typescript": "^4.5.5"

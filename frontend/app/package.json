@@ -20,12 +20,12 @@
     "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.4.1",
-    "@mui/lab": "^5.0.0-alpha.68",
-    "@mui/material": "^5.4.1",
-    "@mui/system": "^5.4.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/lab": "^5.0.0-alpha.70",
+    "@mui/material": "^5.4.3",
+    "@mui/system": "^5.4.3",
     "@react-hookz/web": "^12.3.0",
     "@reduxjs/toolkit": "^1.7.2",
     "@sls-monorepo/configuration": "1.0.0",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "@stylelint/postcss-css-in-js": "^0.37.2",
     "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
+    "@testing-library/react": "^12.1.3",
     "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/dotenv-flow": "^3.2.0",
@@ -61,15 +61,15 @@
     "prettier": "^2.5.1",
     "redux-devtools-extension": "^2.13.9",
     "rollup-plugin-visualizer": "^5.5.4",
-    "stylelint": "^14.5.0",
+    "stylelint": "^14.5.2",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^25.0.0",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5",
-    "vite": "^2.8.2",
+    "vite": "^2.8.4",
     "vite-plugin-svgr": "^1.0.1",
-    "vite-tsconfig-paths": "^3.4.0"
+    "vite-tsconfig-paths": "^3.4.1"
   }
 }

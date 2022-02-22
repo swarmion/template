@@ -32,12 +32,12 @@
     "@middy/validator": "^2.5.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.0",
-    "@babel/core": "^7.17.2",
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@serverless/typescript": "^3.2.0",
+    "@serverless/typescript": "^3.3.0",
     "@sls-monorepo/configuration": "1.0.0",
     "@types/aws-lambda": "^8.10.92",
     "@zerollup/ts-transform-paths": "^1.7.18",

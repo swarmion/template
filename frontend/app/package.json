@@ -61,7 +61,7 @@
     "prettier": "^2.5.1",
     "redux-devtools-extension": "^2.13.9",
     "rollup-plugin-visualizer": "^5.5.4",
-    "stylelint": "^14.5.2",
+    "stylelint": "^14.5.3",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^25.0.0",

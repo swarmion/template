@@ -2,8 +2,6 @@ import mergeStageParams from '../mergeStageParams';
 
 /**
  * unit tests
- *
- * @group unit/helpers
  */
 describe('mergeStageParams', () => {
   it('should merge single stage params', () => {

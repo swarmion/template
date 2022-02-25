@@ -4,8 +4,6 @@ import { getUser } from '../selectors';
 
 /**
  * user selectors test
- *
- * @group unit/redux
  */
 describe('user slice selectors', () => {
   describe('getUser function', () => {

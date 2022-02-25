@@ -4,8 +4,6 @@ import reducer, { initialState, setUser } from '../slice';
 
 /**
  * user reducers test
- *
- * @group unit/redux
  */
 describe('user reducers', () => {
   describe('setUser', () => {

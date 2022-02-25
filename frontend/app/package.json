@@ -16,7 +16,7 @@
     "test": "yarn test-linter && yarn test-type && yarn test-unit",
     "test-linter": "yarn linter-base-config src",
     "test-type": "tsc --noEmit",
-    "test-unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
+    "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
     "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
   },
   "dependencies": {
@@ -58,7 +58,6 @@
     "eslint-plugin-risxss": "^2.1.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
-    "jest-runner-groups": "^2.1.0",
     "postcss": "^8.4.6",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.5.1",

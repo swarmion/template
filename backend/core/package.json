@@ -18,7 +18,7 @@
     "test": "yarn test-linter && yarn test-type && yarn test-unit",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit",
-    "test-unit": "jest --group=unit --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
+    "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
   },
   "dependencies": {
     "@serverless-contracts/plugin": "0.2.2",

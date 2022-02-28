@@ -39,6 +39,7 @@
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
       "editorconfig.editorconfig",
+      "foxundermoon.shell-format",
       "orta.vscode-jest",
       "streetsidesoftware.code-spell-checker",
       "streetsidesoftware.code-spell-checker-french",
@@ -94,6 +95,10 @@
     {
       "path": "frontend/cloudfront",
       "name": "frontend cloudfront [service]"
+    },
+    {
+      "path": "tools/generators",
+      "name": "generators [dev-tool]"
     }
   ]
 }

@@ -3930,7 +3930,6 @@ __metadata:
     esbuild: ^0.14.23
     http-errors: ^2.0.0
     jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
     serverless: ^3.3.0
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
@@ -3959,7 +3958,6 @@ __metadata:
     esbuild: ^0.14.23
     http-errors: ^2.0.0
     jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
     serverless: ^3.3.0
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
@@ -3986,7 +3984,6 @@ __metadata:
     concurrently: ^7.0.0
     eslint: ^8.9.0
     jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
     ts-jest: ^27.1.3
     ts-node: ^10.5.0
@@ -4012,7 +4009,6 @@ __metadata:
     concurrently: ^7.0.0
     eslint: ^8.9.0
     jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
     ts-node: ^10.5.0
     ttypescript: ^1.5.13
@@ -4172,7 +4168,6 @@ __metadata:
     concurrently: ^7.0.0
     eslint: ^8.9.0
     jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
     ts-node: ^10.5.0
     ttypescript: ^1.5.13

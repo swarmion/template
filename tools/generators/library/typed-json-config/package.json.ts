@@ -25,7 +25,7 @@ export const packageJson = (name: string): PackageJson => ({
     'test-linter': 'yarn linter-base-config .',
     'test-type': 'tsc --noEmit --emitDeclarationOnly false',
     'test-unit': "echo 'no tests yet'",
-    transpile: 'babel . --extensions .ts',
+    transpile: 'babel src --extensions .ts',
     watch: "rm -rf dist && concurrently 'yarn:package-* --watch'",
   },
   dependencies: {

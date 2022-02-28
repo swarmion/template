@@ -21,7 +21,7 @@
     "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.2.2",
+    "@serverless-contracts/plugin": "0.3.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0"
   },

@@ -1,11 +1,7 @@
-import { FromSchema } from 'json-schema-to-ts';
-
 import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
 import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
 
-export const handler = async (
-  event: FromSchema<typeof getThreadWithPostsContract.inputSchema>,
-): Promise<FromSchema<typeof getThreadWithPostsContract.outputSchema>> => {
+export const handler = getThreadWithPostsContract.handler(async event => {
   const { threadId } = event.pathParameters;
 
   await Promise.resolve({ threadId });
@@ -35,7 +31,7 @@ export const handler = async (
       },
     ],
   };
-};
+});
 
 export const main = applyHttpMiddlewares(handler, {
   inputSchema: getThreadWithPostsContract.inputSchema,

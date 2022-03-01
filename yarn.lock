@@ -3926,7 +3926,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1080.0
+    aws-sdk: ^2.1083.0
     esbuild: ^0.14.23
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -3954,7 +3954,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1080.0
+    aws-sdk: ^2.1083.0
     esbuild: ^0.14.23
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -4134,7 +4134,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.12.1
     "@typescript-eslint/parser": ^5.12.1
-    aws-sdk: ^2.1080.0
+    aws-sdk: ^2.1083.0
     eslint: ^8.9.0
     eslint-config-prettier: ^8.4.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -5696,9 +5696,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1080.0":
-  version: 2.1080.0
-  resolution: "aws-sdk@npm:2.1080.0"
+"aws-sdk@npm:^2.1083.0":
+  version: 2.1083.0
+  resolution: "aws-sdk@npm:2.1083.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5709,7 +5709,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: af7ca53d45d0d4b2b54db53a631fe1a656ad2a62b045c9c374435808ffc5558f13b5370e8d1d87cd2810d6458f2984107b497319937b9a2b5d013d57b8c0e855
+  checksum: 10471fa906d5d95f99735fe5ed1bbc16ed4d2ca9bcba907a9dd5a3082bb7c5ed1adf34f55862c39da9524708c4b9c70bc3bd39a27b6b8620575d102fa3fe33dd
   languageName: node
   linkType: hard
 

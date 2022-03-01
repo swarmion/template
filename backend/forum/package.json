@@ -26,7 +26,7 @@
     "@sls-monorepo/forum-contracts": "1.0.0",
     "@sls-monorepo/serverless-configuration": "1.0.0",
     "@sls-monorepo/serverless-helpers": "1.0.0",
-    "aws-sdk": "^2.1080.0",
+    "aws-sdk": "^2.1083.0",
     "http-errors": "^2.0.0"
   },
   "devDependencies": {

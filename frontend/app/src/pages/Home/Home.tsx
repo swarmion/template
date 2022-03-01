@@ -58,10 +58,13 @@ const Home = (): JSX.Element => {
     >
       <Title />
       <Box marginTop={6}>
-        <StyledButton variant="contained" onClick={execute}>
+        <StyledButton variant="contained" onClick={() => void execute()}>
           <FormattedMessage id="home.button" />
         </StyledButton>
-        <StyledButtonWithTheme variant="contained" onClick={execute}>
+        <StyledButtonWithTheme
+          variant="contained"
+          onClick={() => void execute()}
+        >
           <FormattedMessage id="home.button" />
         </StyledButtonWithTheme>
       </Box>

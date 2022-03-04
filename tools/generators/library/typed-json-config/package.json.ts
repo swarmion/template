@@ -1,7 +1,10 @@
+import { join } from 'path';
+
+import { NormalizedSchema } from '..';
 import { PackageJson } from '../../types';
 
-export const packageJson = (name: string): PackageJson => ({
-  name,
+export const packageJson = (options: NormalizedSchema): PackageJson => ({
+  name: options.importPath,
   private: true,
   version: '1.0.0',
   license: 'UNLICENSED',
@@ -47,5 +50,12 @@ export const packageJson = (name: string): PackageJson => ({
     'ts-node': '^10.5.0',
     ttypescript: '^1.5.13',
     typescript: '^4.5.5',
+  },
+  nx: {
+    targets: {
+      package: {
+        outputs: [join(options.projectRoot, 'dist')],
+      },
+    },
   },
 });

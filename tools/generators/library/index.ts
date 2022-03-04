@@ -110,7 +110,7 @@ export const libraryGenerator = async (
   writeJson(
     tree,
     join(options.projectRoot, `package.json`),
-    packageJson(options.importPath),
+    packageJson(options),
   );
 
   writeJson(tree, join(options.projectRoot, `tsconfig.json`), packageTsConfig);

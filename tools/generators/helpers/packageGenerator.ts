@@ -1,26 +1,32 @@
-import { addProjectConfiguration, Tree, writeJson } from '@nrwl/devkit';
+import {
+  addProjectConfiguration,
+  ProjectConfiguration,
+  Tree,
+  writeJson,
+} from '@nrwl/devkit';
 import { join } from 'path';
 
-import { NormalizedSchema } from '../types';
+import { NormalizedSchema, PackageJson, TsConfig } from '../types';
 import { createFiles } from './createFiles';
-import {
+import { updateCodeWorkspace } from './updateCodeWorkspace';
+
+interface PackageGeneratorParams {
+  tree: Tree;
+  options: NormalizedSchema;
+  sourcePath: string;
+  packageJson: (options: NormalizedSchema) => PackageJson;
+  packageProjectJson: (root: string) => ProjectConfiguration;
+  packageTsConfig: TsConfig;
+}
+
+export const packageGenerator = ({
+  options,
   packageJson,
   packageProjectJson,
   packageTsConfig,
-} from './typed-json-config';
-import { updateCodeWorkspace } from './updateCodeWorkspace';
-
-const addProject = (tree: Tree, options: NormalizedSchema) => {
-  const projectConfiguration = packageProjectJson(options.projectRoot);
-
-  addProjectConfiguration(tree, options.name, projectConfiguration);
-};
-
-export const packageGenerator = (
-  tree: Tree,
-  options: NormalizedSchema,
-  sourcePath: string,
-): void => {
+  sourcePath,
+  tree,
+}: PackageGeneratorParams): void => {
   createFiles(tree, options, sourcePath);
 
   writeJson(
@@ -31,7 +37,8 @@ export const packageGenerator = (
 
   writeJson(tree, join(options.projectRoot, `tsconfig.json`), packageTsConfig);
 
-  addProject(tree, options);
+  const projectConfiguration = packageProjectJson(options.projectRoot);
+  addProjectConfiguration(tree, options.name, projectConfiguration);
 
   updateCodeWorkspace(tree, options);
 };

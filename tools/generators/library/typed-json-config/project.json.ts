@@ -1,7 +1,7 @@
 import { ProjectConfiguration } from '@nrwl/devkit';
 
-export const packageProjectJson = (path: string): ProjectConfiguration => ({
-  root: `${path}`,
+export const packageProjectJson = (root: string): ProjectConfiguration => ({
+  root,
   projectType: 'library',
   tags: [],
   implicitDependencies: [],

@@ -18,40 +18,30 @@ export const normalizeOptions = (
       ? `${names(options.directory).fileName}/${name}`
       : name;
 
-  if (!options.unitTestRunner) {
-    options.unitTestRunner = 'jest';
-  }
+  const unitTestRunner = options.skipJestConfig === true ? 'none' : 'jest';
 
-  if (!options.linter) {
-    options.linter = Linter.EsLint;
-  }
+  const linter = Linter.EsLint;
 
   const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-');
   const fileName = getCaseAwareFileName({
-    fileName: options.simpleModuleName === true ? name : projectName,
-    pascalCaseFiles: options.pascalCaseFiles === true,
+    fileName: projectName,
+    pascalCaseFiles: false,
   });
-
   const { npmScope } = getWorkspaceLayout(tree);
 
   const projectRoot = joinPathFragments('packages', projectDirectory);
 
-  const parsedTags =
-    options.tags !== undefined
-      ? options.tags.split(',').map(s => s.trim())
-      : [];
-
-  const defaultImportPath = `@${npmScope}/${projectDirectory}`;
-  const importPath = options.importPath ?? defaultImportPath;
+  const importPath = `@${npmScope}/${projectDirectory}`;
 
   return {
     ...options,
     fileName,
-    name: projectName,
-    projectRoot,
-    projectDirectory,
-    parsedTags,
     importPath,
+    linter,
+    name: projectName,
+    projectDirectory,
+    projectRoot,
+    unitTestRunner,
     workspaceName: npmScope,
   };
 };

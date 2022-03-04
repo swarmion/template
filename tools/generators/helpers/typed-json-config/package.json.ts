@@ -1,7 +1,6 @@
 import { join } from 'path';
 
-import { NormalizedSchema } from '..';
-import { PackageJson } from '../../types';
+import { NormalizedSchema, PackageJson } from '../../types';
 
 export const packageJson = (options: NormalizedSchema): PackageJson => ({
   name: options.importPath,

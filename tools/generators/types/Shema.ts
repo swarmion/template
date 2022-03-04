@@ -20,3 +20,13 @@ export interface Schema {
   setParserOptionsProject?: boolean;
   standaloneConfig?: boolean;
 }
+
+export interface NormalizedSchema extends Schema {
+  name: string;
+  fileName: string;
+  projectRoot: string;
+  projectDirectory: string;
+  parsedTags: string[];
+  importPath: string;
+  workspaceName: string;
+}

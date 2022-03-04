@@ -17,7 +17,6 @@ export interface PackageJson {
     'package-cjs': string;
     'package-esm': string;
     'package-types': string;
-    precommit: 'lint-staged';
     test: string;
     'test-linter': string;
     'test-type': string;

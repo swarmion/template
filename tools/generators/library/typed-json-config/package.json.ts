@@ -20,7 +20,6 @@ export const packageJson = (name: string): PackageJson => ({
     'package-esm':
       'NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps',
     'package-types': 'ttsc',
-    precommit: 'lint-staged',
     test: 'yarn test-linter && yarn test-type && yarn test-unit',
     'test-linter': 'yarn linter-base-config .',
     'test-type': 'tsc --noEmit --emitDeclarationOnly false',

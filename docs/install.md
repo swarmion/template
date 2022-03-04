@@ -18,7 +18,7 @@ If you want to take is as an example to start your own projet,
 - Go to [the shared configuration file](../packages/serverless-configuration/sharedConfig.ts);
 - Change the `projectName` variable to the name of your project (note that this name must not be too long);
 - Change the dev profile name to one that suits you;
-- Search and replace "sls-monorepo" and replace it with the same project name
+- Search and replace "swarmion-starter" and replace it with the same project name
 
 ## Install modules
 
@@ -45,7 +45,7 @@ In order to deploy the stack on a development environment, you will need to setu
 - Click on the "Attach existing policy directly", then select "AdministratorAccess" and click on "Next: tags";
 - Click "Next: review", then "Create user";
 - Do not close the window yet;
-- Open a terminal and run: `aws configure --profile <your-profile>` (the value of `<your-profile>` depends of your choice in [the personalisation section](#change-the-project-general-settings). By default it will be `sls-monorepo-developer`);
+- Open a terminal and run: `aws configure --profile <your-profile>` (the value of `<your-profile>` depends of your choice in [the personalisation section](#change-the-project-general-settings). By default it will be `swarmion-starter-developer`);
 - Fill in the Access Key Id and the Secret Access Key from your user;
 - For the region, use the AWS region chosen for your project. See [the list of AWS regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 

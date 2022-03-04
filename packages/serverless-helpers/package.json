@@ -1,5 +1,5 @@
 {
-  "name": "@sls-monorepo/serverless-helpers",
+  "name": "@swarmion-starter/serverless-helpers",
   "private": true,
   "version": "1.0.0",
   "license": "UNLICENSED",
@@ -38,7 +38,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
     "@serverless/typescript": "^3.3.0",
-    "@sls-monorepo/configuration": "1.0.0",
+    "@swarmion-starter/configuration": "1.0.0",
     "@types/aws-lambda": "^8.10.93",
     "@types/node": "^17.0.21",
     "@zerollup/ts-transform-paths": "^1.7.18",

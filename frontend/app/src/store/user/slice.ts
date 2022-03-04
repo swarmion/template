@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { UserEntity } from '@sls-monorepo/users-contracts';
+import { UserEntity } from '@swarmion-starter/users-contracts';
 
 export type UserData = UserEntity | null;
 

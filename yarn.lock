@@ -3887,350 +3887,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sls-monorepo/backend-core@workspace:backend/core":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/backend-core@workspace:backend/core"
-  dependencies:
-    "@serverless-contracts/plugin": 0.3.0
-    "@serverless/typescript": ^3.3.0
-    "@sls-monorepo/configuration": 1.0.0
-    "@sls-monorepo/core-contracts": 1.0.0
-    "@sls-monorepo/serverless-configuration": 1.0.0
-    "@sls-monorepo/serverless-helpers": 1.0.0
-    "@types/jest": ^27.4.1
-    "@types/node": ^17.0.21
-    esbuild: ^0.14.23
-    jest: ^27.5.1
-    serverless: ^3.7.0
-    serverless-esbuild: ^1.25.0
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/backend-forum@workspace:backend/forum":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/backend-forum@workspace:backend/forum"
-  dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
-    "@serverless/typescript": ^3.3.0
-    "@sls-monorepo/configuration": 1.0.0
-    "@sls-monorepo/core-contracts": 1.0.0
-    "@sls-monorepo/forum-contracts": 1.0.0
-    "@sls-monorepo/serverless-configuration": 1.0.0
-    "@sls-monorepo/serverless-helpers": 1.0.0
-    "@types/http-errors": ^1.8.2
-    "@types/jest": ^27.4.1
-    "@types/node": ^17.0.21
-    aws-sdk: ^2.1084.0
-    esbuild: ^0.14.23
-    http-errors: ^2.0.0
-    jest: ^27.5.1
-    serverless: ^3.7.0
-    serverless-esbuild: ^1.25.0
-    serverless-iam-roles-per-function: ^3.2.0
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/backend-users@workspace:backend/users":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/backend-users@workspace:backend/users"
-  dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
-    "@serverless/typescript": ^3.3.0
-    "@sls-monorepo/configuration": 1.0.0
-    "@sls-monorepo/core-contracts": 1.0.0
-    "@sls-monorepo/serverless-configuration": 1.0.0
-    "@sls-monorepo/serverless-helpers": 1.0.0
-    "@sls-monorepo/users-contracts": 1.0.0
-    "@types/http-errors": ^1.8.2
-    "@types/jest": ^27.4.1
-    "@types/node": ^17.0.21
-    aws-sdk: ^2.1084.0
-    esbuild: ^0.14.23
-    http-errors: ^2.0.0
-    jest: ^27.5.1
-    serverless: ^3.7.0
-    serverless-esbuild: ^1.25.0
-    serverless-iam-roles-per-function: ^3.2.0
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/configuration@1.0.0, @sls-monorepo/configuration@workspace:packages/configuration":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/configuration@workspace:packages/configuration"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@serverless/typescript": ^3.3.0
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    prettier: ^2.5.1
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/core-contracts@1.0.0, @sls-monorepo/core-contracts@workspace:contracts/core-contracts":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/core-contracts@workspace:contracts/core-contracts"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    prettier: ^2.5.1
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/forum-contracts@1.0.0, @sls-monorepo/forum-contracts@workspace:contracts/forum-contracts":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/forum-contracts@workspace:contracts/forum-contracts"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
-    prettier: ^2.5.1
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/frontend-app@workspace:frontend/app":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/frontend-app@workspace:frontend/app"
-  dependencies:
-    "@emotion/react": ^11.8.1
-    "@emotion/styled": ^11.8.1
-    "@mui/icons-material": ^5.4.4
-    "@mui/lab": ^5.0.0-alpha.71
-    "@mui/material": ^5.4.4
-    "@mui/system": ^5.4.4
-    "@react-hookz/web": ^12.3.0
-    "@reduxjs/toolkit": ^1.8.0
-    "@sls-monorepo/configuration": 1.0.0
-    "@sls-monorepo/users-contracts": 1.0.0
-    "@stylelint/postcss-css-in-js": ^0.37.2
-    "@testing-library/dom": ^8.11.3
-    "@testing-library/jest-dom": ^5.16.2
-    "@testing-library/react": ^12.1.3
-    "@testing-library/react-hooks": ^7.0.2
-    "@testing-library/user-event": ^13.5.0
-    "@types/dotenv-flow": ^3.2.0
-    "@types/node": ^17.0.21
-    "@types/react": ^17.0.39
-    "@types/react-dom": ^17.0.12
-    "@vitejs/plugin-react": ^1.2.0
-    axios: 0.25.0
-    dotenv-flow: ^3.2.0
-    eslint: ^8.10.0
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.29.2
-    eslint-plugin-react-hooks: ^4.3.0
-    eslint-plugin-risxss: ^2.1.0
-    husky: ^7.0.4
-    jest: ^27.5.1
-    postcss: ^8.4.7
-    postcss-syntax: ^0.36.2
-    prettier: ^2.5.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-intl: ^5.24.6
-    react-redux: ^7.2.6
-    react-router-dom: ^6.2.2
-    redux: ^4.1.2
-    redux-devtools-extension: ^2.13.9
-    rollup: ^2.68.0
-    rollup-plugin-visualizer: ^5.6.0
-    stylelint: ^14.5.3
-    stylelint-config-prettier: ^9.0.3
-    stylelint-config-rational-order: ^0.1.2
-    stylelint-config-standard: ^25.0.0
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    typescript: ^4.6.2
-    vite: ^2.8.6
-    vite-plugin-svgr: ^1.0.1
-    vite-tsconfig-paths: ^3.4.1
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/frontend-cloudfront@workspace:frontend/cloudfront":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/frontend-cloudfront@workspace:frontend/cloudfront"
-  dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
-    "@serverless/typescript": ^3.3.0
-    "@sls-monorepo/serverless-configuration": 1.0.0
-    "@sls-monorepo/users-contracts": 1.0.0
-    "@types/jest": ^27.4.1
-    "@types/node": ^17.0.21
-    jest: ^27.5.1
-    serverless: ^3.7.0
-    serverless-lift: ^1.12.1
-    ts-jest: ^27.1.3
-    ts-node: ^10.6.0
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/root@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/root@workspace:."
-  dependencies:
-    "@commitlint/cli": ^16.2.1
-    "@commitlint/config-conventional": ^16.2.1
-    "@nrwl/cli": ^13.8.3
-    "@nrwl/devkit": ^13.8.3
-    "@nrwl/linter": ^13.8.3
-    "@nrwl/tao": ^13.8.3
-    "@nrwl/workspace": ^13.8.3
-    "@types/jest": ^27.4.1
-    "@typescript-eslint/eslint-plugin": ^5.13.0
-    "@typescript-eslint/parser": ^5.13.0
-    aws-sdk: ^2.1084.0
-    eslint: ^8.10.0
-    eslint-config-prettier: ^8.4.0
-    eslint-import-resolver-typescript: ^2.5.0
-    eslint-plugin-import: ^2.25.4
-    eslint-plugin-jest: ^26.1.1
-    eslint-plugin-prefer-arrow: ^1.2.3
-    eslint-plugin-prettier: ^4.0.0
-    husky: ^7.0.4
-    jest: ^27.5.1
-    lint-staged: ^12.3.4
-    lodash: ^4.17.21
-    npm-audit-resolver: ^3.0.0-7
-    prettier: ^2.5.1
-    syncpack: ^6.2.0
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/serverless-configuration@1.0.0, @sls-monorepo/serverless-configuration@workspace:packages/serverless-configuration":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/serverless-configuration@workspace:packages/serverless-configuration"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@serverless/typescript": ^3.3.0
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    prettier: ^2.5.1
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/serverless-helpers@1.0.0, @sls-monorepo/serverless-helpers@workspace:packages/serverless-helpers":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/serverless-helpers@workspace:packages/serverless-helpers"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@middy/core": ^2.5.7
-    "@middy/http-error-handler": ^2.5.7
-    "@middy/http-json-body-parser": ^2.5.7
-    "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.3.0
-    "@sls-monorepo/configuration": 1.0.0
-    "@types/aws-lambda": ^8.10.93
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
-    prettier: ^2.5.1
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
-"@sls-monorepo/users-contracts@1.0.0, @sls-monorepo/users-contracts@workspace:contracts/users-contracts":
-  version: 0.0.0-use.local
-  resolution: "@sls-monorepo/users-contracts@workspace:contracts/users-contracts"
-  dependencies:
-    "@babel/cli": ^7.17.6
-    "@babel/core": ^7.17.5
-    "@babel/plugin-transform-runtime": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
-    "@types/node": ^17.0.21
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.0.0
-    eslint: ^8.10.0
-    jest: ^27.5.1
-    json-schema-to-ts: ^1.6.5
-    prettier: ^2.5.1
-    ts-node: ^10.6.0
-    ttypescript: ^1.5.13
-    typescript: ^4.6.2
-  languageName: unknown
-  linkType: soft
-
 "@stylelint/postcss-css-in-js@npm:^0.37.2":
   version: 0.37.2
   resolution: "@stylelint/postcss-css-in-js@npm:0.37.2"
@@ -4367,6 +4023,350 @@ __metadata:
   checksum: 998164c3c30cf788f033f7f93cb929a948af7e52eaba6b16d0d9c667d28af671850a96108664da2551b1e5d59656fbc94ce23141735a1092d01f2f12ff2127ce
   languageName: node
   linkType: hard
+
+"@swarmion-starter/backend-core@workspace:backend/core":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/backend-core@workspace:backend/core"
+  dependencies:
+    "@serverless-contracts/plugin": 0.3.0
+    "@serverless/typescript": ^3.3.0
+    "@swarmion-starter/configuration": 1.0.0
+    "@swarmion-starter/core-contracts": 1.0.0
+    "@swarmion-starter/serverless-configuration": 1.0.0
+    "@swarmion-starter/serverless-helpers": 1.0.0
+    "@types/jest": ^27.4.1
+    "@types/node": ^17.0.21
+    esbuild: ^0.14.23
+    jest: ^27.5.1
+    serverless: ^3.7.0
+    serverless-esbuild: ^1.25.0
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/backend-forum@workspace:backend/forum":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
+  dependencies:
+    "@serverless-contracts/eslint-plugin": 0.3.0
+    "@serverless-contracts/plugin": 0.3.0
+    "@serverless/typescript": ^3.3.0
+    "@swarmion-starter/configuration": 1.0.0
+    "@swarmion-starter/core-contracts": 1.0.0
+    "@swarmion-starter/forum-contracts": 1.0.0
+    "@swarmion-starter/serverless-configuration": 1.0.0
+    "@swarmion-starter/serverless-helpers": 1.0.0
+    "@types/http-errors": ^1.8.2
+    "@types/jest": ^27.4.1
+    "@types/node": ^17.0.21
+    aws-sdk: ^2.1084.0
+    esbuild: ^0.14.23
+    http-errors: ^2.0.0
+    jest: ^27.5.1
+    serverless: ^3.7.0
+    serverless-esbuild: ^1.25.0
+    serverless-iam-roles-per-function: ^3.2.0
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/backend-users@workspace:backend/users":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/backend-users@workspace:backend/users"
+  dependencies:
+    "@serverless-contracts/eslint-plugin": 0.3.0
+    "@serverless-contracts/plugin": 0.3.0
+    "@serverless/typescript": ^3.3.0
+    "@swarmion-starter/configuration": 1.0.0
+    "@swarmion-starter/core-contracts": 1.0.0
+    "@swarmion-starter/serverless-configuration": 1.0.0
+    "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion-starter/users-contracts": 1.0.0
+    "@types/http-errors": ^1.8.2
+    "@types/jest": ^27.4.1
+    "@types/node": ^17.0.21
+    aws-sdk: ^2.1084.0
+    esbuild: ^0.14.23
+    http-errors: ^2.0.0
+    jest: ^27.5.1
+    serverless: ^3.7.0
+    serverless-esbuild: ^1.25.0
+    serverless-iam-roles-per-function: ^3.2.0
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/configuration@1.0.0, @swarmion-starter/configuration@workspace:packages/configuration":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/configuration@workspace:packages/configuration"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@serverless/typescript": ^3.3.0
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    prettier: ^2.5.1
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/core-contracts@1.0.0, @swarmion-starter/core-contracts@workspace:contracts/core-contracts":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/core-contracts@workspace:contracts/core-contracts"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@serverless-contracts/core": 0.3.0
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    prettier: ^2.5.1
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/forum-contracts@1.0.0, @swarmion-starter/forum-contracts@workspace:contracts/forum-contracts":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/forum-contracts@workspace:contracts/forum-contracts"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@serverless-contracts/core": 0.3.0
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    json-schema-to-ts: ^1.6.5
+    prettier: ^2.5.1
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/frontend-app@workspace:frontend/app":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/frontend-app@workspace:frontend/app"
+  dependencies:
+    "@emotion/react": ^11.8.1
+    "@emotion/styled": ^11.8.1
+    "@mui/icons-material": ^5.4.4
+    "@mui/lab": ^5.0.0-alpha.71
+    "@mui/material": ^5.4.4
+    "@mui/system": ^5.4.4
+    "@react-hookz/web": ^12.3.0
+    "@reduxjs/toolkit": ^1.8.0
+    "@stylelint/postcss-css-in-js": ^0.37.2
+    "@swarmion-starter/configuration": 1.0.0
+    "@swarmion-starter/users-contracts": 1.0.0
+    "@testing-library/dom": ^8.11.3
+    "@testing-library/jest-dom": ^5.16.2
+    "@testing-library/react": ^12.1.3
+    "@testing-library/react-hooks": ^7.0.2
+    "@testing-library/user-event": ^13.5.0
+    "@types/dotenv-flow": ^3.2.0
+    "@types/node": ^17.0.21
+    "@types/react": ^17.0.39
+    "@types/react-dom": ^17.0.12
+    "@vitejs/plugin-react": ^1.2.0
+    axios: 0.25.0
+    dotenv-flow: ^3.2.0
+    eslint: ^8.10.0
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-react: ^7.29.2
+    eslint-plugin-react-hooks: ^4.3.0
+    eslint-plugin-risxss: ^2.1.0
+    husky: ^7.0.4
+    jest: ^27.5.1
+    postcss: ^8.4.7
+    postcss-syntax: ^0.36.2
+    prettier: ^2.5.1
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-intl: ^5.24.6
+    react-redux: ^7.2.6
+    react-router-dom: ^6.2.2
+    redux: ^4.1.2
+    redux-devtools-extension: ^2.13.9
+    rollup: ^2.68.0
+    rollup-plugin-visualizer: ^5.6.0
+    stylelint: ^14.5.3
+    stylelint-config-prettier: ^9.0.3
+    stylelint-config-rational-order: ^0.1.2
+    stylelint-config-standard: ^25.0.0
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    typescript: ^4.6.2
+    vite: ^2.8.6
+    vite-plugin-svgr: ^1.0.1
+    vite-tsconfig-paths: ^3.4.1
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
+  dependencies:
+    "@serverless-contracts/eslint-plugin": 0.3.0
+    "@serverless-contracts/plugin": 0.3.0
+    "@serverless/typescript": ^3.3.0
+    "@swarmion-starter/serverless-configuration": 1.0.0
+    "@swarmion-starter/users-contracts": 1.0.0
+    "@types/jest": ^27.4.1
+    "@types/node": ^17.0.21
+    jest: ^27.5.1
+    serverless: ^3.7.0
+    serverless-lift: ^1.12.1
+    ts-jest: ^27.1.3
+    ts-node: ^10.6.0
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/root@workspace:."
+  dependencies:
+    "@commitlint/cli": ^16.2.1
+    "@commitlint/config-conventional": ^16.2.1
+    "@nrwl/cli": ^13.8.3
+    "@nrwl/devkit": ^13.8.3
+    "@nrwl/linter": ^13.8.3
+    "@nrwl/tao": ^13.8.3
+    "@nrwl/workspace": ^13.8.3
+    "@types/jest": ^27.4.1
+    "@typescript-eslint/eslint-plugin": ^5.13.0
+    "@typescript-eslint/parser": ^5.13.0
+    aws-sdk: ^2.1084.0
+    eslint: ^8.10.0
+    eslint-config-prettier: ^8.4.0
+    eslint-import-resolver-typescript: ^2.5.0
+    eslint-plugin-import: ^2.25.4
+    eslint-plugin-jest: ^26.1.1
+    eslint-plugin-prefer-arrow: ^1.2.3
+    eslint-plugin-prettier: ^4.0.0
+    husky: ^7.0.4
+    jest: ^27.5.1
+    lint-staged: ^12.3.4
+    lodash: ^4.17.21
+    npm-audit-resolver: ^3.0.0-7
+    prettier: ^2.5.1
+    syncpack: ^6.2.0
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/serverless-configuration@1.0.0, @swarmion-starter/serverless-configuration@workspace:packages/serverless-configuration":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/serverless-configuration@workspace:packages/serverless-configuration"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@serverless/typescript": ^3.3.0
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    prettier: ^2.5.1
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/serverless-helpers@1.0.0, @swarmion-starter/serverless-helpers@workspace:packages/serverless-helpers":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/serverless-helpers@workspace:packages/serverless-helpers"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@middy/core": ^2.5.7
+    "@middy/http-error-handler": ^2.5.7
+    "@middy/http-json-body-parser": ^2.5.7
+    "@middy/validator": ^2.5.7
+    "@serverless/typescript": ^3.3.0
+    "@swarmion-starter/configuration": 1.0.0
+    "@types/aws-lambda": ^8.10.93
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    json-schema-to-ts: ^1.6.5
+    prettier: ^2.5.1
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/users-contracts@1.0.0, @swarmion-starter/users-contracts@workspace:contracts/users-contracts":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/users-contracts@workspace:contracts/users-contracts"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.5
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.17.2
+    "@serverless-contracts/core": 0.3.0
+    "@types/node": ^17.0.21
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    eslint: ^8.10.0
+    jest: ^27.5.1
+    json-schema-to-ts: ^1.6.5
+    prettier: ^2.5.1
+    ts-node: ^10.6.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
 
 "@szmarczak/http-timer@npm:^4.0.5":
   version: 4.0.6

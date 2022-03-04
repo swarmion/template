@@ -70,7 +70,7 @@ module.exports = {
       {
         patterns: [
           {
-            group: ['@sls-monorepo/*/*'],
+            group: ['@swarmion-starter/*/*'],
             message:
               'import of internal modules must be done at the root level.',
           },

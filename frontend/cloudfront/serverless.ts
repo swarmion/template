@@ -6,8 +6,8 @@ import {
   projectName,
   sharedParams,
   sharedProviderConfig,
-} from '@sls-monorepo/serverless-configuration';
-import { getUserContract } from '@sls-monorepo/users-contracts';
+} from '@swarmion-starter/serverless-configuration';
+import { getUserContract } from '@swarmion-starter/users-contracts';
 
 const serverlessConfiguration: AWS & Lift & ServerlessContracts = {
   service: `${projectName}-frontend`, // Keep it short to have role name below 64

@@ -1,5 +1,5 @@
 {
-  "name": "@sls-monorepo/backend-core",
+  "name": "@swarmion-starter/backend-core",
   "private": true,
   "version": "1.0.0",
   "license": "UNLICENSED",
@@ -22,13 +22,13 @@
   },
   "dependencies": {
     "@serverless-contracts/plugin": "0.3.0",
-    "@sls-monorepo/serverless-configuration": "1.0.0",
-    "@sls-monorepo/serverless-helpers": "1.0.0"
+    "@swarmion-starter/serverless-configuration": "1.0.0",
+    "@swarmion-starter/serverless-helpers": "1.0.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.3.0",
-    "@sls-monorepo/configuration": "1.0.0",
-    "@sls-monorepo/core-contracts": "1.0.0",
+    "@swarmion-starter/configuration": "1.0.0",
+    "@swarmion-starter/core-contracts": "1.0.0",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "esbuild": "^0.14.23",

@@ -1,7 +1,7 @@
 import {
   getHandlerPath,
   LambdaFunction,
-} from '@sls-monorepo/serverless-helpers';
+} from '@swarmion-starter/serverless-helpers';
 
 const config: LambdaFunction = {
   environment: {},

@@ -27,7 +27,7 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "jest.autoRun": "off",
     "jest.disabledWorkspaceFolders": [
-      "sls-monorepo root",
+      "swarmion-starter root",
       "frontend cloudfront [service]"
     ],
     "jest.jestCommandLine": "yarn jest",
@@ -50,7 +50,7 @@
   "folders": [
     {
       "path": ".",
-      "name": "sls-monorepo root"
+      "name": "swarmion-starter root"
     },
     {
       "path": "backend/core",

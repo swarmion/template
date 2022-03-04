@@ -1,4 +1,4 @@
-export const projectName = 'sls-monorepo';
+export const projectName = 'swarmion-starter';
 export const region = 'eu-west-1';
 
 export const defaultEnvironment = 'dev';
@@ -23,7 +23,7 @@ export const sharedProviderConfig = {
  * An empty string for a profile means that the default profile will be used
  */
 export const sharedParams = {
-  dev: { profile: 'sls-monorepo-developer' },
+  dev: { profile: 'swarmion-starter-developer' },
   staging: { profile: '' },
   production: { profile: '' },
 };

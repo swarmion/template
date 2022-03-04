@@ -4,7 +4,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'prettier',
-    'plugin:@serverless-contracts/recommended',
+    'plugin:@swarmion/recommended',
   ],
   plugins: ['react-hooks', 'jsx-a11y', 'risxss'],
   rules: {

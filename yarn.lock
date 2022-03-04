@@ -3506,42 +3506,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/cli@npm:13.8.3, @nrwl/cli@npm:^13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/cli@npm:13.8.3"
+"@nrwl/cli@npm:13.8.4, @nrwl/cli@npm:^13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/cli@npm:13.8.4"
   dependencies:
-    "@nrwl/tao": 13.8.3
+    "@nrwl/tao": 13.8.4
     chalk: 4.1.0
     enquirer: ~2.3.6
     v8-compile-cache: 2.3.0
     yargs-parser: 20.0.0
   bin:
     nx: bin/nx.js
-  checksum: 364fe7e9cb54da8465aede02c033bd0d85f8e6b83b17c633a14f6bc95b2ab693f80dc2547e17f3370d18f4d56b0fd35273e51dbdc6420cc69c1fbf589a47f667
+  checksum: 41b8ffa70b472fad7bcfaf87eafe3e01cd4b730d84f488f18d52555daa5c8e11026c110d2f1a24242cd8a9a5eedb06cd1388c4c9d5640581992c37574c2ef0ea
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:13.8.3, @nrwl/devkit@npm:^13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/devkit@npm:13.8.3"
+"@nrwl/devkit@npm:13.8.4, @nrwl/devkit@npm:^13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/devkit@npm:13.8.4"
   dependencies:
-    "@nrwl/tao": 13.8.3
+    "@nrwl/tao": 13.8.4
     ejs: ^3.1.5
     ignore: ^5.0.4
     rxjs: ^6.5.4
     semver: 7.3.4
     tslib: ^2.3.0
-  checksum: 02aeb9a0640657d9f6a78314fa5db11adcde3da308c8a0bbae51b80e2ef57f1ce4e5c8ac4c1ee5346723b6218228290b760e1cbf8dd7151bb699a9911e41ccf7
+  checksum: 763874c89c27af246f2277e3a41aecd8e612ded1731bbfb424877fec54a267b2b072c6c387095eb6caef49aeb1349ff2323cdd12bc38244ecb38c06868f425ac
   languageName: node
   linkType: hard
 
-"@nrwl/jest@npm:13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/jest@npm:13.8.3"
+"@nrwl/jest@npm:13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/jest@npm:13.8.4"
   dependencies:
     "@jest/reporters": 27.2.2
     "@jest/test-result": 27.2.2
-    "@nrwl/devkit": 13.8.3
+    "@nrwl/devkit": 13.8.4
     chalk: 4.1.0
     identity-obj-proxy: 3.0.0
     jest-config: 27.2.2
@@ -3550,16 +3550,16 @@ __metadata:
     resolve.exports: 1.1.0
     rxjs: ^6.5.4
     tslib: ^2.3.0
-  checksum: 76401c6925ac453ac4c48bcaea68e9947d776c20c29ac76791baead9c195a61e9120a782b32b3e13a9b9e805acd6888613ddd8dab0150ca7e83729bdfa1c8ff3
+  checksum: 40dd770a0c5065fc64d0af220c02d2109ecb497edca56f4b34a1541c0fff25761832d36182ed55d456bea5ea2c33b92a31549d13ba08f0a8eb15465bb6c8381d
   languageName: node
   linkType: hard
 
-"@nrwl/linter@npm:13.8.3, @nrwl/linter@npm:^13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/linter@npm:13.8.3"
+"@nrwl/linter@npm:13.8.4, @nrwl/linter@npm:^13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/linter@npm:13.8.4"
   dependencies:
-    "@nrwl/devkit": 13.8.3
-    "@nrwl/jest": 13.8.3
+    "@nrwl/devkit": 13.8.4
+    "@nrwl/jest": 13.8.4
     "@phenomnomnominal/tsquery": 4.1.1
     tmp: ~0.2.1
     tslib: ^2.3.0
@@ -3568,13 +3568,13 @@ __metadata:
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: 7f79e7ca35dcd21251f386c8ef82e12f3e3fa556b009df5804c3d3bf951adceef48a62d9b2d1e6c96b02210a2c683fc1ec8e18bfb3abe95427c304c69dd22771
+  checksum: e1eeef68891ca463db6832ba270f13826ec55c5be2380581936af3ec8257420eed3d0fb76184746c93c559c062dbc9d10975e1c7df721cae4b46f50fd0edf99d
   languageName: node
   linkType: hard
 
-"@nrwl/tao@npm:13.8.3, @nrwl/tao@npm:^13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/tao@npm:13.8.3"
+"@nrwl/tao@npm:13.8.4, @nrwl/tao@npm:^13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/tao@npm:13.8.4"
   dependencies:
     chalk: 4.1.0
     enquirer: ~2.3.6
@@ -3582,7 +3582,7 @@ __metadata:
     fs-extra: ^9.1.0
     ignore: ^5.0.4
     jsonc-parser: 3.0.0
-    nx: 13.8.3
+    nx: 13.8.4
     rxjs: ^6.5.4
     rxjs-for-await: 0.0.2
     semver: 7.3.4
@@ -3591,18 +3591,18 @@ __metadata:
     yargs-parser: 20.0.0
   bin:
     tao: index.js
-  checksum: 6504a53e9728effa7faceae8887f4caecd7d69f24d571dcf06b5976dbeb03b3fcfd2613d214be748698d11af8ea679fc51ec4fd4b2d0b881ae7ac02ab78641c4
+  checksum: 3e48dc042aafd3bfedbd2e6f5a546fe2dfbde9e694147afc791e12153e0305e925a2b7e9b84fd8c6e22fca4ed8f774e9a70b015bba796626e3f83cdba401c95b
   languageName: node
   linkType: hard
 
-"@nrwl/workspace@npm:^13.8.3":
-  version: 13.8.3
-  resolution: "@nrwl/workspace@npm:13.8.3"
+"@nrwl/workspace@npm:^13.8.4":
+  version: 13.8.4
+  resolution: "@nrwl/workspace@npm:13.8.4"
   dependencies:
-    "@nrwl/cli": 13.8.3
-    "@nrwl/devkit": 13.8.3
-    "@nrwl/jest": 13.8.3
-    "@nrwl/linter": 13.8.3
+    "@nrwl/cli": 13.8.4
+    "@nrwl/devkit": 13.8.4
+    "@nrwl/jest": 13.8.4
+    "@nrwl/linter": 13.8.4
     "@parcel/watcher": 2.0.4
     chalk: 4.1.0
     chokidar: ^3.5.1
@@ -3629,7 +3629,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 3b768022b1448766a3fda8b87d80ba2561217ecff914bc972d0effeeb27ea3f9541b42b8fb5f9e8f2bd2934b87ae852e9b09efc96c74109039eb69070570c8f0
+  checksum: 7efa8a7db68adde0cebccd2fb18cff1ac0a4a361eca81374d0d49df23e77aab3bc86069432d1e5393ba416d70bcdf15fb8c3ae2b2ed994a7f64c452669d13f88
   languageName: node
   linkType: hard
 
@@ -3715,41 +3715,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless-contracts/core@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/core@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
-    lodash: ^4.17.21
-  checksum: ea25f2968203cadb2b9527b5c83b2ec2c2b27f74d868bc485bc63ef08b5d096b32c1ece41f976fa52980cd4c6111608cb32cecbc93827adab231d66dd4a576f7
-  languageName: node
-  linkType: hard
-
-"@serverless-contracts/eslint-plugin@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/eslint-plugin@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    find-up: 5.0.0
-  checksum: 260236b687f282cbc61d28d318b075eb43da64d1aa19ad41545528869c88c7b09b8f99d51c4b43454f2a14f9e7583bc38e2c758233cfb3ff1e6c8fbaf1a2fe38
-  languageName: node
-  linkType: hard
-
-"@serverless-contracts/plugin@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/plugin@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
-    json-schema-diff: ^0.17.1
-    lodash: ^4.17.21
-  peerDependencies:
-    serverless: ^2.60 || 3
-  checksum: 24e8c645b7576452cbd046fea49d77c181e4fb211064517ff32477a878818035024b54f7b507bf4d142fc51890dc9a53f52bfabbc2a05b9751132ef4c016f617
-  languageName: node
-  linkType: hard
-
 "@serverless/aws-lambda-otel-extension-dist@npm:^0.1.6":
   version: 0.1.6
   resolution: "@serverless/aws-lambda-otel-extension-dist@npm:0.1.6"
@@ -3757,9 +3722,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/dashboard-plugin@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "@serverless/dashboard-plugin@npm:6.1.4"
+"@serverless/dashboard-plugin@npm:^6.1.5":
+  version: 6.1.5
+  resolution: "@serverless/dashboard-plugin@npm:6.1.5"
   dependencies:
     "@serverless/event-mocks": ^1.1.1
     "@serverless/platform-client": ^4.3.2
@@ -3781,7 +3746,7 @@ __metadata:
     type: ^2.6.0
     uuid: ^8.3.2
     yamljs: ^0.3.0
-  checksum: 9f214aee1612b49bdc0f5365cbc08cdbd69625f367244ee1d5d243688b0c570f84fd94ed69c853adb9aaa427139020ed6c99b0e0b4458fe79f874d74a54cfe55
+  checksum: c6cdcae586eb60b58a131237d9ae1c97be64f2de72c5f86ccd182f3c4cc412d179e77b3ef1c291f9128e6067ed6d4a23b8a19b5022ca53c5596289e230af3656
   languageName: node
   linkType: hard
 
@@ -3859,6 +3824,43 @@ __metadata:
     uuid: ^8.3.2
     write-file-atomic: ^4.0.0
   checksum: 2735644a0d7bbaeb7072622f3d1c34f06596b33236062af66eb2b3aab737fd16804c049063fd49ea6c818a705e4acce45ae699fba0f0ddf2c40ea18f6c9897a1
+  languageName: node
+  linkType: hard
+
+"@serverless/utils@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "@serverless/utils@npm:6.0.3"
+  dependencies:
+    archive-type: ^4.0.0
+    chalk: ^4.1.2
+    ci-info: ^3.3.0
+    cli-progress-footer: ^2.3.0
+    content-disposition: ^0.5.4
+    d: ^1.0.1
+    decompress: ^4.2.1
+    event-emitter: ^0.3.5
+    ext: ^1.6.0
+    ext-name: ^5.0.0
+    file-type: ^16.5.3
+    filenamify: ^4.3.0
+    get-stream: ^6.0.1
+    got: ^11.8.3
+    inquirer: ^8.2.0
+    js-yaml: ^4.1.0
+    jwt-decode: ^3.1.2
+    lodash: ^4.17.21
+    log: ^6.3.1
+    log-node: ^8.0.3
+    make-dir: ^3.1.0
+    memoizee: ^0.4.15
+    ncjsm: ^4.3.0
+    p-event: ^4.2.0
+    supports-color: ^8.1.1
+    type: ^2.6.0
+    uni-global: ^1.0.0
+    uuid: ^8.3.2
+    write-file-atomic: ^4.0.1
+  checksum: 1f1e4e88174a37d9fb3f7577746ef6326f529f76c8f4963ba11490b59c06716f2504d4df3963274bbbabf278e2d86eb84b9eea7bc34f4bf7d5385000a433594d
   languageName: node
   linkType: hard
 
@@ -4028,17 +4030,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    esbuild: ^0.14.23
+    esbuild: ^0.14.25
     jest: ^27.5.1
-    serverless: ^3.7.0
+    serverless: ^3.7.1
     serverless-esbuild: ^1.25.0
     ts-jest: ^27.1.3
     ts-node: ^10.6.0
@@ -4050,22 +4052,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1084.0
-    esbuild: ^0.14.23
+    aws-sdk: ^2.1086.0
+    esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.0
+    serverless: ^3.7.1
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4078,22 +4080,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1084.0
-    esbuild: ^0.14.23
+    aws-sdk: ^2.1086.0
+    esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.0
+    serverless: ^3.7.1
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4137,7 +4139,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4161,7 +4163,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4199,13 +4201,13 @@ __metadata:
     "@types/dotenv-flow": ^3.2.0
     "@types/node": ^17.0.21
     "@types/react": ^17.0.39
-    "@types/react-dom": ^17.0.12
+    "@types/react-dom": ^17.0.13
     "@vitejs/plugin-react": ^1.2.0
     axios: 0.25.0
     dotenv-flow: ^3.2.0
     eslint: ^8.10.0
     eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.29.2
+    eslint-plugin-react: ^7.29.3
     eslint-plugin-react-hooks: ^4.3.0
     eslint-plugin-risxss: ^2.1.0
     husky: ^7.0.4
@@ -4220,7 +4222,7 @@ __metadata:
     react-router-dom: ^6.2.2
     redux: ^4.1.2
     redux-devtools-extension: ^2.13.9
-    rollup: ^2.68.0
+    rollup: ^2.69.1
     rollup-plugin-visualizer: ^5.6.0
     stylelint: ^14.5.3
     stylelint-config-prettier: ^9.0.3
@@ -4239,15 +4241,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
-    serverless: ^3.7.0
+    serverless: ^3.7.1
     serverless-lift: ^1.12.1
     ts-jest: ^27.1.3
     ts-node: ^10.6.0
@@ -4261,17 +4263,17 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.1
     "@commitlint/config-conventional": ^16.2.1
-    "@nrwl/cli": ^13.8.3
-    "@nrwl/devkit": ^13.8.3
-    "@nrwl/linter": ^13.8.3
-    "@nrwl/tao": ^13.8.3
-    "@nrwl/workspace": ^13.8.3
+    "@nrwl/cli": ^13.8.4
+    "@nrwl/devkit": ^13.8.4
+    "@nrwl/linter": ^13.8.4
+    "@nrwl/tao": ^13.8.4
+    "@nrwl/workspace": ^13.8.4
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.13.0
     "@typescript-eslint/parser": ^5.13.0
-    aws-sdk: ^2.1084.0
+    aws-sdk: ^2.1086.0
     eslint: ^8.10.0
-    eslint-config-prettier: ^8.4.0
+    eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.5.0
     eslint-plugin-import: ^2.25.4
     eslint-plugin-jest: ^26.1.1
@@ -4353,7 +4355,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4367,6 +4369,41 @@ __metadata:
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
+
+"@swarmion/eslint-plugin@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/eslint-plugin@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    find-up: 5.0.0
+  checksum: bda6d9a2fc83f5c899b580eb407820ed4239b4b8f5c18563077066ad49f2b36e6c9bec98b451d0de68ee967f9c67fd95a8d947d3fb0cc99b113a9155105e0bda
+  languageName: node
+  linkType: hard
+
+"@swarmion/serverless-contracts@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/serverless-contracts@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    axios: ^0.25.0
+    lodash: ^4.17.21
+  checksum: a4eb4b13759c3b2c889a19775eb8368d7eed70e96a7bd8aaed456ea743888e2701d5baf7bcb22cd879125a2435297e0c8aa99021e49e7c0b5a194ca610bdc904
+  languageName: node
+  linkType: hard
+
+"@swarmion/serverless-plugin@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/serverless-plugin@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    axios: ^0.25.0
+    json-schema-diff: ^0.17.1
+    lodash: ^4.17.21
+  peerDependencies:
+    serverless: ^2.60 || 3
+  checksum: 38071858c38efe8981cd08134317e10962d0e8eba9559911bc00d0b2e194d5a2079ec04fb438604a67858787d1d22c6c078642658922698b506ac930166b4646
+  languageName: node
+  linkType: hard
 
 "@szmarczak/http-timer@npm:^4.0.5":
   version: 4.0.6
@@ -4763,12 +4800,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.12":
-  version: 17.0.12
-  resolution: "@types/react-dom@npm:17.0.12"
+"@types/react-dom@npm:^17.0.13":
+  version: 17.0.13
+  resolution: "@types/react-dom@npm:17.0.13"
   dependencies:
     "@types/react": "*"
-  checksum: 9754e1d0c0107310eab35a2eb1dad45f6ef0a41e562c23a29d6bf723a29c8a2036c4acd6a1a1422bf7cf956d431e41b154608dd917f6e69c7ab0d87720c5e27e
+  checksum: 62c42a54ac8961c23a0e74b9cdd8b0a78563757e462b1ab665b2aa365bfd8b86a73d3f6eafc09a4a80fb08659321db168f012aa597c41c0df36f645a94e9266b
   languageName: node
   linkType: hard
 
@@ -5686,23 +5723,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1083.0":
-  version: 2.1083.0
-  resolution: "aws-sdk@npm:2.1083.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    uuid: 3.3.2
-    xml2js: 0.4.19
-  checksum: 10471fa906d5d95f99735fe5ed1bbc16ed4d2ca9bcba907a9dd5a3082bb7c5ed1adf34f55862c39da9524708c4b9c70bc3bd39a27b6b8620575d102fa3fe33dd
-  languageName: node
-  linkType: hard
-
 "aws-sdk@npm:^2.1084.0":
   version: 2.1084.0
   resolution: "aws-sdk@npm:2.1084.0"
@@ -5717,6 +5737,23 @@ __metadata:
     uuid: 3.3.2
     xml2js: 0.4.19
   checksum: 1854bd426ee604eacc37740b0bb47b13cd40893de076d8118e91780350293d06acdad649e84aa843d4c4c140d6ec90191fe6b41665c6e16c8e502df37e7d1e0b
+  languageName: node
+  linkType: hard
+
+"aws-sdk@npm:^2.1086.0":
+  version: 2.1086.0
+  resolution: "aws-sdk@npm:2.1086.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 658b92f0034487ba0ade4385057b57f00a9696a5c412738fd1b8df036c3cd7d5afcb713a7976ab433941c240d2fc4895e405e039e8a4423fce2612db742b7819
   languageName: node
   linkType: hard
 
@@ -7932,6 +7969,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild-android-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-android-64@npm:0.14.25"
+  conditions: os=android & cpu=x64
+  languageName: node
+  linkType: hard
+
 "esbuild-android-arm64@npm:0.14.21":
   version: 0.14.21
   resolution: "esbuild-android-arm64@npm:0.14.21"
@@ -7939,9 +7983,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-android-arm64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-android-arm64@npm:0.14.23"
+"esbuild-android-arm64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-android-arm64@npm:0.14.25"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
@@ -7953,9 +7997,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-darwin-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-darwin-64@npm:0.14.23"
+"esbuild-darwin-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-darwin-64@npm:0.14.25"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -7967,9 +8011,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-darwin-arm64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-darwin-arm64@npm:0.14.23"
+"esbuild-darwin-arm64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-darwin-arm64@npm:0.14.25"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
@@ -7981,9 +8025,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-freebsd-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-freebsd-64@npm:0.14.23"
+"esbuild-freebsd-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-freebsd-64@npm:0.14.25"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
@@ -7995,9 +8039,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-freebsd-arm64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-freebsd-arm64@npm:0.14.23"
+"esbuild-freebsd-arm64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-freebsd-arm64@npm:0.14.25"
   conditions: os=freebsd & cpu=arm64
   languageName: node
   linkType: hard
@@ -8009,9 +8053,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-32@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-32@npm:0.14.23"
+"esbuild-linux-32@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-32@npm:0.14.25"
   conditions: os=linux & cpu=ia32
   languageName: node
   linkType: hard
@@ -8023,9 +8067,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-64@npm:0.14.23"
+"esbuild-linux-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-64@npm:0.14.25"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -8037,9 +8081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-arm64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-arm64@npm:0.14.23"
+"esbuild-linux-arm64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-arm64@npm:0.14.25"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
@@ -8051,9 +8095,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-arm@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-arm@npm:0.14.23"
+"esbuild-linux-arm@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-arm@npm:0.14.25"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
@@ -8065,9 +8109,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-mips64le@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-mips64le@npm:0.14.23"
+"esbuild-linux-mips64le@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-mips64le@npm:0.14.25"
   conditions: os=linux & cpu=mips64el
   languageName: node
   linkType: hard
@@ -8079,9 +8123,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-ppc64le@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-ppc64le@npm:0.14.23"
+"esbuild-linux-ppc64le@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-ppc64le@npm:0.14.25"
   conditions: os=linux & cpu=ppc64
   languageName: node
   linkType: hard
@@ -8093,9 +8137,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-riscv64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-riscv64@npm:0.14.23"
+"esbuild-linux-riscv64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-riscv64@npm:0.14.25"
   conditions: os=linux & cpu=riscv64
   languageName: node
   linkType: hard
@@ -8107,9 +8151,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-linux-s390x@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-linux-s390x@npm:0.14.23"
+"esbuild-linux-s390x@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-linux-s390x@npm:0.14.25"
   conditions: os=linux & cpu=s390x
   languageName: node
   linkType: hard
@@ -8121,9 +8165,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-netbsd-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-netbsd-64@npm:0.14.23"
+"esbuild-netbsd-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-netbsd-64@npm:0.14.25"
   conditions: os=netbsd & cpu=x64
   languageName: node
   linkType: hard
@@ -8135,9 +8179,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-openbsd-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-openbsd-64@npm:0.14.23"
+"esbuild-openbsd-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-openbsd-64@npm:0.14.25"
   conditions: os=openbsd & cpu=x64
   languageName: node
   linkType: hard
@@ -8149,9 +8193,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-sunos-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-sunos-64@npm:0.14.23"
+"esbuild-sunos-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-sunos-64@npm:0.14.25"
   conditions: os=sunos & cpu=x64
   languageName: node
   linkType: hard
@@ -8163,9 +8207,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-windows-32@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-windows-32@npm:0.14.23"
+"esbuild-windows-32@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-windows-32@npm:0.14.25"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
@@ -8177,9 +8221,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-windows-64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-windows-64@npm:0.14.23"
+"esbuild-windows-64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-windows-64@npm:0.14.25"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -8191,9 +8235,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-windows-arm64@npm:0.14.23":
-  version: 0.14.23
-  resolution: "esbuild-windows-arm64@npm:0.14.23"
+"esbuild-windows-arm64@npm:0.14.25":
+  version: 0.14.25
+  resolution: "esbuild-windows-arm64@npm:0.14.25"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -8266,30 +8310,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.14.23":
-  version: 0.14.23
-  resolution: "esbuild@npm:0.14.23"
+"esbuild@npm:^0.14.25":
+  version: 0.14.25
+  resolution: "esbuild@npm:0.14.25"
   dependencies:
-    esbuild-android-arm64: 0.14.23
-    esbuild-darwin-64: 0.14.23
-    esbuild-darwin-arm64: 0.14.23
-    esbuild-freebsd-64: 0.14.23
-    esbuild-freebsd-arm64: 0.14.23
-    esbuild-linux-32: 0.14.23
-    esbuild-linux-64: 0.14.23
-    esbuild-linux-arm: 0.14.23
-    esbuild-linux-arm64: 0.14.23
-    esbuild-linux-mips64le: 0.14.23
-    esbuild-linux-ppc64le: 0.14.23
-    esbuild-linux-riscv64: 0.14.23
-    esbuild-linux-s390x: 0.14.23
-    esbuild-netbsd-64: 0.14.23
-    esbuild-openbsd-64: 0.14.23
-    esbuild-sunos-64: 0.14.23
-    esbuild-windows-32: 0.14.23
-    esbuild-windows-64: 0.14.23
-    esbuild-windows-arm64: 0.14.23
+    esbuild-android-64: 0.14.25
+    esbuild-android-arm64: 0.14.25
+    esbuild-darwin-64: 0.14.25
+    esbuild-darwin-arm64: 0.14.25
+    esbuild-freebsd-64: 0.14.25
+    esbuild-freebsd-arm64: 0.14.25
+    esbuild-linux-32: 0.14.25
+    esbuild-linux-64: 0.14.25
+    esbuild-linux-arm: 0.14.25
+    esbuild-linux-arm64: 0.14.25
+    esbuild-linux-mips64le: 0.14.25
+    esbuild-linux-ppc64le: 0.14.25
+    esbuild-linux-riscv64: 0.14.25
+    esbuild-linux-s390x: 0.14.25
+    esbuild-netbsd-64: 0.14.25
+    esbuild-openbsd-64: 0.14.25
+    esbuild-sunos-64: 0.14.25
+    esbuild-windows-32: 0.14.25
+    esbuild-windows-64: 0.14.25
+    esbuild-windows-arm64: 0.14.25
   dependenciesMeta:
+    esbuild-android-64:
+      optional: true
     esbuild-android-arm64:
       optional: true
     esbuild-darwin-64:
@@ -8330,7 +8377,7 @@ __metadata:
       optional: true
   bin:
     esbuild: bin/esbuild
-  checksum: 41d26f9022a9f95a1ccf280fd6c2cf2684264663c03d5d4338bfab17710292b9c2ca45624ed55d9f37d7be5f29557ebd6d101b21ed5592fb0b6e6ac5e76bc58d
+  checksum: 076fa82293d91d4a9c5ad27f8bde01fb86dc60b60b6d12c3deb917c5c7e9235b324e27114fc6e7e1fee9c9a1796fd094eac306c3b44b77a3819929472ee29450
   languageName: node
   linkType: hard
 
@@ -8381,14 +8428,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.4.0":
-  version: 8.4.0
-  resolution: "eslint-config-prettier@npm:8.4.0"
+"eslint-config-prettier@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint-config-prettier@npm:8.5.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: ee8dc343f1fed15dc0658e190a966cc23644477f2331a7f56ae2bb79dd74892e3cde8ea5c142e7a3329a8291a1de041e13ca96e54d0c85ff4a2aba13390c5f10
+  checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
   languageName: node
   linkType: hard
 
@@ -8523,9 +8570,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.29.2":
-  version: 7.29.2
-  resolution: "eslint-plugin-react@npm:7.29.2"
+"eslint-plugin-react@npm:^7.29.3":
+  version: 7.29.3
+  resolution: "eslint-plugin-react@npm:7.29.3"
   dependencies:
     array-includes: ^3.1.4
     array.prototype.flatmap: ^1.2.5
@@ -8543,7 +8590,7 @@ __metadata:
     string.prototype.matchall: ^4.0.6
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-  checksum: fcd793c0fd8e4570dcf8f70dd4afae9882303f4a4b650e09dac2f85fdc0b28747cb97b79832f4b8f4eabdbfb9edf69dc0ff04e8b7f33e0bb8e3f024185f4b037
+  checksum: 5a7b0b5700a3ed9bc52f5e7caab31a60bba586d356d07b49aa78c4b7b83fb54f2e4f6d59f61a9a315f1f89ea74f422a41846ff3432647dd1e8ae629a96dc2814
   languageName: node
   linkType: hard
 
@@ -13057,14 +13104,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:13.8.3":
-  version: 13.8.3
-  resolution: "nx@npm:13.8.3"
+"nx@npm:13.8.4":
+  version: 13.8.4
+  resolution: "nx@npm:13.8.4"
   dependencies:
-    "@nrwl/cli": 13.8.3
+    "@nrwl/cli": 13.8.4
   bin:
     nx: bin/nx.js
-  checksum: e65fc97a9fb83e7c84873eec5cec9ba38bddf003356d2485408bef6ae079297155a6254132dfc952a7a1fcc6b3184b781567cebb920ae01f5584b081a14489f2
+  checksum: 04d88525fa45ae83d60ac31dcbe3eadf9d94c617e01e4b0043f5b5322b4f402bb4bf9d613a1ac0fb37085d56d6de516f54976321cbed78360ec082de21b645f8
   languageName: node
   linkType: hard
 
@@ -14819,9 +14866,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.68.0":
-  version: 2.68.0
-  resolution: "rollup@npm:2.68.0"
+"rollup@npm:^2.69.1":
+  version: 2.69.1
+  resolution: "rollup@npm:2.69.1"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -14829,7 +14876,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: c883f6fb2e10e1c79a32527da0c50ef47a7beb8ddacfdae4197ff2d1911fb8d10bb2704496cf878d3048fbf3524d613bc87f25c5be0afc667fe30b7d04fa8092
+  checksum: dc9b21b0ecfdbb5811b2110e80866f60420ffcd744faf38d58117f1c3ac2660d553196d2c4c343a9f9d67b5e83c23d4a3c6050524ae1b4159b8530f2593f2c07
   languageName: node
   linkType: hard
 
@@ -15094,18 +15141,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "serverless@npm:3.7.0"
+"serverless@npm:^3.7.1":
+  version: 3.7.1
+  resolution: "serverless@npm:3.7.1"
   dependencies:
     "@serverless/aws-lambda-otel-extension-dist": ^0.1.6
-    "@serverless/dashboard-plugin": ^6.1.4
+    "@serverless/dashboard-plugin": ^6.1.5
     "@serverless/platform-client": ^4.3.2
-    "@serverless/utils": ^6.0.2
+    "@serverless/utils": ^6.0.3
     ajv: ^8.10.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1083.0
+    aws-sdk: ^2.1084.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -15154,7 +15201,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 788555f0384ce7f97512b3cb1f4bc533184888c882b32a5d665b9b08ad0665d305b04e90d1ec2b4a6e4ba7dbf2454a6beecf728bdb869843a757c48c71897e53
+  checksum: d7de6213f7962f26b4cbd04f6314b6756b6686a8ed4fb7f7e3dfd6c66141ffc8cb060e0c0840b3d4720bc58bf4c8275cdd0c8cb636c1f812b035885d4a269ba9
   languageName: node
   linkType: hard
 

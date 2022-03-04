@@ -1,5 +1,5 @@
-import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
+import { ServerlessContracts } from '@swarmion/serverless-plugin';
 import type { Lift } from 'serverless-lift';
 
 import {
@@ -12,7 +12,7 @@ import { getUserContract } from '@swarmion-starter/users-contracts';
 const serverlessConfiguration: AWS & Lift & ServerlessContracts = {
   service: `${projectName}-frontend`, // Keep it short to have role name below 64
   frameworkVersion: '>=3.0.0',
-  plugins: ['serverless-lift', '@serverless-contracts/plugin'],
+  plugins: ['serverless-lift', '@swarmion/serverless-plugin'],
   provider: sharedProviderConfig,
   params: sharedParams,
   custom: {

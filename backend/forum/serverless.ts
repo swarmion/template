@@ -1,14 +1,14 @@
 import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
 
-import { httpApiResourceContract } from '@sls-monorepo/core-contracts';
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
+import { httpApiResourceContract } from '@swarmion-starter/core-contracts';
+import { getThreadWithPostsContract } from '@swarmion-starter/forum-contracts';
 import {
   projectName,
   sharedEsbuildConfig,
   sharedParams,
   sharedProviderConfig,
-} from '@sls-monorepo/serverless-configuration';
+} from '@swarmion-starter/serverless-configuration';
 
 import { functions } from './functions';
 

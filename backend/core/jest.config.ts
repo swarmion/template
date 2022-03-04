@@ -1,3 +1,3 @@
-import { jestConfig } from '@sls-monorepo/configuration';
+import { jestConfig } from '@swarmion-starter/configuration';
 
 export default jestConfig;

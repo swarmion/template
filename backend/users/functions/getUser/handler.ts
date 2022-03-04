@@ -1,5 +1,5 @@
-import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
-import { getUserContract } from '@sls-monorepo/users-contracts';
+import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
+import { getUserContract } from '@swarmion-starter/users-contracts';
 
 export const handler = getUserContract.handler(async event => {
   const { userId } = event.pathParameters;

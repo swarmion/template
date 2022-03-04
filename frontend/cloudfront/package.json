@@ -1,5 +1,5 @@
 {
-  "name": "@sls-monorepo/frontend-cloudfront",
+  "name": "@swarmion-starter/frontend-cloudfront",
   "private": true,
   "version": "1.0.0",
   "license": "UNLICENSED",
@@ -15,8 +15,8 @@
     "test-type": "tsc --noEmit"
   },
   "dependencies": {
-    "@sls-monorepo/serverless-configuration": "1.0.0",
-    "@sls-monorepo/users-contracts": "1.0.0"
+    "@swarmion-starter/serverless-configuration": "1.0.0",
+    "@swarmion-starter/users-contracts": "1.0.0"
   },
   "devDependencies": {
     "@serverless-contracts/eslint-plugin": "0.3.0",

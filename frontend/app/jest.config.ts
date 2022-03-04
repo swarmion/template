@@ -1,6 +1,6 @@
 import type { InitialOptionsTsJest } from 'ts-jest/dist/types';
 
-import { jestConfig } from '@sls-monorepo/configuration';
+import { jestConfig } from '@swarmion-starter/configuration';
 
 const config: InitialOptionsTsJest = {
   ...jestConfig,

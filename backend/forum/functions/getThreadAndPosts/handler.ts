@@ -1,5 +1,5 @@
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
-import { applyHttpMiddlewares } from '@sls-monorepo/serverless-helpers';
+import { getThreadWithPostsContract } from '@swarmion-starter/forum-contracts';
+import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 
 export const handler = getThreadWithPostsContract.handler(async event => {
   const { threadId } = event.pathParameters;

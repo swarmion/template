@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { getUserContract } from '@sls-monorepo/users-contracts';
+import { getUserContract } from '@swarmion-starter/users-contracts';
 
 import { Title } from 'components';
 import client from 'services/networking/client';

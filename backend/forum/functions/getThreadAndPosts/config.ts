@@ -1,8 +1,8 @@
-import { getThreadWithPostsContract } from '@sls-monorepo/forum-contracts';
+import { getThreadWithPostsContract } from '@swarmion-starter/forum-contracts';
 import {
   getHandlerPath,
   LambdaFunction,
-} from '@sls-monorepo/serverless-helpers';
+} from '@swarmion-starter/serverless-helpers';
 
 const config: LambdaFunction = {
   environment: {},

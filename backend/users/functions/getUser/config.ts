@@ -1,8 +1,8 @@
 import {
   getHandlerPath,
   LambdaFunction,
-} from '@sls-monorepo/serverless-helpers';
-import { getUserContract } from '@sls-monorepo/users-contracts';
+} from '@swarmion-starter/serverless-helpers';
+import { getUserContract } from '@swarmion-starter/users-contracts';
 
 const config: LambdaFunction = {
   environment: {},

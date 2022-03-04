@@ -3715,41 +3715,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless-contracts/core@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/core@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
-    lodash: ^4.17.21
-  checksum: ea25f2968203cadb2b9527b5c83b2ec2c2b27f74d868bc485bc63ef08b5d096b32c1ece41f976fa52980cd4c6111608cb32cecbc93827adab231d66dd4a576f7
-  languageName: node
-  linkType: hard
-
-"@serverless-contracts/eslint-plugin@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/eslint-plugin@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    find-up: 5.0.0
-  checksum: 260236b687f282cbc61d28d318b075eb43da64d1aa19ad41545528869c88c7b09b8f99d51c4b43454f2a14f9e7583bc38e2c758233cfb3ff1e6c8fbaf1a2fe38
-  languageName: node
-  linkType: hard
-
-"@serverless-contracts/plugin@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@serverless-contracts/plugin@npm:0.3.0"
-  dependencies:
-    "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
-    json-schema-diff: ^0.17.1
-    lodash: ^4.17.21
-  peerDependencies:
-    serverless: ^2.60 || 3
-  checksum: 24e8c645b7576452cbd046fea49d77c181e4fb211064517ff32477a878818035024b54f7b507bf4d142fc51890dc9a53f52bfabbc2a05b9751132ef4c016f617
-  languageName: node
-  linkType: hard
-
 "@serverless/aws-lambda-otel-extension-dist@npm:^0.1.6":
   version: 0.1.6
   resolution: "@serverless/aws-lambda-otel-extension-dist@npm:0.1.6"
@@ -4065,12 +4030,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     esbuild: ^0.14.25
@@ -4087,14 +4052,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
@@ -4115,14 +4080,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
@@ -4174,7 +4139,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4198,7 +4163,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4276,11 +4241,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless-contracts/eslint-plugin": 0.3.0
-    "@serverless-contracts/plugin": 0.3.0
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
+    "@swarmion/eslint-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
@@ -4390,7 +4355,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@serverless-contracts/core": 0.3.0
+    "@swarmion/serverless-contracts": 0.4.0
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4404,6 +4369,41 @@ __metadata:
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
+
+"@swarmion/eslint-plugin@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/eslint-plugin@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    find-up: 5.0.0
+  checksum: bda6d9a2fc83f5c899b580eb407820ed4239b4b8f5c18563077066ad49f2b36e6c9bec98b451d0de68ee967f9c67fd95a8d947d3fb0cc99b113a9155105e0bda
+  languageName: node
+  linkType: hard
+
+"@swarmion/serverless-contracts@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/serverless-contracts@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    axios: ^0.25.0
+    lodash: ^4.17.21
+  checksum: a4eb4b13759c3b2c889a19775eb8368d7eed70e96a7bd8aaed456ea743888e2701d5baf7bcb22cd879125a2435297e0c8aa99021e49e7c0b5a194ca610bdc904
+  languageName: node
+  linkType: hard
+
+"@swarmion/serverless-plugin@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@swarmion/serverless-plugin@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+    axios: ^0.25.0
+    json-schema-diff: ^0.17.1
+    lodash: ^4.17.21
+  peerDependencies:
+    serverless: ^2.60 || 3
+  checksum: 38071858c38efe8981cd08134317e10962d0e8eba9559911bc00d0b2e194d5a2079ec04fb438604a67858787d1d22c6c078642658922698b506ac930166b4646
+  languageName: node
+  linkType: hard
 
 "@szmarczak/http-timer@npm:^4.0.5":
   version: 4.0.6

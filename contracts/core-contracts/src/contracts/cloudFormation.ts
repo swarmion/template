@@ -1,4 +1,4 @@
-import { CloudFormationContract } from '@serverless-contracts/core';
+import { CloudFormationContract } from '@swarmion/serverless-contracts';
 
 export const httpApiResourceContract = new CloudFormationContract({
   id: 'core-httpApi',

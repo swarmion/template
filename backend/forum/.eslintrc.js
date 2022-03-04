@@ -1,7 +1,7 @@
 const generateImportOrderRule = require('../../commonConfiguration/generateImportOrderRule');
 
 module.exports = {
-  extends: ['plugin:@serverless-contracts/recommended'],
+  extends: ['plugin:@swarmion/recommended'],
   rules: generateImportOrderRule(__dirname),
   parserOptions: {
     project: ['./tsconfig.json'],

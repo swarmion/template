@@ -21,9 +21,9 @@
     "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
   },
   "dependencies": {
-    "@serverless-contracts/plugin": "0.3.0",
     "@swarmion-starter/serverless-configuration": "1.0.0",
-    "@swarmion-starter/serverless-helpers": "1.0.0"
+    "@swarmion-starter/serverless-helpers": "1.0.0",
+    "@swarmion/serverless-plugin": "0.4.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.3.0",

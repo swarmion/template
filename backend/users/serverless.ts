@@ -1,5 +1,5 @@
-import { ServerlessContracts } from '@serverless-contracts/plugin';
 import { AWS } from '@serverless/typescript';
+import { ServerlessContracts } from '@swarmion/serverless-plugin';
 
 import { httpApiResourceContract } from '@swarmion-starter/core-contracts';
 import {
@@ -19,7 +19,7 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   plugins: [
     'serverless-esbuild',
     'serverless-iam-roles-per-function',
-    '@serverless-contracts/plugin',
+    '@swarmion/serverless-plugin',
   ],
   provider: {
     ...sharedProviderConfig,

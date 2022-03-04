@@ -1,4 +1,4 @@
-import { ApiGatewayContract } from '@serverless-contracts/core';
+import { ApiGatewayContract } from '@swarmion/serverless-contracts';
 
 import { postEntitySchema, threadEntitySchema } from 'contracts/entities';
 

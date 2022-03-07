@@ -4043,7 +4043,7 @@ __metadata:
     serverless: ^3.7.1
     serverless-esbuild: ^1.25.0
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
@@ -4063,7 +4063,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1086.0
+    aws-sdk: ^2.1087.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -4071,7 +4071,7 @@ __metadata:
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
@@ -4091,7 +4091,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1086.0
+    aws-sdk: ^2.1087.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -4099,7 +4099,7 @@ __metadata:
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
@@ -4123,7 +4123,7 @@ __metadata:
     jest: ^27.5.1
     prettier: ^2.5.1
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -4147,7 +4147,7 @@ __metadata:
     eslint: ^8.10.0
     jest: ^27.5.1
     prettier: ^2.5.1
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -4172,7 +4172,7 @@ __metadata:
     jest: ^27.5.1
     json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -4212,7 +4212,7 @@ __metadata:
     eslint-plugin-risxss: ^2.1.0
     husky: ^7.0.4
     jest: ^27.5.1
-    postcss: ^8.4.7
+    postcss: ^8.4.8
     postcss-syntax: ^0.36.2
     prettier: ^2.5.1
     react: ^17.0.2
@@ -4222,14 +4222,14 @@ __metadata:
     react-router-dom: ^6.2.2
     redux: ^4.1.2
     redux-devtools-extension: ^2.13.9
-    rollup: ^2.69.1
+    rollup: ^2.70.0
     rollup-plugin-visualizer: ^5.6.0
     stylelint: ^14.5.3
     stylelint-config-prettier: ^9.0.3
     stylelint-config-rational-order: ^0.1.2
     stylelint-config-standard: ^25.0.0
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     typescript: ^4.6.2
     vite: ^2.8.6
     vite-plugin-svgr: ^1.0.1
@@ -4252,7 +4252,7 @@ __metadata:
     serverless: ^3.7.1
     serverless-lift: ^1.12.1
     ts-jest: ^27.1.3
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
@@ -4271,7 +4271,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.13.0
     "@typescript-eslint/parser": ^5.13.0
-    aws-sdk: ^2.1086.0
+    aws-sdk: ^2.1087.0
     eslint: ^8.10.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -4281,7 +4281,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
     jest: ^27.5.1
-    lint-staged: ^12.3.4
+    lint-staged: ^12.3.5
     lodash: ^4.17.21
     npm-audit-resolver: ^3.0.0-7
     prettier: ^2.5.1
@@ -4308,7 +4308,7 @@ __metadata:
     eslint: ^8.10.0
     jest: ^27.5.1
     prettier: ^2.5.1
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -4339,7 +4339,7 @@ __metadata:
     jest: ^27.5.1
     json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -4364,7 +4364,7 @@ __metadata:
     jest: ^27.5.1
     json-schema-to-ts: ^1.6.5
     prettier: ^2.5.1
-    ts-node: ^10.6.0
+    ts-node: ^10.7.0
     ttypescript: ^1.5.13
     typescript: ^4.6.2
   languageName: unknown
@@ -5740,9 +5740,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1086.0":
-  version: 2.1086.0
-  resolution: "aws-sdk@npm:2.1086.0"
+"aws-sdk@npm:^2.1087.0":
+  version: 2.1087.0
+  resolution: "aws-sdk@npm:2.1087.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5753,7 +5753,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 658b92f0034487ba0ade4385057b57f00a9696a5c412738fd1b8df036c3cd7d5afcb713a7976ab433941c240d2fc4895e405e039e8a4423fce2612db742b7819
+  checksum: 488751ee977b240436a61889341702ea23ee8f890102312764105bf76c9125bd27fe584722959e9c4b8b351b9a9ffef7e505b88cd9070737f196a54273b5d288
   languageName: node
   linkType: hard
 
@@ -11954,9 +11954,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.3.4":
-  version: 12.3.4
-  resolution: "lint-staged@npm:12.3.4"
+"lint-staged@npm:^12.3.5":
+  version: 12.3.5
+  resolution: "lint-staged@npm:12.3.5"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -11973,7 +11973,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4e0b4b9da4183a0daeab35d41e4d243fb1270a39db997efa0c3745fa148a7a4b8b723a51cb757595fc8bb118796ca1465e67aede72f25e9ea48165aec36cec3b
+  checksum: 6653c7078b36741e521e5f309b56bb75db198a05cbdd188124ff82a290e352ade3eb1e6080265729e19711ac08d190e300874af00e4e540b57b3c8f0690e2573
   languageName: node
   linkType: hard
 
@@ -13902,14 +13902,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.7":
-  version: 8.4.7
-  resolution: "postcss@npm:8.4.7"
+"postcss@npm:^8.4.8":
+  version: 8.4.8
+  resolution: "postcss@npm:8.4.8"
   dependencies:
     nanoid: ^3.3.1
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: a515ed36622edbee1d3ba153298d3b62ae9826dfa6de19204c2a6f975c8d3ad36808423b5119a9d82b78efd486de3ce35a1faf882a36ac8aa09492be4fbb7fe1
+  checksum: 8e42def1ea98a4ac800d2b8937b19c83c6722da6c39ded72b1877eb743922f51b6e93be3667284b685ac18e8b583f21d97f24e0a73161c70fe8dc6901e614b87
   languageName: node
   linkType: hard
 
@@ -14866,9 +14866,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.69.1":
-  version: 2.69.1
-  resolution: "rollup@npm:2.69.1"
+"rollup@npm:^2.70.0":
+  version: 2.70.0
+  resolution: "rollup@npm:2.70.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -14876,7 +14876,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: dc9b21b0ecfdbb5811b2110e80866f60420ffcd744faf38d58117f1c3ac2660d553196d2c4c343a9f9d67b5e83c23d4a3c6050524ae1b4159b8530f2593f2c07
+  checksum: 95075049f7a2c727a7bdd78c4a6fb4a468561b3de853c010d34fdd693d7c761d5838bcfaf4e49a441b34abbc22cceaa01af47f69f622cbd725678792b5f1acfb
   languageName: node
   linkType: hard
 
@@ -16619,9 +16619,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.6.0":
-  version: 10.6.0
-  resolution: "ts-node@npm:10.6.0"
+"ts-node@npm:^10.7.0":
+  version: 10.7.0
+  resolution: "ts-node@npm:10.7.0"
   dependencies:
     "@cspotcode/source-map-support": 0.7.0
     "@tsconfig/node10": ^1.0.7
@@ -16649,10 +16649,11 @@ __metadata:
   bin:
     ts-node: dist/bin.js
     ts-node-cwd: dist/bin-cwd.js
+    ts-node-esm: dist/bin-esm.js
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: bc7589d8c38dc75a2a6f832ac43faaac7edd3d0ef4643f46a9deeaabcdd35722e8c89e729fcd39a16069b30d09e297c2fb3eec917a82dd3f1e7da8b352bbd447
+  checksum: 2a379e43f7478d0b79e1e63af91fe222d83857727957df4bd3bdf3c0a884de5097b12feb9bbf530074526b8874c0338b0e6328cf334f3a5e2c49c71e837273f7
   languageName: node
   linkType: hard
 

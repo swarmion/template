@@ -1,11 +1,11 @@
+const sortOrderSmacss = require('stylelint-config-property-sort-order-smacss/generate');
+
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-    'stylelint-config-prettier',
-    'stylelint-config-rational-order',
-  ],
+  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+  plugins: ['stylelint-order'],
   rules: {
     'declaration-no-important': true,
+    'order/properties-order': [sortOrderSmacss()],
   },
   overrides: [
     {

@@ -17,7 +17,7 @@
     "test-linter": "yarn linter-base-config src",
     "test-type": "tsc --noEmit",
     "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
-    "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
+    "test-stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
   },
   "dependencies": {
     "@emotion/react": "^11.8.1",
@@ -66,8 +66,9 @@
     "rollup-plugin-visualizer": "^5.6.0",
     "stylelint": "^14.5.3",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2",

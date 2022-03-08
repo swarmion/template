@@ -17,7 +17,7 @@
     "test-linter": "yarn linter-base-config src",
     "test-type": "tsc --noEmit",
     "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
-    "test:stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
+    "test-stylelint": "yarn stylelint-base-config **/*.{ts,tsx}"
   },
   "dependencies": {
     "@emotion/react": "^11.8.1",

@@ -8,6 +8,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
   private: true,
   version: '1.0.0',
   license: 'UNLICENSED',
+  sideEffects: false,
   files: ['dist'],
   main: 'dist/cjs/index.js',
   module: 'dist/esm/index.js',

@@ -4026,7 +4026,7 @@ __metadata:
     "@types/node": ^17.0.21
     esbuild: ^0.14.25
     jest: ^27.5.1
-    serverless: ^3.7.2
+    serverless: ^3.7.3
     serverless-esbuild: ^1.25.0
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
@@ -4049,11 +4049,11 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1088.0
+    aws-sdk: ^2.1089.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.2
+    serverless: ^3.7.3
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4077,11 +4077,11 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1088.0
+    aws-sdk: ^2.1089.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.2
+    serverless: ^3.7.3
     serverless-esbuild: ^1.25.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4181,7 +4181,7 @@ __metadata:
     "@swarmion-starter/users-contracts": 1.0.0
     "@testing-library/dom": ^8.11.3
     "@testing-library/jest-dom": ^5.16.2
-    "@testing-library/react": ^12.1.3
+    "@testing-library/react": ^12.1.4
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
@@ -4189,7 +4189,7 @@ __metadata:
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.13
     "@vitejs/plugin-react": ^1.2.0
-    axios: 0.26.0
+    axios: 0.26.1
     dotenv-flow: ^3.2.0
     eslint: ^8.10.0
     eslint-plugin-jsx-a11y: ^6.5.1
@@ -4236,7 +4236,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
-    serverless: ^3.7.2
+    serverless: ^3.7.3
     serverless-lift: ^1.12.1
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
@@ -4258,7 +4258,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.14.0
     "@typescript-eslint/parser": ^5.14.0
-    aws-sdk: ^2.1088.0
+    aws-sdk: ^2.1089.0
     eslint: ^8.10.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -4630,9 +4630,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^12.1.3":
-  version: 12.1.3
-  resolution: "@testing-library/react@npm:12.1.3"
+"@testing-library/react@npm:^12.1.4":
+  version: 12.1.4
+  resolution: "@testing-library/react@npm:12.1.4"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^8.0.0
@@ -4640,7 +4640,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: 2f059e93dc3f161c4d15910d1fa80cd4f5cfb6eff8a733939a72ac720c2499b74761e8980c02983a6e49153b776e82bd770a1c3e66e05c4429db0e01612f7d0a
+  checksum: 944c5f8d4abb22c0650c25c7ae499651828c37c0e741ff67a4635d4cd99b307d486dabec05b372aba638bd359d29cd2af97393b5055ea294a201d80b4bc384b8
   languageName: node
   linkType: hard
 
@@ -5750,9 +5750,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1088.0":
-  version: 2.1088.0
-  resolution: "aws-sdk@npm:2.1088.0"
+"aws-sdk@npm:^2.1089.0":
+  version: 2.1089.0
+  resolution: "aws-sdk@npm:2.1089.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5763,7 +5763,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 5abe5b13d55b4341ac05c88107e8d95d818afb8f6663363911c3783404fc93dcebb73447c296c495b7c925d90952ae738a31ec78fcd297f9396a376840abd29d
+  checksum: ad31c214a14cded9777c894b011f21ea54594412b1ceba51a28189d03c0b7a2cc04973bfa72a05fe15e09c43dae73e491b4c745bc3aef6d12bbb30ef39d33994
   languageName: node
   linkType: hard
 
@@ -5791,12 +5791,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.26.0":
-  version: 0.26.0
-  resolution: "axios@npm:0.26.0"
+"axios@npm:0.26.1":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
   dependencies:
     follow-redirects: ^1.14.8
-  checksum: d7a8b898f4157bedeb2e06c03b16133b91b354c041205bea732ce58b7a21f373d22057b0eea0d482838145ce6ff482b359750d9bcb8dd19d45e3928e3c65c280
+  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
   languageName: node
   linkType: hard
 
@@ -13790,9 +13790,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.7.2":
-  version: 3.7.2
-  resolution: "serverless@npm:3.7.2"
+"serverless@npm:^3.7.3":
+  version: 3.7.3
+  resolution: "serverless@npm:3.7.3"
   dependencies:
     "@serverless/aws-lambda-otel-extension-dist": ^0.1.6
     "@serverless/dashboard-plugin": ^6.1.5
@@ -13801,7 +13801,7 @@ __metadata:
     ajv: ^8.10.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1088.0
+    aws-sdk: ^2.1089.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -13850,7 +13850,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: dd6892ea4de1a434512047570f35ebeca7aff6d2ac59af7efead66ae7325b147024dca84a006cd701546c7ae5031a1553d956d9c8148f98b044a85ca3549afa1
+  checksum: 7b2273caf52906cec51e34d4faa1dc0a1e2fa098004019360ff0ca1b60b80c4da9f28ba2b30ddd8d2503b25f5d8ef6ab84231ffbbc3b5e44e3351398cf3aa183
   languageName: node
   linkType: hard
 

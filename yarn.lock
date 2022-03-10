@@ -3908,7 +3908,7 @@ __metadata:
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
-    "@swarmion/serverless-plugin": 0.4.0
+    "@swarmion/serverless-plugin": 0.4.1
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     esbuild: ^0.14.25
@@ -3931,12 +3931,12 @@ __metadata:
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
-    "@swarmion/eslint-plugin": 0.4.0
-    "@swarmion/serverless-plugin": 0.4.0
+    "@swarmion/eslint-plugin": 0.4.1
+    "@swarmion/serverless-plugin": 0.4.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1089.0
+    aws-sdk: ^2.1090.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -3959,12 +3959,12 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/eslint-plugin": 0.4.0
-    "@swarmion/serverless-plugin": 0.4.0
+    "@swarmion/eslint-plugin": 0.4.1
+    "@swarmion/serverless-plugin": 0.4.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
-    aws-sdk: ^2.1089.0
+    aws-sdk: ^2.1090.0
     esbuild: ^0.14.25
     http-errors: ^2.0.0
     jest: ^27.5.1
@@ -4012,7 +4012,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@swarmion/serverless-contracts": 0.4.0
+    "@swarmion/serverless-contracts": 0.4.1
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4036,7 +4036,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@swarmion/serverless-contracts": 0.4.0
+    "@swarmion/serverless-contracts": 0.4.1
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4073,7 +4073,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
     "@types/node": ^17.0.21
-    "@types/react": ^17.0.39
+    "@types/react": ^17.0.40
     "@types/react-dom": ^17.0.13
     "@vitejs/plugin-react": ^1.2.0
     axios: 0.26.1
@@ -4118,8 +4118,8 @@ __metadata:
     "@serverless/typescript": ^3.3.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/eslint-plugin": 0.4.0
-    "@swarmion/serverless-plugin": 0.4.0
+    "@swarmion/eslint-plugin": 0.4.1
+    "@swarmion/serverless-plugin": 0.4.1
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
@@ -4145,7 +4145,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.14.0
     "@typescript-eslint/parser": ^5.14.0
-    aws-sdk: ^2.1089.0
+    aws-sdk: ^2.1090.0
     eslint: ^8.10.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -4229,7 +4229,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.2
-    "@swarmion/serverless-contracts": 0.4.0
+    "@swarmion/serverless-contracts": 0.4.1
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4244,38 +4244,38 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/eslint-plugin@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@swarmion/eslint-plugin@npm:0.4.0"
+"@swarmion/eslint-plugin@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@swarmion/eslint-plugin@npm:0.4.1"
   dependencies:
     "@babel/runtime": ^7.17.2
     find-up: 5.0.0
-  checksum: bda6d9a2fc83f5c899b580eb407820ed4239b4b8f5c18563077066ad49f2b36e6c9bec98b451d0de68ee967f9c67fd95a8d947d3fb0cc99b113a9155105e0bda
+  checksum: 1f92da70120da7f5b61a146b43f1e1be1d25b83d46d445b8c531c6e7c1cb375c053034d248b44fc99a705d616e9693fffeb544483bf4a8f36630625f87a9f611
   languageName: node
   linkType: hard
 
-"@swarmion/serverless-contracts@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@swarmion/serverless-contracts@npm:0.4.0"
+"@swarmion/serverless-contracts@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@swarmion/serverless-contracts@npm:0.4.1"
   dependencies:
     "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
+    axios: ^0.26.1
     lodash: ^4.17.21
-  checksum: a4eb4b13759c3b2c889a19775eb8368d7eed70e96a7bd8aaed456ea743888e2701d5baf7bcb22cd879125a2435297e0c8aa99021e49e7c0b5a194ca610bdc904
+  checksum: 04b163eaa84628912cf174f249a84792cdcebe403956e8e349808d66dfc2bbab719d707bde1c987eb83ff9c3b552c62de82689d76d59e59d134050897bce7803
   languageName: node
   linkType: hard
 
-"@swarmion/serverless-plugin@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@swarmion/serverless-plugin@npm:0.4.0"
+"@swarmion/serverless-plugin@npm:0.4.1":
+  version: 0.4.1
+  resolution: "@swarmion/serverless-plugin@npm:0.4.1"
   dependencies:
     "@babel/runtime": ^7.17.2
-    axios: ^0.25.0
+    axios: ^0.26.1
     json-schema-diff: ^0.17.1
     lodash: ^4.17.21
   peerDependencies:
     serverless: ^2.60 || 3
-  checksum: 38071858c38efe8981cd08134317e10962d0e8eba9559911bc00d0b2e194d5a2079ec04fb438604a67858787d1d22c6c078642658922698b506ac930166b4646
+  checksum: ce4cba7a83cde091b42eeec8143b2de448d72caddf75f30cc9f33276c4017ac6be53a37578ce2ee12add6ee080ce9f850f472c2fd051a5c8b80ecbc16f7ceed8
   languageName: node
   linkType: hard
 
@@ -4853,7 +4853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17, @types/react@npm:>=16.9.0, @types/react@npm:^17.0.39":
+"@types/react@npm:*, @types/react@npm:16 || 17, @types/react@npm:>=16.9.0":
   version: 17.0.39
   resolution: "@types/react@npm:17.0.39"
   dependencies:
@@ -4861,6 +4861,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: bf04d3c2894559012710d595553e12b422d3b91cd8f4f7e122d8cb044ba9c2ba17f6e8a4e09581359cc5509ddc59cd8c8fabd6774f3505a40a45393f074d6e6e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.40":
+  version: 17.0.40
+  resolution: "@types/react@npm:17.0.40"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 24d1b210b5bf3c7d49f9a7fe5490db02e005a1d989045a2d67528347557dd0bcb0d7bcf96088152697e97521ac4c9506d1357ee48a2b7d4e701c70d838dc7284
   languageName: node
   linkType: hard
 
@@ -5567,6 +5578,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aws-sdk@npm:^2.1090.0":
+  version: 2.1090.0
+  resolution: "aws-sdk@npm:2.1090.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    uuid: 3.3.2
+    xml2js: 0.4.19
+  checksum: 56895fe5cd57df89320e76397aee5f39557c5c219c376d4cbccb0b8276d7ba6d7bf7b38a9aee81f84fab902243ed9a4f96264b916ce8a3a9c7540bdf383876b2
+  languageName: node
+  linkType: hard
+
 "axe-core@npm:^4.3.5":
   version: 4.4.1
   resolution: "axe-core@npm:4.4.1"
@@ -5574,7 +5602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.26.1":
+"axios@npm:0.26.1, axios@npm:^0.26.1":
   version: 0.26.1
   resolution: "axios@npm:0.26.1"
   dependencies:
@@ -5589,15 +5617,6 @@ __metadata:
   dependencies:
     follow-redirects: ^1.14.0
   checksum: 44245f24ac971e7458f3120c92f9d66d1fc695e8b97019139de5b0cc65d9b8104647db01e5f46917728edfc0cfd88eb30fc4c55e6053eef4ace76768ce95ff3c
-  languageName: node
-  linkType: hard
-
-"axios@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "axios@npm:0.25.0"
-  dependencies:
-    follow-redirects: ^1.14.7
-  checksum: 2a8a3787c05f2a0c9c3878f49782357e2a9f38945b93018fb0c4fd788171c43dceefbb577988628e09fea53952744d1ecebde234b561f1e703aa43e0a598a3ad
   languageName: node
   linkType: hard
 
@@ -8497,7 +8516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.7, follow-redirects@npm:^1.14.8":
+"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.8":
   version: 1.14.9
   resolution: "follow-redirects@npm:1.14.9"
   peerDependenciesMeta:

@@ -1,6 +1,6 @@
 import { Tree, updateJson } from '@nrwl/devkit';
 
-import { NormalizedSchema } from '../types';
+import { GeneratorType, GeneratorTypeToName, NormalizedSchema } from '../types';
 
 type CodeWorkspaceType = {
   folders: {
@@ -9,8 +9,17 @@ type CodeWorkspaceType = {
   }[];
 };
 
-const formatFolderName = (options: NormalizedSchema) =>
-  options.name.replace(new RegExp('-', 'g'), ' ') + ' [library]';
+const formatFolderName = (options: NormalizedSchema) => {
+  const formattedName = options.name.replace(new RegExp('-', 'g'), ' ');
+  switch (options.generatorType) {
+    case GeneratorType.LIBRARY:
+      return `${formattedName} [${options.generatorType.toLowerCase()}]`;
+    case GeneratorType.SERVICE:
+      return `${
+        GeneratorTypeToName[options.generatorType]
+      } ${formattedName} [${options.generatorType.toLowerCase()}]`;
+  }
+};
 
 export const updateCodeWorkspace = (
   tree: Tree,

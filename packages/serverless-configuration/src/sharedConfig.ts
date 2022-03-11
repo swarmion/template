@@ -31,7 +31,8 @@ export const sharedParams = {
 export const sharedEsbuildConfig = {
   packager: 'yarn',
   bundle: true,
-  minify: false,
+  minify: true,
+  keepNames: true,
   sourcemap: true,
   exclude: ['aws-sdk'],
   target: 'node14',

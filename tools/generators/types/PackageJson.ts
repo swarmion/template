@@ -4,11 +4,11 @@ export interface PackageJson {
   private: boolean;
   version: string;
   license: string;
-  sideEffects: boolean;
-  files: string[];
-  main: string;
-  module: string;
-  types: string;
+  sideEffects?: boolean;
+  files?: string[];
+  main?: string;
+  module?: string;
+  types?: string;
   scripts: {
     [key: string]: string;
     'lint-fix': string;

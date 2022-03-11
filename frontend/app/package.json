@@ -39,6 +39,7 @@
     "redux": "^4.1.2"
   },
   "devDependencies": {
+    "@redux-devtools/extension": "^3.2.2",
     "@stylelint/postcss-css-in-js": "^0.37.2",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
@@ -61,7 +62,6 @@
     "postcss": "^8.4.8",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.5.1",
-    "redux-devtools-extension": "^2.13.9",
     "rollup": "^2.70.0",
     "rollup-plugin-visualizer": "^5.6.0",
     "stylelint": "^14.5.3",

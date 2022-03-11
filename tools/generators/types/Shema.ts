@@ -1,5 +1,7 @@
 import { Linter } from '@nrwl/linter';
 
+import { GeneratorType } from './GeneratorType';
+
 export interface Schema {
   name: string;
   directory?: string;
@@ -8,10 +10,10 @@ export interface Schema {
 
 export interface NormalizedSchema extends Schema {
   fileName: string;
+  generatorType: GeneratorType;
   importPath: string;
   linter: Linter;
   name: string;
-  projectDirectory: string;
   projectRoot: string;
   unitTestRunner: 'jest' | 'none';
   workspaceName: string;

@@ -4,7 +4,7 @@ import { join } from 'path';
 
 import { normalizeOptions, packageGenerator } from '../helpers';
 import { symlinkVsCodeConfiguration } from '../helpers/symlink';
-import { Schema } from '../types';
+import { GeneratorType, Schema } from '../types';
 import {
   packageJson,
   packageProjectJson,
@@ -14,7 +14,7 @@ import {
 const SOURCE_FOLDER = './files';
 
 export default async (tree: Tree, schema: Schema): Promise<() => void> => {
-  const options = normalizeOptions(tree, schema);
+  const options = normalizeOptions(tree, schema, GeneratorType.LIBRARY);
 
   packageGenerator({
     tree,

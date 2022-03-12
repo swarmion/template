@@ -38,7 +38,7 @@ export const packageGenerator = ({
   writeJson(tree, join(options.projectRoot, `tsconfig.json`), packageTsConfig);
 
   const projectConfiguration = packageProjectJson(options.projectRoot);
-  addProjectConfiguration(tree, options.name, projectConfiguration);
+  addProjectConfiguration(tree, options.importPath, projectConfiguration);
 
   updateCodeWorkspace(tree, options);
 };

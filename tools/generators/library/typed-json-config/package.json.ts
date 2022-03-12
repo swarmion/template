@@ -3,7 +3,7 @@ import { join } from 'path';
 import { NormalizedSchema, PackageJson } from '../../types';
 
 export const packageJson = (options: NormalizedSchema): PackageJson => ({
-  name: options.importPath,
+  name: `@${options.workspaceName}/${options.importPath}`,
   private: true,
   version: '1.0.0',
   license: 'UNLICENSED',

@@ -39,7 +39,7 @@ export const normalizeOptions = (
   });
   const { npmScope } = getWorkspaceLayout(tree);
 
-  const importPath = formatImportPath(npmScope, generatorType, projectName);
+  const importPath = formatImportPath(generatorType, projectName);
 
   return {
     ...options,
@@ -64,14 +64,13 @@ const getCaseAwareFileName = (options: {
 };
 
 const formatImportPath = (
-  npmScope: string,
   generatorType: GeneratorType,
   projectName: string,
 ) => {
   switch (generatorType) {
     case GeneratorType.LIBRARY:
-      return `${npmScope}/${projectName}`;
+      return projectName;
     case GeneratorType.SERVICE:
-      return `${npmScope}/${GeneratorTypeToDirectory[generatorType]}-${projectName}`;
+      return `${GeneratorTypeToDirectory[generatorType]}-${projectName}`;
   }
 };

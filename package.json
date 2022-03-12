@@ -15,6 +15,7 @@
     "deploy": "nx run-many --target=deploy --all --parallel=4",
     "deploy-affected": "nx affected --target=deploy",
     "generate-library": "nx workspace-generator library",
+    "generate-service": "nx workspace-generator service",
     "graph": "nx dep-graph",
     "info": "nx run-many --target=sls-info --all --parallel=4",
     "lint-fix": "yarn linter-base-config --fix",

@@ -3,7 +3,7 @@ export enum GeneratorType {
   SERVICE = 'SERVICE',
 }
 
-export enum GeneratorTypeToName {
-  LIBRARY = 'library',
+export enum GeneratorTypeToDirectory {
+  LIBRARY = 'packages',
   SERVICE = 'backend',
 }

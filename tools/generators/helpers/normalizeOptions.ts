@@ -8,7 +8,7 @@ import { Linter } from '@nrwl/linter';
 
 import {
   GeneratorType,
-  GeneratorTypeToName,
+  GeneratorTypeToDirectory,
   NormalizedSchema,
   Schema,
 } from '../types';
@@ -22,7 +22,7 @@ export const normalizeOptions = (
   options.directory =
     options.directory !== undefined && options.directory !== ''
       ? options.directory
-      : GeneratorTypeToName[generatorType];
+      : GeneratorTypeToDirectory[generatorType];
   const projectRoot = joinPathFragments(
     names(options.directory).fileName,
     name,
@@ -72,6 +72,6 @@ const formatImportPath = (
     case GeneratorType.LIBRARY:
       return `${npmScope}/${projectName}`;
     case GeneratorType.SERVICE:
-      return `${npmScope}/${GeneratorTypeToName[generatorType]}-${projectName}`;
+      return `${npmScope}/${GeneratorTypeToDirectory[generatorType]}-${projectName}`;
   }
 };

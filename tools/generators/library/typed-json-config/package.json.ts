@@ -34,12 +34,12 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     '@babel/runtime': '^7.17.2',
   },
   devDependencies: {
+    [`@${options.workspaceName}/configuration`]: '1.0.0',
     '@babel/cli': '^7.17.6',
     '@babel/core': '^7.17.5',
     '@babel/plugin-transform-runtime': '^7.17.0',
     '@babel/preset-env': '^7.16.11',
     '@babel/preset-typescript': '^7.16.7',
-    '@swarmion-starter/configuration': '1.0.0',
     '@types/node': '^17.0.21',
     '@zerollup/ts-transform-paths': '^1.7.18',
     'babel-plugin-module-resolver': '^4.1.0',

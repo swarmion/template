@@ -23,13 +23,13 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     'test-unit': 'jest --runInBand --collectCoverage --logHeapUsage',
   },
   dependencies: {
-    '@swarmion-starter/serverless-configuration': '1.0.0',
-    '@swarmion-starter/serverless-helpers': '1.0.0',
+    [`@${options.workspaceName}/serverless-configuration`]: '1.0.0',
+    [`@${options.workspaceName}/serverless-helpers`]: '1.0.0',
   },
   devDependencies: {
+    [`@${options.workspaceName}/configuration`]: '1.0.0',
+    [`@${options.workspaceName}/core-contracts`]: '1.0.0',
     '@serverless/typescript': '^3.3.0',
-    '@swarmion-starter/configuration': '1.0.0',
-    '@swarmion-starter/core-contracts': '1.0.0',
     '@types/jest': '^27.4.1',
     '@types/node': '^17.0.21',
     esbuild: '^0.14.23',

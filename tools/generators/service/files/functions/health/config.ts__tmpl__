@@ -1,7 +1,7 @@
 import {
   getHandlerPath,
   LambdaFunction,
-} from '@swarmion-starter/serverless-helpers';
+} from '@<%= workspaceName %>/serverless-helpers';
 
 const config: LambdaFunction = {
   environment: {},

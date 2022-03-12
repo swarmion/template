@@ -1,12 +1,12 @@
 import { AWS } from '@serverless/typescript';
 
-import { httpApiResourceContract } from '@swarmion-starter/core-contracts';
+import { httpApiResourceContract } from '@<%= workspaceName %>/core-contracts';
 import {
   projectName,
   sharedEsbuildConfig,
   sharedParams,
   sharedProviderConfig,
-} from '@swarmion-starter/serverless-configuration';
+} from '@<%= workspaceName %>/serverless-configuration';
 
 import { functions } from './functions';
 

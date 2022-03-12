@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 import { formatFiles, installPackagesTask, Tree } from '@nrwl/devkit';
 import { join } from 'path';
 

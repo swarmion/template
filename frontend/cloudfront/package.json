@@ -20,8 +20,6 @@
   },
   "devDependencies": {
     "@serverless/typescript": "^3.3.0",
-    "@swarmion/eslint-plugin": "0.4.1",
-    "@swarmion/serverless-plugin": "0.4.1",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "jest": "^27.5.1",

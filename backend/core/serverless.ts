@@ -1,5 +1,4 @@
 import { AWS } from '@serverless/typescript';
-import { ServerlessContracts } from '@swarmion/serverless-plugin';
 
 import { httpApiResourceContract } from '@swarmion-starter/core-contracts';
 import {
@@ -12,11 +11,11 @@ import { mergeStageParams } from '@swarmion-starter/serverless-helpers';
 
 import { functions } from './functions';
 
-const serverlessConfiguration: AWS & ServerlessContracts = {
+const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
   frameworkVersion: '>=3.0.0',
   configValidationMode: 'error',
-  plugins: ['serverless-esbuild', '@swarmion/serverless-plugin'],
+  plugins: ['serverless-esbuild'],
   provider: {
     ...sharedProviderConfig,
     httpApi: {
@@ -47,12 +46,6 @@ const serverlessConfiguration: AWS & ServerlessContracts = {
   custom: {
     projectName,
     esbuild: sharedEsbuildConfig,
-  },
-  contracts: {
-    provides: {
-      httpApiResourceContract: httpApiResourceContract.fullContractSchema,
-    },
-    consumes: {},
   },
   resources: {
     Description: 'Core service',

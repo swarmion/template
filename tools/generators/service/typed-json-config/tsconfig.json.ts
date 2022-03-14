@@ -8,10 +8,10 @@ export const packageTsConfig: TsConfig = {
     esModuleInterop: true,
   },
   references: [
-    { path: '../../packages/configuration' },
-    { path: '../../packages/serverless-configuration' },
-    { path: '../../packages/serverless-helpers' },
-    { path: '../../contracts/core-contracts' },
+    { path: '../../contracts/core-contracts/tsconfig.build.json' },
+    { path: '../../packages/configuration/tsconfig.build.json' },
+    { path: '../../packages/serverless-configuration/tsconfig.build.json' },
+    { path: '../../packages/serverless-helpers/tsconfig.build.json' },
   ],
   include: ['./**/*.ts'],
   'ts-node': {

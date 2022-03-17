@@ -8,6 +8,10 @@
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
 
+<p align="right">
+  <i>If you use this repo, star it ✨</i>
+</p>
+
 ## Install
 
 Head to [the install docs](./docs/install.md)!

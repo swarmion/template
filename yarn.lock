@@ -3767,10 +3767,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/typescript@npm:^3.7.4":
-  version: 3.7.4
-  resolution: "@serverless/typescript@npm:3.7.4"
-  checksum: 127e74955234bc54000a3585e549e3fc96f0b0673dc77c21b2d9deb29c7f31d17614f386c2b49faa0e91deaaf42420fc2a0e76337a5c51ab90a69b4c8d9c4d07
+"@serverless/typescript@npm:^3.7.5":
+  version: 3.7.5
+  resolution: "@serverless/typescript@npm:3.7.5"
+  checksum: fdd4f625424b18d801d3be2914b131f720320995d33184475953a3481c1608c8a7b84206d3b8e031961426175a047660b5f55502774dab2c9d46d325281746ab
   languageName: node
   linkType: hard
 
@@ -3977,7 +3977,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -3986,7 +3986,7 @@ __metadata:
     "@types/node": ^17.0.21
     esbuild: ^0.14.27
     jest: ^27.5.1
-    serverless: ^3.7.5
+    serverless: ^3.7.6
     serverless-esbuild: ^1.26.1
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
@@ -3998,7 +3998,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
@@ -4011,7 +4011,7 @@ __metadata:
     esbuild: ^0.14.27
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.5
+    serverless: ^3.7.6
     serverless-esbuild: ^1.26.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4024,7 +4024,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -4037,7 +4037,7 @@ __metadata:
     esbuild: ^0.14.27
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.5
+    serverless: ^3.7.6
     serverless-esbuild: ^1.26.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -4056,7 +4056,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.7
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4184,13 +4184,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
-    serverless: ^3.7.5
+    serverless: ^3.7.6
     serverless-lift: ^1.12.1
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
@@ -4222,7 +4222,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
     jest: ^27.5.1
-    lint-staged: ^12.3.6
+    lint-staged: ^12.3.7
     lodash: ^4.17.21
     npm-audit-resolver: ^3.0.0-7
     prettier: ^2.6.0
@@ -4241,7 +4241,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.7
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4269,7 +4269,7 @@ __metadata:
     "@middy/http-error-handler": ^2.5.7
     "@middy/http-json-body-parser": ^2.5.7
     "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.7.4
+    "@serverless/typescript": ^3.7.5
     "@swarmion-starter/configuration": 1.0.0
     "@types/aws-lambda": ^8.10.93
     "@types/node": ^17.0.21
@@ -5647,23 +5647,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1092.0":
-  version: 2.1094.0
-  resolution: "aws-sdk@npm:2.1094.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    uuid: 3.3.2
-    xml2js: 0.4.19
-  checksum: d1a2f6f7ddef3cc9d38680958e8bcbebf6f2631204f5addb55b627c3b742ba60332e100d2d5f83d9bccc8f9f1f8db0f24934d9bb69513aa4d81ac6843c0157fe
-  languageName: node
-  linkType: hard
-
 "aws-sdk@npm:^2.1095.0":
   version: 2.1095.0
   resolution: "aws-sdk@npm:2.1095.0"
@@ -6974,10 +6957,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.10.8":
-  version: 1.10.8
-  resolution: "dayjs@npm:1.10.8"
-  checksum: 5a6b358a0646a780b7dbbec07b8c4400425143f88bf127f456bd2e75a854046f54808d65da2bf964c8267b82dbde0530e990376757ce7d961349d9cde8716a1d
+"dayjs@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "dayjs@npm:1.11.0"
+  checksum: 2d36f6d71345114cdcd89147adf9e05b4f8fe81684e08c8bf1f86b140aa0b86ecc3cae661a9348d96feb7fbefd03e1bc3697303688e95209670abcb36b4ece15
   languageName: node
   linkType: hard
 
@@ -11005,9 +10988,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.3.6":
-  version: 12.3.6
-  resolution: "lint-staged@npm:12.3.6"
+"lint-staged@npm:^12.3.7":
+  version: 12.3.7
+  resolution: "lint-staged@npm:12.3.7"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -11025,7 +11008,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: b5075addb79cefd3a01eb3e4b511cdbe255c86e80ac4f27c4ce90bbd5a6ef3765ec0c70ddc33e37d13aef54218b6026f52fcd0ed0ac9bf3a205a533b994ed387
+  checksum: b595097556880eb2ab7ce2cf105047f6f22525ccfd608fbdc63ab243259aa36a26949576fadff673748fb885e7cb37ad3f4471d964ad54c1205d57a58999ba24
   languageName: node
   linkType: hard
 
@@ -13664,9 +13647,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.7.5":
-  version: 3.7.5
-  resolution: "serverless@npm:3.7.5"
+"serverless@npm:^3.7.6":
+  version: 3.7.6
+  resolution: "serverless@npm:3.7.6"
   dependencies:
     "@serverless/dashboard-plugin": ^6.1.5
     "@serverless/platform-client": ^4.3.2
@@ -13674,7 +13657,7 @@ __metadata:
     ajv: ^8.10.0
     ajv-formats: ^2.1.1
     archiver: ^5.3.0
-    aws-sdk: ^2.1092.0
+    aws-sdk: ^2.1095.0
     bluebird: ^3.7.2
     cachedir: ^2.3.0
     chalk: ^4.1.2
@@ -13682,7 +13665,7 @@ __metadata:
     ci-info: ^3.3.0
     cli-progress-footer: ^2.3.0
     d: ^1.0.1
-    dayjs: ^1.10.8
+    dayjs: ^1.11.0
     decompress: ^4.2.1
     dotenv: ^10.0.0
     dotenv-expand: ^5.1.0
@@ -13724,7 +13707,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: 154d3a0c33f83e3c48ea7bc27eb47646d9905ee08b8cbb9fca400cdd76130861dacfdb0a6f18b8f80b1e5ac742fdabbe02402f61bf4ba2d2f42fdfa81ccc4c65
+  checksum: 879088aa2157ed127cad8c42e871b5bd2112b5ef3681d6e2b6251577b68e6aef6948db663542eec51218220ee4bc97d9abe6bd27cf6e243cbc748ff2ee8804a2
   languageName: node
   linkType: hard
 

@@ -9,7 +9,7 @@ const defaultPlugins = [
     'module-resolver',
     {
       root: ['./src'],
-      extensions: ['.ts'],
+      extensions: ['.ts', '.tsx'],
     },
   ],
   '@babel/plugin-transform-runtime',

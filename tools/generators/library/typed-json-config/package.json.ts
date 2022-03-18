@@ -22,7 +22,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
       'NODE_ENV=cjs yarn transpile --out-dir dist/cjs --source-maps',
     'package-esm':
       'NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps',
-    'package:types': 'ttsc -p tsconfig.build.json',
+    'package-types': 'ttsc -p tsconfig.build.json',
     test: 'yarn test-linter && yarn test-type && yarn test-unit',
     'test-linter': 'yarn linter-base-config .',
     'test-type': 'tsc --noEmit --emitDeclarationOnly false',

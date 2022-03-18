@@ -1,0 +1,16 @@
+{
+  "root": "apps/packages-generator-e2e",
+  "projectType": "application",
+  "sourceRoot": "apps/packages-generator-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/nx-plugin:e2e",
+      "options": {
+        "target": "packages-generator:build",
+        "jestConfig": "apps/packages-generator-e2e/jest.config.js"
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["packages-generator"]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "packages-generator",
+  "version": "0.0.1",
+  "generators": {
+    "template-example": {
+      "factory": "./src/generators/template-example/generator",
+      "schema": "./src/generators/template-example/schema.json",
+      "description": "template-example generator"
+    },
+    "library": {
+      "factory": "./src/generators/library/index",
+      "schema": "./src/generators/library/schema.json",
+      "description": "library generator"
+    },
+    "service": {
+      "factory": "./src/generators/service/index",
+      "schema": "./src/generators/service/schema.json",
+      "description": "service generator"
+    }
+  }
+}

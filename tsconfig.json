@@ -15,6 +15,11 @@
     "declaration": true,
     "declarationMap": true,
     "strictFunctionTypes": false,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "paths": {
+      "@swarmion-starter/packages-generator": [
+        "./packages/packages-generator/src/index.ts"
+      ]
+    }
   }
 }

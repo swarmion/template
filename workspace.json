@@ -9,6 +9,8 @@
     "forum-contracts": "contracts/forum-contracts",
     "frontend-app": "frontend/app",
     "frontend-cloudfront": "frontend/cloudfront",
+    "packages-generator": "packages/packages-generator",
+    "packages-generator-e2e": "apps/packages-generator-e2e",
     "serverless-configuration": "packages/serverless-configuration",
     "serverless-helpers": "packages/serverless-helpers",
     "users-contracts": "contracts/users-contracts"

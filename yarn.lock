@@ -4147,9 +4147,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion-starter/library-generator@workspace:packages/library-generator":
+"@swarmion-starter/packages-generator@workspace:packages/packages-generator":
   version: 0.0.0-use.local
-  resolution: "@swarmion-starter/library-generator@workspace:packages/library-generator"
+  resolution: "@swarmion-starter/packages-generator@workspace:packages/packages-generator"
   languageName: unknown
   linkType: soft
 

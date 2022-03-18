@@ -99,6 +99,14 @@
     {
       "path": "tools/generators",
       "name": "generators [dev-tool]"
+    },
+    {
+      "path": "packages/packages-generator",
+      "name": "Packages generator [dev-tool]"
+    },
+    {
+      "path": "apps/packages-generator-e2e",
+      "name": "Packages generator e2e [dev-tool]"
     }
   ]
 }

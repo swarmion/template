@@ -461,6 +461,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-cdk/aws-iam@npm:1.149.0":
+  version: 1.149.0
+  resolution: "@aws-cdk/aws-iam@npm:1.149.0"
+  dependencies:
+    "@aws-cdk/core": 1.149.0
+    "@aws-cdk/region-info": 1.149.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/core": 1.149.0
+    "@aws-cdk/region-info": 1.149.0
+    constructs: ^3.3.69
+  checksum: 5c4007db1b746f2c7ff366061216cc4dc0da0006092f425619072f953bad7eedc0016ac872361c73105201adfedd33193d8cf7b4cd58f06b13a32a81835d205b
+  languageName: node
+  linkType: hard
+
 "@aws-cdk/aws-kinesis@npm:1.148.0":
   version: 1.148.0
   resolution: "@aws-cdk/aws-kinesis@npm:1.148.0"
@@ -498,6 +513,25 @@ __metadata:
     "@aws-cdk/cx-api": 1.148.0
     constructs: ^3.3.69
   checksum: bb9222bceb10be1ec96cb7fd9466fdb56195c75eedea87f7564a110a5b245a31c66675af94b7100cf49a391eaaf9708ef895f1833e1dedd7d8190622901a5981
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/aws-kms@npm:^1.138":
+  version: 1.149.0
+  resolution: "@aws-cdk/aws-kms@npm:1.149.0"
+  dependencies:
+    "@aws-cdk/aws-iam": 1.149.0
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+    "@aws-cdk/core": 1.149.0
+    "@aws-cdk/cx-api": 1.149.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/aws-iam": 1.149.0
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+    "@aws-cdk/core": 1.149.0
+    "@aws-cdk/cx-api": 1.149.0
+    constructs: ^3.3.69
+  checksum: 049f8d436eec3e7a4c190076c5b3677c207586ed11ceed592c5b109d2d44c79d0c84e81919124610d6789444299dc9d2146c5b2fbb254887e5726b89410b9a2d
   languageName: node
   linkType: hard
 
@@ -745,6 +779,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-cdk/cloud-assembly-schema@npm:1.149.0":
+  version: 1.149.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:1.149.0"
+  dependencies:
+    jsonschema: ^1.4.0
+    semver: ^7.3.5
+  checksum: 3983ce3b9497645f909f4056e7b2bd065e24b239a3e9fe775fce7c7f7953147c9d631d833603bf8a5226970f624ac829ec45475417cb649b3d06260518535cf8
+  languageName: node
+  linkType: hard
+
 "@aws-cdk/core@npm:1.148.0, @aws-cdk/core@npm:^1.138":
   version: 1.148.0
   resolution: "@aws-cdk/core@npm:1.148.0"
@@ -763,6 +807,27 @@ __metadata:
     "@aws-cdk/region-info": 1.148.0
     constructs: ^3.3.69
   checksum: 7143be70521840ef9a2de864b0fb52e5359328b078944e8c88a04a49ac6dcdbf1616e02ff36365ab5aa72e4c1dc20e2c808d4558f3d0d66a926ecd4989cb33e4
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/core@npm:1.149.0":
+  version: 1.149.0
+  resolution: "@aws-cdk/core@npm:1.149.0"
+  dependencies:
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+    "@aws-cdk/cx-api": 1.149.0
+    "@aws-cdk/region-info": 1.149.0
+    "@balena/dockerignore": ^1.0.2
+    constructs: ^3.3.69
+    fs-extra: ^9.1.0
+    ignore: ^5.2.0
+    minimatch: ^3.1.2
+  peerDependencies:
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+    "@aws-cdk/cx-api": 1.149.0
+    "@aws-cdk/region-info": 1.149.0
+    constructs: ^3.3.69
+  checksum: 1ec1fd22b9fc464a6dffe6d8f0f0dfae2edaf004ff92a861e81957f0552d002d2850793cd07756d4b1eb89c418a3fdc1010b7572d0f8ec0bf176b664bd5cc251
   languageName: node
   linkType: hard
 
@@ -803,10 +868,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-cdk/cx-api@npm:1.149.0":
+  version: 1.149.0
+  resolution: "@aws-cdk/cx-api@npm:1.149.0"
+  dependencies:
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+    semver: ^7.3.5
+  peerDependencies:
+    "@aws-cdk/cloud-assembly-schema": 1.149.0
+  checksum: a0cdecc60dc91b57e94b733448568f71384c1b6a44c456a4e88863dc04cf4dff64033b39d9233b9157ed871f074692b25bf0f7f3f2651acbd8be3e504ce2f729
+  languageName: node
+  linkType: hard
+
 "@aws-cdk/region-info@npm:1.148.0":
   version: 1.148.0
   resolution: "@aws-cdk/region-info@npm:1.148.0"
   checksum: b8553a1fd345563f7cbf29b1d425e3271ffa5a1977f2d0d5532f36c986f32dd796297bf0fb9f9eb6bcc5512caa7829adb3af93fdf74f082803dee2e3c4219f73
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/region-info@npm:1.149.0":
+  version: 1.149.0
+  resolution: "@aws-cdk/region-info@npm:1.149.0"
+  checksum: 5e5491ffbd532f1ff57e24ef6d5018e4ef285018c3fd40903e8be39e0680b333498a15d09a634874e8c8f75d5424025c9d5d254a8483f4a98b5c54a8c5c84d76
   languageName: node
   linkType: hard
 
@@ -3878,7 +3962,7 @@ __metadata:
     esbuild: ^0.14.27
     eslint: ^8.11.0
     jest: ^27.5.1
-    serverless: ^3.7.8
+    serverless: ^3.7.9
     serverless-esbuild: ^1.26.1
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
@@ -3904,7 +3988,7 @@ __metadata:
     eslint: ^8.11.0
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.8
+    serverless: ^3.7.9
     serverless-esbuild: ^1.26.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -3931,7 +4015,7 @@ __metadata:
     eslint: ^8.11.0
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.7.8
+    serverless: ^3.7.9
     serverless-esbuild: ^1.26.1
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.3
@@ -3975,7 +4059,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.7
-    "@swarmion/serverless-contracts": 0.4.2
+    "@swarmion/serverless-contracts": 0.4.3
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3999,7 +4083,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.7
-    "@swarmion/serverless-contracts": 0.4.2
+    "@swarmion/serverless-contracts": 0.4.3
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4084,8 +4168,8 @@ __metadata:
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.21
     jest: ^27.5.1
-    serverless: ^3.7.8
-    serverless-lift: ^1.12.1
+    serverless: ^3.7.9
+    serverless-lift: ^1.13.0
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
     typescript: ^4.6.2
@@ -4190,7 +4274,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.7
-    "@swarmion/serverless-contracts": 0.4.2
+    "@swarmion/serverless-contracts": 0.4.3
     "@types/node": ^17.0.21
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4205,14 +4289,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/serverless-contracts@npm:0.4.2":
-  version: 0.4.2
-  resolution: "@swarmion/serverless-contracts@npm:0.4.2"
+"@swarmion/serverless-contracts@npm:0.4.3":
+  version: 0.4.3
+  resolution: "@swarmion/serverless-contracts@npm:0.4.3"
   dependencies:
     "@babel/runtime": ^7.17.7
     axios: ^0.26.1
     lodash: ^4.17.21
-  checksum: de3b64d404a8db045e4909da0ab6f7e591a42f441a9fb1b9dccc8f28c2710e5a1f4b48489948aae356ea0b34c93ac2aca876ecd47fa5878d3db48b008821bb04
+  checksum: 1129bab579fa1a920ee634b72a05fd8bb4bc402a229add0f94a6f605336b68277362c501e6f3abebfa545f326b41c1567eba170a6840bdd5a787a28b2e1969e8
   languageName: node
   linkType: hard
 
@@ -13190,9 +13274,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless-lift@npm:^1.12.1":
-  version: 1.12.1
-  resolution: "serverless-lift@npm:1.12.1"
+"serverless-lift@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "serverless-lift@npm:1.13.0"
   dependencies:
     "@aws-cdk/aws-apigatewayv2": ^1.138
     "@aws-cdk/aws-apigatewayv2-integrations": ^1.138
@@ -13204,6 +13288,7 @@ __metadata:
     "@aws-cdk/aws-ec2": ^1.138
     "@aws-cdk/aws-events": ^1.138
     "@aws-cdk/aws-iam": ^1.138
+    "@aws-cdk/aws-kms": ^1.138
     "@aws-cdk/aws-lambda": ^1.138
     "@aws-cdk/aws-s3": ^1.138
     "@aws-cdk/aws-sns": ^1.138
@@ -13223,13 +13308,13 @@ __metadata:
     toml: ^3.0.0
   peerDependencies:
     serverless: ^2.36.0 || ^3
-  checksum: 7de0f1d43e85ed86eb7cff783f6b35a2ff50a4123927e33be2eb9886868ee31d8f22101ebbc5d52b5437384b0a014b0edcb43a7faa674918d8fd83ca0edc51c2
+  checksum: 2db565aff8fc18a8fe6dc6051a5727a1e2cb0b69c99b22220903ddef6e4a2bf8027317837fb5039f4ba21ceed87c5e130120a0634dfcea4e782279e6a5ad629e
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.7.8":
-  version: 3.7.8
-  resolution: "serverless@npm:3.7.8"
+"serverless@npm:^3.7.9":
+  version: 3.7.9
+  resolution: "serverless@npm:3.7.9"
   dependencies:
     "@serverless/dashboard-plugin": ^6.1.5
     "@serverless/platform-client": ^4.3.2
@@ -13287,7 +13372,7 @@ __metadata:
   bin:
     serverless: bin/serverless.js
     sls: bin/serverless.js
-  checksum: bfe20fabc1e8b97deebca6693f34dd9dd97fa6b229802efb3ce4b5c5be6fc8dec3d2b923790041c895e5584d9d06ffff29c84acbc6c1760d17bc317119846fc6
+  checksum: 8075b247eaa2a762580659d7077664f2990bb864aa5f39cb6d8e2d969293755c703367712bbed30d6ec5407f1a33ae1169d6bb41f90cbc859a1ca53f36b42c62
   languageName: node
   linkType: hard
 

@@ -33,6 +33,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     '@types/jest': '^27.4.1',
     '@types/node': '^17.0.21',
     esbuild: '^0.14.23',
+    eslint: '^8.11.0',
     jest: '^27.5.1',
     serverless: '^3.7.0',
     'serverless-esbuild': '^1.25.0',

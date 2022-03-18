@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "$id": "library-generator",
+  "$id": "service-generator",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
-      "description": "Library name",
+      "description": "Service name",
       "$default": {
         "$source": "argv",
         "index": 0

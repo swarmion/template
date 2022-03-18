@@ -7,4 +7,7 @@ export type TsConfig = {
   include?: string[];
   exclude?: string[];
   references?: { path: string }[];
+  'ts-node'?: {
+    files: boolean;
+  };
 };

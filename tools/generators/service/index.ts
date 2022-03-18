@@ -13,7 +13,7 @@ import {
 const SOURCE_FOLDER = './files';
 
 export default async (tree: Tree, schema: Schema): Promise<() => void> => {
-  const options = normalizeOptions(tree, schema, GeneratorType.LIBRARY);
+  const options = normalizeOptions(tree, schema, GeneratorType.SERVICE);
 
   packageGenerator({
     tree,

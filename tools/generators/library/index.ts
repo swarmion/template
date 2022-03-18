@@ -1,10 +1,16 @@
-import { formatFiles, installPackagesTask, Tree } from '@nrwl/devkit';
+import {
+  formatFiles,
+  installPackagesTask,
+  Tree,
+  writeJson,
+} from '@nrwl/devkit';
 import { join } from 'path';
 
 import { normalizeOptions, packageGenerator } from '../helpers';
 import { symlinkVsCodeConfiguration } from '../helpers/symlink';
 import { GeneratorType, Schema } from '../types';
 import {
+  packageBuildTsConfig,
   packageJson,
   packageProjectJson,
   packageTsConfig,
@@ -23,6 +29,11 @@ export default async (tree: Tree, schema: Schema): Promise<() => void> => {
     packageProjectJson,
     packageTsConfig,
   });
+  writeJson(
+    tree,
+    join(options.projectRoot, `tsconfig.build.json`),
+    packageBuildTsConfig,
+  );
   await formatFiles(tree);
 
   return () => {

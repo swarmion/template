@@ -4,7 +4,6 @@ export const packageTsConfig: TsConfig = {
   extends: '../../tsconfig.json',
   compilerOptions: {
     baseUrl: 'src',
-    rootDir: 'src',
     composite: true,
     // @ts-expect-error ttypescript types are not defined
     plugins: [{ transform: '@zerollup/ts-transform-paths' }],

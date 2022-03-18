@@ -17,8 +17,8 @@
     "types": ["vite-plugin-svgr/client"]
   },
   "references": [
-    { "path": "../../packages/configuration" },
-    { "path": "../../contracts/users-contracts" }
+    { "path": "../../packages/configuration/tsconfig.build.json" },
+    { "path": "../../contracts/users-contracts/tsconfig.build.json" }
   ],
   "include": ["./config", "./src", "./vite.config.ts", "./jest.*"]
 }

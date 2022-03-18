@@ -27,7 +27,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     'test-linter': 'yarn linter-base-config .',
     'test-type': 'tsc --noEmit --emitDeclarationOnly false',
     'test-unit': 'jest --runInBand --collectCoverage --logHeapUsage',
-    transpile: 'babel src --extensions .ts',
+    transpile: 'babel src --extensions .ts --quiet',
     watch: "rm -rf dist && concurrently 'yarn:package-* --watch'",
   },
   dependencies: {

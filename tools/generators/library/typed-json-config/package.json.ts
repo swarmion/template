@@ -55,7 +55,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
   nx: {
     targets: {
       package: {
-        outputs: [join(options.projectRoot, 'dist')],
+        outputs: [join(options.packageRoot, 'dist')],
       },
     },
   },

@@ -19,11 +19,7 @@ export const normalizeOptions = (
   generatorType: GeneratorType,
 ): NormalizedSchema => {
   const name = names(options.name).fileName;
-  options.directory =
-    options.directory !== undefined && options.directory !== ''
-      ? options.directory
-      : GeneratorTypeToDirectory[generatorType];
-  const projectRoot = joinPathFragments(
+  const packageRoot = joinPathFragments(
     names(options.directory).fileName,
     name,
   );
@@ -48,6 +44,7 @@ export const normalizeOptions = (
     importPath,
     linter,
     name: projectName,
+    packageRoot,
     projectRoot,
     unitTestRunner,
     workspaceName: npmScope,

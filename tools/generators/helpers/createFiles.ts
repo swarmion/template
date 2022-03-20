@@ -10,7 +10,7 @@ export const createFiles = (
 ): void => {
   const { className, name, propertyName } = names(options.name);
 
-  generateFiles(tree, sourcePath, options.projectRoot, {
+  generateFiles(tree, sourcePath, options.packageRoot, {
     ...options,
     dot: '.',
     className,
@@ -19,13 +19,13 @@ export const createFiles = (
     cliCommand: 'nx',
     strict: undefined,
     tmpl: '',
-    offsetFromRoot: offsetFromRoot(options.projectRoot),
+    offsetFromRoot: offsetFromRoot(options.packageRoot),
     hasUnitTestRunner: options.unitTestRunner !== 'none',
   });
 
   if (options.unitTestRunner === 'none') {
     tree.delete(
-      join(options.projectRoot, 'src/lib', `${options.fileName}.spec.ts`),
+      join(options.packageRoot, 'src/lib', `${options.fileName}.spec.ts`),
     );
   }
 };

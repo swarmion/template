@@ -14,7 +14,7 @@ export interface NormalizedSchema extends Schema {
   importPath: string;
   linter: Linter;
   name: string;
-  projectRoot: string;
+  packageRoot: string;
   unitTestRunner: 'jest' | 'none';
   workspaceName: string;
 }

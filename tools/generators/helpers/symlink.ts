@@ -9,8 +9,8 @@ export const symlinkVsCodeConfiguration = (
   options: NormalizedSchema,
 ): void => {
   const relativePath = relative(
-    options.projectRoot,
+    options.packageRoot,
     join(tree.root, 'commonConfiguration/.vscode'),
   );
-  symlinkSync(relativePath, join(options.projectRoot, '.vscode'), 'dir');
+  symlinkSync(relativePath, join(options.packageRoot, '.vscode'), 'dir');
 };

@@ -1,7 +1,9 @@
-import { TsConfig } from '../../types';
+import { joinPathFragments } from '@nrwl/devkit';
 
-export const packageTsConfig: TsConfig = {
-  extends: '../../tsconfig.json',
+import { NormalizedSchema, TsConfig } from '../../types';
+
+export const packageTsConfig = (options: NormalizedSchema): TsConfig => ({
+  extends: joinPathFragments(options.offsetFromRoot, 'tsconfig.json'),
   compilerOptions: {
     baseUrl: 'src',
     composite: true,
@@ -12,4 +14,4 @@ export const packageTsConfig: TsConfig = {
   },
   exclude: ['./dist'],
   include: ['./**/*.ts'],
-};
+});

@@ -4,7 +4,7 @@ import { GeneratorType } from './GeneratorType';
 
 export interface Schema {
   name: string;
-  directory?: string;
+  directory: string;
   skipJestConfig?: boolean;
 }
 

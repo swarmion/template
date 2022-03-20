@@ -1,4 +1,4 @@
-import { generateFiles, names, offsetFromRoot, Tree } from '@nrwl/devkit';
+import { generateFiles, names, Tree } from '@nrwl/devkit';
 import { join } from 'path';
 
 import { NormalizedSchema } from '../types';
@@ -19,7 +19,6 @@ export const createFiles = (
     cliCommand: 'nx',
     strict: undefined,
     tmpl: '',
-    offsetFromRoot: offsetFromRoot(options.packageRoot),
     hasUnitTestRunner: options.unitTestRunner !== 'none',
   });
 

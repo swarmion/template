@@ -1944,6 +1944,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-transform-react-display-name@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/plugin-transform-react-display-name@npm:7.16.7"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.16.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 483154413671ab0a25ae37520b7cf5bfab0958c484a3707c6799b1f1436d1e51481bcc03fbfcdbf90bf6b46818d931ae35e515141d8354c3287351b4467376ba
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-transform-react-jsx-development@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/plugin-transform-react-jsx-development@npm:7.16.7"
@@ -1989,6 +2000,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 7e33a3fb78a3b7352b56f48211160ae60dc3654bae314ea0352bfc179d10eaac789792ccb3701172388ec4e4dbdb94952cdf3386980f3af402d99ceadd91149b
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-pure-annotations@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/plugin-transform-react-pure-annotations@npm:7.16.7"
+  dependencies:
+    "@babel/helper-annotate-as-pure": ^7.16.7
+    "@babel/helper-plugin-utils": ^7.16.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 715fe9c5fd10c5605a6de1d4436d29087878924758969427ba4d0b2bc274a436d3ac8f2777b744c988bdbb90f7e68dc2a82491db333ae7e0079fab776b543fae
   languageName: node
   linkType: hard
 
@@ -2218,6 +2241,22 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 8430e0e9e9d520b53e22e8c4c6a5a080a12b63af6eabe559c2310b187bd62ae113f3da82ba33e9d1d0f3230930ca702843aae9dd226dec51f7d7114dc1f51c10
+  languageName: node
+  linkType: hard
+
+"@babel/preset-react@npm:^7.16.7":
+  version: 7.16.7
+  resolution: "@babel/preset-react@npm:7.16.7"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/helper-validator-option": ^7.16.7
+    "@babel/plugin-transform-react-display-name": ^7.16.7
+    "@babel/plugin-transform-react-jsx": ^7.16.7
+    "@babel/plugin-transform-react-jsx-development": ^7.16.7
+    "@babel/plugin-transform-react-pure-annotations": ^7.16.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: d0a052a418891ab6a02df9c75f0202964ad3b936c20bc44c81bcf3f02c057383f2fa329e0cc79baaac1b4e5e5c8924d3df93a2dd9319efe8042e3b33849978b3
   languageName: node
   linkType: hard
 
@@ -4113,6 +4152,7 @@ __metadata:
     "@reduxjs/toolkit": ^1.8.0
     "@stylelint/postcss-css-in-js": ^0.37.2
     "@swarmion-starter/configuration": 1.0.0
+    "@swarmion-starter/frontend-shared": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@testing-library/dom": ^8.11.3
     "@testing-library/jest-dom": ^5.16.2
@@ -4173,6 +4213,49 @@ __metadata:
     ts-jest: ^27.1.3
     ts-node: ^10.7.0
     typescript: ^4.6.2
+  languageName: unknown
+  linkType: soft
+
+"@swarmion-starter/frontend-shared@1.0.0, @swarmion-starter/frontend-shared@workspace:frontend/shared":
+  version: 0.0.0-use.local
+  resolution: "@swarmion-starter/frontend-shared@workspace:frontend/shared"
+  dependencies:
+    "@babel/cli": ^7.17.6
+    "@babel/core": ^7.17.8
+    "@babel/plugin-transform-runtime": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-react": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    "@emotion/react": ^11.8.2
+    "@emotion/styled": ^11.8.1
+    "@mui/icons-material": ^5.5.1
+    "@mui/lab": ^5.0.0-alpha.73
+    "@mui/material": ^5.5.1
+    "@mui/system": ^5.5.1
+    "@swarmion-starter/configuration": 1.0.0
+    "@testing-library/jest-dom": ^5.16.2
+    "@testing-library/react": ^12.1.4
+    "@testing-library/react-hooks": ^7.0.2
+    "@testing-library/user-event": ^13.5.0
+    "@types/css-mediaquery": ^0.1.1
+    "@types/jest": ^27.4.1
+    "@types/react": ^17.0.41
+    "@zerollup/ts-transform-paths": ^1.7.18
+    babel-plugin-module-resolver: ^4.1.0
+    concurrently: ^7.0.0
+    css-mediaquery: ^0.1.2
+    eslint: ^8.11.0
+    jest: ^27.5.1
+    json-schema-to-ts: ^1.6.5
+    prettier: ^2.6.0
+    react-intl: ^5.24.7
+    react-router-dom: ^6.2.2
+    ts-jest: ^27.1.3
+    ts-node: ^10.7.0
+    ttypescript: ^1.5.13
+    typescript: ^4.6.2
+  peerDependencies:
+    react: ^17.0.2
   languageName: unknown
   linkType: soft
 
@@ -4676,6 +4759,13 @@ __metadata:
     "@types/node": "*"
     "@types/responselike": "*"
   checksum: 667d25808dbf46fe104d6f029e0281ff56058d50c7c1b9182774b3e38bb9c1124f56e4c367ba54f92dbde2d1cc573f26eb0e9748710b2822bc0fd1e5498859c6
+  languageName: node
+  linkType: hard
+
+"@types/css-mediaquery@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@types/css-mediaquery@npm:0.1.1"
+  checksum: b8beb960238fd32b44396fd0871fc8626d9e0136217f168effccd3cc33a0673f1a94e8a982e385a46c34b5ab4b19c9220be7ec628818837a3c47dcaa973954c4
   languageName: node
   linkType: hard
 
@@ -6748,6 +6838,13 @@ __metadata:
   version: 3.0.1
   resolution: "css-functions-list@npm:3.0.1"
   checksum: 8998406f9c6508180dad621bf91cfbf4649d922a57e2e5dd3fd909a2855e29d2f82cf176bd89a7598237b9e989126f8520e21479f2da51f37b1491a38fe72061
+  languageName: node
+  linkType: hard
+
+"css-mediaquery@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "css-mediaquery@npm:0.1.2"
+  checksum: 8e26ae52d8aaaa71893f82fc485363ff0fab494b7d3b3464572aaed50714b8b538d33dbdaa69f0c02cf7f80d1f4d9a77519306c0492223ce91b3987475031a69
   languageName: node
   linkType: hard
 

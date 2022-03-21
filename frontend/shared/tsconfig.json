@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "esModuleInterop": true,
+    "composite": true,
+    "plugins": [{ "transform": "@zerollup/ts-transform-paths" }],
+    "emitDeclarationOnly": true,
+    "jsx": "react-jsx",
+    "outDir": "./dist/types",
+    "types": ["vite-plugin-svgr/client", "jest"]
+  },
+  "references": [
+    { "path": "../../packages/configuration/tsconfig.build.json" }
+  ],
+  "exclude": ["./dist"],
+  "include": ["./**/*.ts", "./**/*.tsx", "./jest.*"]
+}

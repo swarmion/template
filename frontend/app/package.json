@@ -29,6 +29,7 @@
     "@react-hookz/web": "^13.1.0",
     "@reduxjs/toolkit": "^1.8.0",
     "@swarmion-starter/configuration": "1.0.0",
+    "@swarmion-starter/frontend-shared": "1.0.0",
     "@swarmion-starter/users-contracts": "1.0.0",
     "axios": "0.26.1",
     "react": "^17.0.2",

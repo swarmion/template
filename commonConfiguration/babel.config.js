@@ -9,7 +9,7 @@ const defaultPlugins = [
     'module-resolver',
     {
       root: ['./src'],
-      extensions: ['.ts'],
+      extensions: ['.ts', '.tsx'],
     },
   ],
   '@babel/plugin-transform-runtime',
@@ -34,14 +34,14 @@ const presetsForCJS = [
   ...defaultPresets,
 ];
 
-module.exports = (plugins = []) => {
+module.exports = (plugins = [], presets = []) => {
   return {
     env: {
       cjs: {
-        presets: presetsForCJS,
+        presets: [...presets, ...presetsForCJS],
       },
       esm: {
-        presets: presetsForESM,
+        presets: [...presets, ...presetsForESM],
       },
     },
     ignore: defaultIgnores,

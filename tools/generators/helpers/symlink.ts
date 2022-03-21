@@ -1,16 +1,12 @@
-import { Tree } from '@nrwl/devkit';
 import { symlinkSync } from 'fs';
-import { join, relative } from 'path';
+import { join } from 'path';
 
 import { NormalizedSchema } from '../types';
 
-export const symlinkVsCodeConfiguration = (
-  tree: Tree,
-  options: NormalizedSchema,
-): void => {
-  const relativePath = relative(
-    options.projectRoot,
-    join(tree.root, 'commonConfiguration/.vscode'),
+export const symlinkVsCodeConfiguration = (options: NormalizedSchema): void => {
+  const relativePath = join(
+    options.offsetFromRoot,
+    'commonConfiguration/.vscode',
   );
-  symlinkSync(relativePath, join(options.projectRoot, '.vscode'), 'dir');
+  symlinkSync(relativePath, join(options.packageRoot, '.vscode'), 'dir');
 };

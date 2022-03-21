@@ -16,7 +16,7 @@ interface PackageGeneratorParams {
   sourcePath: string;
   packageJson: (options: NormalizedSchema) => PackageJson;
   packageProjectJson: (root: string) => ProjectConfiguration;
-  packageTsConfig: TsConfig;
+  packageTsConfig: (options: NormalizedSchema) => TsConfig;
 }
 
 export const packageGenerator = ({
@@ -31,13 +31,17 @@ export const packageGenerator = ({
 
   writeJson(
     tree,
-    join(options.projectRoot, `package.json`),
+    join(options.packageRoot, `package.json`),
     packageJson(options),
   );
 
-  writeJson(tree, join(options.projectRoot, `tsconfig.json`), packageTsConfig);
+  writeJson(
+    tree,
+    join(options.packageRoot, `tsconfig.json`),
+    packageTsConfig(options),
+  );
 
-  const projectConfiguration = packageProjectJson(options.projectRoot);
+  const projectConfiguration = packageProjectJson(options.packageRoot);
   addProjectConfiguration(tree, options.importPath, projectConfiguration);
 
   updateCodeWorkspace(tree, options);

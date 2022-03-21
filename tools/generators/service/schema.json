@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/schema",
   "cli": "nx",
   "$id": "service-generator",
   "type": "object",
@@ -11,6 +10,11 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "directory": {
+      "type": "string",
+      "description": "Directory of the new service",
+      "default": "backend"
     }
   },
   "required": ["name"]

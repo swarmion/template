@@ -34,7 +34,7 @@ export const updateCodeWorkspace = (
     `${options.workspaceName}.code-workspace`,
     (json: CodeWorkspaceType) => {
       json.folders.push({
-        path: options.projectRoot,
+        path: options.packageRoot,
         name: formatFolderName(options),
       });
 

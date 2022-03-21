@@ -4,7 +4,7 @@ import { GeneratorType } from './GeneratorType';
 
 export interface Schema {
   name: string;
-  directory?: string;
+  directory: string;
   skipJestConfig?: boolean;
 }
 
@@ -14,7 +14,8 @@ export interface NormalizedSchema extends Schema {
   importPath: string;
   linter: Linter;
   name: string;
-  projectRoot: string;
+  packageRoot: string;
+  offsetFromRoot: string;
   unitTestRunner: 'jest' | 'none';
   workspaceName: string;
 }

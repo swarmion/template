@@ -5,6 +5,7 @@ import {
   Tree,
 } from '@nrwl/devkit';
 import { Linter } from '@nrwl/linter';
+import { relative } from 'path';
 
 import {
   GeneratorType,
@@ -19,11 +20,7 @@ export const normalizeOptions = (
   generatorType: GeneratorType,
 ): NormalizedSchema => {
   const name = names(options.name).fileName;
-  options.directory =
-    options.directory !== undefined && options.directory !== ''
-      ? options.directory
-      : GeneratorTypeToDirectory[generatorType];
-  const projectRoot = joinPathFragments(
+  const packageRoot = joinPathFragments(
     names(options.directory).fileName,
     name,
   );
@@ -38,7 +35,7 @@ export const normalizeOptions = (
     pascalCaseFiles: false,
   });
   const { npmScope } = getWorkspaceLayout(tree);
-
+  const offsetFromRoot = relative(packageRoot, tree.root);
   const importPath = formatImportPath(generatorType, projectName);
 
   return {
@@ -48,7 +45,8 @@ export const normalizeOptions = (
     importPath,
     linter,
     name: projectName,
-    projectRoot,
+    packageRoot,
+    offsetFromRoot,
     unitTestRunner,
     workspaceName: npmScope,
   };

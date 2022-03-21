@@ -1,20 +1,42 @@
-import { TsConfig } from '../../types';
+import { joinPathFragments } from '@nrwl/devkit';
 
-export const packageTsConfig: TsConfig = {
-  extends: '../../tsconfig.json',
+import { NormalizedSchema, TsConfig } from '../../types';
+
+export const packageTsConfig = (options: NormalizedSchema): TsConfig => ({
+  extends: joinPathFragments(options.offsetFromRoot, 'tsconfig.json'),
   compilerOptions: {
     preserveSymlinks: true,
     baseUrl: '.',
     esModuleInterop: true,
   },
   references: [
-    { path: '../../contracts/core-contracts/tsconfig.build.json' },
-    { path: '../../packages/configuration/tsconfig.build.json' },
-    { path: '../../packages/serverless-configuration/tsconfig.build.json' },
-    { path: '../../packages/serverless-helpers/tsconfig.build.json' },
+    {
+      path: joinPathFragments(
+        options.offsetFromRoot,
+        'contracts/core-contracts/tsconfig.build.json',
+      ),
+    },
+    {
+      path: joinPathFragments(
+        options.offsetFromRoot,
+        'packages/configuration/tsconfig.build.json',
+      ),
+    },
+    {
+      path: joinPathFragments(
+        options.offsetFromRoot,
+        'packages/serverless-configuration/tsconfig.build.json',
+      ),
+    },
+    {
+      path: joinPathFragments(
+        options.offsetFromRoot,
+        'packages/serverless-helpers/tsconfig.build.json',
+      ),
+    },
   ],
   include: ['./**/*.ts'],
   'ts-node': {
     files: true,
   },
-};
+});

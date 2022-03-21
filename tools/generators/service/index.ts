@@ -26,7 +26,7 @@ export default async (tree: Tree, schema: Schema): Promise<() => void> => {
   await formatFiles(tree);
 
   return () => {
-    symlinkVsCodeConfiguration(tree, options);
+    symlinkVsCodeConfiguration(options);
     installPackagesTask(tree, true);
   };
 };

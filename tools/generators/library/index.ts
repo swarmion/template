@@ -31,13 +31,13 @@ export default async (tree: Tree, schema: Schema): Promise<() => void> => {
   });
   writeJson(
     tree,
-    join(options.projectRoot, `tsconfig.build.json`),
+    join(options.packageRoot, `tsconfig.build.json`),
     packageBuildTsConfig,
   );
   await formatFiles(tree);
 
   return () => {
-    symlinkVsCodeConfiguration(tree, options);
+    symlinkVsCodeConfiguration(options);
     installPackagesTask(tree, true);
   };
 };

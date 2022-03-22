@@ -3781,10 +3781,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/typescript@npm:^3.7.5":
-  version: 3.7.5
-  resolution: "@serverless/typescript@npm:3.7.5"
-  checksum: fdd4f625424b18d801d3be2914b131f720320995d33184475953a3481c1608c8a7b84206d3b8e031961426175a047660b5f55502774dab2c9d46d325281746ab
+"@serverless/typescript@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "@serverless/typescript@npm:3.8.0"
+  checksum: 9dd2df51721ead0e9dfe29c2384e8b7f1ac02503f86f3b1572b0b54f853c186857507956cf196231e3b1baf94f5fb7542a1686c0f2acb4c18060487bff45326d
   languageName: node
   linkType: hard
 
@@ -3991,7 +3991,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -4013,7 +4013,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
@@ -4022,7 +4022,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.22
-    aws-sdk: ^2.1096.0
+    aws-sdk: ^2.1097.0
     esbuild: ^0.14.27
     eslint: ^8.11.0
     http-errors: ^2.0.0
@@ -4040,7 +4040,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -4049,7 +4049,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.22
-    aws-sdk: ^2.1096.0
+    aws-sdk: ^2.1097.0
     esbuild: ^0.14.27
     eslint: ^8.11.0
     http-errors: ^2.0.0
@@ -4073,7 +4073,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.8
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@types/node": ^17.0.22
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4193,7 +4193,7 @@ __metadata:
     ts-node: ^10.7.0
     typescript: ^4.6.2
     vite: ^2.8.6
-    vite-plugin-svgr: ^1.0.1
+    vite-plugin-svgr: ^1.1.0
     vite-tsconfig-paths: ^3.4.1
   languageName: unknown
   linkType: soft
@@ -4202,7 +4202,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.4.1
@@ -4273,7 +4273,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.16.0
     "@typescript-eslint/parser": ^5.16.0
-    aws-sdk: ^2.1096.0
+    aws-sdk: ^2.1097.0
     eslint: ^8.11.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.5.0
@@ -4302,7 +4302,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.8
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@types/node": ^17.0.22
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4330,7 +4330,7 @@ __metadata:
     "@middy/http-error-handler": ^2.5.7
     "@middy/http-json-body-parser": ^2.5.7
     "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.7.5
+    "@serverless/typescript": ^3.8.0
     "@swarmion-starter/configuration": 1.0.0
     "@types/aws-lambda": ^8.10.93
     "@types/node": ^17.0.22
@@ -5654,9 +5654,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1096.0, aws-sdk@npm:^2.942.0":
-  version: 2.1096.0
-  resolution: "aws-sdk@npm:2.1096.0"
+"aws-sdk@npm:^2.1096.0, aws-sdk@npm:^2.1097.0, aws-sdk@npm:^2.942.0":
+  version: 2.1097.0
+  resolution: "aws-sdk@npm:2.1097.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5667,7 +5667,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: 1f18a52e3155a6badeccdbd6496d0a0adc3c39e8ce03ed3cf2686d9d66ab66ccfa167143582a81f45420ecd3751e28876e9f6a64ee8a4de07f48ff3c36701d69
+  checksum: 4cbcf08795fc3fbefc13c2e77e0d3e48859d7a53c04374e07eb6e2d31d7617741007c5c8a241ec3ca09d31cdcf4d71a23d27d5a335a7fa77f89604ff6d911585
   languageName: node
   linkType: hard
 
@@ -14984,14 +14984,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-svgr@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "vite-plugin-svgr@npm:1.0.1"
+"vite-plugin-svgr@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "vite-plugin-svgr@npm:1.1.0"
   dependencies:
     "@svgr/core": ^6.2.0
   peerDependencies:
     vite: ^2.6.0
-  checksum: ef3a323dd1bd1ce03c994e7d33c792745150c919fddf33436e1233d7a54a8905059a420d59783fe225e4ab60f17cc6a8b52309a22962c92ee4e682b34972012f
+  checksum: b79042cf75b096464402f36b492503af65d0d63f5a33441f0ec173aa9b32ce98b1f1005d75e2b0cfd7d8574cf5f9b86d837ef6b64807c21e31d1a5648122141b
   languageName: node
   linkType: hard
 

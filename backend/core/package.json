@@ -25,7 +25,7 @@
     "@swarmion-starter/serverless-helpers": "1.0.0"
   },
   "devDependencies": {
-    "@serverless/typescript": "^3.7.5",
+    "@serverless/typescript": "^3.8.0",
     "@swarmion-starter/configuration": "1.0.0",
     "@swarmion-starter/core-contracts": "1.0.0",
     "@types/jest": "^27.4.1",

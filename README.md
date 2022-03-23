@@ -1,9 +1,7 @@
 # Serverless Monorepo Microservices Template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
@@ -82,6 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/guillaumeduboc"><img src="https://avatars.githubusercontent.com/u/33599414?v=4?s=100" width="100px;" alt=""/><br /><sub><b>guillaumeduboc</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=guillaumeduboc" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/MaximeVivier"><img src="https://avatars.githubusercontent.com/u/55386175?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maxime Vivier</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=MaximeVivier" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/GuillaumeLagrange"><img src="https://avatars.githubusercontent.com/u/19265358?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Guillaume Lagrange</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=GuillaumeLagrange" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/pmilliotte"><img src="https://avatars.githubusercontent.com/u/39985796?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pierre Milliotte</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=pmilliotte" title="Code">💻</a></td>
   </tr>
 </table>
 

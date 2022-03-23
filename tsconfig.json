@@ -16,5 +16,8 @@
     "declarationMap": true,
     "strictFunctionTypes": false,
     "strictNullChecks": true
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
   }
 }

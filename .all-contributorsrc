@@ -71,6 +71,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ThomasAribart",
+      "name": "Thomas Aribart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38014240?v=4",
+      "profile": "https://github.com/ThomasAribart",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

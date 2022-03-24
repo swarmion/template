@@ -12,6 +12,6 @@ export const packageTsConfig = (options: NormalizedSchema): TsConfig => ({
     emitDeclarationOnly: true,
     outDir: './dist/types',
   },
-  exclude: ['./dist'],
+  exclude: ['./dist/**/*.ts'],
   include: ['./**/*.ts'],
 });

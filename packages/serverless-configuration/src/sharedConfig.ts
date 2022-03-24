@@ -17,8 +17,9 @@ export const sharedProviderConfig = {
 } as const;
 
 /**
- * common profiles settings. This must be put in the `custom` section of the `serverless.ts`
- * config files since stage params cannot be used for the profile. See https://github.com/serverless/serverless/issues/10642
+ * A set of shared parameters, scoped by stage. You can extend them to add other shared parameters between services.
+ *
+ * See https://www.serverless.com/framework/docs/providers/aws/guide/variables#referencing-parameters
  *
  * An empty string for a profile means that the default profile will be used
  */

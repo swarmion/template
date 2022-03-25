@@ -29,7 +29,8 @@ const serverlessConfiguration: AWS = {
     esbuild: sharedEsbuildConfig,
   },
   resources: {
-    Description: 'Forum service: handle forum activity, posts and threads',
+    Description:
+      'Forum service: handle forum activity, posts and threads (test)',
   },
 };
 

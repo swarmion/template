@@ -1,0 +1,10 @@
+# Name of the application
+name: myapp
+
+services:
+  core:
+    path: backend/core
+  users:
+    path: backend/users
+  forum:
+    path: backend/forum

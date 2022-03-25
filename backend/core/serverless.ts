@@ -51,7 +51,7 @@ const serverlessConfiguration: AWS = {
     Description: 'Core service',
     Outputs: {
       HttpApiId: httpApiResourceContract.exportValue({
-        description: 'The shared httpApi resource',
+        description: 'The shared httpApi resource (test)',
         value: { Ref: 'HttpApi' },
       }),
     },

@@ -29,7 +29,7 @@ const serverlessConfiguration: AWS = {
     esbuild: sharedEsbuildConfig,
   },
   resources: {
-    Description: 'Users service: manage users',
+    Description: 'Users service: manage users (test)',
   },
 };
 

@@ -102,7 +102,7 @@ Nx:
 
 - Filter changes, run commands
 
-Yarn workpaces:
+Yarn workspaces:
 
 - Handle dependencies anywhere in the repository
 
@@ -114,5 +114,5 @@ This repository defines two main types of _internal modules_.
 
 - Deployed modules (Serverless stacks): their purpose is to be deployed and serve our application logic, provision the resources, etc. They are called the **services**;
 - Packaged modules (contracts and packages): their purpose is to be **built** (or **packaged**) and embedded into the code of a deployed service:
-  - **contracts**: provide a binding contract between deployed services, that can be checked at compile time via the static type-checking provided by Typescript or at run time using JSONSchema. For more details on contracts, see the [contracts documentation](./contracts.md);
+  - **contracts**: provide a binding contract between deployed services, that can be checked at compile time via the static type-checking provided by Typescript or at run time using JSONSchema. For more details on contracts, see the [contracts documentation](https://github.com/swarmion/swarmion/tree/main/packages/serverless-contracts);
   - **packages**: aim to reduce the code duplication between the services by providing shared helper functions. These packages must not become too big in order for them to remain usable and must be well documented.

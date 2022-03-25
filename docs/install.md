@@ -15,7 +15,7 @@ If you only want to run the example, you can skip this section.
 
 If you want to take is as an example to start your own project,
 
-- Go to [the shared configuration file](../packages/serverless-configuration/sharedConfig.ts);
+- Go to [the shared configuration file](../packages/serverless-configuration/src/sharedConfig.ts);
 - Change the `projectName` variable to the name of your project (note that this name must not be too long);
 - Change the dev profile name to one that suits you;
 - Search and replace "swarmion-starter" and replace it with the same project name

@@ -6,5 +6,8 @@ services:
     path: backend/core
   users:
     path: backend/users
+    params:
+      blabla: tuparles!
+      toto: ${core.exportedToto}
   forum:
     path: backend/forum

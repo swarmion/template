@@ -5,7 +5,10 @@ import {
 import { getUserContract } from '@swarmion-starter/users-contracts';
 
 const config: LambdaFunction = {
-  environment: {},
+  environment: {
+    INJECTED_TOTO: '${param:toto}',
+    INJECTED_BLABLA: '${param:blabla}',
+  },
   handler: getHandlerPath(__dirname),
   events: [getUserContract.trigger],
 };

@@ -54,6 +54,7 @@ const serverlessConfiguration: AWS = {
         description: 'The shared httpApi resource (test)',
         value: { Ref: 'HttpApi' },
       }),
+      exportedToto: { Value: 'tata' },
     },
   },
 };

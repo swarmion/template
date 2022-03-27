@@ -18,6 +18,6 @@ You can find sample policies in [docs/policies](./policies/).
 
 You can follow the same procedure than in the [install docs](./install.md), except:
 
-- DO NOT give that user an "Administator Access"
+- DO NOT give that user an "Administrator Access"
 - Instead, attach it the policy or policies that you have created in the previous step;
 - Save the Access Key Id and Secret Access Key in order to pass them as credentials in your CI.

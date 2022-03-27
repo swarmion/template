@@ -14,7 +14,7 @@ This template aims to define an opinionated clean Serverless monorepo microservi
 
 Head to [the install docs](./docs/install.md)!
 
-If you need to setup your CI/CD: [docs](./docs/ci-cd.md)
+If you need to setup your CI/CD: [docs](./docs/ci-cd.md).
 
 ## Features
 

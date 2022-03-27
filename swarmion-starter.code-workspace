@@ -33,7 +33,7 @@
     "jest.jestCommandLine": "yarn jest",
     "jest.showCoverageOnLoad": true,
     "jest.coverageFormatter": "DefaultFormatter",
-    "cSpell.words": ["Esbuild"]
+    "cSpell.words": ["esbuild", "swarmion"]
   },
   "extensions": {
     "recommendations": [

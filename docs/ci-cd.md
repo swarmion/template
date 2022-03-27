@@ -2,7 +2,7 @@
 
 ## Choose the correct IAM policy to give your CI user
 
-In order to restrict the abilities of the ci user on the testing and production environment, you need to create one or many porlicies to give that user.
+In order to restrict the abilities of the ci user on the testing and production environment, you need to create one or many policies to give that user.
 
 You can find sample policies in [docs/policies](./policies/).
 

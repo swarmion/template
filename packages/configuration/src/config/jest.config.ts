@@ -14,6 +14,7 @@ const config: InitialOptionsTsJest = {
   coverageReporters: ['json', ['lcov', { projectRoot: './' }]],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   modulePathIgnorePatterns: ['/dist/'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
 };
 
 export default config;

@@ -4018,7 +4018,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.8
-    "@swarmion/serverless-contracts": 0.4.4
+    "@swarmion/serverless-contracts": 0.4.5
     "@types/node": ^17.0.23
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4043,7 +4043,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.8
-    "@swarmion/serverless-contracts": 0.4.4
+    "@swarmion/serverless-contracts": 0.4.5
     "@types/node": ^17.0.23
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4285,7 +4285,7 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.8
-    "@swarmion/serverless-contracts": 0.4.4
+    "@swarmion/serverless-contracts": 0.4.5
     "@types/node": ^17.0.23
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4301,14 +4301,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/serverless-contracts@npm:0.4.4":
-  version: 0.4.4
-  resolution: "@swarmion/serverless-contracts@npm:0.4.4"
+"@swarmion/serverless-contracts@npm:0.4.5":
+  version: 0.4.5
+  resolution: "@swarmion/serverless-contracts@npm:0.4.5"
   dependencies:
     "@babel/runtime": ^7.17.8
     axios: ^0.26.1
     lodash: ^4.17.21
-  checksum: 908947930b6f54b5934ec5d7acf2be8f4df7adbbebdcc9831fd2ba986315b8cc0b141010f355168d0256455137c648748b27c334bb6d89e04b80ad6c399a3f90
+  checksum: 9d8a055cd7a29207723b38aaae84d33d796570c9e87adef229ca6cac2dc02293c220b4cb3bf73bfa21a214ec6a0ff4ae7af411466f565de1b9d78f11a68c59da
   languageName: node
   linkType: hard
 

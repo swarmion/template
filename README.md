@@ -1,7 +1,7 @@
 # Serverless Monorepo Microservices Template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
@@ -86,6 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/ThomasAribart"><img src="https://avatars.githubusercontent.com/u/38014240?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas Aribart</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=ThomasAribart" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/charlesgery"><img src="https://avatars.githubusercontent.com/u/46850903?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Charles Géry</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=charlesgery" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/StanHannebelle"><img src="https://avatars.githubusercontent.com/u/45121661?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stan Hannebelle</b></sub></a><br /><a href="https://github.com/swarmion/template/commits?author=StanHannebelle" title="Code">💻</a></td>
   </tr>
 </table>
 

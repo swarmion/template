@@ -23,7 +23,8 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     'package-esm':
       'NODE_ENV=esm yarn transpile --out-dir dist/esm --source-maps',
     'package-types': 'ttsc -p tsconfig.build.json',
-    test: 'yarn test-linter && yarn test-type && yarn test-unit',
+    test: 'yarn test-linter && yarn test-type && yarn test-unit && yarn test-circular',
+    'test-circular': 'yarn depcruise --validate .dependency-cruiser.js .',
     'test-linter': 'yarn linter-base-config .',
     'test-type': 'tsc --noEmit --emitDeclarationOnly false',
     'test-unit': 'jest --runInBand --collectCoverage --logHeapUsage',
@@ -44,6 +45,7 @@ export const packageJson = (options: NormalizedSchema): PackageJson => ({
     '@zerollup/ts-transform-paths': '^1.7.18',
     'babel-plugin-module-resolver': '^4.1.0',
     concurrently: '^7.0.0',
+    'dependency-cruiser': '^11.2.1',
     eslint: '^8.9.0',
     jest: '^27.5.1',
     'json-schema-to-ts': '^1.6.5',

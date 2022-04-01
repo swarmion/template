@@ -56,6 +56,7 @@ These commands have to be run at the root of the project.
 - `yarn package`: compile the common packages;
 - `yarn watch`: launch the compilation of all packages in watch mode;
 - `yarn deploy`: deploy all the end services in order;
+- `yarn test-circular`: check if there are circular dependencies in the code base;
 
 ## Adding a new service
 

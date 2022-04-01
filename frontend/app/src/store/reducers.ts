@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { reducer as user, initialState as userInitialState } from './user';
+import user, { initialState as userInitialState } from './user/slice';
 
 export const rootInitialState = {
   user: userInitialState,

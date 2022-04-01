@@ -10,7 +10,7 @@
     "linter-base-config": "eslint --ext=js,ts",
     "remove": "serverless remove",
     "sls-info": "serverless info --verbose",
-    "test": "yarn test-linter && yarn test-type",
+    "test": "yarn test-linter && yarn test-type && yarn test-circular",
     "test-circular": "yarn depcruise --validate .dependency-cruiser.js .",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit"

@@ -15,7 +15,7 @@
     "remove-production": "serverless remove --stage production",
     "remove-staging": "serverless remove --stage staging",
     "sls-info": "serverless info --verbose",
-    "test": "yarn test-linter && yarn test-type && yarn test-unit",
+    "test": "yarn test-linter && yarn test-type && yarn test-unit && yarn test-circular",
     "test-circular": "yarn depcruise --validate .dependency-cruiser.js .",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit",

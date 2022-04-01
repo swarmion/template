@@ -80,6 +80,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "charlesgery",
+      "name": "Charles Géry",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46850903?v=4",
+      "profile": "https://github.com/charlesgery",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -100,10 +100,6 @@
     {
       "path": "frontend/cloudfront",
       "name": "frontend cloudfront [service]"
-    },
-    {
-      "path": "tools/generators",
-      "name": "generators [dev-tool]"
     }
   ]
 }

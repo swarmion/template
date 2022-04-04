@@ -1,0 +1,4 @@
+{
+  "pathParameters": { "threadId": "fooBar" },
+  "body": { "content": "Hello, I am Swarmion!" }
+}

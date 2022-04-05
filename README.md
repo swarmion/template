@@ -1,7 +1,9 @@
 # Serverless Monorepo Microservices Template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This template aims to define an opinionated clean Serverless monorepo microservices architecture.
@@ -42,7 +44,7 @@ In order to respect these guidelines, a good solution is the Monorepo approach. 
 
 Tips:
 
-- Always explicitely declare dependencies between end services in `package.json`
+- Always explicitly declare dependencies between end services in `package.json`
 - These dependencies can be of two kinds:
   - code dependencies: _service B_ declares _service A_ as a dependency because it needs some code exported by _service A_;
   - deploy dependencies: _service B_ declares _service A_ as a dependency because it needs _service A_ to be deployed before it.

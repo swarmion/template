@@ -1,0 +1,129 @@
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+# cancel previous runs on the same PR
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+name: ⛷ PR tests
+
+env:
+  CI: true
+  NODE_VERSION: 14
+
+jobs:
+  install-dependencies:
+    name: 🏗 Install dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Install & cache node dependencies
+        uses: ./.github/actions/install-node-deps
+
+  changes:
+    name: 🗒 Get modified packages
+    needs: install-dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      affected_apps: ${{ steps.get-project-changes.outputs.affected_apps }}
+      affected_libs: ${{ steps.get-project-changes.outputs.affected_libs }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          # We need to fetch all branches and commits so that Nx affected has a base to compare against.
+          fetch-depth: 0
+      - name: Get project changes
+        id: get-project-changes
+        uses: ./.github/actions/get-project-changes
+
+  package:
+    name: 📦 Package
+    needs: install-dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Package and cache builds
+        uses: ./.github/actions/package
+
+  app-lint-and-tests:
+    name: 🏛 App Tests
+    needs: [package, changes]
+    runs-on: ubuntu-latest
+    if: join(fromJson(needs.changes.outputs.affected_apps)) != ''
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        AFFECTED_APP: ${{ fromJson(needs.changes.outputs.affected_apps) }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Run tests
+        uses: ./.github/actions/lint-and-tests
+        with:
+          path: $(cat workspace.json | jq '.projects["${{ matrix.AFFECTED_APP }}"]')
+
+  library-lint-and-tests:
+    name: 📚 Library Tests
+    needs: [package, changes]
+    runs-on: ubuntu-latest
+    if: join(fromJson(needs.changes.outputs.affected_libs)) != ''
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        AFFECTED_LIB: ${{ fromJson(needs.changes.outputs.affected_libs) }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Run tests
+        uses: ./.github/actions/lint-and-tests
+        with:
+          path: $(cat workspace.json | jq '.projects["${{ matrix.AFFECTED_LIB }}"]')
+
+  validate-pr:
+    name: ✅ Validate the PR
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    needs: [library-lint-and-tests, app-lint-and-tests, package, changes]
+    steps:
+      - name: Validate package
+        run: |
+          if [[ ${{ needs.package.result }} = "failure" ]]; then
+            echo "Package failed"
+            exit 1
+          fi
+        shell: bash
+      - name: Validate changes
+        run: |
+          if [[ ${{ needs.changes.result }} = "failure" ]]; then
+            echo "Changes failed"
+            exit 1
+          fi
+        shell: bash
+      - name: Validate app tests
+        run: |
+          if [[ ${{ needs.app-lint-and-tests.result }} = "failure" ]]; then
+            echo "App tests failed"
+            exit 1
+          fi
+        shell: bash
+      - name: Validate library tests
+        run: |
+          if [[ ${{ needs.library-lint-and-tests.result }} = "failure" ]]; then
+            echo "Library tests failed"
+            exit 1
+          fi
+        shell: bash

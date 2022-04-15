@@ -39,7 +39,7 @@
     "@nrwl/linter": "^13.10.1",
     "@nrwl/tao": "^13.10.1",
     "@nrwl/workspace": "^13.10.1",
-    "@swarmion/nx-plugin": "0.5.4",
+    "@swarmion/nx-plugin": "0.5.5",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",

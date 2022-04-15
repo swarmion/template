@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
-    "@swarmion/serverless-contracts": "0.5.4"
+    "@swarmion/serverless-contracts": "0.5.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",

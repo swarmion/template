@@ -2,6 +2,7 @@ import { AWS } from '@serverless/typescript';
 
 import { httpApiResourceContract } from '@swarmion-starter/core-contracts';
 import {
+  frameworkVersion,
   projectName,
   sharedEsbuildConfig,
   sharedParams,
@@ -13,7 +14,7 @@ import { functions } from './functions';
 
 const serverlessConfiguration: AWS = {
   service: `${projectName}-core`, // Keep it short to have role name below 64
-  frameworkVersion: '>=3.0.0',
+  frameworkVersion,
   configValidationMode: 'error',
   plugins: ['serverless-esbuild'],
   provider: {
@@ -21,7 +22,7 @@ const serverlessConfiguration: AWS = {
     httpApi: {
       payload: '2.0',
       cors: {
-        // @ts-ignore we use a configuration per environment so we put it as a serverless variable
+        // @ts-expect-error we use a configuration per environment so we put it as a serverless variable
         allowedOrigins: '${param:apiGatewayCorsAllowedOrigins}',
         allowedHeaders: ['Content-Type', 'Authorization', 'Origin'],
         allowedMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],

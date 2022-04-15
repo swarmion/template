@@ -9,7 +9,7 @@ const mergeStageParams = <
   return Object.keys(commonStageParams).reduce(
     (prev, stage) => ({
       ...prev,
-      // @ts-ignore TODO ignore inner typing here
+      // @ts-expect-error TODO ignore inner typing here
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       [stage]: { ...commonStageParams[stage], ...serviceStageParams[stage] },
     }),

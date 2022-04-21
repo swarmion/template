@@ -3960,7 +3960,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.25
-    aws-sdk: ^2.1118.0
+    aws-sdk: ^2.1119.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.37
     eslint: ^8.13.0
@@ -3988,7 +3988,7 @@ __metadata:
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
     "@types/node": ^17.0.25
-    aws-sdk: ^2.1118.0
+    aws-sdk: ^2.1119.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.37
     eslint: ^8.13.0
@@ -4222,7 +4222,7 @@ __metadata:
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.20.0
     "@typescript-eslint/parser": ^5.20.0
-    aws-sdk: ^2.1118.0
+    aws-sdk: ^2.1119.0
     dependency-cruiser: ^11.6.0
     eslint: ^8.13.0
     eslint-config-prettier: ^8.5.0
@@ -4284,7 +4284,7 @@ __metadata:
     "@middy/validator": ^2.5.7
     "@serverless/typescript": ^3.8.0
     "@swarmion-starter/configuration": 1.0.0
-    "@types/aws-lambda": ^8.10.94
+    "@types/aws-lambda": ^8.10.95
     "@types/node": ^17.0.25
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4663,10 +4663,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:^8.10.94":
-  version: 8.10.94
-  resolution: "@types/aws-lambda@npm:8.10.94"
-  checksum: 56840df523d60256173da9e576a3a3173d6be7c4c27a5d1ba277901a8a0dd0795f6f9ad9cb85826f99c5ab3dad4c6557468fbb706bab37149f1deb008333e96f
+"@types/aws-lambda@npm:^8.10.95":
+  version: 8.10.95
+  resolution: "@types/aws-lambda@npm:8.10.95"
+  checksum: 82a696e924e9eb9201aaeeb74fa2a2ee49da6dd62278fc335ab4b48d51458d2eb6f5064c7a24f9b85d12c8a1a8786cbea10a6ee618a56221f413593d26ee21b0
   languageName: node
   linkType: hard
 
@@ -5635,9 +5635,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1117.0, aws-sdk@npm:^2.1118.0, aws-sdk@npm:^2.942.0":
-  version: 2.1118.0
-  resolution: "aws-sdk@npm:2.1118.0"
+"aws-sdk@npm:^2.1117.0, aws-sdk@npm:^2.1119.0, aws-sdk@npm:^2.942.0":
+  version: 2.1119.0
+  resolution: "aws-sdk@npm:2.1119.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5648,7 +5648,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: dbd9076ebff19e716b26ed080723e7d045e13261760d5965fd5608f5bd4334a026841cca0868011625ac898997e00370e62406a94632001533e6bfe55003d0b3
+  checksum: 5802e69a8ea9d7d34594b5e77bfc3de4168ce8ce78925c562b14843d4b141a822e7229e8738eefb6e706cd1925ac105a351193a1b3d35922bf62cd22768a3462
   languageName: node
   linkType: hard
 

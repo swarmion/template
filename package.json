@@ -43,7 +43,7 @@
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
-    "aws-sdk": "^2.1120.0",
+    "aws-sdk": "^2.1121.0",
     "dependency-cruiser": "^11.6.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",

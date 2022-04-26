@@ -3406,36 +3406,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/cli@npm:14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/cli@npm:14.0.2"
+"@nrwl/cli@npm:14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/cli@npm:14.0.3"
   dependencies:
-    nx: 14.0.2
-  checksum: 0610072033a0d4cffebc2c95ac7202f508fc75d7d6db41725d086c744ddf99268fdd16a28b2f02da8c518a5076f11783479aab80ec206b2325832fa9abc6985f
+    nx: 14.0.3
+  checksum: b7f2d11f9329d4e1dbf6b071b3aaf5d1687b17bb73dac33d17c745b7007f9e5aca0d4b8d34dcc8530eb79f633111f610ee0572ee4a5236de0033cc39e0684454
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:14.0.2, @nrwl/devkit@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/devkit@npm:14.0.2"
+"@nrwl/devkit@npm:14.0.3, @nrwl/devkit@npm:^14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/devkit@npm:14.0.3"
   dependencies:
     ejs: ^3.1.5
     ignore: ^5.0.4
-    nx: 14.0.2
+    nx: 14.0.3
     rxjs: ^6.5.4
     semver: 7.3.4
     tslib: ^2.3.0
-  checksum: a7c0d6e8895e775eab70140f1676f9f0e8e8566af9130e851f68b0ab6bdfa90fe4eddbcba8e23311ba35806d5ea39a43fcb6be87760d8e1d751c9e99c709750f
+  checksum: 693ddc8163a3f7d9975d7a246e9303d5694377b8554c950dffda9f8197716ef22bc5104c3f37bbc9a073547abc787d6a039f860043d0f4a692beb0b429eea4e9
   languageName: node
   linkType: hard
 
-"@nrwl/jest@npm:14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/jest@npm:14.0.2"
+"@nrwl/jest@npm:14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/jest@npm:14.0.3"
   dependencies:
     "@jest/reporters": 27.5.1
     "@jest/test-result": 27.5.1
-    "@nrwl/devkit": 14.0.2
+    "@nrwl/devkit": 14.0.3
     chalk: 4.1.0
     identity-obj-proxy: 3.0.0
     jest-config: 27.5.1
@@ -3444,16 +3444,16 @@ __metadata:
     resolve.exports: 1.1.0
     rxjs: ^6.5.4
     tslib: ^2.3.0
-  checksum: 67452c8f29de70d9b9db234492cd55f3b3b4f0a51c5d464031baf47e9698d657578b211004c3d25cace1bc468332695bed539f470518a0470ab2c5a1460346a9
+  checksum: a203478c070ea23c17e1f1baa3149c20b7c8ad17d8d714108df0fcda4fcd773b7c683e414e911c660b20d3813deef8d6c31f5a76a7536c90502966217114efba
   languageName: node
   linkType: hard
 
-"@nrwl/linter@npm:14.0.2, @nrwl/linter@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/linter@npm:14.0.2"
+"@nrwl/linter@npm:14.0.3, @nrwl/linter@npm:^14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/linter@npm:14.0.3"
   dependencies:
-    "@nrwl/devkit": 14.0.2
-    "@nrwl/jest": 14.0.2
+    "@nrwl/devkit": 14.0.3
+    "@nrwl/jest": 14.0.3
     "@phenomnomnominal/tsquery": 4.1.1
     tmp: ~0.2.1
     tslib: ^2.3.0
@@ -3462,28 +3462,28 @@ __metadata:
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: e42248a123000d6e871027d62dc67289f245907035bd9bb7348fd78c7cb865ab8a2ea6650def7aaa8ca87f1f1aae64d7c64aa22b4caef0b449da2ff5b0976fce
+  checksum: b43993aa1cb72d607fc236e28a942bde6e6ab2a02876617a15bd965b0130990683ce4648bb301aaf785950a3c141f884f6a97bc24969de91dadaba92ffc62ba9
   languageName: node
   linkType: hard
 
-"@nrwl/tao@npm:14.0.2, @nrwl/tao@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/tao@npm:14.0.2"
+"@nrwl/tao@npm:14.0.3, @nrwl/tao@npm:^14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/tao@npm:14.0.3"
   dependencies:
-    nx: 14.0.2
+    nx: 14.0.3
   bin:
     tao: index.js
-  checksum: ce029eea83c6a42bb4fd744dca2c3c2f80789066bc2d7ea20a83a2364cedd72e67624432920d3495e49885db025fb362a1d165984661bac26ebd18dcb5f22c1a
+  checksum: 136abd0a048c46475dff57069799c787399676742cdd69fa9b583533e59735cd30c0aa0f412328949ba09bd59e26bb0d1ce30c248cb654ac7453bfcf071e463c
   languageName: node
   linkType: hard
 
-"@nrwl/workspace@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "@nrwl/workspace@npm:14.0.2"
+"@nrwl/workspace@npm:^14.0.3":
+  version: 14.0.3
+  resolution: "@nrwl/workspace@npm:14.0.3"
   dependencies:
-    "@nrwl/devkit": 14.0.2
-    "@nrwl/jest": 14.0.2
-    "@nrwl/linter": 14.0.2
+    "@nrwl/devkit": 14.0.3
+    "@nrwl/jest": 14.0.3
+    "@nrwl/linter": 14.0.3
     "@parcel/watcher": 2.0.4
     chalk: 4.1.0
     chokidar: ^3.5.1
@@ -3498,7 +3498,7 @@ __metadata:
     ignore: ^5.0.4
     minimatch: 3.0.4
     npm-run-path: ^4.0.1
-    nx: 14.0.2
+    nx: 14.0.3
     open: ^8.4.0
     rxjs: ^6.5.4
     semver: 7.3.4
@@ -3511,7 +3511,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: ee77fb1a63e795cb27e625c59fca67045743baf1d51f4b7f69d0fcb87c2ab6d6109c3f2bbe3d90e4a204eb0bc9a71d5368808e0a4db3ecab25f265f0d91cc2b9
+  checksum: cb92ebc5e117d9a871543a3e7ca0db8748705fd27e40c3c50a32954b07ac9cf751a02e8f2b116c1d846f384eca955ce004ec94e00ea92f1c51dd45ead8a135f4
   languageName: node
   linkType: hard
 
@@ -3669,10 +3669,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/typescript@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "@serverless/typescript@npm:3.8.0"
-  checksum: 9dd2df51721ead0e9dfe29c2384e8b7f1ac02503f86f3b1572b0b54f853c186857507956cf196231e3b1baf94f5fb7542a1686c0f2acb4c18060487bff45326d
+"@serverless/typescript@npm:^3.15.2":
+  version: 3.15.2
+  resolution: "@serverless/typescript@npm:3.15.2"
+  checksum: 22e424917edcbb30c647955e54775d96cd63a73d3b68fc567007c7cf299e1c1a46d1e135977f9eb08eb2f4594f092cab7de81c6e6cbec386cf2cde23878b0a7d
   languageName: node
   linkType: hard
 
@@ -3879,13 +3879,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless/typescript": ^3.8.0
+    "@serverless/typescript": ^3.15.2
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
     eslint: ^8.14.0
@@ -3902,7 +3902,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless/typescript": ^3.8.0
+    "@serverless/typescript": ^3.15.2
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
@@ -3910,8 +3910,8 @@ __metadata:
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.27
-    aws-sdk: ^2.1121.0
+    "@types/node": ^17.0.28
+    aws-sdk: ^2.1122.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
     eslint: ^8.14.0
@@ -3930,7 +3930,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless/typescript": ^3.8.0
+    "@serverless/typescript": ^3.15.2
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -3938,8 +3938,8 @@ __metadata:
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.27
-    aws-sdk: ^2.1121.0
+    "@types/node": ^17.0.28
+    aws-sdk: ^2.1122.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
     eslint: ^8.14.0
@@ -3964,8 +3964,8 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
-    "@serverless/typescript": ^3.8.0
-    "@types/node": ^17.0.27
+    "@serverless/typescript": ^3.15.2
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3991,7 +3991,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -4016,7 +4016,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -4054,7 +4054,7 @@ __metadata:
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@types/react": ^17.0.44
     "@types/react-dom": ^17.0.16
     "@vitejs/plugin-react": ^1.3.1
@@ -4079,7 +4079,7 @@ __metadata:
     redux: ^4.2.0
     rollup: ^2.70.2
     rollup-plugin-visualizer: ^5.6.0
-    stylelint: ^14.7.1
+    stylelint: ^14.8.0
     stylelint-config-prettier: ^9.0.3
     stylelint-config-property-sort-order-smacss: ^9.0.0
     stylelint-config-standard: ^25.0.0
@@ -4087,7 +4087,7 @@ __metadata:
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
     typescript: ^4.6.3
-    vite: ^2.9.5
+    vite: ^2.9.6
     vite-plugin-svgr: ^1.1.0
     vite-tsconfig-paths: ^3.4.1
   languageName: unknown
@@ -4097,11 +4097,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless/typescript": ^3.8.0
+    "@serverless/typescript": ^3.15.2
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     dependency-cruiser: ^11.6.0
     jest: ^27.5.1
     serverless: ^3.15.2
@@ -4136,7 +4136,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/css-mediaquery": ^0.1.1
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@types/react": ^17.0.44
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -4165,15 +4165,15 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@nrwl/devkit": ^14.0.2
-    "@nrwl/linter": ^14.0.2
-    "@nrwl/tao": ^14.0.2
-    "@nrwl/workspace": ^14.0.2
+    "@nrwl/devkit": ^14.0.3
+    "@nrwl/linter": ^14.0.3
+    "@nrwl/tao": ^14.0.3
+    "@nrwl/workspace": ^14.0.3
     "@swarmion/nx-plugin": 0.5.6
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.21.0
     "@typescript-eslint/parser": ^5.21.0
-    aws-sdk: ^2.1121.0
+    aws-sdk: ^2.1122.0
     dependency-cruiser: ^11.6.0
     eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
@@ -4184,10 +4184,10 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     husky: ^7.0.4
     jest: ^27.5.1
-    lint-staged: ^12.4.0
+    lint-staged: ^12.4.1
     lodash: ^4.17.21
     npm-audit-resolver: ^3.0.0-7
-    nx: ^14.0.2
+    nx: ^14.0.3
     prettier: ^2.6.2
     syncpack: ^6.2.1
     typescript: ^4.6.3
@@ -4204,8 +4204,8 @@ __metadata:
     "@babel/preset-env": ^7.16.11
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
-    "@serverless/typescript": ^3.8.0
-    "@types/node": ^17.0.27
+    "@serverless/typescript": ^3.15.2
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -4233,10 +4233,10 @@ __metadata:
     "@middy/http-error-handler": ^2.5.7
     "@middy/http-json-body-parser": ^2.5.7
     "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.8.0
+    "@serverless/typescript": ^3.15.2
     "@swarmion-starter/configuration": 1.0.0
     "@types/aws-lambda": ^8.10.95
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -4262,7 +4262,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.27
+    "@types/node": ^17.0.28
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -4793,10 +4793,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.27":
-  version: 17.0.27
-  resolution: "@types/node@npm:17.0.27"
-  checksum: 6645ca813c24dcb9893729ed6f87a9e415d6df03cb3e1ececa3a03ca845d3324c3808b4dc79c08a4b3c7d1ccd515e6d7e004db9c9123c9333e963675238e39fc
+"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.28":
+  version: 17.0.28
+  resolution: "@types/node@npm:17.0.28"
+  checksum: c85a5a9471bdec8bd6335221cfa4e3956d5500ae5f7072e4c1cf700787b8c43fceac1086617a68cc2bb3e4580e7325ffd1333eefd1bb04e3595a1562a0b3d22d
   languageName: node
   linkType: hard
 
@@ -5586,9 +5586,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1119.0, aws-sdk@npm:^2.1121.0, aws-sdk@npm:^2.942.0":
-  version: 2.1121.0
-  resolution: "aws-sdk@npm:2.1121.0"
+"aws-sdk@npm:^2.1119.0, aws-sdk@npm:^2.1122.0, aws-sdk@npm:^2.942.0":
+  version: 2.1122.0
+  resolution: "aws-sdk@npm:2.1122.0"
   dependencies:
     buffer: 4.9.2
     events: 1.1.1
@@ -5599,7 +5599,7 @@ __metadata:
     url: 0.10.3
     uuid: 3.3.2
     xml2js: 0.4.19
-  checksum: ab85098e8dc3cfc5eb6486e9a04131d3fb411f472d5bd8a52c35021d4e871338cc2f4455983c6abdaefc18838381ef433d85fdcd7d2561c9c483a64bc1636229
+  checksum: 6b5130fb255c42b7da09415ae8230e4ea673e29b998f5765a1f1f2f01d74b7441a14c2238f90d58a9f87b58be0ffe2ac46174e9366d27d9ecdd381e1d3f6f01b
   languageName: node
   linkType: hard
 
@@ -10678,9 +10678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.4.0":
-  version: 12.4.0
-  resolution: "lint-staged@npm:12.4.0"
+"lint-staged@npm:^12.4.1":
+  version: 12.4.1
+  resolution: "lint-staged@npm:12.4.1"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -10698,7 +10698,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: e25b273a73b79f224ff1ccb22432c34a9050fe8318b9cf7e08c748e2efc80e1f48ed4f2aa61cd16a701bb7fd6323ecf0d94a497c97732db04f2b5382d6b70131
+  checksum: b57183b537064cda6caef6679918bf271903145f7c28d09567e918b8b13094048b579f8df808ea590dbd7ea2ec332327c5e372cf3d77e85b7b0254f6541ce4c3
   languageName: node
   linkType: hard
 
@@ -11647,12 +11647,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:14.0.2, nx@npm:^14.0.2":
-  version: 14.0.2
-  resolution: "nx@npm:14.0.2"
+"nx@npm:14.0.3, nx@npm:^14.0.3":
+  version: 14.0.3
+  resolution: "nx@npm:14.0.3"
   dependencies:
-    "@nrwl/cli": 14.0.2
-    "@nrwl/tao": 14.0.2
+    "@nrwl/cli": 14.0.3
+    "@nrwl/tao": 14.0.3
     "@parcel/watcher": 2.0.4
     "@swc-node/register": ^1.4.2
     "@swc/core": ^1.2.152
@@ -11686,7 +11686,7 @@ __metadata:
     yargs-parser: 21.0.1
   bin:
     nx: bin/nx.js
-  checksum: 748f4baff910d324c3518c0e9fb13411a8c7e6401e1d4982a36ccdb46ba1f81311260206dc852c992068f317796dfc51e51ff9776c3b0ce2a58d90cfea1c0db4
+  checksum: cc0a38aeed8233e6c7457361f478ec2835f6f8df4595d5cb27f1e5ca3923147d14a856b59adc11a8a6f2a0a23426365e81bbfed0f791dae0095c388d978c9291
   languageName: node
   linkType: hard
 
@@ -14042,9 +14042,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.7.1":
-  version: 14.7.1
-  resolution: "stylelint@npm:14.7.1"
+"stylelint@npm:^14.8.0":
+  version: 14.8.0
+  resolution: "stylelint@npm:14.8.0"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
@@ -14089,7 +14089,7 @@ __metadata:
     write-file-atomic: ^4.0.1
   bin:
     stylelint: bin/stylelint.js
-  checksum: f369d55288fbd2daa149711f3bffb5a8abfba1373cb085a28b7c689c6b7ecbec192a0a9aa9961b20d7ecf1b9f9a8d8e0b4a32a833d1894963bf57086e294570d
+  checksum: cf222d7ec16c6c217998787e5fdf5c1b1acf857b1d19ba22ddce305309850a801e01ec7143671fa428db2f6e877cbee63c359f768880c4420373ad1609b7dde6
   languageName: node
   linkType: hard
 
@@ -15001,9 +15001,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.9.5":
-  version: 2.9.5
-  resolution: "vite@npm:2.9.5"
+"vite@npm:^2.9.6":
+  version: 2.9.6
+  resolution: "vite@npm:2.9.6"
   dependencies:
     esbuild: ^0.14.27
     fsevents: ~2.3.2
@@ -15026,7 +15026,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 354189cbce6904a3b58ca70b7ad9e1bb751ded9c13e483165562e634804cfb29bbf1507a4e6334cb9987e3f1f41e9f50764878a3c837523762e9da65229c9543
+  checksum: 79bbf516547f4adb1a297ac8648f8818b3e2a7bb113a7e12acc2355498d247556f58fc50d39eec4891c07250e7420e72773e358eeb8dc62af62fc1ff32c70877
   languageName: node
   linkType: hard
 

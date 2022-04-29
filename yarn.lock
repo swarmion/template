@@ -2629,36 +2629,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/cli@npm:14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/cli@npm:14.0.3"
+"@nrwl/cli@npm:14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/cli@npm:14.0.5"
   dependencies:
-    nx: 14.0.3
-  checksum: b7f2d11f9329d4e1dbf6b071b3aaf5d1687b17bb73dac33d17c745b7007f9e5aca0d4b8d34dcc8530eb79f633111f610ee0572ee4a5236de0033cc39e0684454
+    nx: 14.0.5
+  checksum: 21bb85931efc3fed8872f1f03403dc5c6a47f687eb5920bffdc38d0abb79fccb1381735549cecd147bff3d19dc73c0bca59657d1116199d433fb2a618831cd2f
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:14.0.3, @nrwl/devkit@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/devkit@npm:14.0.3"
+"@nrwl/devkit@npm:14.0.5, @nrwl/devkit@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/devkit@npm:14.0.5"
   dependencies:
     ejs: ^3.1.5
     ignore: ^5.0.4
-    nx: 14.0.3
     rxjs: ^6.5.4
     semver: 7.3.4
     tslib: ^2.3.0
-  checksum: 693ddc8163a3f7d9975d7a246e9303d5694377b8554c950dffda9f8197716ef22bc5104c3f37bbc9a073547abc787d6a039f860043d0f4a692beb0b429eea4e9
+  peerDependencies:
+    nx: ">= 13.10 <= 15"
+  checksum: a7ca63d5b558bbe9f5d907b737fd8d631b350687d6f481713ca3e21a54bf07468f9b1fa63319ed299d37445ccfa94736823b84c67901b91495438726fbaa8ce2
   languageName: node
   linkType: hard
 
-"@nrwl/jest@npm:14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/jest@npm:14.0.3"
+"@nrwl/jest@npm:14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/jest@npm:14.0.5"
   dependencies:
     "@jest/reporters": 27.5.1
     "@jest/test-result": 27.5.1
-    "@nrwl/devkit": 14.0.3
+    "@nrwl/devkit": 14.0.5
     chalk: 4.1.0
     identity-obj-proxy: 3.0.0
     jest-config: 27.5.1
@@ -2667,16 +2668,16 @@ __metadata:
     resolve.exports: 1.1.0
     rxjs: ^6.5.4
     tslib: ^2.3.0
-  checksum: a203478c070ea23c17e1f1baa3149c20b7c8ad17d8d714108df0fcda4fcd773b7c683e414e911c660b20d3813deef8d6c31f5a76a7536c90502966217114efba
+  checksum: 05e05f87d46b9b2227e9379b108236a7fe555a27b788d1cb9c3e789afc5162316783f60f3699f00d7ea96976812758332666cb43f03338c8a88e43355ed2ff00
   languageName: node
   linkType: hard
 
-"@nrwl/linter@npm:14.0.3, @nrwl/linter@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/linter@npm:14.0.3"
+"@nrwl/linter@npm:14.0.5, @nrwl/linter@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/linter@npm:14.0.5"
   dependencies:
-    "@nrwl/devkit": 14.0.3
-    "@nrwl/jest": 14.0.3
+    "@nrwl/devkit": 14.0.5
+    "@nrwl/jest": 14.0.5
     "@phenomnomnominal/tsquery": 4.1.1
     tmp: ~0.2.1
     tslib: ^2.3.0
@@ -2685,28 +2686,28 @@ __metadata:
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: b43993aa1cb72d607fc236e28a942bde6e6ab2a02876617a15bd965b0130990683ce4648bb301aaf785950a3c141f884f6a97bc24969de91dadaba92ffc62ba9
+  checksum: 27801f8b0087a7bbe70954f4d8428299ab6a845448670dc47872e57d1de5bd220e911678a5a4a2737ec52e05b62311576aa40887bf13038844ba1c287bf43684
   languageName: node
   linkType: hard
 
-"@nrwl/tao@npm:14.0.3, @nrwl/tao@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/tao@npm:14.0.3"
+"@nrwl/tao@npm:14.0.5, @nrwl/tao@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/tao@npm:14.0.5"
   dependencies:
-    nx: 14.0.3
+    nx: 14.0.5
   bin:
     tao: index.js
-  checksum: 136abd0a048c46475dff57069799c787399676742cdd69fa9b583533e59735cd30c0aa0f412328949ba09bd59e26bb0d1ce30c248cb654ac7453bfcf071e463c
+  checksum: d7e3257afdac98ed271a6da75ed339d92b83a76f69a0baff188da2d99df0310b7fd14c410723e681904bc091869b0959b685982b80994061657b2a0e2936d295
   languageName: node
   linkType: hard
 
-"@nrwl/workspace@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "@nrwl/workspace@npm:14.0.3"
+"@nrwl/workspace@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "@nrwl/workspace@npm:14.0.5"
   dependencies:
-    "@nrwl/devkit": 14.0.3
-    "@nrwl/jest": 14.0.3
-    "@nrwl/linter": 14.0.3
+    "@nrwl/devkit": 14.0.5
+    "@nrwl/jest": 14.0.5
+    "@nrwl/linter": 14.0.5
     "@parcel/watcher": 2.0.4
     chalk: 4.1.0
     chokidar: ^3.5.1
@@ -2721,7 +2722,7 @@ __metadata:
     ignore: ^5.0.4
     minimatch: 3.0.4
     npm-run-path: ^4.0.1
-    nx: 14.0.3
+    nx: 14.0.5
     open: ^8.4.0
     rxjs: ^6.5.4
     semver: 7.3.4
@@ -2734,7 +2735,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: cb92ebc5e117d9a871543a3e7ca0db8748705fd27e40c3c50a32954b07ac9cf751a02e8f2b116c1d846f384eca955ce004ec94e00ea92f1c51dd45ead8a135f4
+  checksum: 5d07516505549b70b9d33af3a5873fabcc8206cec72b82c05129d245f702cd2db28175baa1f972d2856d7ed00114a35ab5c7a1f2332258abced81dd6933b2075
   languageName: node
   linkType: hard
 
@@ -3108,7 +3109,7 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
     eslint: ^8.14.0
@@ -3117,7 +3118,7 @@ __metadata:
     serverless-esbuild: ^1.26.2
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3133,7 +3134,7 @@ __metadata:
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     aws-sdk: ^2.1124.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
@@ -3145,7 +3146,7 @@ __metadata:
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3161,7 +3162,7 @@ __metadata:
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     aws-sdk: ^2.1124.0
     dependency-cruiser: ^11.6.0
     esbuild: ^0.14.38
@@ -3173,7 +3174,7 @@ __metadata:
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3188,7 +3189,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@serverless/typescript": ^3.15.2
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3199,7 +3200,7 @@ __metadata:
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3214,7 +3215,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3224,7 +3225,7 @@ __metadata:
     prettier: ^2.6.2
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3239,7 +3240,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3250,7 +3251,7 @@ __metadata:
     prettier: ^2.6.2
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3277,7 +3278,7 @@ __metadata:
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@types/react": ^17.0.44
     "@types/react-dom": ^17.0.16
     "@vitejs/plugin-react": ^1.3.1
@@ -3302,14 +3303,14 @@ __metadata:
     redux: ^4.2.0
     rollup: ^2.70.2
     rollup-plugin-visualizer: ^5.6.0
-    stylelint: ^14.8.0
+    stylelint: ^14.8.1
     stylelint-config-prettier: ^9.0.3
     stylelint-config-property-sort-order-smacss: ^9.0.0
     stylelint-config-standard: ^25.0.0
     stylelint-order: ^5.0.0
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
     vite: ^2.9.6
     vite-plugin-svgr: ^1.1.0
     vite-tsconfig-paths: ^3.4.1
@@ -3324,7 +3325,7 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     dependency-cruiser: ^11.6.0
     eslint: ^8.14.0
     jest: ^27.5.1
@@ -3332,7 +3333,7 @@ __metadata:
     serverless-lift: ^1.15.0
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3360,7 +3361,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/css-mediaquery": ^0.1.1
     "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@types/react": ^17.0.44
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3376,7 +3377,7 @@ __metadata:
     ts-jest: ^27.1.4
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -3389,10 +3390,10 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.4
     "@commitlint/config-conventional": ^16.2.4
-    "@nrwl/devkit": ^14.0.3
-    "@nrwl/linter": ^14.0.3
-    "@nrwl/tao": ^14.0.3
-    "@nrwl/workspace": ^14.0.3
+    "@nrwl/devkit": ^14.0.5
+    "@nrwl/linter": ^14.0.5
+    "@nrwl/tao": ^14.0.5
+    "@nrwl/workspace": ^14.0.5
     "@swarmion/nx-plugin": 0.5.6
     "@types/jest": ^27.4.1
     "@typescript-eslint/eslint-plugin": ^5.21.0
@@ -3411,10 +3412,10 @@ __metadata:
     lint-staged: ^12.4.1
     lodash: ^4.17.21
     npm-audit-resolver: ^3.0.0-7
-    nx: ^14.0.3
+    nx: ^14.0.5
     prettier: ^2.6.2
     syncpack: ^7.0.0
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3429,7 +3430,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@serverless/typescript": ^3.15.2
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3439,7 +3440,7 @@ __metadata:
     prettier: ^2.6.2
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3460,7 +3461,7 @@ __metadata:
     "@serverless/typescript": ^3.15.2
     "@swarmion-starter/configuration": 1.0.0
     "@types/aws-lambda": ^8.10.95
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3471,7 +3472,7 @@ __metadata:
     prettier: ^2.6.2
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3486,7 +3487,7 @@ __metadata:
     "@babel/preset-typescript": ^7.16.7
     "@babel/runtime": ^7.17.9
     "@swarmion/serverless-contracts": 0.5.6
-    "@types/node": ^17.0.29
+    "@types/node": ^17.0.30
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.1.0
@@ -3497,7 +3498,7 @@ __metadata:
     prettier: ^2.6.2
     ts-node: ^10.7.0
     ttypescript: ^1.5.13
-    typescript: ^4.6.3
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -3552,114 +3553,114 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm-eabi@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-android-arm-eabi@npm:1.2.165"
+"@swc/core-android-arm-eabi@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-android-arm-eabi@npm:1.2.173"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm64@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-android-arm64@npm:1.2.165"
+"@swc/core-android-arm64@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-android-arm64@npm:1.2.173"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-darwin-arm64@npm:1.2.165"
+"@swc/core-darwin-arm64@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-darwin-arm64@npm:1.2.173"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-darwin-x64@npm:1.2.165"
+"@swc/core-darwin-x64@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-darwin-x64@npm:1.2.173"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-freebsd-x64@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-freebsd-x64@npm:1.2.165"
+"@swc/core-freebsd-x64@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-freebsd-x64@npm:1.2.173"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.165"
+"@swc/core-linux-arm-gnueabihf@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.2.173"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.2.165"
+"@swc/core-linux-arm64-gnu@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.2.173"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-linux-arm64-musl@npm:1.2.165"
+"@swc/core-linux-arm64-musl@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-linux-arm64-musl@npm:1.2.173"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-linux-x64-gnu@npm:1.2.165"
+"@swc/core-linux-x64-gnu@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-linux-x64-gnu@npm:1.2.173"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-linux-x64-musl@npm:1.2.165"
+"@swc/core-linux-x64-musl@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-linux-x64-musl@npm:1.2.173"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.2.165"
+"@swc/core-win32-arm64-msvc@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.2.173"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.2.165"
+"@swc/core-win32-ia32-msvc@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.2.173"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.2.165":
-  version: 1.2.165
-  resolution: "@swc/core-win32-x64-msvc@npm:1.2.165"
+"@swc/core-win32-x64-msvc@npm:1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core-win32-x64-msvc@npm:1.2.173"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.119, @swc/core@npm:^1.2.152":
-  version: 1.2.165
-  resolution: "@swc/core@npm:1.2.165"
+"@swc/core@npm:^1.2.119, @swc/core@npm:^1.2.173":
+  version: 1.2.173
+  resolution: "@swc/core@npm:1.2.173"
   dependencies:
-    "@swc/core-android-arm-eabi": 1.2.165
-    "@swc/core-android-arm64": 1.2.165
-    "@swc/core-darwin-arm64": 1.2.165
-    "@swc/core-darwin-x64": 1.2.165
-    "@swc/core-freebsd-x64": 1.2.165
-    "@swc/core-linux-arm-gnueabihf": 1.2.165
-    "@swc/core-linux-arm64-gnu": 1.2.165
-    "@swc/core-linux-arm64-musl": 1.2.165
-    "@swc/core-linux-x64-gnu": 1.2.165
-    "@swc/core-linux-x64-musl": 1.2.165
-    "@swc/core-win32-arm64-msvc": 1.2.165
-    "@swc/core-win32-ia32-msvc": 1.2.165
-    "@swc/core-win32-x64-msvc": 1.2.165
+    "@swc/core-android-arm-eabi": 1.2.173
+    "@swc/core-android-arm64": 1.2.173
+    "@swc/core-darwin-arm64": 1.2.173
+    "@swc/core-darwin-x64": 1.2.173
+    "@swc/core-freebsd-x64": 1.2.173
+    "@swc/core-linux-arm-gnueabihf": 1.2.173
+    "@swc/core-linux-arm64-gnu": 1.2.173
+    "@swc/core-linux-arm64-musl": 1.2.173
+    "@swc/core-linux-x64-gnu": 1.2.173
+    "@swc/core-linux-x64-musl": 1.2.173
+    "@swc/core-win32-arm64-msvc": 1.2.173
+    "@swc/core-win32-ia32-msvc": 1.2.173
+    "@swc/core-win32-x64-msvc": 1.2.173
   dependenciesMeta:
     "@swc/core-android-arm-eabi":
       optional: true
@@ -3689,7 +3690,7 @@ __metadata:
       optional: true
   bin:
     swcx: run_swcx.js
-  checksum: 366138976873b86ad376b619300f71ad4d1d3cf4c61185ddd0696e4170e09d3be66124a51e7402718d904622ad22f3a96dd5c710ce749be3154356f5ac2fded2
+  checksum: 12820ebbe2a668872ad60c0be0d0d3ca93539a4068719f3f3d731539505bb2ad145ece80b8666b1b6ef4c56c4e1e22a59b40adf4874f1a8c31f6a47347a00c88
   languageName: node
   linkType: hard
 
@@ -4017,10 +4018,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.29":
-  version: 17.0.29
-  resolution: "@types/node@npm:17.0.29"
-  checksum: bb9d7bce9d6d3882efd9d63b773b548dce98df4bd57eff8ceaa316aa2f3346e36d3618764cc93da84bbff92005174a35eec3465cde91ee973ef1c351ffa40074
+"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.30":
+  version: 17.0.30
+  resolution: "@types/node@npm:17.0.30"
+  checksum: b3cd2db6474aae3ddac5a312f340f6e4ca200429371e62cb74698fe7f23d7414d0200f643204ddfaa797846328539359e3797d7f2baaf3cdd643b159cf53baa6
   languageName: node
   linkType: hard
 
@@ -10918,15 +10919,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:14.0.3, nx@npm:^14.0.3":
-  version: 14.0.3
-  resolution: "nx@npm:14.0.3"
+"nx@npm:14.0.5, nx@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "nx@npm:14.0.5"
   dependencies:
-    "@nrwl/cli": 14.0.3
-    "@nrwl/tao": 14.0.3
+    "@nrwl/cli": 14.0.5
+    "@nrwl/tao": 14.0.5
     "@parcel/watcher": 2.0.4
     "@swc-node/register": ^1.4.2
-    "@swc/core": ^1.2.152
+    "@swc/core": ^1.2.173
     chalk: 4.1.0
     chokidar: ^3.5.1
     cli-cursor: 3.1.0
@@ -10957,7 +10958,7 @@ __metadata:
     yargs-parser: 21.0.1
   bin:
     nx: bin/nx.js
-  checksum: cc0a38aeed8233e6c7457361f478ec2835f6f8df4595d5cb27f1e5ca3923147d14a856b59adc11a8a6f2a0a23426365e81bbfed0f791dae0095c388d978c9291
+  checksum: 7b92dcfd75af03c94e4446c652babc4a2bbbbb88392f7c8bbdfe31268f5be8948e909fa1f93f5415d893949acc0e8740a9c1ac35e9759274e5b2c72e8afcaf13
   languageName: node
   linkType: hard
 
@@ -13289,9 +13290,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^14.8.0":
-  version: 14.8.0
-  resolution: "stylelint@npm:14.8.0"
+"stylelint@npm:^14.8.1":
+  version: 14.8.1
+  resolution: "stylelint@npm:14.8.1"
   dependencies:
     balanced-match: ^2.0.0
     colord: ^2.9.2
@@ -13336,7 +13337,7 @@ __metadata:
     write-file-atomic: ^4.0.1
   bin:
     stylelint: bin/stylelint.js
-  checksum: cf222d7ec16c6c217998787e5fdf5c1b1acf857b1d19ba22ddce305309850a801e01ec7143671fa428db2f6e877cbee63c359f768880c4420373ad1609b7dde6
+  checksum: ea357c078cab17e4af5990b5307e14fab79d6eb4b7fa7f146000907886b240ac547c55cab69c4036c2e5599e155c0ee002525886d55dd16d85c9de4eee8f8b0c
   languageName: node
   linkType: hard
 
@@ -13987,23 +13988,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.4.3, typescript@npm:^4.5.3, typescript@npm:^4.6.3":
-  version: 4.6.3
-  resolution: "typescript@npm:4.6.3"
+"typescript@npm:^4.4.3, typescript@npm:^4.5.3, typescript@npm:^4.6.4":
+  version: 4.6.4
+  resolution: "typescript@npm:4.6.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 255bb26c8cb846ca689dd1c3a56587af4f69055907aa2c154796ea28ee0dea871535b1c78f85a6212c77f2657843a269c3a742d09d81495b97b914bf7920415b
+  checksum: e7bfcc39cd4571a63a54e5ea21f16b8445268b9900bf55aee0e02ad981be576acc140eba24f1af5e3c1457767c96cea6d12861768fb386cf3ffb34013718631a
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>":
-  version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=493e53"
+"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
+  version: 4.6.4
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: fe6bdc1afb2f145ddb7b0a3a31f96352209f6a5704d97f038414ea22ff9d8dd42f32cfb6652e30458d7d958d2d4e85de2df11c574899c6f750a6b3c0e90a3a76
+  checksum: 8cff08bf66d9ecfbf9fcc5edde04a5a7923e6cac3b21d99b4e9a06973bf5bd7f9a83ec7eed24129c1b9e13fd861de8c1070110d4b9ce9f18ab57c6999e9c9a6f
   languageName: node
   linkType: hard
 

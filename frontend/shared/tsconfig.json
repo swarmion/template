@@ -8,12 +8,11 @@
     "plugins": [{ "transform": "@zerollup/ts-transform-paths" }],
     "emitDeclarationOnly": true,
     "jsx": "react-jsx",
-    "outDir": "./dist/types",
-    "types": ["vite-plugin-svgr/client", "jest"]
+    "outDir": "./dist/types"
   },
   "references": [
     { "path": "../../packages/configuration/tsconfig.build.json" }
   ],
   "exclude": ["./dist"],
-  "include": ["./**/*.ts", "./**/*.tsx", "./jest.*"]
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }

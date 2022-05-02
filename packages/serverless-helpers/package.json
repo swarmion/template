@@ -22,7 +22,7 @@
     "test-circular": "yarn depcruise --validate .dependency-cruiser.js .",
     "test-linter": "yarn linter-base-config .",
     "test-type": "tsc --noEmit --emitDeclarationOnly false",
-    "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests",
+    "test-unit": "vitest run --coverage --passWithNoTests",
     "transpile": "babel src --extensions .ts --quiet",
     "watch": "rm -rf dist && concurrently 'yarn:package-* --watch'"
   },
@@ -48,12 +48,13 @@
     "concurrently": "^7.1.0",
     "dependency-cruiser": "^11.6.0",
     "eslint": "^8.14.0",
-    "jest": "^27.5.1",
     "json-schema-to-ts": "^2.2.0",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
     "ttypescript": "^1.5.13",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "vite": "^2.9.6",
+    "vitest": "^0.10.0"
   },
   "nx": {
     "targets": {

@@ -49,7 +49,7 @@ Therefore, it defines a set of _internal modules_ managed by [Nx](https://nx.dev
 |   |
 |   └── ...                         # other deployed services
 |
-├── commonConfiguration             # configuration files such as jest, babel...
+├── commonConfiguration             # configuration files such as babel, lintstaged...
 |   ├── babel.config.js
 |   └── lintstaged-base-config.js
 |

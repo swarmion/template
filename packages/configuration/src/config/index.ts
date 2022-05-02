@@ -1,1 +1,1 @@
-export { default as jestConfig } from './jest.config';
+export { default as vitestConfig } from './vitest.config';

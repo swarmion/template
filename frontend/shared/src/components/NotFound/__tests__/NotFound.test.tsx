@@ -9,6 +9,6 @@ describe('NotFound component', () => {
     const pageNotFound = screen.getByRole('heading', {
       name: /Page not found/,
     });
-    expect(pageNotFound).toBeDefined();
+    expect(pageNotFound).toBeInTheDocument();
   });
 });

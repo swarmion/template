@@ -25,14 +25,6 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "typescript.tsdk": "node_modules/typescript/lib",
-    "jest.autoRun": "off",
-    "jest.disabledWorkspaceFolders": [
-      "swarmion-starter root",
-      "frontend cloudfront [service]"
-    ],
-    "jest.jestCommandLine": "yarn jest",
-    "jest.showCoverageOnLoad": true,
-    "jest.coverageFormatter": "DefaultFormatter",
     "cSpell.words": ["esbuild", "swarmion"]
   },
   "extensions": {
@@ -41,7 +33,6 @@
       "dbaeumer.vscode-eslint",
       "editorconfig.editorconfig",
       "foxundermoon.shell-format",
-      "orta.vscode-jest",
       "streetsidesoftware.code-spell-checker",
       "streetsidesoftware.code-spell-checker-french",
       "stylelint.vscode-stylelint",

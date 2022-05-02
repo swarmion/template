@@ -10,12 +10,6 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-    - name: Cache node_modules
-      uses: ./.github/actions/cache-node-modules
     - name: Derive appropriate SHAs for base and head for `nx affected` commands
       uses: nrwl/nx-set-shas@v2
     - name: Get affected apps

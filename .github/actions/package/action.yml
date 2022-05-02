@@ -3,12 +3,6 @@ description: 'Package all libraries in the monorepo'
 runs:
   using: 'composite'
   steps:
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-    - name: Use cached node_modules
-      uses: ./.github/actions/cache-node-modules
     - name: Cache package builds
       id: package-cache
       uses: ./.github/actions/cache-package-builds

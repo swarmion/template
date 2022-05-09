@@ -3407,6 +3407,7 @@ __metadata:
     eslint-plugin-jest: ^26.1.5
     eslint-plugin-prefer-arrow: ^1.2.3
     eslint-plugin-prettier: ^4.0.0
+    fresko: ^0.0.7
     husky: ^7.0.4
     jest: ^27.5.1
     lint-staged: ^12.4.1
@@ -5414,6 +5415,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 8e3ddf3981c4da405ddbd7d9c8d91944ddf6e33d6837756979f7840a29272a69a5189ecae0ff84006750d6d1e92368d413335eab4db5476db6e6703a1d1e0505
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "chalk@npm:5.0.1"
+  checksum: 7b45300372b908f0471fbf7389ce2f5de8d85bb949026fd51a1b95b10d0ed32c7ed5aab36dd5e9d2bf3191867909b4404cef75c5f4d2d1daeeacd301dd280b76
   languageName: node
   linkType: hard
 
@@ -7621,6 +7629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"figlet@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "figlet@npm:1.5.2"
+  checksum: cc860391669b44e119871d589e09a2814aa86351726a5791e0d3e2d098e4fc37171c85fcfed13f4e9000995bd004dc6dbf848da5fe458cf1477e776b7318986f
+  languageName: node
+  linkType: hard
+
 "figures@npm:3.2.0, figures@npm:^3.0.0, figures@npm:^3.2.0":
   version: 3.2.0
   resolution: "figures@npm:3.2.0"
@@ -7857,6 +7872,23 @@ __metadata:
   version: 2.12.0
   resolution: "fp-ts@npm:2.12.0"
   checksum: 0f078feb261529f1b709a791016ecaee1b8d64a69bf7d999c6dcfcf058b4150e8deab4ee8074a0840f5c237711a9680f06a8b46ff59ef27efddfaea6d2810c45
+  languageName: node
+  linkType: hard
+
+"fresko@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "fresko@npm:0.0.7"
+  dependencies:
+    chalk: ^5.0.1
+    deepmerge: ^4.2.2
+    figlet: ^1.5.2
+    inquirer: ^8.2.4
+    jiti: ^1.13.0
+    semver: ^7.3.7
+    shelljs: ^0.8.5
+  bin:
+    fresko: bin/fresko.mjs
+  checksum: 75a22b50e46c45605ebca8f9d7ea951359ba11a843059d9684d4e0d1f3858f5d7bd78e81e7c5cfcbe7cb91f68aeeb6618a02e90c8e32aa410b37ab1ce8fa37ff
   languageName: node
   linkType: hard
 
@@ -8667,6 +8699,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"inquirer@npm:^8.2.4":
+  version: 8.2.4
+  resolution: "inquirer@npm:8.2.4"
+  dependencies:
+    ansi-escapes: ^4.2.1
+    chalk: ^4.1.1
+    cli-cursor: ^3.1.0
+    cli-width: ^3.0.0
+    external-editor: ^3.0.3
+    figures: ^3.0.0
+    lodash: ^4.17.21
+    mute-stream: 0.0.8
+    ora: ^5.4.1
+    run-async: ^2.4.0
+    rxjs: ^7.5.5
+    string-width: ^4.1.0
+    strip-ansi: ^6.0.0
+    through: ^2.3.6
+    wrap-ansi: ^7.0.0
+  checksum: dfcb6529d3af443dfea2241cb471508091b51f5121a088fdb8728b23ec9b349ef0a5e13a0ef2c8e19457b0bed22f7cbbcd561f7a4529d084c562a58c605e2655
+  languageName: node
+  linkType: hard
+
 "internal-slot@npm:^1.0.3":
   version: 1.0.3
   resolution: "internal-slot@npm:1.0.3"
@@ -8675,6 +8730,13 @@ __metadata:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
+  languageName: node
+  linkType: hard
+
+"interpret@npm:^1.0.0":
+  version: 1.4.0
+  resolution: "interpret@npm:1.4.0"
+  checksum: 2e5f51268b5941e4a17e4ef0575bc91ed0ab5f8515e3cf77486f7c14d13f3010df9c0959f37063dcc96e78d12dc6b0bb1b9e111cdfe69771f4656d2993d36155
   languageName: node
   linkType: hard
 
@@ -9561,6 +9623,15 @@ __metadata:
   bin:
     jest: bin/jest.js
   checksum: 96f1d69042b3c6dfc695f2a4e4b0db38af6fb78582ad1a02beaa57cfcd77cbd31567d7d865c1c85709b7c3e176eefa3b2035ffecd646005f15d8ef528eccf205
+  languageName: node
+  linkType: hard
+
+"jiti@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "jiti@npm:1.13.0"
+  bin:
+    jiti: bin/jiti.js
+  checksum: 1e74d99b9a551df952057b8bce56f744caccca0044aa05021643e6ce0837ed47bc2d5b290fecb462e32988c6bf318afe77e341310c5ecf6bb63c19c80c929cb6
   languageName: node
   linkType: hard
 
@@ -12009,6 +12080,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rechoir@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "rechoir@npm:0.6.2"
+  dependencies:
+    resolve: ^1.1.6
+  checksum: fe76bf9c21875ac16e235defedd7cbd34f333c02a92546142b7911a0f7c7059d2e16f441fe6fb9ae203f459c05a31b2bcf26202896d89e390eda7514d5d2702b
+  languageName: node
+  linkType: hard
+
 "recrawl-sync@npm:^2.0.3":
   version: 2.2.2
   resolution: "recrawl-sync@npm:2.2.2"
@@ -12206,7 +12286,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:>=1.9.0, resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.20.0, resolve@npm:^1.22.0":
+"resolve@npm:>=1.9.0, resolve@npm:^1.1.6, resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.20.0, resolve@npm:^1.22.0":
   version: 1.22.0
   resolution: "resolve@npm:1.22.0"
   dependencies:
@@ -12229,7 +12309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@>=1.9.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@>=1.9.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>":
   version: 1.22.0
   resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
@@ -12721,6 +12801,19 @@ __metadata:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0"
   checksum: 1a2bcae50de99034fcd92ad4212d8e01eedf52c7ec7830eedcf886622804fe36884278f2be8be0ea5fde3fd1c23911643a4e0f726c8685b61871c8908af01222
+  languageName: node
+  linkType: hard
+
+"shelljs@npm:^0.8.5":
+  version: 0.8.5
+  resolution: "shelljs@npm:0.8.5"
+  dependencies:
+    glob: ^7.0.0
+    interpret: ^1.0.0
+    rechoir: ^0.6.2
+  bin:
+    shjs: bin/shjs
+  checksum: 7babc46f732a98f4c054ec1f048b55b9149b98aa2da32f6cf9844c434b43c6251efebd6eec120937bd0999e13811ebd45efe17410edb3ca938f82f9381302748
   languageName: node
   linkType: hard
 

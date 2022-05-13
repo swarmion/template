@@ -1,7 +1,9 @@
+import { getInputSchema, HandlerType } from '@swarmion/serverless-contracts';
+
 import { createPostContract } from '@swarmion-starter/forum-contracts';
 import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 
-export const handler = createPostContract.handler(async event => {
+export const handler: HandlerType<typeof createPostContract> = async event => {
   const { threadId } = event.pathParameters;
   const { content } = event.body;
 
@@ -14,8 +16,8 @@ export const handler = createPostContract.handler(async event => {
     content,
     authorId: 'author2',
   };
-});
+};
 
 export const main = applyHttpMiddlewares(handler, {
-  inputSchema: createPostContract.inputSchema,
+  inputSchema: getInputSchema(createPostContract),
 });

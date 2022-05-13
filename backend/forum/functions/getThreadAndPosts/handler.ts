@@ -1,7 +1,11 @@
+import { getInputSchema, HandlerType } from '@swarmion/serverless-contracts';
+
 import { getThreadWithPostsContract } from '@swarmion-starter/forum-contracts';
 import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 
-export const handler = getThreadWithPostsContract.handler(async event => {
+export const handler: HandlerType<
+  typeof getThreadWithPostsContract
+> = async event => {
   const { threadId } = event.pathParameters;
 
   await Promise.resolve({ threadId });
@@ -31,8 +35,8 @@ export const handler = getThreadWithPostsContract.handler(async event => {
       },
     ],
   };
-});
+};
 
 export const main = applyHttpMiddlewares(handler, {
-  inputSchema: getThreadWithPostsContract.inputSchema,
+  inputSchema: getInputSchema(getThreadWithPostsContract),
 });

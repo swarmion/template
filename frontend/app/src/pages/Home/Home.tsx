@@ -2,6 +2,7 @@ import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { useAsync } from '@react-hookz/web/esnext';
 import { nanoid } from '@reduxjs/toolkit';
+import { getAxiosRequest } from '@swarmion/serverless-contracts';
 import { useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
@@ -18,7 +19,7 @@ const Home = (): JSX.Element => {
   const dispatch = useDispatch();
   const userFromRedux = useSelector(getUser);
   const [{ result, error }, { execute }] = useAsync(() =>
-    getUserContract.axiosRequest(client, {
+    getAxiosRequest(getUserContract, client, {
       pathParameters: { userId: nanoid() },
     }),
   );

@@ -32,7 +32,7 @@
     "@swarmion-starter/configuration": "1.0.0",
     "@swarmion-starter/frontend-shared": "1.0.0",
     "@swarmion-starter/users-contracts": "1.0.0",
-    "axios": "0.26.1",
+    "@swarmion/serverless-contracts": "0.5.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intl": "^5.25.1",
@@ -78,5 +78,8 @@
     "vite": "^2.9.9",
     "vite-plugin-svgr": "^1.1.0",
     "vite-tsconfig-paths": "^3.4.1"
+  },
+  "peerDependencies": {
+    "axios": "^0.27.2"
   }
 }

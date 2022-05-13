@@ -65,5 +65,8 @@
   "engines": {
     "node": "^14.18.1"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "resolutions": {
+    "@swarmion/serverless-contracts": "portal:/Users/stanhannebelle/Dev/swarmion/swarmion/packages/serverless-contracts"
+  }
 }

@@ -14,7 +14,7 @@
     "stylelint-base-config": "stylelint",
     "stylelint-fix": "yarn stylelint-base-config --fix",
     "test": "yarn test-linter && yarn test-type && yarn test-unit && yarn test-circular",
-    "test-circular": "yarn depcruise --validate .dependency-cruiser.js .",
+    "test-circular": "yarn depcruise --validate .dependency-cruiser.js src",
     "test-linter": "yarn linter-base-config src",
     "test-stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
     "test-type": "tsc --noEmit",

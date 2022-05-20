@@ -1,3 +1,5 @@
+import { getTrigger } from '@swarmion/serverless-contracts';
+
 import { createPostContract } from '@swarmion-starter/forum-contracts';
 import {
   getHandlerPath,
@@ -7,7 +9,7 @@ import {
 const config: LambdaFunction = {
   environment: {},
   handler: getHandlerPath(__dirname),
-  events: [createPostContract.trigger],
+  events: [getTrigger(createPostContract)],
 };
 
 export default config;

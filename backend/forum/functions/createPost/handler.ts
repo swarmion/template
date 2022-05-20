@@ -1,7 +1,9 @@
+import { getLambdaHandler } from '@swarmion/serverless-contracts';
+
 import { createPostContract } from '@swarmion-starter/forum-contracts';
 import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 
-export const handler = createPostContract.handler(async event => {
+export const handler = getLambdaHandler(createPostContract)(async event => {
   const { threadId } = event.pathParameters;
   const { content } = event.body;
 

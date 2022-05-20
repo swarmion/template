@@ -1,3 +1,5 @@
+import { getTrigger } from '@swarmion/serverless-contracts';
+
 import {
   getHandlerPath,
   LambdaFunction,
@@ -7,7 +9,7 @@ import { getUserContract } from '@swarmion-starter/users-contracts';
 const config: LambdaFunction = {
   environment: {},
   handler: getHandlerPath(__dirname),
-  events: [getUserContract.trigger],
+  events: [getTrigger(getUserContract)],
 };
 
 export default config;

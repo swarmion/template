@@ -20,16 +20,16 @@
     "@swarmion-starter/users-contracts": "1.0.0"
   },
   "devDependencies": {
-    "@serverless/typescript": "^3.17.0",
-    "@types/jest": "^27.5.0",
-    "@types/node": "^17.0.32",
-    "dependency-cruiser": "^11.7.0",
-    "eslint": "^8.15.0",
+    "@serverless/typescript": "^3.18.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.35",
+    "dependency-cruiser": "^11.7.1",
+    "eslint": "^8.16.0",
     "jest": "^27.5.1",
-    "serverless": "^3.17.0",
-    "serverless-lift": "^1.15.1",
-    "ts-jest": "^27.1.4",
-    "ts-node": "^10.7.0",
+    "serverless": "^3.18.1",
+    "serverless-lift": "^1.17.0",
+    "ts-jest": "^27.1.5",
+    "ts-node": "^10.8.0",
     "typescript": "^4.6.4"
   }
 }

@@ -23,6 +23,7 @@ const serverlessConfiguration: AWS & Lift = {
       path: '../app/dist',
     },
   },
+  lift: { automaticPermissions: false },
   resources: {
     Description: 'Frontend cloudfront service',
   },

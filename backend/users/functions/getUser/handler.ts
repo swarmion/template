@@ -1,7 +1,9 @@
+import { getLambdaHandler } from '@swarmion/serverless-contracts';
+
 import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 import { getUserContract } from '@swarmion-starter/users-contracts';
 
-export const handler = getUserContract.handler(async event => {
+const handler = getLambdaHandler(getUserContract)(async event => {
   const { userId } = event.pathParameters;
 
   await Promise.resolve({ userId });

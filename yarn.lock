@@ -1425,7 +1425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.18.3
   resolution: "@babel/runtime@npm:7.18.3"
   dependencies:
@@ -3163,13 +3163,13 @@ __metadata:
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
-    "@types/jest": ^27.5.1
-    "@types/node": ^17.0.38
+    "@types/jest": ^27.5.2
+    "@types/node": ^17.0.39
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
     eslint: ^8.16.0
     jest: ^27.5.1
-    serverless: ^3.18.2
+    serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     ts-jest: ^27.1.5
     ts-node: ^10.8.0
@@ -3187,17 +3187,17 @@ __metadata:
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.0
+    "@swarmion/serverless-contracts": 0.6.1
     "@types/http-errors": ^1.8.2
-    "@types/jest": ^27.5.1
-    "@types/node": ^17.0.38
-    aws-sdk: ^2.1146.0
+    "@types/jest": ^27.5.2
+    "@types/node": ^17.0.39
+    aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
     eslint: ^8.16.0
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.18.2
+    serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.5
@@ -3216,17 +3216,17 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.0
+    "@swarmion/serverless-contracts": 0.6.1
     "@types/http-errors": ^1.8.2
-    "@types/jest": ^27.5.1
-    "@types/node": ^17.0.38
-    aws-sdk: ^2.1146.0
+    "@types/jest": ^27.5.2
+    "@types/node": ^17.0.39
+    aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
     eslint: ^8.16.0
     http-errors: ^2.0.0
     jest: ^27.5.1
-    serverless: ^3.18.2
+    serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.5
@@ -3246,7 +3246,7 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@serverless/typescript": ^3.18.0
-    "@types/node": ^17.0.38
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3271,8 +3271,8 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.0
-    "@types/node": ^17.0.38
+    "@swarmion/serverless-contracts": 0.6.1
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3296,8 +3296,8 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.0
-    "@types/node": ^17.0.38
+    "@swarmion/serverless-contracts": 0.6.1
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3329,14 +3329,14 @@ __metadata:
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/frontend-shared": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.0
+    "@swarmion/serverless-contracts": 0.6.1
     "@testing-library/dom": ^8.13.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^12.1.5
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
-    "@types/node": ^17.0.38
+    "@types/node": ^17.0.39
     "@types/react": ^17.0.45
     "@types/react-dom": ^17.0.17
     "@vitejs/plugin-react": ^1.3.2
@@ -3382,12 +3382,12 @@ __metadata:
     "@serverless/typescript": ^3.18.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@types/jest": ^27.5.1
-    "@types/node": ^17.0.38
+    "@types/jest": ^27.5.2
+    "@types/node": ^17.0.39
     dependency-cruiser: ^11.8.0
     eslint: ^8.16.0
     jest: ^27.5.1
-    serverless: ^3.18.2
+    serverless: ^3.19.0
     serverless-lift: ^1.18.0
     ts-jest: ^27.1.5
     ts-node: ^10.8.0
@@ -3418,8 +3418,8 @@ __metadata:
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/css-mediaquery": ^0.1.1
-    "@types/jest": ^27.5.1
-    "@types/node": ^17.0.38
+    "@types/jest": ^27.5.2
+    "@types/node": ^17.0.39
     "@types/react": ^17.0.45
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3452,11 +3452,11 @@ __metadata:
     "@nrwl/linter": ^14.1.9
     "@nrwl/tao": ^14.1.9
     "@nrwl/workspace": ^14.1.9
-    "@swarmion/nx-plugin": 0.6.0
-    "@types/jest": ^27.5.1
+    "@swarmion/nx-plugin": 0.6.1
+    "@types/jest": ^27.5.2
     "@typescript-eslint/eslint-plugin": ^5.27.0
     "@typescript-eslint/parser": ^5.27.0
-    aws-sdk: ^2.1146.0
+    aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
     eslint: ^8.16.0
     eslint-config-prettier: ^8.5.0
@@ -3489,7 +3489,7 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@serverless/typescript": ^3.18.0
-    "@types/node": ^17.0.38
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3520,7 +3520,7 @@ __metadata:
     "@serverless/typescript": ^3.18.0
     "@swarmion-starter/configuration": 1.0.0
     "@types/aws-lambda": ^8.10.97
-    "@types/node": ^17.0.38
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3545,8 +3545,8 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.0
-    "@types/node": ^17.0.38
+    "@swarmion/serverless-contracts": 0.6.1
+    "@types/node": ^17.0.39
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
@@ -3561,21 +3561,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/nx-plugin@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@swarmion/nx-plugin@npm:0.6.0"
-  checksum: 12ea3f2c67c894ecee7d0b7049cb152c8c6241340c0c4de9ba820c4707a7c2f2b69cd7364b53a2a82cfcb9adb2b1d7cffef8bf7121c362965215bf4c02fec822
+"@swarmion/nx-plugin@npm:0.6.1":
+  version: 0.6.1
+  resolution: "@swarmion/nx-plugin@npm:0.6.1"
+  checksum: dbec194f050c6b0a115d4e8552e341298ba934df1632b3808d880e0d3128b2d20c7c4a8ca830b8cf8eb0f4cd6f1eddacbb555293b850943a11dfbcf9a160f76e
   languageName: node
   linkType: hard
 
-"@swarmion/serverless-contracts@npm:0.6.0":
-  version: 0.6.0
-  resolution: "@swarmion/serverless-contracts@npm:0.6.0"
+"@swarmion/serverless-contracts@npm:0.6.1":
+  version: 0.6.1
+  resolution: "@swarmion/serverless-contracts@npm:0.6.1"
   dependencies:
-    "@babel/runtime": ^7.17.9
+    "@babel/runtime": ^7.18.3
     axios: ^0.27.2
     lodash: ^4.17.21
-  checksum: 4ab60fc02e0ad94c551c43b699ace8757085bd203000f4a89ea4ebd741cfc4a4025d6cfeeb08b2ba743528974be213510abfe1f5651f78eed25a2dfbd653b60e
+  checksum: 5f08d8404306e5b0f141994edd230004e8343f7388dc5562596b6db9e8810be3e73172fe4f60843215c368deff2d596ca8832574cfb11dcd05d97d6aeca5395d
   languageName: node
   linkType: hard
 
@@ -4041,7 +4041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.5.1":
+"@types/jest@npm:^27.5.2":
   version: 27.5.2
   resolution: "@types/jest@npm:27.5.2"
   dependencies:
@@ -4095,7 +4095,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.38":
+"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.39":
   version: 17.0.39
   resolution: "@types/node@npm:17.0.39"
   checksum: 1258561d0af920e52a64cdebb58534ba6cf82fd58697d12a55a11a3747b211f98d316a05fb59cd5b453af5305682dade835ec27666d7fe557156080ea645efb8
@@ -4918,7 +4918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1146.0, aws-sdk@npm:^2.1147.0, aws-sdk@npm:^2.942.0":
+"aws-sdk@npm:^2.1147.0, aws-sdk@npm:^2.1148.0, aws-sdk@npm:^2.942.0":
   version: 2.1148.0
   resolution: "aws-sdk@npm:2.1148.0"
   dependencies:
@@ -12847,7 +12847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^3.18.2":
+"serverless@npm:^3.19.0":
   version: 3.19.0
   resolution: "serverless@npm:3.19.0"
   dependencies:

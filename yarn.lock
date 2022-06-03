@@ -3452,7 +3452,7 @@ __metadata:
     "@nrwl/linter": ^14.1.9
     "@nrwl/tao": ^14.1.9
     "@nrwl/workspace": ^14.1.9
-    "@swarmion/nx-plugin": 0.5.6
+    "@swarmion/nx-plugin": 0.6.0
     "@types/jest": ^27.5.1
     "@typescript-eslint/eslint-plugin": ^5.27.0
     "@typescript-eslint/parser": ^5.27.0
@@ -3561,10 +3561,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/nx-plugin@npm:0.5.6":
-  version: 0.5.6
-  resolution: "@swarmion/nx-plugin@npm:0.5.6"
-  checksum: 6930d51ee80dbd63aa07c6af70cf03e1298cafdf929ba498bb8f900603067f9c488fa365df759d1b751fa1bcbababfdf798c59fead78208e60bc2b828b1bdd3c
+"@swarmion/nx-plugin@npm:0.6.0":
+  version: 0.6.0
+  resolution: "@swarmion/nx-plugin@npm:0.6.0"
+  checksum: 12ea3f2c67c894ecee7d0b7049cb152c8c6241340c0c4de9ba820c4707a7c2f2b69cd7364b53a2a82cfcb9adb2b1d7cffef8bf7121c362965215bf4c02fec822
   languageName: node
   linkType: hard
 

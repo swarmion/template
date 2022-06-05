@@ -3164,16 +3164,16 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@types/jest": ^27.5.2
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
-    typescript: ^4.7.2
+    ts-node: ^10.8.1
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3190,19 +3190,19 @@ __metadata:
     "@swarmion/serverless-contracts": 0.6.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     http-errors: ^2.0.0
     jest: ^27.5.1
     serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
-    typescript: ^4.7.2
+    ts-node: ^10.8.1
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3219,19 +3219,19 @@ __metadata:
     "@swarmion/serverless-contracts": 0.6.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
     esbuild: ^0.14.42
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     http-errors: ^2.0.0
     jest: ^27.5.1
     serverless: ^3.19.0
     serverless-esbuild: ^1.30.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
-    typescript: ^4.7.2
+    ts-node: ^10.8.1
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3246,18 +3246,18 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@serverless/typescript": ^3.18.0
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     prettier: ^2.6.2
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3272,17 +3272,17 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@swarmion/serverless-contracts": 0.6.1
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     prettier: ^2.6.2
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3297,18 +3297,18 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@swarmion/serverless-contracts": 0.6.1
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     json-schema-to-ts: ^2.5.3
     prettier: ^2.6.2
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3336,14 +3336,14 @@ __metadata:
     "@testing-library/react-hooks": ^7.0.2
     "@testing-library/user-event": ^13.5.0
     "@types/dotenv-flow": ^3.2.0
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@types/react": ^17.0.45
     "@types/react-dom": ^17.0.17
     "@vitejs/plugin-react": ^1.3.2
     axios: 0.27.2
     dependency-cruiser: ^11.8.0
     dotenv-flow: ^3.2.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-react: ^7.30.0
     eslint-plugin-react-hooks: ^4.5.0
@@ -3367,8 +3367,8 @@ __metadata:
     stylelint-config-standard: ^25.0.0
     stylelint-order: ^5.0.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
-    typescript: ^4.7.2
+    ts-node: ^10.8.1
+    typescript: ^4.7.3
     vite: ^2.9.9
     vite-plugin-svgr: ^1.1.0
     vite-tsconfig-paths: ^3.5.0
@@ -3383,15 +3383,15 @@ __metadata:
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.5.2
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     serverless: ^3.19.0
     serverless-lift: ^1.18.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
-    typescript: ^4.7.2
+    ts-node: ^10.8.1
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3419,23 +3419,23 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/css-mediaquery": ^0.1.1
     "@types/jest": ^27.5.2
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@types/react": ^17.0.45
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     css-mediaquery: ^0.1.2
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     json-schema-to-ts: ^2.5.3
     prettier: ^2.6.2
     react-intl: ^5.25.1
     react-router-dom: ^6.3.0
     ts-jest: ^27.1.5
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   peerDependencies:
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -3458,11 +3458,11 @@ __metadata:
     "@typescript-eslint/parser": ^5.27.0
     aws-sdk: ^2.1148.0
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^2.7.1
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^26.4.6
+    eslint-plugin-jest: ^26.5.1
     eslint-plugin-prefer-arrow: ^1.2.3
     eslint-plugin-prettier: ^4.0.0
     fresko: ^0.5.3
@@ -3474,7 +3474,7 @@ __metadata:
     nx: ^14.1.9
     prettier: ^2.6.2
     syncpack: ^7.2.2
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3489,17 +3489,17 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@serverless/typescript": ^3.18.0
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     prettier: ^2.6.2
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3519,19 +3519,19 @@ __metadata:
     "@middy/validator": ^2.5.7
     "@serverless/typescript": ^3.18.0
     "@swarmion-starter/configuration": 1.0.0
-    "@types/aws-lambda": ^8.10.97
-    "@types/node": ^17.0.39
+    "@types/aws-lambda": ^8.10.98
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     json-schema-to-ts: ^2.5.3
     prettier: ^2.6.2
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3546,18 +3546,18 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
     "@swarmion/serverless-contracts": 0.6.1
-    "@types/node": ^17.0.39
+    "@types/node": ^17.0.40
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
     concurrently: ^7.2.1
     dependency-cruiser: ^11.8.0
-    eslint: ^8.16.0
+    eslint: ^8.17.0
     jest: ^27.5.1
     json-schema-to-ts: ^2.5.3
     prettier: ^2.6.2
-    ts-node: ^10.8.0
+    ts-node: ^10.8.1
     ttypescript: ^1.5.13
-    typescript: ^4.7.2
+    typescript: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -3899,10 +3899,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:^8.10.97":
-  version: 8.10.97
-  resolution: "@types/aws-lambda@npm:8.10.97"
-  checksum: 0a79e5d8533fa317e6855a3319abdb62645d826370a274444ada0fc2cac64e82f39cb4f6416bd075e2031df91809e57e7ad430f9aeea28bbe2f3be8d4c03ea6d
+"@types/aws-lambda@npm:^8.10.98":
+  version: 8.10.98
+  resolution: "@types/aws-lambda@npm:8.10.98"
+  checksum: dad5d2ba3374a9b5401c826a9a9f8341c0c871d5b5033012067c26c2f8865a98f097c7e1c7f077e7887c2f84b4a450fb4b24cf03f41850379dc89a3e8c5be7da
   languageName: node
   linkType: hard
 
@@ -4095,10 +4095,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.39":
-  version: 17.0.39
-  resolution: "@types/node@npm:17.0.39"
-  checksum: 1258561d0af920e52a64cdebb58534ba6cf82fd58697d12a55a11a3747b211f98d316a05fb59cd5b453af5305682dade835ec27666d7fe557156080ea645efb8
+"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:>=8.1.0, @types/node@npm:^17.0.40":
+  version: 17.0.40
+  resolution: "@types/node@npm:17.0.40"
+  checksum: e3b2fe876672fbe4be84ce17773944eb2f5eaba50e2c6c0536bdf6d4972ed6488581580581f154183fdc8f2d56fa42a42e3d6e83b9b71ee25adea16a84765e92
   languageName: node
   linkType: hard
 
@@ -7237,9 +7237,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^26.4.6":
-  version: 26.4.6
-  resolution: "eslint-plugin-jest@npm:26.4.6"
+"eslint-plugin-jest@npm:^26.5.1":
+  version: 26.5.1
+  resolution: "eslint-plugin-jest@npm:26.5.1"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
@@ -7250,7 +7250,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: 1d4c35282abecbc3656f9a355c3e63df0b4134fae208ceb9ee75421ed95f6a108753ac86b54d9302f4ae192227c41b45a50034854e75fad3691868eaab8394a2
+  checksum: feb9915c27e420a18e5d9b52add505e0f78d4cad7ce49092faecb1ae4c020ae899c7d9a81ff8591778f36fd259a890dbb08289057c8ff0a24069851226e12c27
   languageName: node
   linkType: hard
 
@@ -7390,9 +7390,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.16.0":
-  version: 8.16.0
-  resolution: "eslint@npm:8.16.0"
+"eslint@npm:^8.17.0":
+  version: 8.17.0
+  resolution: "eslint@npm:8.17.0"
   dependencies:
     "@eslint/eslintrc": ^1.3.0
     "@humanwhocodes/config-array": ^0.9.2
@@ -7431,7 +7431,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 654a0200b49dc07280673fee13cdfb04326466790e031dfa9660b69fba3b1cf766a51504328f9de56bd18e6b5eb7578985cf29dc7f016c5ec851220ff9db95eb
+  checksum: b484c96681c6b19f5b437f664623f1cd310d3ee9be88400d8450e086e664cd968a9dc202f0b0678578fd50e7a445b92586efe8c787de5073ff2f83213b00bb7b
   languageName: node
   linkType: hard
 
@@ -14038,9 +14038,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.8.0":
-  version: 10.8.0
-  resolution: "ts-node@npm:10.8.0"
+"ts-node@npm:^10.8.0, ts-node@npm:^10.8.1":
+  version: 10.8.1
+  resolution: "ts-node@npm:10.8.1"
   dependencies:
     "@cspotcode/source-map-support": ^0.8.0
     "@tsconfig/node10": ^1.0.7
@@ -14072,7 +14072,7 @@ __metadata:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: 1c22dc8dd80d0ba4dd4250b82cc032b63f6fbe8c87f8197cef43e7f9e2d43f5b333b445ed712e3006e24119257b4bff2c46605f7da61ab6f5e9514885d296f0c
+  checksum: 7d1aa7aa3ae1c0459c4922ed0dbfbade442cfe0c25aebaf620cdf1774f112c8d7a9b14934cb6719274917f35b2c503ba87bcaf5e16a0d39ba0f68ce3e7728363
   languageName: node
   linkType: hard
 
@@ -14247,23 +14247,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.4, typescript@npm:^4.7.2":
-  version: 4.7.2
-  resolution: "typescript@npm:4.7.2"
+"typescript@npm:^4.6.4, typescript@npm:^4.7.3":
+  version: 4.7.3
+  resolution: "typescript@npm:4.7.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5163585e6b56410f77d5483b698d9489bbee8902c99029eb70cf6d21525a186530ce19a00951af84eefd4a131cc51d0959f5118e25e70ab61f45ac4057dbd1ef
+  checksum: fd13a1ce53790a36bb8350e1f5e5e384b5f6cb9b0635114a6d01d49cb99916abdcfbc13c7521cdae2f2d3f6d8bc4a8ae7625edf645a04ee940588cd5e7597b2f
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.2#~builtin<compat/typescript>":
-  version: 4.7.2
-  resolution: "typescript@patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=493e53"
+"typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.3#~builtin<compat/typescript>":
+  version: 4.7.3
+  resolution: "typescript@patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 09d93fc0983d38eadd9b0427f790b49b4437f45002a87d447be3fbe53120880e87a91dd03e1d900498f99205d6e0b7c9784fe41fca11d56f4bbce371f74bb160
+  checksum: 8257ce7ecbbf9416da60045a76a99d473698ca9e973fa0ddab7137cacb1587255431176cbbcc801a650938c4dc8109ab88355774829a714fabe56a53a2fe4524
   languageName: node
   linkType: hard
 

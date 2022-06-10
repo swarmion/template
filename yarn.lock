@@ -2956,10 +2956,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@serverless/typescript@npm:^3.18.0":
-  version: 3.18.0
-  resolution: "@serverless/typescript@npm:3.18.0"
-  checksum: a4925ab90be6544692697326889ae4f67c02df796d273894c6e6efeda5c4a2309a159eeacd005f8c567e8796e0222dee470ab58dd0f3c398e1ecc5b099a7451b
+"@serverless/typescript@npm:^3.19.0":
+  version: 3.19.0
+  resolution: "@serverless/typescript@npm:3.19.0"
+  checksum: 6cb3b29720d9766dddc1ca975c8945f2ef4ba7d3b1bc6a5f7a448e96833d5a06a79b649e4df3b09a60ef46b5f22fcc1572a74ff326f47b47fbc922e185ac18a1
   languageName: node
   linkType: hard
 
@@ -3169,7 +3169,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -3192,13 +3192,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
     "@types/node": ^17.0.41
@@ -3221,13 +3221,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
     "@types/node": ^17.0.41
@@ -3256,7 +3256,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3282,7 +3282,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3307,7 +3307,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3340,7 +3340,7 @@ __metadata:
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/frontend-shared": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@testing-library/dom": ^8.13.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^12.1.5
@@ -3380,7 +3380,7 @@ __metadata:
     ts-jest: ^27.1.5
     ts-node: ^10.8.1
     typescript: ^4.7.3
-    vite: ^2.9.10
+    vite: ^2.9.12
     vite-plugin-svgr: ^1.1.0
     vite-tsconfig-paths: ^3.5.0
   languageName: unknown
@@ -3390,7 +3390,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/frontend-cloudfront@workspace:frontend/cloudfront"
   dependencies:
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@types/jest": ^27.5.2
@@ -3463,7 +3463,7 @@ __metadata:
     "@nrwl/linter": ^14.2.4
     "@nrwl/tao": ^14.2.4
     "@nrwl/workspace": ^14.2.4
-    "@swarmion/nx-plugin": 0.6.1
+    "@swarmion/nx-plugin": 0.7.1
     "@types/jest": ^27.5.2
     "@typescript-eslint/eslint-plugin": ^5.27.1
     "@typescript-eslint/parser": ^5.27.1
@@ -3499,7 +3499,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3528,9 +3528,9 @@ __metadata:
     "@middy/http-error-handler": ^2.5.7
     "@middy/http-json-body-parser": ^2.5.7
     "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.18.0
+    "@serverless/typescript": ^3.19.0
     "@swarmion-starter/configuration": 1.0.0
-    "@types/aws-lambda": ^8.10.99
+    "@types/aws-lambda": ^8.10.100
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3556,7 +3556,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
     "@babel/runtime": ^7.18.3
-    "@swarmion/serverless-contracts": 0.6.1
+    "@swarmion/serverless-contracts": 0.7.1
     "@types/node": ^17.0.41
     "@zerollup/ts-transform-paths": ^1.7.18
     babel-plugin-module-resolver: ^4.1.0
@@ -3572,21 +3572,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion/nx-plugin@npm:0.6.1":
-  version: 0.6.1
-  resolution: "@swarmion/nx-plugin@npm:0.6.1"
-  checksum: dbec194f050c6b0a115d4e8552e341298ba934df1632b3808d880e0d3128b2d20c7c4a8ca830b8cf8eb0f4cd6f1eddacbb555293b850943a11dfbcf9a160f76e
+"@swarmion/nx-plugin@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@swarmion/nx-plugin@npm:0.7.1"
+  checksum: e9b6d32e6f20dc30d44bccbb7101335ebb711d420605e54257332dbfb3073644a5879ea6a79d8679e0ff54961407db92b38c3ddde2ac22eccb220b2a5c37586b
   languageName: node
   linkType: hard
 
-"@swarmion/serverless-contracts@npm:0.6.1":
-  version: 0.6.1
-  resolution: "@swarmion/serverless-contracts@npm:0.6.1"
+"@swarmion/serverless-contracts@npm:0.7.1":
+  version: 0.7.1
+  resolution: "@swarmion/serverless-contracts@npm:0.7.1"
   dependencies:
     "@babel/runtime": ^7.18.3
-    axios: ^0.27.2
     lodash: ^4.17.21
-  checksum: 5f08d8404306e5b0f141994edd230004e8343f7388dc5562596b6db9e8810be3e73172fe4f60843215c368deff2d596ca8832574cfb11dcd05d97d6aeca5395d
+  peerDependencies:
+    axios: ^0.27.2
+  checksum: a778206c32e851910d013ba37b8ea0f2e50f95ca0ce83aff27760ebea6c5c8650f0cfde88caddc8838e8417ad497931cfc7419692c66981a46166b34357f3782
   languageName: node
   linkType: hard
 
@@ -3735,10 +3736,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:^8.10.99":
-  version: 8.10.99
-  resolution: "@types/aws-lambda@npm:8.10.99"
-  checksum: 63023588d53887e0b87e09ba9d11ccf0357a8894c86ab6f6f8498635203eff1a07cf2357f2d653e22c9c323d7848dddfc094d0398491b9deafeeb29d4875d80e
+"@types/aws-lambda@npm:^8.10.100":
+  version: 8.10.100
+  resolution: "@types/aws-lambda@npm:8.10.100"
+  checksum: 458cc9928ee8844376ee509b557cc8c7cf936c0c85f2d9569dc7f6ca2912e876906c0dd9e07f76d17ba2836e039492de32f05b3af56f93612425e2a42ad7f98a
   languageName: node
   linkType: hard
 
@@ -4778,7 +4779,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.27.2, axios@npm:^0.27.2":
+"axios@npm:0.27.2":
   version: 0.27.2
   resolution: "axios@npm:0.27.2"
   dependencies:
@@ -14341,9 +14342,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.9.10":
-  version: 2.9.10
-  resolution: "vite@npm:2.9.10"
+"vite@npm:^2.9.12":
+  version: 2.9.12
+  resolution: "vite@npm:2.9.12"
   dependencies:
     esbuild: ^0.14.27
     fsevents: ~2.3.2
@@ -14366,7 +14367,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 37a4eafdb0990e496a27903b0722f1a5d13c622338a885f66d9b4da955ac40cb567e7e8bc97aac50c3f2a385f10a2e03bc9d5c14bf8a8bd0a1fbf6321c0d3562
+  checksum: 33cf8b6bfbbcae4b7f856d739ae519bed6b1ce23fc652ca98db1d4878bf35424885951c13e0d2536248423a0836d91ef7cae744ff40cbcbd6e7ffe495bd15ea5
   languageName: node
   linkType: hard
 

@@ -26,12 +26,12 @@
     "@swarmion-starter/forum-contracts": "1.0.0",
     "@swarmion-starter/serverless-configuration": "1.0.0",
     "@swarmion-starter/serverless-helpers": "1.0.0",
-    "@swarmion/serverless-contracts": "0.6.1",
+    "@swarmion/serverless-contracts": "0.7.1",
     "aws-sdk": "^2.1152.0",
     "http-errors": "^2.0.0"
   },
   "devDependencies": {
-    "@serverless/typescript": "^3.18.0",
+    "@serverless/typescript": "^3.19.0",
     "@swarmion-starter/configuration": "1.0.0",
     "@types/http-errors": "^1.8.2",
     "@types/jest": "^27.5.2",

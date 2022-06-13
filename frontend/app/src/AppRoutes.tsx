@@ -3,11 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { NotFound } from '@swarmion-starter/frontend-shared';
 
-const Home = React.lazy(() => import('pages/Home/Home'));
+import { RoutePaths } from 'types';
 
-export enum RoutePaths {
-  HOME_PAGE = '/',
-}
+const Home = React.lazy(() => import('pages/Home/Home'));
 
 const AppRoutes = (): JSX.Element => (
   <Suspense fallback={NotFound}>

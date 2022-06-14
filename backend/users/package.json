@@ -27,7 +27,7 @@
     "@swarmion-starter/serverless-helpers": "1.0.0",
     "@swarmion-starter/users-contracts": "1.0.0",
     "@swarmion/serverless-contracts": "0.7.2",
-    "aws-sdk": "^2.1152.0",
+    "aws-sdk": "^2.1153.0",
     "http-errors": "^2.0.0"
   },
   "devDependencies": {
@@ -35,8 +35,8 @@
     "@swarmion-starter/configuration": "1.0.0",
     "@types/http-errors": "^1.8.2",
     "@types/jest": "^27.5.2",
-    "@types/node": "^17.0.41",
-    "dependency-cruiser": "^11.9.0",
+    "@types/node": "^17.0.42",
+    "dependency-cruiser": "^11.10.0",
     "esbuild": "^0.14.43",
     "eslint": "^8.17.0",
     "jest": "^27.5.1",

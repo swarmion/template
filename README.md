@@ -1,20 +1,20 @@
-# Serverless Monorepo Microservices Template
+# Swarmion example
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-This template aims to define an opinionated clean Serverless monorepo microservices architecture.
+This template is an example of a project generated with [Swarmion](https://github.com/swarmion/swarmion).
 
-<p align="right">
-  <i>If you use this repo, star it ✨</i>
-</p>
+## Generate a new project with Swarmion
 
-## Install
+```bash
+yarn create swarmion-app
+```
 
-Head to [the install docs](./docs/install.md)!
-
-If you need to setup your CI/CD: [docs](./docs/ci-cd.md).
+Then head to the Swarmion documentation on [swarmion.dev](https://www.swarmion.dev)
 
 ## Features
 
@@ -35,10 +35,7 @@ This repository follows the code principles:
 - **Don't deploy all at once**
 - **Safe deployments**
 
-In order to respect these guidelines, a good solution is the Monorepo approach. See:
-
-- [the Monorepo structure documentation](./docs/monorepo-structure.md)
-- [the contracts documentation](https://github.com/swarmion/swarmion)
+In order to respect these guidelines, a good solution is the Monorepo approach.
 
 Tips:
 
@@ -54,17 +51,8 @@ These commands have to be run at the root of the project.
 - `nvm use`: set the version of node set in `.nvmrc`
 - `yarn`: install node dependencies in all packages;
 - `yarn package`: compile the common packages;
-- `yarn watch`: launch the compilation of all packages in watch mode;
+- `yarn test`: launch the tests in all packages;
 - `yarn deploy`: deploy all the end services in order;
-- `yarn test-circular`: check if there are circular dependencies in the code base;
-
-## Adding a new service
-
-- Good idea!
-
-## Other docs
-
-- [Swarmion](https://github.com/swarmion/swarmion)
 
 ## Contributors ✨
 

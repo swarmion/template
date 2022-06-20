@@ -30,5 +30,5 @@ export const createPostContract = new ApiGatewayContract({
   bodySchema,
   headersSchema: undefined,
   outputSchema: postEntitySchema,
-  hasAuthorizer: false,
+  authorizerType: undefined,
 });

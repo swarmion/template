@@ -21,5 +21,5 @@ export const getUserContract = new ApiGatewayContract({
   bodySchema: undefined,
   headersSchema: undefined,
   outputSchema: userEntitySchema,
-  hasAuthorizer: false,
+  authorizerType: undefined,
 });

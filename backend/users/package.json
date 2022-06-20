@@ -26,7 +26,7 @@
     "@swarmion-starter/serverless-configuration": "1.0.0",
     "@swarmion-starter/serverless-helpers": "1.0.0",
     "@swarmion-starter/users-contracts": "1.0.0",
-    "@swarmion/serverless-contracts": "0.7.2",
+    "@swarmion/serverless-contracts": "0.8.1",
     "aws-sdk": "^2.1153.0",
     "http-errors": "^2.0.0"
   },

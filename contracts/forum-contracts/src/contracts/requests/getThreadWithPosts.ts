@@ -31,5 +31,5 @@ export const getThreadWithPostsContract = new ApiGatewayContract({
   bodySchema: undefined,
   headersSchema: undefined,
   outputSchema,
-  hasAuthorizer: false,
+  authorizerType: undefined,
 });

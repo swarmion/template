@@ -1,6 +1,6 @@
 import { getLambdaHandler } from '@swarmion/serverless-contracts';
+import { applyHttpMiddlewares } from '@swarmion/serverless-helpers';
 
-import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 import { getUserContract } from '@swarmion-starter/users-contracts';
 
 const handler = getLambdaHandler(getUserContract)(async event => {

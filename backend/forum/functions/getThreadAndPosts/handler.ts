@@ -1,7 +1,7 @@
 import { getLambdaHandler } from '@swarmion/serverless-contracts';
+import { applyHttpMiddlewares } from '@swarmion/serverless-helpers';
 
 import { getThreadWithPostsContract } from '@swarmion-starter/forum-contracts';
-import { applyHttpMiddlewares } from '@swarmion-starter/serverless-helpers';
 
 export const handler = getLambdaHandler(getThreadWithPostsContract)(
   async event => {

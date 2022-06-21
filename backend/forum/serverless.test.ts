@@ -1,6 +1,5 @@
 import { AWS } from '@serverless/typescript';
-
-import { testFunctionNames } from '@swarmion-starter/serverless-helpers';
+import { testFunctionNames } from '@swarmion/serverless-helpers';
 
 import * as sc from './serverless';
 

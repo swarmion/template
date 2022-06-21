@@ -3172,7 +3172,7 @@ __metadata:
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
-    "@swarmion-starter/serverless-helpers": 1.0.0
+    "@swarmion/serverless-helpers": 0.8.2
     "@types/jest": ^27.5.2
     "@types/node": ^17.0.45
     dependency-cruiser: ^11.10.0
@@ -3196,8 +3196,8 @@ __metadata:
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
-    "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion/serverless-contracts": 0.8.2
+    "@swarmion/serverless-helpers": 0.8.2
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
     "@types/node": ^17.0.45
@@ -3224,9 +3224,9 @@ __metadata:
     "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
-    "@swarmion-starter/serverless-helpers": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@swarmion/serverless-contracts": 0.8.2
+    "@swarmion/serverless-helpers": 0.8.2
     "@types/http-errors": ^1.8.2
     "@types/jest": ^27.5.2
     "@types/node": ^17.0.45
@@ -3513,38 +3513,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swarmion-starter/serverless-helpers@1.0.0, @swarmion-starter/serverless-helpers@workspace:packages/serverless-helpers":
-  version: 0.0.0-use.local
-  resolution: "@swarmion-starter/serverless-helpers@workspace:packages/serverless-helpers"
-  dependencies:
-    "@babel/cli": ^7.17.10
-    "@babel/core": ^7.18.5
-    "@babel/plugin-transform-runtime": ^7.18.5
-    "@babel/preset-env": ^7.18.2
-    "@babel/preset-typescript": ^7.17.12
-    "@babel/runtime": ^7.18.3
-    "@middy/core": ^2.5.7
-    "@middy/http-error-handler": ^2.5.7
-    "@middy/http-json-body-parser": ^2.5.7
-    "@middy/validator": ^2.5.7
-    "@serverless/typescript": ^3.19.0
-    "@swarmion-starter/configuration": 1.0.0
-    "@types/aws-lambda": ^8.10.101
-    "@types/node": ^17.0.45
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    concurrently: ^7.2.2
-    dependency-cruiser: ^11.10.0
-    eslint: ^8.18.0
-    jest: ^27.5.1
-    json-schema-to-ts: ^2.5.3
-    prettier: ^2.7.1
-    ts-node: ^10.8.1
-    ttypescript: ^1.5.13
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
-
 "@swarmion-starter/users-contracts@1.0.0, @swarmion-starter/users-contracts@workspace:contracts/users-contracts":
   version: 0.0.0-use.local
   resolution: "@swarmion-starter/users-contracts@workspace:contracts/users-contracts"
@@ -3587,6 +3555,19 @@ __metadata:
   peerDependencies:
     axios: ^0.27.2
   checksum: cb4b7eb41325c2e9958c54b54396116c3ec32359059e8d1ff58086f052d368fc73354a4d7df84990bd7fba19d613d0b245b5c316075037f093bf82cb69b8a24b
+  languageName: node
+  linkType: hard
+
+"@swarmion/serverless-helpers@npm:0.8.2":
+  version: 0.8.2
+  resolution: "@swarmion/serverless-helpers@npm:0.8.2"
+  dependencies:
+    "@babel/runtime": ^7.18.3
+    "@middy/core": ^2.5.7
+    "@middy/http-error-handler": ^2.5.7
+    "@middy/http-json-body-parser": ^2.5.7
+    "@middy/validator": ^2.5.7
+  checksum: 0f8a1180929b14cc058564fa6c9711f4bb4f5260f09aeb6b85d6bc8596ff9014d9d8b45166ce4f0a81eb0809169546447a8adec742a0b8491076ab8a3af2717a
   languageName: node
   linkType: hard
 
@@ -3732,13 +3713,6 @@ __metadata:
   version: 4.2.2
   resolution: "@types/aria-query@npm:4.2.2"
   checksum: 6f2ce11d91e2d665f3873258db19da752d91d85d3679eb5efcdf9c711d14492287e1e4eb52613b28e60375841a9e428594e745b68436c963d8bad4bf72188df3
-  languageName: node
-  linkType: hard
-
-"@types/aws-lambda@npm:^8.10.101":
-  version: 8.10.101
-  resolution: "@types/aws-lambda@npm:8.10.101"
-  checksum: 7e81bab6b1bfd45404b19ffbfafc70a27f6a5975c20d288be354a83c48a8d31054e8a0986c4b8547df278034832492f86de9cbd74b337158c26d88d7e356c3c6
   languageName: node
   linkType: hard
 

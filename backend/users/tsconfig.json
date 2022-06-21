@@ -8,7 +8,6 @@
   "references": [
     { "path": "../../packages/configuration/tsconfig.build.json" },
     { "path": "../../packages/serverless-configuration/tsconfig.build.json" },
-    { "path": "../../packages/serverless-helpers/tsconfig.build.json" },
     { "path": "../../contracts/core-contracts/tsconfig.build.json" },
     { "path": "../../contracts/users-contracts/tsconfig.build.json" }
   ],

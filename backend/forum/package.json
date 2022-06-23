@@ -25,9 +25,9 @@
     "@swarmion-starter/core-contracts": "1.0.0",
     "@swarmion-starter/forum-contracts": "1.0.0",
     "@swarmion-starter/serverless-configuration": "1.0.0",
-    "@swarmion/serverless-contracts": "0.8.2",
-    "@swarmion/serverless-helpers": "0.8.2",
-    "aws-sdk": "^2.1158.0",
+    "@swarmion/serverless-contracts": "0.8.3",
+    "@swarmion/serverless-helpers": "0.8.3",
+    "aws-sdk": "^2.1160.0",
     "http-errors": "^2.0.0"
   },
   "devDependencies": {

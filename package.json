@@ -28,7 +28,8 @@
     "test-circular": "nx run-many --target=test-circular --all --parallel=4",
     "test-linter": "nx run-many --target=test-linter --all --parallel=4",
     "test-type": "nx run-many --target=test-type --all --parallel=4",
-    "test-unit": "nx run-many --target=test-unit --all --parallel=4"
+    "test-unit": "nx run-many --target=test-unit --all --parallel=4",
+    "ts-coverage": "nx run-many --target=ts-coverage --all --parallel=4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -59,7 +60,8 @@
     "nx": "^14.3.6",
     "prettier": "^2.7.1",
     "syncpack": "^7.2.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "typescript-coverage-report": "^0.6.4"
   },
   "engines": {
     "node": "^16.15.0"

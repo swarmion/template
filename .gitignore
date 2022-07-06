@@ -20,6 +20,7 @@ node_modules
 
 # testing
 coverage
+coverage-ts
 
 # Ignore Jetbrains folder settings
 .idea

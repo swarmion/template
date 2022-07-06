@@ -54,3 +54,12 @@ runs:
           echo "No circular dependencies test script found in package.json"
         fi
       shell: bash
+    - name: Run typescript coverage test
+      run: |
+        cd ${{ inputs.path }}
+        if [[ $(cat package.json | jq '.scripts["ts-coverage"]') != null ]]; then
+          yarn ts-coverage
+        else
+          echo "No typescript coverage test script found in package.json"
+        fi
+      shell: bash

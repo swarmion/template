@@ -18,7 +18,7 @@
     "test-linter": "yarn linter-base-config src",
     "test-stylelint": "yarn stylelint-base-config **/*.{ts,tsx}",
     "test-type": "tsc --noEmit",
-    "test-unit": "jest --runInBand --collectCoverage --logHeapUsage --passWithNoTests"
+    "test-unit": "vitest run --coverage --passWithNoTests"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -54,6 +54,7 @@
     "@types/react": "^17.0.47",
     "@types/react-dom": "^17.0.17",
     "@vitejs/plugin-react": "^1.3.2",
+    "c8": "^7.12.0",
     "dependency-cruiser": "^11.10.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^8.18.0",
@@ -62,7 +63,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-risxss": "^2.1.0",
     "husky": "^8.0.1",
-    "jest": "^27.5.1",
     "postcss": "^8.4.14",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.7.1",
@@ -73,11 +73,11 @@
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
-    "ts-jest": "^27.1.5",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4",
     "vite": "^2.9.12",
     "vite-plugin-svgr": "^1.1.0",
-    "vite-tsconfig-paths": "^3.5.0"
+    "vite-tsconfig-paths": "^3.5.0",
+    "vitest": "^0.19.1"
   }
 }

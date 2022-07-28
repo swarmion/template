@@ -1,10 +1,12 @@
+/// <reference types="vitest" />
+
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vite';
 import svgrPlugin from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-import { checkEnvConsistency, getEnvWithProcessPrefix } from './config';
+import { checkEnvConsistency } from './config';
 
 const plugins = [react(), tsconfigPaths(), svgrPlugin()];
 
@@ -19,15 +21,18 @@ if (process.env.ANALYZE === 'true') {
 
 export default defineConfig(({ mode }) => {
   checkEnvConsistency(mode);
-  const envWithProcessPrefix = getEnvWithProcessPrefix(mode);
 
   return {
-    define: envWithProcessPrefix,
     plugins,
     resolve: {
       alias: {
         'react/jsx-runtime': 'react/jsx-runtime.js',
       },
+    },
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      setupFiles: './vitest.setup.ts',
     },
   };
 });

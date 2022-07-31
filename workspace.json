@@ -4,7 +4,6 @@
     "backend-core": "backend/core",
     "backend-forum": "backend/forum",
     "backend-users": "backend/users",
-    "configuration": "packages/configuration",
     "core-contracts": "contracts/core-contracts",
     "forum-contracts": "contracts/forum-contracts",
     "frontend-app": "frontend/app",

@@ -29,7 +29,6 @@
     "@mui/system": "^5.8.5",
     "@react-hookz/web": "^13.3.0",
     "@reduxjs/toolkit": "^1.8.2",
-    "@swarmion-starter/configuration": "1.0.0",
     "@swarmion-starter/frontend-shared": "1.0.0",
     "@swarmion-starter/users-contracts": "1.0.0",
     "@swarmion/serverless-contracts": "0.8.3",

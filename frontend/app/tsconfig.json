@@ -18,7 +18,6 @@
   },
   "references": [
     { "path": "../shared/tsconfig.build.json" },
-    { "path": "../../packages/configuration/tsconfig.build.json" },
     { "path": "../../contracts/users-contracts/tsconfig.build.json" }
   ],
   "include": ["./**/*.ts", "./**/*.tsx"]

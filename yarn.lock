@@ -3138,7 +3138,6 @@ __metadata:
   resolution: "@swarmion-starter/backend-core@workspace:backend/core"
   dependencies:
     "@serverless/typescript": ^3.19.0
-    "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion/serverless-helpers": 0.8.3
@@ -3161,7 +3160,6 @@ __metadata:
   resolution: "@swarmion-starter/backend-forum@workspace:backend/forum"
   dependencies:
     "@serverless/typescript": ^3.19.0
-    "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/forum-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
@@ -3190,7 +3188,6 @@ __metadata:
   resolution: "@swarmion-starter/backend-users@workspace:backend/users"
   dependencies:
     "@serverless/typescript": ^3.19.0
-    "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/core-contracts": 1.0.0
     "@swarmion-starter/serverless-configuration": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
@@ -3208,33 +3205,6 @@ __metadata:
     serverless-esbuild: ^1.30.0
     serverless-iam-roles-per-function: ^3.2.0
     ts-node: ^10.8.1
-    typescript: ^4.7.4
-    vite: ^3.0.3
-    vitest: ^0.19.1
-  languageName: unknown
-  linkType: soft
-
-"@swarmion-starter/configuration@1.0.0, @swarmion-starter/configuration@workspace:packages/configuration":
-  version: 0.0.0-use.local
-  resolution: "@swarmion-starter/configuration@workspace:packages/configuration"
-  dependencies:
-    "@babel/cli": ^7.17.10
-    "@babel/core": ^7.18.5
-    "@babel/plugin-transform-runtime": ^7.18.5
-    "@babel/preset-env": ^7.18.2
-    "@babel/preset-typescript": ^7.17.12
-    "@babel/runtime": ^7.18.3
-    "@serverless/typescript": ^3.19.0
-    "@types/node": ^17.0.45
-    "@zerollup/ts-transform-paths": ^1.7.18
-    babel-plugin-module-resolver: ^4.1.0
-    c8: ^7.12.0
-    concurrently: ^7.2.2
-    dependency-cruiser: ^11.10.0
-    eslint: ^8.18.0
-    prettier: ^2.7.1
-    ts-node: ^10.8.1
-    ttypescript: ^1.5.13
     typescript: ^4.7.4
     vite: ^3.0.3
     vitest: ^0.19.1
@@ -3310,7 +3280,6 @@ __metadata:
     "@redux-devtools/extension": ^3.2.2
     "@reduxjs/toolkit": ^1.8.2
     "@stylelint/postcss-css-in-js": ^0.37.3
-    "@swarmion-starter/configuration": 1.0.0
     "@swarmion-starter/frontend-shared": 1.0.0
     "@swarmion-starter/users-contracts": 1.0.0
     "@swarmion/serverless-contracts": 0.8.3
@@ -3394,7 +3363,6 @@ __metadata:
     "@mui/lab": ^5.0.0-alpha.87
     "@mui/material": ^5.8.5
     "@mui/system": ^5.8.5
-    "@swarmion-starter/configuration": 1.0.0
     "@testing-library/dom": ^8.14.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^12.1.5

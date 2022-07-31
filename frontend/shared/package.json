@@ -38,7 +38,6 @@
     "@mui/lab": "^5.0.0-alpha.87",
     "@mui/material": "^5.8.5",
     "@mui/system": "^5.8.5",
-    "@swarmion-starter/configuration": "1.0.0",
     "@testing-library/dom": "^8.14.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",

@@ -61,10 +61,6 @@
       "name": "backend users [service]"
     },
     {
-      "path": "packages/configuration",
-      "name": "configuration [library]"
-    },
-    {
       "path": "packages/serverless-configuration",
       "name": "serverless configuration [library]"
     },

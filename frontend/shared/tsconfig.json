@@ -10,9 +10,6 @@
     "jsx": "react-jsx",
     "outDir": "./dist/types"
   },
-  "references": [
-    { "path": "../../packages/configuration/tsconfig.build.json" }
-  ],
   "exclude": ["./dist"],
   "include": ["./**/*.ts", "./**/*.tsx"]
 }

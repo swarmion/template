@@ -21,7 +21,7 @@ Then head to the Swarmion documentation on [swarmion.dev](https://www.swarmion.d
 - Nx
 - Eslint configuration
 - Prettier configuration
-- Jest configuration
+- Vitest configuration
 - Typescript
 - Common packages built with babel, with a watch mode
 - Selective tests, package and deploy to remove the need to run all the tests and deploy at every commit.

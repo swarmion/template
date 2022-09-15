@@ -25,15 +25,9 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "typescript.tsdk": "node_modules/typescript/lib",
-    "jest.autoRun": "off",
-    "jest.disabledWorkspaceFolders": [
-      "swarmion-starter root",
-      "frontend cloudfront [service]"
-    ],
-    "jest.jestCommandLine": "yarn jest",
-    "jest.showCoverageOnLoad": true,
-    "jest.coverageFormatter": "DefaultFormatter",
-    "cSpell.words": ["esbuild", "swarmion"]
+    "cSpell.words": ["esbuild", "swarmion"],
+    "vitest.commandLine": "yarn vitest",
+    "vitest.disabledWorkspaceFolders": ["swarmion-starter root"]
   },
   "extensions": {
     "recommendations": [
@@ -41,12 +35,12 @@
       "dbaeumer.vscode-eslint",
       "editorconfig.editorconfig",
       "foxundermoon.shell-format",
-      "orta.vscode-jest",
       "streetsidesoftware.code-spell-checker",
       "streetsidesoftware.code-spell-checker-french",
       "stylelint.vscode-stylelint",
       "styled-components.vscode-styled-components",
-      "SebastianBille.iam-legend"
+      "SebastianBille.iam-legend",
+      "ZixuanChen.vitest-explorer"
     ]
   },
   "folders": [
@@ -65,10 +59,6 @@
     {
       "path": "backend/users",
       "name": "backend users [service]"
-    },
-    {
-      "path": "packages/configuration",
-      "name": "configuration [library]"
     },
     {
       "path": "packages/serverless-configuration",

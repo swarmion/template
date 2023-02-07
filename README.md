@@ -1,4 +1,4 @@
-# Swarmion example
+# Swarmion example - ⚠  Deprecated, check https://github.com/swarmion/swarmion instead
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -15,44 +15,6 @@ yarn create swarmion-app
 ```
 
 Then head to the Swarmion documentation on [swarmion.dev](https://www.swarmion.dev)
-
-## Features
-
-- Nx
-- Eslint configuration
-- Prettier configuration
-- Vitest configuration
-- Typescript
-- Common packages built with babel, with a watch mode
-- Selective tests, package and deploy to remove the need to run all the tests and deploy at every commit.
-
-## Code principles
-
-This repository follows the code principles:
-
-- **Your codebase should adapt to your team organizations**
-- **DRY** (Don't Repeat Yourself)
-- **Don't deploy all at once**
-- **Safe deployments**
-
-In order to respect these guidelines, a good solution is the Monorepo approach.
-
-Tips:
-
-- Always explicitly declare dependencies between end services in `package.json`
-- These dependencies can be of two kinds:
-  - code dependencies: _service B_ declares _service A_ as a dependency because it needs some code exported by _service A_;
-  - deploy dependencies: _service B_ declares _service A_ as a dependency because it needs _service A_ to be deployed before it.
-
-## Commands
-
-These commands have to be run at the root of the project.
-
-- `nvm use`: set the version of node set in `.nvmrc`
-- `yarn`: install node dependencies in all packages;
-- `yarn package`: compile the common packages;
-- `yarn test`: launch the tests in all packages;
-- `yarn deploy`: deploy all the end services in order;
 
 ## Contributors ✨
 
